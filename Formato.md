@@ -47,6 +47,8 @@ Forma general: `<base>/<hora>/<parte>`.
 
 **Partes:** `himno` · `ant1` `salmo1` `ant2` `salmo2` `ant3` `salmo3` · `lectura` · `responsorio` · `ant_ev` (antífona del Benedictus o del Magníficat) · `preces` · `oracion`. En Laudes `salmo2` es el cántico del Antiguo Testamento; en Vísperas `salmo3`, el del Nuevo. En el invitatorio, solo `ant`.
 
+**Antífona del Evangelio por ciclo:** el domingo, antes de cada `…/ant_ev` se busca `…/ant_ev-<ciclo>` (`ant_ev-A`, `-B`, `-C`), en cualquier tiempo. Así un domingo de Cuaresma o de Pascua puede tener la común y la propia de cada ciclo (decisión del usuario, 10-nov-2026).
+
 La `oracion` puede escribirse sin hora (`<base>/oracion`) cuando es la misma todo el día.
 
 **Bases:**

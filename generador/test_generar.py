@@ -65,6 +65,16 @@ def test_cadena_de_una_memoria_va_de_lo_propio_al_salterio():
     assert generar.candidatas(info, cel, "laudes", "salmo1") == ["salterio/s4/mar/laudes/salmo1"]
 
 
+def test_domingo_busca_antes_la_antifona_de_su_ciclo():
+    info = generar.dia_liturgico(date(2027, 3, 7))          # IV domingo de Cuaresma, ciclo B
+    cel = info["celebraciones"][0]
+    claves = generar.candidatas(info, cel, "laudes", "ant_ev")
+    assert claves[:2] == ["tiempo/cuaresma/s4/dom/laudes/ant_ev-B", "tiempo/cuaresma/s4/dom/laudes/ant_ev"]
+    # Una feria no busca ciclo.
+    info = generar.dia_liturgico(date(2027, 3, 8))
+    assert not any(c.endswith("-B") for c in generar.candidatas(info, info["celebraciones"][0], "laudes", "ant_ev"))
+
+
 def test_solemnidad_no_cae_al_salterio_salvo_la_salmodia():
     info = generar.dia_liturgico(date(2026, 12, 8))
     cel = info["celebraciones"][0]

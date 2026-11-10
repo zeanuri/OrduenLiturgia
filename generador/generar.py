@@ -219,6 +219,11 @@ def candidatas(info: dict, cel: dict, hora: str, parte: str) -> list[str]:
             claves.append(f"{b}/{parte}")
     if parte == "oracion" and info["tiempo"] == "ordinario" and tipo == "domingo":
         claves.insert(0, f"tiempo/ordinario/s{info['semana']}/oracion")
+    if parte == "ant_ev" and dia == "dom":
+        # Domingo: antes que la común, la antífona del ciclo (`…/ant_ev-A`), si la hay.
+        ciclo = info["ciclo"]
+        claves = [v for c in claves for v in (
+            [c] if c.startswith("salterio/") or f"-{ciclo}/" in c else [f"{c}-{ciclo}", c])]
     return claves
 
 
