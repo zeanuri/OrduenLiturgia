@@ -116,7 +116,7 @@ async function vistaDia(fecha, c) {
     return `<li><a class="${h === ahora ? "ahora" : ""}" href="#/dia/${fecha}/${c}/${h}"><span>${pv ? R.primeras : R[h]}` +
       (pv ? `<small>${esc(cel.visperas_de.de_eu)}</small>` : "") + `</span></a></li>`;
   };
-  const orden = ahora ? [ahora, ...HORAS.filter(h => h !== ahora)] : HORAS;
+  const orden = HORAS;                 // orden fijo: Dei-salmoa, Gorespenak, Bezperak
   $("vista").innerHTML = avisos() +
     `<div class="cab" style="--c:${TINTA[dia.color] || TINTA.Verde}">
        ${enVentana(mas(fecha, -1)) ? `<a class="flecha ant" href="#/dia/${mas(fecha, -1)}" aria-label="Aurreko eguna">&larr;</a>` : ""}
