@@ -101,7 +101,14 @@ def test_ventana_completa_e_indice(tmp_path):
     assert not (tmp_path / "dias" / "2026-10-01.json").exists()
 
 
-def test_color_de_la_memoria_obligatoria_no_el_de_la_feria():
-    assert generar.generar_dia(date(2026, 11, 10), {}, {})["color"] == "Blanco"     # san León Magno
-    assert generar.generar_dia(date(2026, 11, 12), {}, {})["color"] == "Rojo"       # san Josafat, mártir
-    assert generar.generar_dia(date(2026, 11, 14), {}, {})["color"] == "Verde"      # feria
+def test_cabecera_en_euskera_y_color_del_tiempo_como_lecturasdeldia():
+    dia = generar.generar_dia(date(2026, 11, 10), {}, {})
+    assert dia["color"] == "Verde"                                   # el del tiempo, no el del santo
+    assert dia["cabecera"] == {
+        "nombre": "Urtean Zeharreko XXXII. Asteko Asteartea", "tiempo": "Urtean Zehar", "rango": "Asteguna",
+        "ciclo": "A zikloa", "ciclo_ferial": "II urtea",
+        "memoria": "Leon Magno aita santua eta doktorea", "memoria_rango": "Nahitaezko Oroitzapena",
+    }
+    assert dia["celebraciones"][0]["nombre_eu"] == "Leon Magno aita santua eta doktorea"
+    solemnidad = generar.generar_dia(date(2026, 12, 8), {}, {})
+    assert solemnidad["cabecera"]["nombre"] == "Andre Maria Sortzez Garbia" and solemnidad["cabecera"]["memoria"] == ""

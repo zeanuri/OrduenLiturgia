@@ -15,11 +15,13 @@ const R = {
   prueba: "PROBAKO TESTUAK — ez dira liturgia-testuak", sinDatos: "Ezin izan da eguna kargatu.",
   sinConexion: "Konexino barik: gordetako azkena erakusten da.", falta: "Testua falta da",
   salterio: "Salmutegiko astea", opcional: "aukerakoa",
-  dias: ["astelehena", "martitzena", "eguaztena", "eguena", "barikua", "zapatua", "domekea"],
-  diasCortos: ["al", "mr", "ez", "eg", "br", "zp", "dm"],
-  meses: ["urtarrila", "zezeila", "martia", "apirila", "maiatza", "bagila", "garagarrila", "abuztua", "iraila", "urria", "zemendia", "abendua"],
+  // Días y meses en batua, como el resto de rótulos de lecturasdeldia.org/eu.
+  dias: ["Astelehena", "Asteartea", "Asteazkena", "Osteguna", "Ostirala", "Larunbata", "Igandea"],
+  diasCortos: ["al", "ar", "az", "og", "or", "lr", "ig"],
+  meses: ["urtarrila", "otsaila", "martxoa", "apirila", "maiatza", "ekaina", "uztaila", "abuztua", "iraila", "urria", "azaroa", "abendua"],
 };
 const COLORES = { Verde: "#2e7d32", Morado: "#6a1b9a", Blanco: "#ffffff", Rojo: "#c62828", Rosa: "#f48fb1", Negro: "#222222" };
+const TONO = { Verde: "green", Morado: "purple", Blanco: "white", Rojo: "red", Rosa: "pink" };   // como body[data-color] de lecturasdeldia
 const HORAS = ["invitatorio", "laudes", "visperas"];
 
 // ── Almacén en el dispositivo (IndexedDB) ─────────────────────────────────
@@ -78,7 +80,7 @@ const deIso = s => { const [a, m, d] = s.split("-").map(Number); return new Date
 const mas = (s, n) => { const d = deIso(s); d.setDate(d.getDate() + n); return iso(d); };
 const hoyIso = () => iso(new Date());
 const lunes0 = d => (d.getDay() + 6) % 7;                    // lunes = 0
-const fechaLarga = s => { const d = deIso(s); return `${R.dias[lunes0(d)]}, ${d.getFullYear()}ko ${R.meses[d.getMonth()]}k ${d.getDate()}`; };
+const fechaLarga = s => { const d = deIso(s); return `${R.dias[lunes0(d)]} \u00b7 ${s.slice(8)}/${s.slice(5, 7)}/${s.slice(0, 4)}`; };
 
 // ── Pintar ────────────────────────────────────────────────────────────────
 const $ = id => document.getElementById(id);
@@ -102,25 +104,32 @@ async function vistaDia(fecha, c) {
   if (!dia) { cabecera(fechaLarga(fecha), "", null); $("vista").innerHTML = avisos(`<p class="aviso">${R.sinDatos}</p>`); return; }
   const cel = dia.celebraciones[c] || dia.celebraciones[0];
   c = dia.celebraciones.indexOf(cel);
-  cabecera(fechaLarga(fecha), `${R.salterio}: ${["", "I", "II", "III", "IV"][dia.semana_salterio]}`, null);
+  cabecera(R.app, "", null);
+  const cab = dia.cabecera;
   const tarde = new Date().getHours() >= 13;
   const ahora = fecha === hoyIso() ? (tarde ? "visperas" : "laudes") : null;
   const fichas = dia.celebraciones.length < 2 ? "" : `<div class="fichas">` + dia.celebraciones.map((x, i) =>
-    `<button class="ficha" aria-pressed="${i === c}" data-ir="#/dia/${fecha}/${i}">${esc(x.nombre)}${x.opcional ? ` (${R.opcional})` : ""}</button>`).join("") + `</div>`;
+    `<button class="ficha" aria-pressed="${i === c}" data-ir="#/dia/${fecha}/${i}">${esc(x.nombre_eu)}${x.opcional ? ` (${R.opcional})` : ""}</button>`).join("") + `</div>`;
   const fila = h => {
     const pv = h === "visperas" && cel.visperas_de.cuales === "primeras";
     return `<li><a class="${h === ahora ? "ahora" : ""}" href="#/dia/${fecha}/${c}/${h}"><span>${pv ? R.primeras : R[h]}` +
-      (pv ? `<small>${esc(cel.visperas_de.de)}</small>` : "") + `</span></a></li>`;
+      (pv ? `<small>${esc(cel.visperas_de.de_eu)}</small>` : "") + `</span></a></li>`;
   };
   const orden = ahora ? [ahora, ...HORAS.filter(h => h !== ahora)] : HORAS;
   $("vista").innerHTML = avisos() +
-    `<h1 class="celebracion">${esc(cel.nombre)}</h1>
-     <p class="rango">${punto(dia.color)}${esc(cel.rango)}</p>${fichas}
+    `<div class="tarjeta" data-color="${TONO[dia.color] || "green"}">
+       ${enVentana(mas(fecha, -1)) ? `<a class="flecha ant" href="#/dia/${mas(fecha, -1)}" aria-label="Aurreko eguna">&larr;</a>` : ""}
+       ${enVentana(mas(fecha, 1)) ? `<a class="flecha sig" href="#/dia/${mas(fecha, 1)}" aria-label="Hurrengo eguna">&rarr;</a>` : ""}
+       <div class="fecha">${fechaLarga(fecha)}</div>
+       <h1>${esc(cab.nombre)}</h1>
+       <div class="pildoras"><span>${punto(dia.color)}${esc(cab.tiempo)}</span><span>${esc(cab.rango)}</span>
+         <span>${esc(cab.ciclo)}</span>${cab.ciclo_ferial ? `<span>${esc(cab.ciclo_ferial)}</span>` : ""}
+         <span>${R.salterio}: ${["", "I", "II", "III", "IV"][dia.semana_salterio]}</span></div>
+       ${cab.memoria ? `<div class="memoria"><span class="estrella">&#9733;</span>${esc(cab.memoria)} <em>(${esc(cab.memoria_rango)})</em></div>` : ""}
+     </div>${fichas}
      <ul class="horas">${orden.map(fila).join("")}
        <li><a href="${esc(dia.misa)}" target="_blank" rel="noopener"><span>${R.misa}<small>lecturasdeldia.org</small></span></a></li></ul>
-     <nav class="pasos">${enVentana(mas(fecha, -1)) ? `<a href="#/dia/${mas(fecha, -1)}">&larr; ${mas(fecha, -1).slice(5)}</a>` : "<span></span>"}
-       ${fecha !== hoyIso() ? `<a href="#/">${R.hoy}</a>` : ""}
-       ${enVentana(mas(fecha, 1)) ? `<a href="#/dia/${mas(fecha, 1)}">${mas(fecha, 1).slice(5)} &rarr;</a>` : "<span></span>"}</nav>`;
+     ${fecha !== hoyIso() ? `<nav class="pasos"><a href="#/">${R.hoy}</a></nav>` : ""}`;
 }
 
 const enVentana = f => !indice || (f >= indice.desde && f <= indice.hasta);
@@ -159,7 +168,7 @@ async function vistaHora(fecha, c, hora) {
   $("vista").innerHTML = avisos(prueba ? `<p class="aviso prueba">${R.prueba}</p>` : "") +
     `<div class="herramientas"><button data-letra="-1" aria-label="Letra txikiagoa">A&minus;</button>
        <button data-letra="1" aria-label="Letra handiagoa">A+</button><button data-tema aria-label="Gaua / eguna">&#9680;</button></div>
-     <article class="lector"><h1>${esc(pv ? cel.visperas_de.de : cel.nombre)}</h1><h2>${pv ? R.primeras : R[hora]}</h2>${cuerpo}</article>`;
+     <article class="lector"><h1>${esc(pv ? cel.visperas_de.de_eu : cel.nombre_eu)}</h1><h2>${pv ? R.primeras : R[hora]}</h2>${cuerpo}</article>`;
 }
 
 function vistaCalendario(mes) {

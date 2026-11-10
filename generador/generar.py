@@ -29,6 +29,7 @@ AQUI = Path(__file__).resolve().parent
 PROYECTO = AQUI.parent
 sys.path.insert(0, str(AQUI))
 import liturgia  # noqa: E402  (copia del motor de calendario de la CEE; ver README)
+import liturgical_names_eu as eu  # noqa: E402  (nombres en euskera, los de lecturasdeldia.org/eu)
 
 DIAS_ATRAS = 40
 DIAS_ADELANTE = 365
@@ -145,11 +146,13 @@ def dia_liturgico(d: date) -> dict:
         opcionales.append({"nombre": mem, "rango": rango_mem, "opcional": True})
     elif mem:                                   # memoria obligatoria o fiesta: es la celebración
         principal = {"nombre": mem, "rango": rango_mem, "opcional": False}
-        info["color"] = r.get("memorial_color") or r["color"]
     info["celebraciones"] = [principal, *opcionales]
     for c in info["celebraciones"]:
         c["tipo"] = tipo_de(c["rango"])
         c["id"] = slug(c["nombre"])
+        # Nombre en euskera: el del día por `localize_name`; el de un santo, por `localize_memorial`.
+        c["nombre_eu"] = eu.localize_name(c["nombre"]) if c["nombre"] == r["name"] else eu.localize_memorial(c["nombre"])
+        c["rango_eu"] = eu.localize_rank(c["rango"])
     info["nivel"] = liturgia.get_precedence_level(
         principal["nombre"], principal["rango"], r["season"], d, d.weekday() == 6)
     return info
@@ -277,20 +280,29 @@ def generar_dia(d: date, textos: dict, faltan: dict) -> dict:
         if primeras:
             cel_m = manana["celebraciones"][0]
             horas["visperas"] = componer(manana, cel_m, "visperas1", textos, faltan)
-            visperas_de = {"cuales": "primeras", "de": cel_m["nombre"]}
+            visperas_de = {"cuales": "primeras", "de": cel_m["nombre"], "de_eu": cel_m["nombre_eu"]}
         else:
             horas["visperas"] = componer(info, cel, "visperas", textos, faltan)
             visperas_de = {"cuales": "segundas" if cel["tipo"] in ("solemnidad", "domingo") else "del dia",
-                           "de": cel["nombre"]}
+                           "de": cel["nombre"], "de_eu": cel["nombre_eu"]}
         celebraciones.append({
-            "id": cel["id"], "nombre": cel["nombre"], "rango": cel["rango"], "opcional": cel["opcional"],
+            "id": cel["id"], "nombre": cel["nombre"], "nombre_eu": cel["nombre_eu"],
+            "rango": cel["rango"], "rango_eu": cel["rango_eu"], "opcional": cel["opcional"],
             "visperas_de": visperas_de, "horas": horas,
         })
     r = info["r"]
     return {
         "fecha": d.isoformat(), "dia_semana": DIAS[d.weekday()], "tiempo": info["tiempo"],
         "semana": info["semana"], "semana_salterio": info["salterio"], "ciclo_dominical": info["ciclo"],
-        "color": info["color"], "celebraciones": celebraciones, "misa": WEB_MISA.format(d),
+        "color": r["color"], "celebraciones": celebraciones, "misa": WEB_MISA.format(d),
+        # Cabecera del día en euskera, como la de lecturasdeldia.org/eu.
+        "cabecera": {
+            "nombre": eu.localize_name(r["name"]), "tiempo": eu.localize_season(r["season"]),
+            "rango": eu.localize_rank(r["rank"]), "ciclo": eu.localize_sunday_cycle(r["sunday_cycle"]),
+            "ciclo_ferial": eu.localize_weekday_cycle(r["weekday_cycle"]) if r.get("weekday_cycle") else "",
+            "memoria": eu.localize_memorial(r["memorial"]) if r.get("memorial") and r["memorial"] != r["name"] else "",
+            "memoria_rango": eu.localize_rank(r["memorial_rank"]) if r.get("memorial_rank") else "",
+        },
     }
 
 
@@ -327,7 +339,7 @@ def main(argv=None) -> int:
                 partes_prueba += sum(1 for p in partes if p.get("prueba"))
         c0 = dia["celebraciones"][0]
         indice[d.isoformat()] = {
-            "nombre": c0["nombre"], "rango": c0["rango"], "tiempo": dia["tiempo"], "color": dia["color"],
+            "nombre": c0["nombre_eu"], "rango": c0["rango"], "tiempo": dia["tiempo"], "color": dia["color"],
             "semana_salterio": dia["semana_salterio"], "huella": hashlib.sha1(cuerpo.encode()).hexdigest()[:12],
         }
     for viejo in dias_dir.glob("*.json"):            # lo que salió de la ventana se retira
