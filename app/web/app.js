@@ -21,7 +21,8 @@ const R = {
   meses: ["urtarrila", "otsaila", "martxoa", "apirila", "maiatza", "ekaina", "uztaila", "abuztua", "iraila", "urria", "azaroa", "abendua"],
 };
 const COLORES = { Verde: "#2e7d32", Morado: "#6a1b9a", Blanco: "#ffffff", Rojo: "#c62828", Rosa: "#f48fb1", Negro: "#222222" };
-const TONO = { Verde: "green", Morado: "purple", Blanco: "white", Rojo: "red", Rosa: "pink" };   // como body[data-color] de lecturasdeldia
+// Color del tiempo para las letras de la cabecera (el blanco litúrgico se escribe en oro oscuro).
+const TINTA = { Verde: "#1b7d44", Morado: "#5b3a8e", Rojo: "#b3202a", Blanco: "#8c6e18", Rosa: "#a84e74" };
 const HORAS = ["invitatorio", "laudes", "visperas"];
 
 // ── Almacén en el dispositivo (IndexedDB) ─────────────────────────────────
@@ -117,15 +118,13 @@ async function vistaDia(fecha, c) {
   };
   const orden = ahora ? [ahora, ...HORAS.filter(h => h !== ahora)] : HORAS;
   $("vista").innerHTML = avisos() +
-    `<div class="tarjeta" data-color="${TONO[dia.color] || "green"}">
+    `<div class="cab" style="--c:${TINTA[dia.color] || TINTA.Verde}">
        ${enVentana(mas(fecha, -1)) ? `<a class="flecha ant" href="#/dia/${mas(fecha, -1)}" aria-label="Aurreko eguna">&larr;</a>` : ""}
        ${enVentana(mas(fecha, 1)) ? `<a class="flecha sig" href="#/dia/${mas(fecha, 1)}" aria-label="Hurrengo eguna">&rarr;</a>` : ""}
        <div class="fecha">${fechaLarga(fecha)}</div>
        <h1>${esc(cab.nombre)}</h1>
-       <div class="pildoras"><span>${punto(dia.color)}${esc(cab.tiempo)}</span><span>${esc(cab.rango)}</span>
-         <span>${esc(cab.ciclo)}</span>${cab.ciclo_ferial ? `<span>${esc(cab.ciclo_ferial)}</span>` : ""}
-         <span>${R.salterio}: ${["", "I", "II", "III", "IV"][dia.semana_salterio]}</span></div>
-       ${cab.memoria ? `<div class="memoria"><span class="estrella">&#9733;</span>${esc(cab.memoria)} <em>(${esc(cab.memoria_rango)})</em></div>` : ""}
+       ${cab.memoria ? `<div class="memoria"><span class="estrella">&#9733;</span>${esc(cab.memoria)} <em>${esc(cab.memoria_rango)}</em></div>` : ""}
+       <div class="info">${esc(cab.tiempo)} &middot; ${esc(cab.rango)} &middot; ${R.salterio}: ${["", "I", "II", "III", "IV"][dia.semana_salterio]}</div>
      </div>${fichas}
      <ul class="horas">${orden.map(fila).join("")}
        <li><a href="${esc(dia.misa)}" target="_blank" rel="noopener"><span>${R.misa}<small>lecturasdeldia.org</small></span></a></li></ul>
