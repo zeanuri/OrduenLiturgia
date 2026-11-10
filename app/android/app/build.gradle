@@ -1,0 +1,32 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'io.github.zeanuri.orduenliturgia'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'io.github.zeanuri.orduenliturgia'
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName '0.1'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    // La app es la web de app/web dentro de un WebView, con una copia de los
+    // dias generados (salida/) para el primer arranque sin conexion.
+    sourceSets { main { assets.srcDirs = ["${buildDir}/web-assets"] } }
+}
+
+def webAssets = tasks.register('webAssets', Copy) {
+    from('../../web')
+    from('../../../salida') {
+        into 'datos'
+        exclude 'faltan.txt'
+    }
+    into("${buildDir}/web-assets")
+}
+preBuild.dependsOn webAssets
+
+dependencies { implementation 'androidx.webkit:webkit:1.11.0' }

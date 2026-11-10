@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Orduen Liturgia</string>
+    <style name="Tema" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#3D4458</item>
+        <item name="android:windowBackground">#F6F4F1</item>
+    </style>
+</resources>

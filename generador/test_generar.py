@@ -1,0 +1,107 @@
+"""Pruebas del generador. Correr: py -3.14 -m pytest projects/OrduenLiturgia/generador -q"""
+import json
+from datetime import date
+
+import pytest
+
+import generar
+
+# Semana del salterio de cada fecha, cotejada con la app oficial «Liturgia euskaraz»
+# el 10-nov-2026.
+SALTERIO_APP_OFICIAL = [
+    ("2026-11-10", 4),   # Urtean Zeharreko XXXII. astea
+    ("2026-11-29", 1),   # Abendualdiko I. astea
+    ("2026-12-18", 3),
+    ("2026-12-28", 1),   # Eguberri zortziurrena
+    ("2027-01-02", 1),   # Agerkunde aurretik
+    ("2027-01-04", 2),   # Agerkunde aurretik, tras el domingo
+    ("2027-01-07", 2),   # Agerkunde ondoren
+    ("2027-01-11", 1),   # Urtean Zeharreko I. astea
+    ("2027-02-11", 4),   # Hausterre
+    ("2027-03-22", 2),   # Aste Santua
+    ("2027-04-06", 2),   # II. Pazko astea
+]
+
+
+@pytest.mark.parametrize("fecha,semana", SALTERIO_APP_OFICIAL)
+def test_semana_salterio_coincide_con_la_app_oficial(fecha, semana):
+    assert generar.dia_liturgico(date.fromisoformat(fecha))["salterio"] == semana
+
+
+@pytest.mark.parametrize("fecha,cuales,de", [
+    ("2026-11-14", "primeras", "XXXIII Domingo del Tiempo Ordinario"),          # sábado feria → domingo
+    ("2026-11-15", "segundas", "XXXIII Domingo del Tiempo Ordinario"),          # domingo → lunes feria
+    ("2026-11-21", "primeras", "Nuestro Señor Jesucristo, Rey del Universo"),   # sábado con memoria → solemnidad
+    ("2026-12-07", "primeras", "La Inmaculada Concepción"),                     # lunes feria → solemnidad
+    ("2026-11-10", "del dia", "San León Magno, papa y doctor"),                 # memoria obligatoria
+    ("2027-03-27", "segundas", None),                                           # Sábado Santo: no hay primeras de Pascua
+    ("2027-03-30", "segundas", "Martes de la Octava de Pascua"),                # octava: cada día las suyas
+])
+def test_visperas_de_quien(fecha, cuales, de):
+    dia = generar.generar_dia(date.fromisoformat(fecha), {}, {})
+    v = dia["celebraciones"][0]["visperas_de"]
+    assert v["cuales"] == cuales
+    if de:
+        assert v["de"] == de
+
+
+def test_memoria_libre_sale_como_opcional_y_la_feria_como_principal():
+    dia = generar.generar_dia(date(2026, 11, 16), {}, {})   # santa Margarita de Escocia / santa Gertrudis
+    assert [c["opcional"] for c in dia["celebraciones"]] == [False, True]
+    assert dia["celebraciones"][0]["rango"] == "Feria"
+
+
+def test_cadena_de_una_memoria_va_de_lo_propio_al_salterio():
+    info = generar.dia_liturgico(date(2026, 11, 10))
+    cel = info["celebraciones"][0]
+    assert generar.candidatas(info, cel, "laudes", "himno") == [
+        "propio/san-leon-magno-papa-y-doctor/laudes/himno",
+        "comunes/doctores/laudes/himno",
+        "comunes/pastores/laudes/himno",
+        "comunes/santos-varones/laudes/himno",
+        "salterio/s4/mar/laudes/himno",
+    ]
+    # Los salmos de una memoria son siempre los del salterio.
+    assert generar.candidatas(info, cel, "laudes", "salmo1") == ["salterio/s4/mar/laudes/salmo1"]
+
+
+def test_solemnidad_no_cae_al_salterio_salvo_la_salmodia():
+    info = generar.dia_liturgico(date(2026, 12, 8))
+    cel = info["celebraciones"][0]
+    assert all(not c.startswith("salterio/") for c in generar.candidatas(info, cel, "laudes", "himno"))
+    assert generar.candidatas(info, cel, "laudes", "salmo1")[-1] == "salterio/s1/dom/laudes/salmo1"
+
+
+def test_texto_presente_se_incrusta_y_el_ausente_se_marca():
+    textos = {
+        "salterio/s4/mar/laudes/salmo1": {"ref": "salmos/101"},
+        "salmos/101": {"titulo": "RELLENO", "lineas": [{"t": "texto", "x": "relleno"}]},
+    }
+    faltan: dict = {}
+    dia = generar.generar_dia(date(2026, 11, 10), textos, faltan)
+    partes = {p["parte"]: p for p in dia["celebraciones"][0]["horas"]["laudes"]}
+    assert partes["salmo1"]["clave"] == "salterio/s4/mar/laudes/salmo1"
+    assert partes["salmo1"]["lineas"] == [{"t": "texto", "x": "relleno"}]
+    assert partes["himno"]["falta"][-1] == "salterio/s4/mar/laudes/himno"
+    assert "salterio/s4/mar/laudes/himno" in faltan and "salterio/s4/mar/laudes/salmo1" not in faltan
+
+
+def test_ventana_completa_e_indice(tmp_path):
+    assert generar.main(["--hoy", "2026-11-10", "--salida", str(tmp_path), "--textos", str(tmp_path / "no"),
+                         "--inventario"]) == 0
+    dias = sorted(p.name for p in (tmp_path / "dias").glob("*.json"))
+    assert len(dias) == 406 and dias[0] == "2026-10-01.json" and dias[-1] == "2027-11-10.json"
+    indice = json.loads((tmp_path / "indice.json").read_text(encoding="utf-8"))
+    assert indice["desde"] == "2026-10-01" and len(indice["dias"]) == 406
+    hoy = json.loads((tmp_path / "dias" / "2026-11-10.json").read_text(encoding="utf-8"))
+    assert hoy["misa"] == "https://lecturasdeldia.org/eu/2026/11/10/"
+    assert [p["parte"] for p in hoy["celebraciones"][0]["horas"]["invitatorio"]] == ["apertura", "ant", "salmo95"]
+    # Al mover la ventana un día, el día que sale se retira.
+    generar.main(["--hoy", "2026-11-11", "--salida", str(tmp_path), "--textos", str(tmp_path / "no")])
+    assert not (tmp_path / "dias" / "2026-10-01.json").exists()
+
+
+def test_color_de_la_memoria_obligatoria_no_el_de_la_feria():
+    assert generar.generar_dia(date(2026, 11, 10), {}, {})["color"] == "Blanco"     # san León Magno
+    assert generar.generar_dia(date(2026, 11, 12), {}, {})["color"] == "Rojo"       # san Josafat, mártir
+    assert generar.generar_dia(date(2026, 11, 14), {}, {})["color"] == "Verde"      # feria
