@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
@@ -12,9 +13,16 @@ import android.webkit.WebViewClient;
 
 import androidx.webkit.WebViewAssetLoader;
 
-/** La app es la web de app/web servida desde los assets; los enlaces externos se abren fuera. */
+/**
+ * La app es la web publicada en GitHub Pages: cada cambio que se publica llega
+ * solo, sin instalar un APK nuevo, y la propia web se guarda para abrirse sin
+ * conexión. Si falla la carga (primer arranque sin red), se abre la copia que
+ * el APK lleva dentro. Los enlaces a otros sitios se abren en el navegador.
+ */
 public class MainActivity extends Activity {
-    private static final String HOST = "appassets.androidplatform.net";
+    private static final String PUBLICADA = "https://zeanuri.github.io/OrduenLiturgia/app/";
+    private static final String HOST_COPIA = "appassets.androidplatform.net";
+    private static final String COPIA = "https://" + HOST_COPIA + "/assets/index.html";
     private WebView web;
 
     @Override
@@ -37,17 +45,34 @@ public class MainActivity extends Activity {
             @Override
             public boolean shouldOverrideUrlLoading(WebView v, WebResourceRequest r) {
                 Uri u = r.getUrl();
-                if (HOST.equals(u.getHost())) {
+                if (HOST_COPIA.equals(u.getHost()) || u.toString().startsWith(PUBLICADA)) {
                     return false;
                 }
                 startActivity(new Intent(Intent.ACTION_VIEW, u));
                 return true;
             }
+
+            @Override
+            public void onReceivedError(WebView v, WebResourceRequest r, WebResourceError e) {
+                abrirCopiaSiFalla(v, r);
+            }
+
+            @Override
+            public void onReceivedHttpError(WebView v, WebResourceRequest r, WebResourceResponse e) {
+                abrirCopiaSiFalla(v, r);
+            }
         });
         if (estado == null) {
-            web.loadUrl("https://" + HOST + "/assets/index.html");
+            web.loadUrl(PUBLICADA);
         } else {
             web.restoreState(estado);
+        }
+    }
+
+    /** Solo cuando lo que falla es la página misma (no una imagen o un dato). */
+    private void abrirCopiaSiFalla(WebView v, WebResourceRequest r) {
+        if (r.isForMainFrame() && r.getUrl().toString().startsWith(PUBLICADA)) {
+            v.loadUrl(COPIA);
         }
     }
 

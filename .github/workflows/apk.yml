@@ -1,13 +1,17 @@
-name: Construir la app (APK de pruebas)
+name: Construir la app (APK)
 
+# El APK solo hace falta cuando cambia el envoltorio de Android: las pantallas
+# y los textos llegan a la app por la red (generar.yml). Cada compilación se
+# firma con la clave fija y sustituye a la anterior en la descarga «pruebas»:
+#   https://github.com/zeanuri/OrduenLiturgia/releases/download/pruebas/OrduenLiturgia.apk
 on:
   push:
     branches: [main]
-    paths: ['app/**', 'generador/**', 'textos/**', '.github/workflows/apk.yml']
+    paths: ['app/android/**', '.github/workflows/apk.yml']
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   apk:
@@ -26,10 +30,24 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
-      - name: Compilar
-        run: gradle -p app/android assembleDebug --no-daemon
-      - uses: actions/upload-artifact@v4
-        with:
-          name: OrduenLiturgia-debug
-          path: app/android/app/build/outputs/apk/debug/app-debug.apk
-          if-no-files-found: error
+      - name: Compilar y firmar
+        env:
+          FIRMA_ALMACEN_B64: ${{ secrets.FIRMA_ALMACEN_B64 }}
+          FIRMA_CONTRASENA: ${{ secrets.FIRMA_CONTRASENA }}
+          FIRMA_ALIAS: ${{ secrets.FIRMA_ALIAS }}
+          NUMERO_VERSION: ${{ github.run_number }}
+        run: |
+          test -n "$FIRMA_ALMACEN_B64" || { echo "Faltan los secretos de firma"; exit 1; }
+          echo "$FIRMA_ALMACEN_B64" | base64 -d > "$RUNNER_TEMP/firma.jks"
+          export FIRMA_ALMACEN="$RUNNER_TEMP/firma.jks"
+          gradle -p app/android assembleRelease --no-daemon
+          cp app/android/app/build/outputs/apk/release/app-release.apk OrduenLiturgia.apk
+          rm -f "$RUNNER_TEMP/firma.jks"
+      - name: Publicar en la descarga «pruebas»
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view pruebas >/dev/null 2>&1 || gh release create pruebas --prerelease --target main \
+            --title "Versión de pruebas" \
+            --notes "APK de pruebas de OrduenLiturgia. Lleva textos de RELLENO, no textos litúrgicos. Se sustituye en cada compilación."
+          gh release upload pruebas OrduenLiturgia.apk --clobber

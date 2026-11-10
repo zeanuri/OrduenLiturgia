@@ -1,5 +1,9 @@
 plugins { id 'com.android.application' }
 
+// Clave de firma fija (secretos del repositorio). Sin ella, el APK sale sin firmar de release.
+def almacen = System.getenv('FIRMA_ALMACEN')
+def numero = (System.getenv('NUMERO_VERSION') ?: '1') as Integer
+
 android {
     namespace 'io.github.zeanuri.orduenliturgia'
     compileSdk 34
@@ -7,15 +11,34 @@ android {
         applicationId 'io.github.zeanuri.orduenliturgia'
         minSdk 24
         targetSdk 34
-        versionCode 1
-        versionName '0.1'
+        versionCode numero
+        versionName "0.1.${numero}"
     }
+    signingConfigs {
+        if (almacen) {
+            fija {
+                storeFile file(almacen)
+                storePassword System.getenv('FIRMA_CONTRASENA')
+                keyAlias System.getenv('FIRMA_ALIAS')
+                keyPassword System.getenv('FIRMA_CONTRASENA')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (almacen) {
+                signingConfig signingConfigs.fija
+            }
+        }
+    }
+    lint { checkReleaseBuilds false }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-    // La app es la web de app/web dentro de un WebView, con una copia de los
-    // dias generados (salida/) para el primer arranque sin conexion.
+    // Copia de la web y de los dias generados (salida/): solo se usa si la app
+    // arranca sin conexion antes de haber guardado nada.
     sourceSets { main { assets.srcDirs = ["${buildDir}/web-assets"] } }
 }
 

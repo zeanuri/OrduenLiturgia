@@ -219,6 +219,9 @@ document.addEventListener("click", e => {
 $("btn-cal").onclick = () => { location.hash = "#/egutegia/" + hoyIso().slice(0, 7); };
 window.addEventListener("hashchange", navegar);
 
+// Guarda las pantallas para abrir la app sin conexión (solo en la versión publicada).
+if ("serviceWorker" in navigator && location.hostname.endsWith("github.io")) navigator.serviceWorker.register("sw.js");
+
 ajustes();
 navegar().then(async () => {                       // en segundo plano: la semana que viene, para leer sin conexión
   if (!enLinea || !indice) return;
