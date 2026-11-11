@@ -13,7 +13,7 @@ const R = {
   app: "Orduen Liturgia", invitatorio: "Dei-salmoa", laudes: "Gorespenak", visperas: "Bezperak",
   primeras: "Lehenengo Bezperak", misa: "Mezako irakurgaiak", calendario: "Egutegia", hoy: "Gaur",
   prueba: "PROBAKO TESTUAK — ez dira liturgia-testuak", sinDatos: "Ezin izan da eguna kargatu.",
-  sinConexion: "Konexino barik: gordetako azkena erakusten da.", falta: "Bizkaierazko bertsioaren zain",
+  sinConexion: "Konexino barik: gordetako azkena erakusten da.", falta: "Bizkaierazko bertsioaren zain", ant: "Ant.",
   salterio: "Salmutegiko astea", opcional: "aukerakoa",
   // Días y meses en batua, como el resto de rótulos de lecturasdeldia.org/eu.
   dias: ["Astelehena", "Asteartea", "Asteazkena", "Osteguna", "Ostirala", "Larunbata", "Igandea"],
@@ -144,9 +144,17 @@ function lineas(ls) {
   return html + (marca ? `<p>${marca}</p>` : "");
 }
 
-function parteHtml(p) {
+function parteHtml(p, marca) {
   if (p.falta) return `<section><p class="falta" title="${esc(p.falta[0])}">${R.falta}</p></section>`;
-  return `<section data-parte="${p.parte}">${p.titulo ? `<p class="l-titulo">${esc(p.titulo)}</p>` : ""}${lineas(p.lineas)}</section>`;
+  const ls = marca ? [{ t: "ant", x: marca }, ...(p.lineas || [])] : p.lineas;
+  return `<section data-parte="${p.parte}">${p.titulo ? `<p class="l-titulo">${esc(p.titulo)}</p>` : ""}${lineas(ls)}</section>`;
+}
+
+// Marca de la antífona, como en «Liturgia euskaraz»: «1. Ant.» antes del salmo y «Ant.»
+// al repetirla detrás; la del Benedictus o el Magníficat y la del invitatorio, «Ant.».
+function marcaAnt(p, repetida) {
+  const n = /^ant(\d)$/.exec(p.parte);
+  return n && !repetida ? `${n[1]}. ${R.ant}` : R.ant;
 }
 
 async function vistaHora(fecha, c, hora) {
@@ -158,10 +166,11 @@ async function vistaHora(fecha, c, hora) {
   cabecera(fechaLarga(fecha), pv ? R.primeras : R[hora], `#/dia/${fecha}/${c}`);
   // La antífona se dice antes y después de su salmo o cántico: se repite detrás.
   let cuerpo = "", ant = null;
-  partes.forEach((p, i) => {
-    cuerpo += parteHtml(p);
-    if (p.parte.startsWith("ant")) ant = p;
-    else if (ant) { cuerpo += parteHtml(ant); ant = null; }
+  partes.forEach(p => {
+    const esAnt = p.parte.startsWith("ant");
+    cuerpo += parteHtml(p, esAnt ? marcaAnt(p, false) : "");
+    if (esAnt) ant = p;
+    else if (ant) { if (!ant.falta) cuerpo += parteHtml(ant, marcaAnt(ant, true)); ant = null; }
   });
   const prueba = partes.some(p => p.prueba);
   $("vista").innerHTML = avisos(prueba ? `<p class="aviso prueba">${R.prueba}</p>` : "") +
