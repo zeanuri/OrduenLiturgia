@@ -78,6 +78,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .marca { color: var(--rojo); font-weight: bold; margin-right: .35em; }
 .falta { font-family: system-ui, sans-serif; font-size: 13px; color: var(--tenue); border: 1px dashed var(--raya);
   border-radius: 8px; padding: 8px 10px; }
+.batua { font-family: system-ui, sans-serif; font-size: 12px; color: var(--rojo); margin: 0 0 2px; }
 
 /* Calendario */
 .mes { display: flex; justify-content: space-between; align-items: center; font-size: 20px; margin: 4px 0 12px; }

@@ -31,6 +31,21 @@ sys.path.insert(0, str(AQUI))
 import liturgia  # noqa: E402  (copia del motor de calendario de la CEE; ver README)
 import liturgical_names_eu as eu  # noqa: E402  (nombres en euskera, los de lecturasdeldia.org/eu)
 
+# Nombres de las celebraciones como los da «Liturgia euskaraz» (decisión del usuario,
+# 11-nov-2026), por `id`: {"nombre": …, "rango": …}. Lo que no está aquí lo traduce `eu`.
+_NOMBRES = Path(__file__).with_name("nombres_eu.json")
+NOMBRES_EU = json.loads(_NOMBRES.read_text(encoding="utf-8")) if _NOMBRES.exists() else {}
+
+
+def nombre_eu(nombre_es: str, traducido: str) -> str:
+    n = NOMBRES_EU.get(slug(nombre_es))
+    return n["nombre"] if n else traducido
+
+
+def rango_eu(nombre_es: str, rango_es: str) -> str:
+    n = NOMBRES_EU.get(slug(nombre_es))
+    return n["rango"] if n and n["rango"] else eu.localize_rank(rango_es)
+
 DIAS_ATRAS = 40
 DIAS_ADELANTE = 365
 WEB_MISA = "https://lecturasdeldia.org/eu/{:%Y/%m/%d}/"
@@ -151,8 +166,9 @@ def dia_liturgico(d: date) -> dict:
         c["tipo"] = tipo_de(c["rango"])
         c["id"] = slug(c["nombre"])
         # Nombre en euskera: el del día por `localize_name`; el de un santo, por `localize_memorial`.
-        c["nombre_eu"] = eu.localize_name(c["nombre"]) if c["nombre"] == r["name"] else eu.localize_memorial(c["nombre"])
-        c["rango_eu"] = eu.localize_rank(c["rango"])
+        c["nombre_eu"] = nombre_eu(c["nombre"], eu.localize_name(c["nombre"]) if c["nombre"] == r["name"]
+                                   else eu.localize_memorial(c["nombre"]))
+        c["rango_eu"] = rango_eu(c["nombre"], c["rango"])
     info["nivel"] = liturgia.get_precedence_level(
         principal["nombre"], principal["rango"], r["season"], d, d.weekday() == 6)
     return info
@@ -264,7 +280,7 @@ def componer(info: dict, cel: dict, hora: str, textos: dict, faltan: dict) -> li
             partes.append({"parte": nombre, "falta": claves})
         else:
             partes.append({"parte": nombre, "clave": clave,
-                           **{k: pieza[k] for k in ("titulo", "lineas", "prueba", "fuente") if k in pieza}})
+                           **{k: pieza[k] for k in ("titulo", "lineas", "prueba", "fuente", "batua") if k in pieza}})
     return partes
 
 
@@ -302,11 +318,12 @@ def generar_dia(d: date, textos: dict, faltan: dict) -> dict:
         "color": r["color"], "celebraciones": celebraciones, "misa": WEB_MISA.format(d),
         # Cabecera del día en euskera, como la de lecturasdeldia.org/eu.
         "cabecera": {
-            "nombre": eu.localize_name(r["name"]), "tiempo": eu.localize_season(r["season"]),
-            "rango": eu.localize_rank(r["rank"]), "ciclo": eu.localize_sunday_cycle(r["sunday_cycle"]),
+            "nombre": nombre_eu(r["name"], eu.localize_name(r["name"])), "tiempo": eu.localize_season(r["season"]),
+            "rango": rango_eu(r["name"], r["rank"]), "ciclo": eu.localize_sunday_cycle(r["sunday_cycle"]),
             "ciclo_ferial": eu.localize_weekday_cycle(r["weekday_cycle"]) if r.get("weekday_cycle") else "",
-            "memoria": eu.localize_memorial(r["memorial"]) if r.get("memorial") and r["memorial"] != r["name"] else "",
-            "memoria_rango": eu.localize_rank(r["memorial_rank"]) if r.get("memorial_rank") else "",
+            "memoria": nombre_eu(r["memorial"], eu.localize_memorial(r["memorial"]))
+                       if r.get("memorial") and r["memorial"] != r["name"] else "",
+            "memoria_rango": rango_eu(r["memorial"], r["memorial_rank"]) if r.get("memorial_rank") else "",
         },
     }
 

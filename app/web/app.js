@@ -147,7 +147,9 @@ function lineas(ls) {
 function parteHtml(p, marca) {
   if (p.falta) return `<section><p class="falta" title="${esc(p.falta[0])}">${R.falta}</p></section>`;
   const ls = marca ? [{ t: "ant", x: marca }, ...(p.lineas || [])] : p.lineas;
-  return `<section data-parte="${p.parte}">${p.titulo ? `<p class="l-titulo">${esc(p.titulo)}</p>` : ""}${lineas(ls)}</section>`;
+  // Texto en batua de «Liturgia euskaraz» donde aún no hay bizkaiera: se dice encima.
+  const batua = p.batua ? `<p class="batua" title="${esc(p.fuente || "")}">${R.falta}</p>` : "";
+  return `<section data-parte="${p.parte}">${batua}${p.titulo ? `<p class="l-titulo">${esc(p.titulo)}</p>` : ""}${lineas(ls)}</section>`;
 }
 
 // Marca de la antífona, como en «Liturgia euskaraz»: «1. Ant.» antes del salmo y «Ant.»

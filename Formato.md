@@ -23,6 +23,7 @@ Cualquier número de ficheros `.json` en cualquier subcarpeta. Cada fichero es u
 
 - `titulo` (opcional) y `lineas` (lista ordenada).
 - `fuente` (opcional): de dónde sale el texto (en `textos/bizkaiera/`, la URL de la entrada del blog del autor). El generador la copia a la salida.
+- `batua` (opcional, `true`): texto en batua de «Liturgia euskaraz» donde aún no hay bizkaiera (`textos/batua/batua.json`). La app lo pinta con la nota «Bizkaierazko bertsioaren zain» encima. Una clave que ya está en bizkaiera no entra en batua: el bizkaiera manda.
 - `ref`: la pieza remite a otra clave. Sirve para escribir cada salmo una sola vez (`salmos/101`) y citarlo desde cada día.
 
 ### Tipos de línea (`t`)

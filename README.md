@@ -2,7 +2,7 @@
 
 Liturgia de las Horas en euskera bizkaino para Android: **Invitatorio, Laudes y Vísperas**, con su calendario. Las Completas se añadirán más adelante.
 
-**Estado: en desarrollo.** Laudes y Vísperas llevan los textos en bizkaiera que su autor publica en sus blogs de Gorespenak y Bezperak, con su permiso (`textos/bizkaiera/`; cada pieza lleva en `fuente` la entrada del blog de donde sale). Lo que todavía no tiene versión en bizkaiera sale vacío con la nota «Bizkaierazko bertsioaren zain»: hoy, el Invitatorio, las partes fijas (apertura, Benedictus y Magníficat, Padre nuestro, conclusión) y parte de los himnos.
+**Estado: en desarrollo.** Laudes y Vísperas llevan los textos en bizkaiera que su autor publica en sus blogs de Gorespenak y Bezperak, con su permiso (`textos/bizkaiera/`; cada pieza lleva en `fuente` la entrada del blog de donde sale). Lo que todavía no tiene versión en bizkaiera sale en batua, el de la app «Liturgia euskaraz» (`textos/batua/`), con la nota «Bizkaierazko bertsioaren zain» encima: hoy, las partes fijas (apertura, Benedictus y Magníficat, Padre nuestro, conclusión), parte de los himnos y lo propio de algunos días. Sin texto todavía: la antífona y el salmo del Invitatorio.
 
 ## Cómo funciona
 
