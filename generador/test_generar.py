@@ -1,6 +1,6 @@
 """Pruebas del generador. Correr: py -3.14 -m pytest projects/OrduenLiturgia/generador -q"""
 import json
-from datetime import date
+from datetime import date, timedelta
 
 import pytest
 
@@ -130,7 +130,7 @@ def test_ventana_completa_e_indice(tmp_path):
     assert indice["desde"] == "2026-10-01" and len(indice["dias"]) == 406
     hoy = json.loads((tmp_path / "dias" / "2026-11-10.json").read_text(encoding="utf-8"))
     assert hoy["misa"] == "https://lecturasdeldia.org/eu/2026/11/10/"
-    assert [p["parte"] for p in hoy["celebraciones"][0]["horas"]["invitatorio"]] == ["apertura", "ant", "salmo95"]
+    assert [p["parte"] for p in hoy["celebraciones"][0]["horas"]["invitatorio"]] == ["apertura", "ant", "salmo"]
     # Al mover la ventana un día, el día que sale se retira.
     generar.main(["--hoy", "2026-11-11", "--salida", str(tmp_path), "--textos", str(tmp_path / "no")])
     assert not (tmp_path / "dias" / "2026-10-01.json").exists()
@@ -152,3 +152,99 @@ def test_cabecera_en_euskera_y_color_del_tiempo_como_lecturasdeldia():
     octava = generar.generar_dia(date(2026, 12, 31), {}, {})
     assert octava["cabecera"]["nombre"] == "Eguberri-Zortziurreneko VII. eguna"
     assert octava["cabecera"]["memoria"] == "San Silvestre I.a, aita santua"
+
+
+# ── Completas ───────────────────────────────────────────────────────────────
+
+def noche(fecha: str) -> dict:
+    d = date.fromisoformat(fecha)
+    info, man = generar.dia_liturgico(d), generar.dia_liturgico(d + timedelta(days=1))
+    return generar.formulario_completas(info, man, generar.tiene_primeras_visperas(man) and man["nivel"] < info["nivel"])
+
+
+@pytest.mark.parametrize("fecha,f,primeras,solemnidad", [
+    ("2026-11-10", 4, False, False),   # martes ordinario
+    ("2026-11-14", 1, True, False),    # sábado: primeras de domingo
+    ("2026-11-15", 2, False, False),   # domingo
+    ("2026-12-07", 1, True, True),     # lunes, víspera de la Inmaculada: primeras de solemnidad
+    ("2026-12-08", 2, False, True),    # solemnidad entre semana
+    ("2026-11-02", 2, False, False),   # Difuntos: formulario 2 con la oración del domingo
+    ("2027-03-24", 5, False, False),   # miércoles de Semana Santa: no hay primeras del Jueves Santo
+    ("2027-03-25", 2, False, True),    # Jueves Santo
+    ("2027-03-26", 2, False, True),    # Viernes Santo
+    ("2027-03-27", 2, False, True),    # Sábado Santo: no son primeras de la Pascua
+    ("2027-03-28", 2, False, False),   # domingo de Pascua
+    ("2027-03-29", 1, False, False),   # lunes de la octava
+    ("2027-03-30", 2, False, False),   # martes de la octava
+    ("2027-03-31", 1, False, False),   # miércoles de la octava
+    ("2027-04-03", 1, True, False),    # sábado de la octava
+    ("2027-04-05", 2, False, True),    # Anunciación trasladada, en Pascua
+    ("2027-04-20", 4, False, False),   # martes de Pascua
+    ("2027-02-16", 4, False, False),   # martes de Cuaresma
+])
+def test_formulario_de_completas(fecha, f, primeras, solemnidad):
+    n = noche(fecha)
+    assert (n["f"], n["primeras"], n["solemnidad"]) == (f, primeras, solemnidad)
+
+
+def test_completas_cadena_de_claves():
+    n = noche("2026-11-10")                                                    # martes ordinario
+    assert generar.candidatas_completas(n, "salmo1") == ["completas/f4/salmo1"]
+    assert generar.candidatas_completas(n, "oracion") == ["completas/f4/oracion"]
+    assert generar.candidatas_completas(n, "himno") == ["completas/f4/himno"]
+    assert generar.candidatas_completas(n, "fijo/completas/maria") == ["fijo/completas/maria"]
+    cuaresma = noche("2027-02-16")
+    assert generar.candidatas_completas(cuaresma, "himno") == ["completas/f2/himno"]       # los dos himnos juntos
+    assert generar.candidatas_completas(cuaresma, "fijo/apertura")[0] == "fijo/visperas/apertura-cuaresma"
+    assert generar.candidatas_completas(noche("2026-11-14"), "fijo/apertura")[0] == "fijo/visperas/apertura"   # sin «Aleluia» solo en Cuaresma
+    assert generar.candidatas_completas(noche("2027-03-25"), "responsorio") == [
+        "completas/triduo/jue/responsorio", "completas/responsorio"]
+    assert generar.candidatas_completas(noche("2027-03-25"), "oracion") == [
+        "completas/solemnidad/oracion", "completas/f2/oracion"]
+    pascua = noche("2027-03-31")
+    assert generar.candidatas_completas(pascua, "responsorio") == [
+        "completas/octava/responsorio", "completas/pascua/responsorio", "completas/responsorio"]
+    assert generar.candidatas_completas(pascua, "salmo1") == ["completas/pascua/f1/salmo1", "completas/f1/salmo1"]
+    assert generar.candidatas_completas(pascua, "fijo/completas/maria") == [
+        "fijo/completas/maria-pascua", "fijo/completas/maria"]
+    pascua_tarde = noche("2027-04-20")
+    assert generar.candidatas_completas(pascua_tarde, "responsorio") == ["completas/pascua/responsorio", "completas/responsorio"]
+    # Una noche de primeras usa el tiempo de mañana: el sábado antes del I domingo de Adviento es de Adviento.
+    assert noche("2026-11-28")["tiempo"] == "adviento"
+
+
+def test_completas_una_noche_de_un_salmo_no_tiene_ant2():
+    claves = ["fijo/completas/examen", "fijo/completas/nunc-dimittis", "fijo/completas/conclusion",
+              "fijo/completas/maria", "completas/ant_ev", "completas/responsorio", "completas/f4/himno",
+              "completas/f4/ant1", "completas/f4/salmo1", "completas/f4/lectura", "completas/f4/oracion"]
+    textos = {k: {"lineas": [{"t": "texto", "x": k}]} for k in claves}
+    dia = generar.generar_dia(date(2026, 11, 10), textos, {})
+    partes = [p["parte"] for p in dia["celebraciones"][0]["horas"]["completas"]]
+    assert partes == ["apertura", "examen", "himno", "ant1", "salmo1", "lectura", "responsorio", "ant_ev",
+                      "nunc-dimittis", "oracion", "conclusion", "maria"]
+    assert dia["celebraciones"][0]["completas_de"]["cuales"] == "del dia"
+    # El formulario 1 (sábado) sí tiene dos salmos, y es la primera Completas del domingo.
+    sab = generar.generar_dia(date(2026, 11, 14), {}, {})
+    assert [p["parte"] for p in sab["celebraciones"][0]["horas"]["completas"]].count("ant2") == 1
+    assert sab["celebraciones"][0]["completas_de"]["cuales"] == "primeras"
+    assert "XXXIII" in sab["celebraciones"][0]["completas_de"]["de"]
+    # En Pascua el formulario 1 lleva una sola antífona (los dos salmos van juntos en salmo1).
+    pas = generar.generar_dia(date(2027, 4, 3), {}, {})
+    assert "ant2" not in [p["parte"] for p in pas["celebraciones"][0]["horas"]["completas"]]
+
+
+# ── Invitatorio con los cuatro salmos ───────────────────────────────────────
+
+def test_invitatorio_ofrece_los_salmos_que_existen():
+    solo = {"fijo/invitatorio/salmo95": {"lineas": [{"t": "salmo", "x": "95"}], "batua": True},
+            "fijo/invitatorio/salmo24": {"lineas": [{"t": "salmo", "x": "24"}]}}
+    faltan: dict = {}
+    dia = generar.generar_dia(date(2026, 11, 10), solo, faltan)
+    inv = {p["parte"]: p for p in dia["celebraciones"][0]["horas"]["invitatorio"]}
+    assert [o["n"] for o in inv["salmo"]["opciones"]] == ["95", "24"]
+    assert inv["salmo"]["opciones"][0]["batua"] is True and inv["salmo"]["opciones"][1]["clave"] == "fijo/invitatorio/salmo24"
+    assert "falta" in inv["ant"]                                   # la antífona sigue su cadena de siempre
+    # Sin ninguno, la parte es una falta con las cuatro claves.
+    vacio = generar.generar_dia(date(2026, 11, 10), {}, {})
+    salmo = {p["parte"]: p for p in vacio["celebraciones"][0]["horas"]["invitatorio"]}["salmo"]
+    assert salmo["falta"] == [f"fijo/invitatorio/salmo{n}" for n in ("95", "100", "67", "24")]

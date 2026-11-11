@@ -45,9 +45,9 @@ Cualquier número de ficheros `.json` en cualquier subcarpeta. Cada fichero es u
 
 Forma general: `<base>/<hora>/<parte>`.
 
-**Horas:** `invitatorio`, `laudes`, `visperas`, `visperas1` (primeras vísperas).
+**Horas:** `invitatorio`, `laudes`, `visperas`, `visperas1` (primeras vísperas), `completas` (sus claves, abajo, § Completas).
 
-**Partes:** `himno` · `ant1` `salmo1` `ant2` `salmo2` `ant3` `salmo3` · `lectura` · `responsorio` · `ant_ev` (antífona del Benedictus o del Magníficat) · `preces` · `oracion`. En Laudes `salmo2` es el cántico del Antiguo Testamento; en Vísperas `salmo3`, el del Nuevo. En el invitatorio, solo `ant`.
+**Partes:** `himno` · `ant1` `salmo1` `ant2` `salmo2` `ant3` `salmo3` · `lectura` · `responsorio` · `ant_ev` (antífona del Benedictus o del Magníficat) · `preces` · `oracion`. En Laudes `salmo2` es el cántico del Antiguo Testamento; en Vísperas `salmo3`, el del Nuevo. En el invitatorio, `ant` y los cuatro salmos `fijo/invitatorio/salmo95`, `…/salmo100`, `…/salmo67`, `…/salmo24` (`lineas`: el encabezado —`salmo`, `epigrafe`, `sentencia`— y una línea `estrofa` por estrofa, Gloria incluido, sin la antífona).
 
 **Antífona del Evangelio por ciclo:** el domingo, antes de cada `…/ant_ev` se busca `…/ant_ev-<ciclo>` (`ant_ev-A`, `-B`, `-C`), en cualquier tiempo. Así un domingo de Cuaresma o de Pascua puede tener la común y la propia de cada ciclo (decisión del usuario, 10-nov-2026).
 
@@ -71,6 +71,21 @@ La `oracion` puede escribirse sin hora (`<base>/oracion`) cuando es la misma tod
 | `salmos/<n>` | Salmos y cánticos, para citarlos con `ref` | `salmos/101` |
 
 `comun` dentro de un tiempo es lo que vale para todo ese tiempo (por ejemplo, el himno de Adviento).
+
+### Completas
+
+Siete formularios (`f1`…`f7`) en `textos/batua/completas.json` (de «Liturgia euskaraz»; sin bizkaiera, salvo la apertura, que es la de Vísperas). Orden de la hora: `fijo/apertura` · `fijo/completas/examen` · `himno` · `ant1` `salmo1` [`ant2` `salmo2`] · `lectura` · `responsorio` · `ant_ev` · `fijo/completas/nunc-dimittis` · `oracion` · `fijo/completas/conclusion` · `fijo/completas/maria`.
+
+| Parte | Claves (la primera que existe) |
+|---|---|
+| `himno` | `completas/f<n>/himno` en Tiempo Ordinario (el `f2` lleva los dos himnos juntos); en los demás tiempos, `completas/f2/himno` |
+| `ant1` `salmo1` `ant2` `salmo2` | `completas/f<n>/<parte>`; en Pascua antes `completas/pascua/f<n>/<parte>` (una sola antífona: en `f1` y `f5` los dos salmos van juntos en `salmo1`, sin `ant2`/`salmo2`) |
+| `lectura` · `oracion` | `completas/f<n>/<parte>`; la oración, antes `completas/solemnidad/oracion` |
+| `responsorio` | `completas/triduo/<jue\|vie\|sab>/responsorio` · `completas/octava/responsorio` (de Pascua al II domingo) · `completas/pascua/responsorio` · `completas/responsorio` |
+| `ant_ev` | `completas/pascua/ant_ev` · `completas/ant_ev` |
+| `maria` | `fijo/completas/maria-pascua` (Pascua) · `fijo/completas/maria` |
+
+Formulario de la noche (`formulario_completas`), medido contra el servidor (`referencia/completas_informe.txt`): si son **primeras** (noche de sábado, o víspera de solemnidad que precede a hoy; nunca en Semana Santa), `f1`; domingo o solemnidad (también el Triduo), `f2`; octava de Pascua, lunes, miércoles y viernes `f1`, martes y jueves `f2`; lunes a viernes, `f3`…`f7`. Tiempo y apertura son los de mañana si son primeras. Oración de solemnidad (`C5002`): solemnidad que no es domingo, ella o su víspera, salvo la octava de Pascua y los Difuntos (rezan como domingo). Dos salmos: `f1` y `f5`, fuera de Pascua. El lunes de Tiempo Ordinario (`f3`) no tiene himno: el del servidor está en castellano.
 
 ## 2. Cómo elige el generador
 
@@ -108,6 +123,7 @@ Sin comprobar todavía con el libro: el reparto exacto de lo propio en las feria
     "id": "san-leon-magno-papa-y-doctor", "nombre": "San León Magno, papa y doctor",
     "rango": "Memoria Obligatoria", "opcional": false,
     "visperas_de": {"cuales": "del dia", "de": "San León Magno, papa y doctor"},
+    "completas_de": {"cuales": "del dia", "de": "San León Magno, papa y doctor"},
     "horas": {
       "invitatorio": [ … ],
       "laudes": [
@@ -120,7 +136,9 @@ Sin comprobar todavía con el libro: el reparto exacto de lo propio en las feria
 }
 ```
 
-Una parte lleva `clave` y sus `lineas` (y `fuente`, si la pieza la tiene) cuando hay texto, o `falta` con la lista de claves donde se buscó. La app pinta una parte con `falta` vacía, con la nota «Bizkaierazko bertsioaren zain». `visperas_de.cuales` vale `primeras`, `segundas` o `del dia`.
+Una parte lleva `clave` y sus `lineas` (y `fuente`, si la pieza la tiene) cuando hay texto, o `falta` con la lista de claves donde se buscó. La app pinta una parte con `falta` vacía, con la nota «Oraindik osatu gabe» (no hay texto ni en bizkaiera ni en batua). `visperas_de.cuales` y `completas_de.cuales` valen `primeras`, `segundas` o `del dia`.
+
+Una parte puede llevar en vez de `lineas` una lista `opciones` (el salmo del Invitatorio): `{"parte": "salmo", "opciones": [{"n": "95", "clave": "fijo/invitatorio/salmo95", "lineas": […], "batua": true, "fuente": "…"}, {"n": "100", …}, …]}`; solo salen los salmos que tienen texto, y si no hay ninguno, la parte es una `falta` con las cuatro claves.
 
 `nombre_eu` y la `cabecera` llevan los nombres de «Liturgia euskaraz» (`generador/nombres_eu.json`, por `id`; la feria de la octava de Navidad, que el motor llama como al santo, con `-feria`); lo que no está en la tabla, el de lecturasdeldia.org/eu. Los rangos, con sus palabras («beharrezko oroipena», «festaburua»…), según el rango de nuestro motor.
 

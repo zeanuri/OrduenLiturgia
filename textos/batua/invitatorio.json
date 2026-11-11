@@ -1,0 +1,1468 @@
+{
+"comunes/apostoles/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Apostoluen erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1725"
+},
+"comunes/dedicacion/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Jainkoaren etxean bildurik, gartu dezagun Kristo, Elizaren ezkonlaguna.\nEdota:\nZatozte, gurtu dezagun Kristo, Eliza maite duena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1711"
+},
+"comunes/martires-uno/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, martirien erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1730"
+},
+"comunes/martires-varios/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, martirien erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1730"
+},
+"comunes/santa-maria/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren jai honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1715"
+},
+"fijo/invitatorio/salmo100": {
+"lineas": [
+{
+"t": "salmo",
+"x": "100. [99] Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Jauretxera sartzen direnen poza"
+},
+{
+"t": "sentencia",
+"x": "Berrerosiei garaipen-gorazarrea abestarazten die Jaunak (San Atanasio)."
+},
+{
+"t": "estrofa",
+"x": "Lurtar guztiok, egin irrintzi Jaunari, † \nzerbitza ezazue Jauna pozaren pozez, * \nsar zaitezte oihu alaiz haren aurrera."
+},
+{
+"t": "estrofa",
+"x": "Jakizue Jauna dela Jainkoa, †\nhark egin gaitu, harenak gara, * \nharen herri eta haren larreko artalde."
+},
+{
+"t": "estrofa",
+"x": "Sartu haren tenpluko ateetatik eskerrak emanez, † \nharen atarietan gorazarreak abestuz. *\nEman eskerrak, bedeinka haren izena."
+},
+{
+"t": "estrofa",
+"x": "«Ona baita Jauna, †\nharen maitasuna betikoa, *\nharen leialtasuna mendez mendekoa»."
+},
+{
+"t": "estrofa",
+"x": "Aintza Aitari, eta Semeari, eta Espiritu Santuari.\nHasieran zen bezala, orain eta beti,\ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I2991, I2992, I2993, I2995, I2996"
+},
+"fijo/invitatorio/salmo24": {
+"lineas": [
+{
+"t": "salmo",
+"x": "24. [23] Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Jainkoa handikiro sartzen da bere tenplura"
+},
+{
+"t": "sentencia",
+"x": "Zeruko ateak zabaldu egiten dira, gizon bezala igo den Kristoren aurrean (S. Ireneo)."
+},
+{
+"t": "estrofa",
+"x": "Jaunarena da lurra, eta lurra betetzen duena, *\nmundua eta bertan bizi direnak, \nhark ezarri baitu itsasoen gainean, *\nhark finkatu lur azpiko ibaien gainean."
+},
+{
+"t": "estrofa",
+"x": "Jaunaren mendira nor igoko? * \nHaren toki santuan nor egongo?"
+},
+{
+"t": "estrofa",
+"x": "Eskuak errugabe eta bihotza garbi dituena, † \nsasijainkoetara jotzen ez duena, * \nengainuzko zinik egiten ez duena.\nHorrelakoa bedeinkatuko du Jaunak, * \njustizia egingo dio Jainko salbatzaileak."
+},
+{
+"t": "estrofa",
+"x": "Hau da haren bila saiatzen den gizaldia, * \nJakoben Jainkoaren aurpegi bila dabilena."
+},
+{
+"t": "estrofa",
+"x": "Ateburuok, zabal zaitezte, †\nzabal zaitezte, aspaldiko ateok, * \nbadator-eta Errege ospetsua."
+},
+{
+"t": "estrofa",
+"x": "Nor da Errege ospetsu hori? † \nJauna da, indartsu eta ahaltsua, * \nJauna, guduan ahaltsua."
+},
+{
+"t": "estrofa",
+"x": "Ateburuak, zabal zaitezte,\nzabal zaitezte, aspaldiko ateok, * \nbadator-eta Errege ospetsua."
+},
+{
+"t": "estrofa",
+"x": "Nor da Errege ospetsu hori? † \nJaun ahalguztiduna, *\nbera da Errege ospetsua."
+},
+{
+"t": "estrofa",
+"x": "Aintza Aitari, eta Semeari, eta Espiritu Santuari.\nHasieran zen bezala, orain eta beti,\ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I2231, I2232, I2233, I2234, I2235, I2236, I2237, I2238, I2239"
+},
+"fijo/invitatorio/salmo67": {
+"lineas": [
+{
+"t": "salmo",
+"x": "67. [66] Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Ospa bezate Jauna herri guztiek"
+},
+{
+"t": "sentencia",
+"x": "Jakin ezazue, atzerritarrrei bidaltzen diela Jainkoak bere salbamena (Eg 28, 28)."
+},
+{
+"t": "estrofa",
+"x": "Erruki bekigu Jainkoa eta bedeinka gaitzala, *\nager diezagula aurpegi argia,\nezagutu dezaten munduan zure bidea, *\nnazio guztietan Zugandiko salbamena."
+},
+{
+"t": "estrofa",
+"x": "Ene Jainko, aipa zaitzatela herriek, *\naipa zaitzatela herri guztiek."
+},
+{
+"t": "estrofa",
+"x": "Poztu bitez kantari nazioak, †\nzuzentasunez baitituzu gobernatzen herriak *\neta gidatzen munduan nazioak."
+},
+{
+"t": "estrofa",
+"x": "Ene Jainko, aipa zaitzatela herriek, *\naipa zaitzatela herri guztiek."
+},
+{
+"t": "estrofa",
+"x": "Lurrak bere uzta eman du, *\nJainkoak, gure Jainkoak, bedeinkatzen gaitu.\nBedeinka gaitzala Jainkoak, *\nizan diezaiola begirune mundu osoak."
+},
+{
+"t": "estrofa",
+"x": "Aintza Aitari, eta Semeari, eta Espiritu Santuari.\nHasieran zen bezala, orain eta beti,\ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I2661, I2662, I2663, I2664, I2665, I2666"
+},
+"fijo/invitatorio/salmo95": {
+"lineas": [
+{
+"t": "salmo",
+"x": "95. [94] Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Jainkoa goresteko deia"
+},
+{
+"t": "sentencia",
+"x": "Bero ezazue elkar egunero, «gaur» hori esan daitekeen bitartean (Hb 3, 13)."
+},
+{
+"t": "estrofa",
+"x": "Zatozte, degiogun poz-oihu Jaunari, *\npoz-irrintzi, salbatzen gaituen harkaitzari.\nAurkez gakizkion eskerrak emanez, *\ndegiogun jai txaloka eta kantari."
+},
+{
+"t": "estrofa",
+"x": "Jainko handia baita Jauna, *\njainko guztien gain errege handia;\nbere esku dauzka lurpeko leizeak, *\nbereak ditu mendi-gailurrak;\nberea du itsasoa, berak egina, *\nbaita lehorra ere, bere eskuz moldatua."
+},
+{
+"t": "estrofa",
+"x": "Zatozte, gurtu dezagun ahuspezturik, *\nbelaunika gaitezen egin gaituen Jaunaren aurrean.\nBera baita gure Jainkoa, † \neta gu hark larraturiko herria, *\nharen zainpeko artaldea."
+},
+{
+"t": "estrofa",
+"x": "Entzungo ahal duzue gaur haren ahotsa: † \n«Ez gogortu bihotza Meriban bezala, *\nMasako egunean basamortuan bezala,\ntentatu egin baininduten zuen gurasoek, *\nprobatu, Nik eginak ikusi arren»."
+},
+{
+"t": "estrofa",
+"x": "Berrogei urtez gogait eragin zidan belaunaldi hark, † \neta esan nuen: «Bihotz desleialeko herria dira, *\nez dituzte ezagutzen nire bideak».\nOrduan, zin egin nuen haserre: *\n«Ez dira sartuko nire atseden-lekuan»."
+},
+{
+"t": "estrofa",
+"x": "Aintza Aitari, eta Semeari, eta Espiritu Santuari.\nHasieran zen bezala, orain eta beti,\ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I2941, I2942, I2943, I2944, I2945, I2946"
+},
+"propio/conmemoracion-de-los-fieles-difuntos/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, bizi direnen erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1700"
+},
+"propio/dedicacion-de-la-basilica-de-letran/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Jainkoaren etxean bildurik, gartu dezagun Kristo, Elizaren ezkonlaguna.\nEdota:\nZatozte, gurtu dezagun Kristo, Eliza maite duena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1711"
+},
+"propio/dedicacion-de-la-basilica-de-santa-maria-la-mayor/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/domingo-de-pentecostes/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Aleluia. Zatozte, gurtu dezagun lurbira guztia bete duen Jaunaren Espiritua. Aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1581"
+},
+"propio/domingo-de-ramos-en-la-pasion-del-senor/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo Jauna, guregatik jasan baitzuen tentaldia eta guregatik heriotza."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1301"
+},
+"propio/domingo-de-resurreccion/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Piztu da Jauna egiaz, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1501"
+},
+"propio/el-bautismo-del-senor/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Aitaren Seme maitea, Hari atsegin zaiona."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1223"
+},
+"propio/epifania-del-senor/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun agertu zaigun Kristo."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1202"
+},
+"propio/jueves-de-la-octava-de-pascua/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Piztu da Jauna egiaz, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1501"
+},
+"propio/jueves-santo-la-cena-del-senor/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo Jauna, guregatik jasan baitzuen tentaldia eta guregatik heriotza."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1301"
+},
+"propio/la-ascension-del-senor/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Aleluia. Zatozte, gurtu dezagun zerura igo den Kristo Jauna. Aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1571"
+},
+"propio/la-catedra-de-san-pedro/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Apostoluen erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1725"
+},
+"propio/la-inmaculada-concepcion/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Ospa dezagun Maria Birjinaren Sortze Garbia; gurtu dezagun Kristo, haren Semea, gure Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1874"
+},
+"propio/la-sagrada-familia-de-jesus-maria-y-jose/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria eta Joseren menpean jarri zen Jainkoaren Semea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1212"
+},
+"propio/la-visitacion-de-la-virgen-maria/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Gorets dezagun Jauna, Maria Birjina dohatsuaren ikustaldia ospatzean."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1479_F"
+},
+"propio/lunes-de-la-octava-de-pascua/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Piztu da Jauna egiaz, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1501"
+},
+"propio/martes-de-la-octava-de-pascua/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Piztu da Jauna egiaz, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1501"
+},
+"propio/miercoles-de-la-octava-de-pascua/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Piztu da Jauna egiaz, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1501"
+},
+"propio/natividad-de-san-juan-bautista/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jesusen Bihotza, gureganako maitasunagatik zulatua izan baitzen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1645"
+},
+"propio/natividad-del-senor/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun guregatik jaio den Kristo."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1201"
+},
+"propio/sabado-de-la-octava-de-pascua/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Piztu da Jauna egiaz, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1501"
+},
+"propio/sabado-santo-vigilia-pascual/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo Jauna, guregatik jasan baitzuen heriotza eta guregatik izan zen hobiratua."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1377"
+},
+"propio/sagrado-corazon-de-jesus/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jesusen Bihotza, gureganako maitasunagatik zulatua izan baitzen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1645"
+},
+"propio/san-alberto-magno-obispo-y-doctor/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/san-andres-apostol/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Apostoluen erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1725"
+},
+"propio/san-antonio-maria-claret/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/san-bartolome-apostol/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Apostoluen erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1725"
+},
+"propio/san-bernabe-apostol/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Espiritu Santua, profeten eta irakasleen bidez hitz egin ziguna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1487_F"
+},
+"propio/san-calixto-i-papa-y-martir/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/san-cayetano-santos-sixto-ii-y-companeros/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/san-clemente-i-san-columbano/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/san-efren-diacono-y-doctor/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Goraipa dezagun Kristo betiereko apaizgoa duena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1642"
+},
+"propio/san-esteban-protomartir/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo jaio berria, Esteban santua koroatu zuena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1885"
+},
+"propio/san-jose-obrero/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Jauna, arotzaren semetzat hartua izatea nahi izan zuena. Aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1457"
+},
+"propio/san-juan-apostol-y-evangelista/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Apostoluen erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1725"
+},
+"propio/san-juan-de-capistrano/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/san-juan-eudes/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/san-juan-pablo-ii-papa/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/san-justino-martir/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, pozez oihu dagiogun Jaunari."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1022"
+},
+"propio/san-lorenzo-diacono-y-martir/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, martirien erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1730"
+},
+"propio/san-lucas-evangelista/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Ebanjelioaren bidez hitz egiten diguna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1838"
+},
+"propio/san-martin-de-tours-obispo/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Gorets dezagun gure Jainkoa, Martin santuaren eguna ospatzean."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1854"
+},
+"propio/san-mateo-apostol-y-evangelista/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Apostoluen erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1725"
+},
+"propio/san-matias-apostol/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Apostoluen erregea. Aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1726"
+},
+"propio/san-pedro-claver/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/san-pedro-crisologo/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/san-roberto-belarmino/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/santa-juana-francisca-de-chantal/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/santa-margarita-de-escocia-santa-gertrudis/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/santa-margarita-maria-de-alacoque-santa-eduvigis/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/santa-maria-madre-de-dios/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Ospatu dezagun Maria Birjinaren amatasuna; gurtu dezagun haren Seme Jesu Kristo gure Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1219"
+},
+"propio/santisima-trinidad/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun egiazko Jaungoikoa, Hirutasunean bakarra eta Bakartasunean hirukoitza. Aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1643"
+},
+"propio/santisimo-cuerpo-y-sangre-de-cristo-corpus-christi/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, biziaren ogia den gure Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1644"
+},
+"propio/santo-tomas-apostol/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Apostoluen erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1725"
+},
+"propio/santos-dionisio-y-companeros-san-juan-leonardi/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/santos-felipe-y-santiago-apostoles/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Apostoluen erregea. Aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1726"
+},
+"propio/santos-inocentes-martires/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo jaio berria, Haurtxo Errugabe martiriak koroatu zituena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1887"
+},
+"propio/santos-juan-de-brebeuf-isaac-jogues-y-companeros-san-pablo-de-la-cruz/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/santos-ponciano-e-hipolito-martires/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
+},
+"propio/santos-simon-y-judas-apostoles/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Apostoluen erregea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1725"
+},
+"propio/todos-los-santos/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jainkoa, santu guztien batzarrak goresten duena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1846"
+},
+"propio/viernes-de-la-octava-de-pascua/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Piztu da Jauna egiaz, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1501"
+},
+"propio/viernes-santo-la-pasion-del-senor/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo Jauna, bere odolaz erosi gaituen Jainkoaren Semea."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1376"
+},
+"salterio/s1/dom/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, pozez oihu dagiogun Jaunari, txalo dagiogun salbamen dugun Harkaitzari. Aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1011"
+},
+"salterio/s1/jue/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Bera baita gure Jainkoa."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1015"
+},
+"salterio/s1/lun/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Hurbil gakizkio aurrera Jaunari esker-kantuekin."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1012"
+},
+"salterio/s1/mar/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, errege handia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1013"
+},
+"salterio/s1/mie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jainkoa, Berak egin baikaitu."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1014"
+},
+"salterio/s1/sab/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, berea baita lurra, eta lurra betetzen dutenak."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1017"
+},
+"salterio/s1/vie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Eskerrak Jaunari, haren maitasuna betikoa baita."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1016"
+},
+"salterio/s2/dom/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Jaunaren herri, haren larreko artalde; bedeinka ezazu zeure Jainkoa. Aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1021"
+},
+"salterio/s2/jue/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Sar zaitezte pozez oihuka Jaunaren aurrera."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1025"
+},
+"salterio/s2/lun/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, pozez oihu dagiogun Jaunari."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1022"
+},
+"salterio/s2/mar/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Jainko handia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1023"
+},
+"salterio/s2/mie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Lur osoa, egin txalo Jainkoari, egin zerbitzu alai Jaunari."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1024"
+},
+"salterio/s2/sab/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzun dezagun Jaunaren ahotsa, haren atsedenera sar gaitezen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1027"
+},
+"salterio/s2/vie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Ona da Jauna: bedeinka ezazue haren izena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1026"
+},
+"salterio/s3/dom/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, pozez oihu dagiogun Jaunari, txalo dagiogun salbamen dugun Harkaitzari. Aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1011"
+},
+"salterio/s3/jue/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Bera baita gure Jainkoa."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1015"
+},
+"salterio/s3/lun/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Hurbil gakizkio aurrera Jaunari esker-kantuekin."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1012"
+},
+"salterio/s3/mar/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, errege handia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1013"
+},
+"salterio/s3/mie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jainkoa, Berak egin baikaitu."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1014"
+},
+"salterio/s3/sab/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, berea baita lurra, eta lurra betetzen dutenak."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1017"
+},
+"salterio/s3/vie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Eskerrak Jaunari, haren maitasuna betikoa baita."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1016"
+},
+"salterio/s4/dom/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Jaunaren herri, haren larreko artalde; bedeinka ezazu zeure Jainkoa. Aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1021"
+},
+"salterio/s4/jue/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Sar zaitezte pozez oihuka Jaunaren aurrera."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1025"
+},
+"salterio/s4/lun/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, pozez oihu dagiogun Jaunari."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1022"
+},
+"salterio/s4/mar/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Jauna, Jainko handia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1023"
+},
+"salterio/s4/mie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Lur osoa, egin txalo Jainkoari, egin zerbitzu alai Jaunari."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1024"
+},
+"salterio/s4/sab/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzun dezagun Jaunaren ahotsa, haren atsedenera sar gaitezen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1027"
+},
+"salterio/s4/vie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Ona da Jauna: bedeinka ezazue haren izena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1026"
+},
+"tiempo/adviento/12-22/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun hurbil den Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1102"
+},
+"tiempo/adviento/12-23/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun hurbil den Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1102"
+},
+"tiempo/adviento/12-24/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Gaur jakingo duzue badatorrela Jauna, eta bihar ikusiko duzue haren aintza."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1103"
+},
+"tiempo/adviento/comun-17-24/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun hurbil den Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1102"
+},
+"tiempo/adviento/comun/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun badatorren erregea, hurbil den Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1101"
+},
+"tiempo/adviento/s4/dom/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun hurbil den Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1102"
+},
+"tiempo/adviento/s4/jue/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Gaur jakingo duzue badatorrela Jauna, eta bihar ikusiko duzue haren aintza."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1103"
+},
+"tiempo/adviento/s4/mar/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun hurbil den Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1102"
+},
+"tiempo/adviento/s4/mie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun hurbil den Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1102"
+},
+"tiempo/adviento/s4/sab/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Gaur jakingo duzue badatorrela Jauna, eta bihar ikusiko duzue haren aintza."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1103"
+},
+"tiempo/adviento/s4/vie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun hurbil den Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1102"
+},
+"tiempo/cuaresma/comun/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo Jauna, guregatik jasan baitzuen tentaldia eta guregatik heriotza."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1301"
+},
+"tiempo/cuaresma/s2/dom/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s2/jue/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s2/lun/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s2/mar/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s2/mie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s2/sab/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s2/vie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s4/dom/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s4/jue/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s4/lun/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s4/mar/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s4/mie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s4/sab/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/cuaresma/s4/vie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Entzungo ahal duzue gaur Jaunaren mintzoa: «Ez gogortu zuen bihotza»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1302"
+},
+"tiempo/navidad/comun-epifania/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun agertu zaigun Kristo."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1202"
+},
+"tiempo/navidad/comun/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun guregatik jaio den Kristo."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1201"
+},
+"tiempo/pascua/comun-ascension/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo, Espiritu Santua agindu zigun Jauna. aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1502"
+},
+"tiempo/pascua/comun/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Piztu da Jauna egiaz, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1501"
+},
+"tiempo/semana-santa/lun/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo Jauna, guregatik jasan baitzuen tentaldia eta guregatik heriotza."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1301"
+},
+"tiempo/semana-santa/mar/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo Jauna, guregatik jasan baitzuen tentaldia eta guregatik heriotza."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1301"
+},
+"tiempo/semana-santa/mie/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zatozte, gurtu dezagun Kristo Jauna, guregatik jasan baitzuen tentaldia eta guregatik heriotza."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1301"
+}
+}

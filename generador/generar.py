@@ -77,8 +77,15 @@ ORDEN = {
                "fijo/benedictus", "preces", "fijo/padrenuestro", "oracion", "fijo/conclusion"],
     "visperas": ["fijo/apertura", "himno", *SALMODIA, "lectura", "responsorio", "ant_ev",
                  "fijo/magnificat", "preces", "fijo/padrenuestro", "oracion", "fijo/conclusion"],
-    "invitatorio": ["fijo/invitatorio/apertura", "ant", "fijo/invitatorio/salmo95"],
+    # `salmos` no es una clave: es la parte que ofrece los cuatro salmos invitatorios (ver INVITATORIO).
+    "invitatorio": ["fijo/invitatorio/apertura", "ant", "salmos"],
+    # `ant2`/`salmo2` solo salen en las noches de dos salmos (ver `formulario_completas`).
+    "completas": ["fijo/apertura", "fijo/completas/examen", "himno", "ant1", "salmo1", "ant2", "salmo2",
+                  "lectura", "responsorio", "ant_ev", "fijo/completas/nunc-dimittis", "oracion",
+                  "fijo/completas/conclusion", "fijo/completas/maria"],
 }
+# Salmos del Invitatorio, en el orden de «Liturgia euskaraz» (95., 100., 67., 24.).
+INVITATORIO = ["95", "100", "67", "24"]
 # Parte que vale para todas las horas del día: se busca también sin la hora en la clave.
 COMPARTIDAS = {"oracion"}
 
@@ -224,7 +231,7 @@ def fijas(info: dict, cel: dict, hora: str, parte: str) -> list[str]:
     hay en la hora, la propia del día (en batua) antes que la de todo el año."""
     if parte.startswith("fijo/invitatorio/"):
         return [parte]
-    h = "visperas" if hora == "visperas1" else hora
+    h = "visperas" if hora in ("visperas1", "completas") else hora     # la apertura de Completas es la de Vísperas
     nombre = parte.removeprefix("fijo/")
     claves = [f"fijo/{h}/{nombre}", parte]
     pascua = (info["tiempo"] == "pascua" and info["semana"] == 1) or cel["id"] == "domingo-de-pentecostes"
@@ -278,6 +285,76 @@ def candidatas(info: dict, cel: dict, hora: str, parte: str) -> list[str]:
     return claves
 
 
+# ── Completas ───────────────────────────────────────────────────────────────
+# La regla sale de comparar este calendario con las noches de «Liturgia euskaraz»
+# (referencia/completas.py, informe en referencia/completas_informe.txt).
+
+def primeras_completas(info: dict, manana: dict, primeras: bool) -> bool:
+    """¿La noche es la primera Completas de mañana? Como las primeras Vísperas, y además toda noche de
+    sábado: el servidor da el domingo entero (también cuando una fiesta o solemnidad del sábado le
+    quita las Vísperas). En Semana Santa nunca: el miércoles no precede al Jueves Santo, y el Sábado
+    Santo tiene las suyas (la Vigilia no las tiene)."""
+    if info["tiempo"] == "semana-santa":
+        return False
+    return primeras or manana["fecha"].weekday() == 6
+
+
+def formulario_completas(info: dict, manana: dict, primeras: bool) -> dict:
+    """Qué Completas se rezan la noche de `info`. Siete formularios (1-7): el 1, tras las primeras
+    Vísperas; el 2, domingo y solemnidad; del 3 al 7, de lunes a viernes. La octava de Pascua alterna
+    1 (lunes, miércoles, viernes) y 2 (martes, jueves). Devuelve el formulario `f` y lo demás que
+    cambia el texto: tiempo de la noche (el de mañana si son primeras), Pascua, octava, Triduo, oración
+    de solemnidad y si tiene dos salmos."""
+    pc = primeras_completas(info, manana, primeras)
+    x = manana if pc else info
+    d, wd = info["fecha"], info["fecha"].weekday()
+    cel = info["celebraciones"][0]
+    octava_hoy = (not pc and info["tiempo"] == "pascua" and 0 < (d - liturgia.easter(d.year)).days < 7)
+    if pc:
+        f = 1
+    elif octava_hoy:
+        f = 1 if wd in (0, 2, 4) else 2
+    elif wd == 6 or cel["tipo"] == "solemnidad":
+        f = 2
+    else:
+        f = 1 if wd == 5 else wd + 3
+    pascua = x["tiempo"] == "pascua"
+    cel_x = x["celebraciones"][0]
+    # Oración «de solemnidad»: la solemnidad que no es domingo, ella misma o su víspera (no la
+    # octava de Pascua, que reza como domingo, ni los Difuntos, que rezan el formulario 2).
+    solemne = (cel_x["tipo"] == "solemnidad" and x["fecha"].weekday() != 6 and not octava_hoy
+               and cel_x["id"] != "conmemoracion-de-los-fieles-difuntos")
+    return {
+        "f": f, "primeras": pc, "info": x, "cel": cel_x, "tiempo": x["tiempo"], "pascua": pascua,
+        "octava": pascua and (x["fecha"] - liturgia.easter(x["fecha"].year)).days <= 7,
+        "triduo": ("jue", "vie", "sab")[wd - 3] if info["tiempo"] == "semana-santa" and wd in (3, 4, 5) else None,
+        "solemnidad": solemne, "dos_salmos": f in (1, 5) and not pascua,
+    }
+
+
+def candidatas_completas(noche: dict, parte: str) -> list[str]:
+    """Claves donde buscar `parte` de Completas, de la más propia a la más general. Lo que no
+    depende del formulario (responsorio, antífona del Evangelio) tiene una sola clave general."""
+    f, p = noche["f"], parte
+    if p == "fijo/apertura":      # la de Vísperas (sin «Aleluia» en Cuaresma y Semana Santa), según el tiempo de la noche
+        return fijas(noche["info"], noche["cel"], "completas", p)
+    if p.startswith("fijo/completas/"):
+        return [p + "-pascua", p] if p.endswith("/maria") and noche["pascua"] else [p]
+    if p == "himno":              # un solo himno, o los dos juntos (el del formulario 2) en los demás tiempos
+        return [f"completas/f{f if noche['tiempo'] == 'ordinario' else 2}/himno"]
+    if p == "responsorio":
+        return ([f"completas/triduo/{noche['triduo']}/responsorio"] if noche["triduo"] else []) + (
+            ["completas/octava/responsorio"] if noche["octava"] else []) + (
+            ["completas/pascua/responsorio"] if noche["pascua"] else []) + ["completas/responsorio"]
+    if p == "ant_ev":
+        return (["completas/pascua/ant_ev"] if noche["pascua"] else []) + ["completas/ant_ev"]
+    if p == "oracion":
+        return (["completas/solemnidad/oracion"] if noche["solemnidad"] else []) + [f"completas/f{f}/oracion"]
+    if noche["pascua"] and p in ("ant1", "salmo1"):
+        return [f"completas/pascua/f{f}/{p}", f"completas/f{f}/{p}"]
+    return [f"completas/f{f}/{p}"]
+
+
 # ── Textos ──────────────────────────────────────────────────────────────────
 
 def cargar_textos(carpeta: Path) -> dict:
@@ -304,12 +381,36 @@ def resolver(textos: dict, claves: list[str]) -> tuple[str | None, dict | None]:
     return None, None
 
 
-def componer(info: dict, cel: dict, hora: str, textos: dict, faltan: dict) -> list[dict]:
+def salmos_invitatorio(textos: dict, faltan: dict) -> dict:
+    """La parte `salmo` del Invitatorio: los cuatro salmos a elegir (los que tengan texto)."""
+    claves = {n: f"fijo/invitatorio/salmo{n}" for n in INVITATORIO}
+    opciones = []
+    for n, k in claves.items():
+        clave, pieza = resolver(textos, [k])
+        if pieza is not None:
+            opciones.append({"n": n, "clave": clave,
+                             **{c: pieza[c] for c in ("titulo", "lineas", "prueba", "fuente", "batua") if c in pieza}})
+    if opciones:
+        return {"parte": "salmo", "opciones": opciones}
+    for k in claves.values():
+        faltan.setdefault(k, set()).add(k)
+    return {"parte": "salmo", "falta": list(claves.values())}
+
+
+def componer(info: dict, cel: dict, hora: str, textos: dict, faltan: dict, noche: dict | None = None) -> list[dict]:
     partes = []
     for parte in ORDEN["visperas" if hora == "visperas1" else hora]:
-        claves = candidatas(info, cel, hora, parte)
+        if parte == "salmos":
+            partes.append(salmos_invitatorio(textos, faltan))
+            continue
+        if hora == "completas":
+            if parte in ("ant2", "salmo2") and not noche["dos_salmos"]:
+                continue                                  # noche de un solo salmo: no hay segundo
+            claves = candidatas_completas(noche, parte)
+        else:
+            claves = candidatas(info, cel, hora, parte)
         clave, pieza = resolver(textos, claves)
-        if cel["tipo"] == "memoria" and not parte.startswith(("fijo/", "salmo")) and (
+        if hora != "completas" and cel["tipo"] == "memoria" and not parte.startswith(("fijo/", "salmo")) and (
                 pieza is None or pieza.get("batua") and not clave.startswith("propio/")):
             # El bizkaiera manda: si la feria solo está en batua y el común está en bizkaiera, el común.
             # Lo propio del santo, aunque sea batua, se queda (como en las fiestas).
@@ -339,6 +440,7 @@ def generar_dia(d: date, textos: dict, faltan: dict) -> dict:
     info, manana = dia_liturgico(d), dia_liturgico(d + timedelta(days=1))
     # Vísperas: las primeras de mañana solo si mañana las tiene y precede a hoy.
     primeras = tiene_primeras_visperas(manana) and manana["nivel"] < info["nivel"]
+    noche = formulario_completas(info, manana, primeras)
     celebraciones = []
     for cel in info["celebraciones"]:
         horas = {h: componer(info, cel, h, textos, faltan) for h in ("invitatorio", "laudes")}
@@ -350,10 +452,17 @@ def generar_dia(d: date, textos: dict, faltan: dict) -> dict:
             horas["visperas"] = componer(info, cel, "visperas", textos, faltan)
             visperas_de = {"cuales": "segundas" if cel["tipo"] in ("solemnidad", "domingo") else "del dia",
                            "de": cel["nombre"], "de_eu": cel["nombre_eu"]}
+        # Completas: las mismas para todas las celebraciones del día (dependen de la noche).
+        horas["completas"] = componer(noche["info"], noche["cel"], "completas", textos, faltan, noche)
+        if noche["primeras"]:
+            completas_de = {"cuales": "primeras", "de": noche["cel"]["nombre"], "de_eu": noche["cel"]["nombre_eu"]}
+        else:
+            completas_de = {"cuales": "segundas" if cel["tipo"] in ("solemnidad", "domingo") else "del dia",
+                            "de": cel["nombre"], "de_eu": cel["nombre_eu"]}
         celebraciones.append({
             "id": cel["id"], "nombre": cel["nombre"], "nombre_eu": cel["nombre_eu"],
             "rango": cel["rango"], "rango_eu": cel["rango_eu"], "opcional": cel["opcional"],
-            "visperas_de": visperas_de, "horas": horas,
+            "visperas_de": visperas_de, "completas_de": completas_de, "horas": horas,
         })
     r = info["r"]
     return {

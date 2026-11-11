@@ -1,4 +1,4 @@
-/* Orduen Liturgia — Invitatorio, Laudes y Vísperas.
+/* Orduen Liturgia — Invitatorio, Laudes, Vísperas y Completas.
    Lee los días ya resueltos que genera cada noche el repositorio (indice.json y
    dias/AAAA-MM-DD.json), los guarda en el dispositivo y funciona sin conexión
    con lo último que bajó. Formato: Formato.md. */
@@ -10,11 +10,11 @@ const SEMILLA = "datos/";            // copia incluida en la app: primer arranqu
 
 // Rótulos. PROVISIONALES: pendientes de revisar por quien fije el bizkaiera.
 const R = {
-  app: "Orduen Liturgia", invitatorio: "Dei-salmoa", laudes: "Gorespenak", visperas: "Bezperak",
+  app: "Orduen Liturgia", invitatorio: "Dei-salmoa", laudes: "Gorespenak", visperas: "Bezperak", completas: "Konpletak",
   primeras: "Lehenengo Bezperak", misa: "Mezako irakurgaiak", calendario: "Egutegia", hoy: "Gaur",
   prueba: "PROBAKO TESTUAK — ez dira liturgia-testuak", sinDatos: "Ezin izan da eguna kargatu.",
-  sinConexion: "Konexino barik: gordetako azkena erakusten da.", falta: "Bizkaierazko bertsioaren zain", ant: "Ant.",
-  salterio: "Salmutegiko astea", opcional: "aukerakoa",
+  sinConexion: "Konexino barik: gordetako azkena erakusten da.", falta: "Bizkaierazko bertsioaren zain", pendiente: "Oraindik osatu gabe", ant: "Ant.",
+  salterio: "Salmutegiko astea", opcional: "aukerakoa", salmoa: "Salmoa", salmos: "95., 100., 67., 24.",
   // Días y meses en batua, como el resto de rótulos de lecturasdeldia.org/eu.
   dias: ["Astelehena", "Asteartea", "Asteazkena", "Osteguna", "Ostirala", "Larunbata", "Igandea"],
   diasCortos: ["al", "ar", "az", "og", "or", "lr", "ig"],
@@ -23,7 +23,7 @@ const R = {
 const COLORES = { Verde: "#2e7d32", Morado: "#6a1b9a", Blanco: "#ffffff", Rojo: "#c62828", Rosa: "#f48fb1", Negro: "#222222" };
 // Color del tiempo para las letras de la cabecera (el blanco litúrgico se escribe en oro oscuro).
 const TINTA = { Verde: "#1b7d44", Morado: "#5b3a8e", Rojo: "#b3202a", Blanco: "#8c6e18", Rosa: "#a84e74" };
-const HORAS = ["invitatorio", "laudes", "visperas"];
+const HORAS = ["invitatorio", "laudes", "visperas", "completas"];
 
 // ── Almacén en el dispositivo (IndexedDB) ─────────────────────────────────
 const almacen = (() => {
@@ -113,10 +113,11 @@ async function vistaDia(fecha, c) {
     `<button class="ficha" aria-pressed="${i === c}" data-ir="#/dia/${fecha}/${i}">${esc(x.nombre_eu)}${x.opcional ? ` (${R.opcional})` : ""}</button>`).join("") + `</div>`;
   const fila = h => {
     const pv = h === "visperas" && cel.visperas_de.cuales === "primeras";
+    const pc = h === "completas" && cel.completas_de && cel.completas_de.cuales === "primeras";   // primeras Completas: el nombre de mañana
     return `<li><a class="${h === ahora ? "ahora" : ""}" href="#/dia/${fecha}/${c}/${h}"><span>${pv ? R.primeras : R[h]}` +
-      (pv ? `<small>${esc(cel.visperas_de.de_eu)}</small>` : "") + `</span></a></li>`;
+      (pv ? `<small>${esc(cel.visperas_de.de_eu)}</small>` : pc ? `<small>${esc(cel.completas_de.de_eu)}</small>` : "") + `</span></a></li>`;
   };
-  const orden = HORAS;                 // orden fijo: Dei-salmoa, Gorespenak, Bezperak
+  const orden = HORAS.filter(h => cel.horas[h]);       // orden fijo: Dei-salmoa, Gorespenak, Bezperak, Konpletak
   $("vista").innerHTML = avisos() +
     `<div class="cab" style="--c:${TINTA[dia.color] || TINTA.Verde}">
        ${enVentana(mas(fecha, -1)) ? `<a class="flecha ant" href="#/dia/${mas(fecha, -1)}" aria-label="Aurreko eguna">&larr;</a>` : ""}
@@ -150,7 +151,7 @@ function lineas(ls) {
 }
 
 function parteHtml(p, marca) {
-  if (p.falta) return `<section><p class="falta" title="${esc(p.falta[0])}">${R.falta}</p></section>`;
+  if (p.falta) return `<section><p class="falta" title="${esc(p.falta[0])}">${R.pendiente}</p></section>`;
   const ls = marca ? [{ t: "ant", x: marca }, ...(p.lineas || [])] : p.lineas;
   // Texto en batua de «Liturgia euskaraz» donde aún no hay bizkaiera: se dice encima.
   const batua = p.batua ? `<p class="batua" title="${esc(p.fuente || "")}">${R.falta}</p>` : "";
@@ -158,10 +159,36 @@ function parteHtml(p, marca) {
 }
 
 // Marca de la antífona, como en «Liturgia euskaraz»: «1. Ant.» antes del salmo y «Ant.»
-// al repetirla detrás; la del Benedictus o el Magníficat y la del invitatorio, «Ant.».
-function marcaAnt(p, repetida) {
+// al repetirla detrás; la del Benedictus o el Magníficat y la del invitatorio, «Ant.». Una hora de
+// una sola antífona (Completas de un salmo, o de dos con una sola antífona en Pascua) también «Ant.».
+function marcaAnt(p, repetida, varias) {
   const n = /^ant(\d)$/.exec(p.parte);
-  return n && !repetida ? `${n[1]}. ${R.ant}` : R.ant;
+  return n && !repetida && varias ? `${n[1]}. ${R.ant}` : R.ant;
+}
+
+// Salmo invitatorio elegido (95, 100, 67 o 24); el 95 por defecto. Se guarda en el dispositivo.
+const salmoInv = () => localStorage.getItem("salmoInv") || "95";
+let invActual = null;                 // {p, ant}: la parte `salmo` con sus opciones y la antífona del invitatorio
+
+// El salmo elegido: encabezado, y la antífona antes de la primera estrofa y detrás de cada una (Gloria
+// incluido), como «Liturgia euskaraz». Sin antífona (falta), el aviso una vez arriba y el salmo solo.
+function salmoInvHtml() {
+  const { p, ant } = invActual;
+  const o = p.opciones.find(x => x.n === salmoInv()) || p.opciones[0];
+  const cab = o.lineas.filter(l => l.t !== "estrofa"), estrofas = o.lineas.filter(l => l.t === "estrofa");
+  const conAnt = ant && !ant.falta;
+  const nota = (!conAnt ? `<p class="falta" title="${esc(ant && ant.falta ? ant.falta[0] : "")}">${R.pendiente}</p>` : "") +
+    (o.batua || (conAnt && ant.batua) ? `<p class="batua" title="${esc(o.fuente || "")}">${R.falta}</p>` : "");
+  const a = conAnt ? `<section>${lineas([{ t: "ant", x: R.ant }, ...ant.lineas])}</section>` : "";
+  return nota + `<section>${lineas(cab)}</section>` + a + estrofas.map(e => `<section>${lineas([e])}</section>` + a).join("");
+}
+
+// Fila de botones 95 · 100 · 67 · 24 y, debajo, el salmo elegido (se repinta al pulsar, sin navegar).
+function selectorSalmoInv() {
+  const n = (invActual.p.opciones.find(x => x.n === salmoInv()) || invActual.p.opciones[0]).n;
+  return `<section><p class="l-titulo">${R.salmoa}</p><div class="fichas" role="group" aria-label="${R.salmos}">` +
+    invActual.p.opciones.map(o => `<button class="ficha" data-salmo="${o.n}" aria-pressed="${o.n === n}">${o.n}</button>`).join("") +
+    `</div></section><div id="salmo-inv">${salmoInvHtml()}</div>`;
 }
 
 async function vistaHora(fecha, c, hora) {
@@ -170,20 +197,25 @@ async function vistaHora(fecha, c, hora) {
   if (!cel || !cel.horas[hora]) { location.hash = "#/dia/" + fecha; return; }
   const partes = cel.horas[hora];
   const pv = hora === "visperas" && cel.visperas_de.cuales === "primeras";
+  const pc = hora === "completas" && cel.completas_de && cel.completas_de.cuales === "primeras";
   cabecera(fechaLarga(fecha), pv ? R.primeras : R[hora], `#/dia/${fecha}/${c}`);
   // La antífona se dice antes y después de su salmo o cántico: se repite detrás.
+  const varias = partes.some(p => p.parte === "ant2");    // «1. Ant.» solo si hay una segunda
   let cuerpo = "", ant = null;
   partes.forEach(p => {
+    if (hora === "invitatorio" && p.parte === "ant") { ant = p; return; }     // la antífona entra en el salmo
+    if (p.opciones) { invActual = { p, ant }; ant = null; cuerpo += selectorSalmoInv(); return; }
     const esAnt = p.parte.startsWith("ant");
-    cuerpo += parteHtml(p, esAnt ? marcaAnt(p, false) : "");
+    cuerpo += parteHtml(p, esAnt ? marcaAnt(p, false, varias) : "");
     if (esAnt) ant = p;
-    else if (ant) { if (!ant.falta) cuerpo += parteHtml(ant, marcaAnt(ant, true)); ant = null; }
+    else if (ant) { if (!ant.falta) cuerpo += parteHtml(ant, marcaAnt(ant, true, varias)); ant = null; }
   });
+  if (ant && hora === "invitatorio") cuerpo += parteHtml(ant, R.ant);         // sin salmos que elegir: la antífona sola
   const prueba = partes.some(p => p.prueba);
   $("vista").innerHTML = avisos(prueba ? `<p class="aviso prueba">${R.prueba}</p>` : "") +
     `<div class="herramientas"><button data-letra="-1" aria-label="Letra txikiagoa">A&minus;</button>
        <button data-letra="1" aria-label="Letra handiagoa">A+</button><button data-tema aria-label="Gaua / eguna">&#9680;</button></div>
-     <article class="lector"><h1>${esc(pv ? cel.visperas_de.de_eu : cel.nombre_eu)}</h1><h2>${pv ? R.primeras : R[hora]}</h2>${cuerpo}</article>`;
+     <article class="lector"><h1>${esc(pv ? cel.visperas_de.de_eu : pc ? cel.completas_de.de_eu : cel.nombre_eu)}</h1><h2>${pv ? R.primeras : R[hora]}</h2>${cuerpo}</article>`;
 }
 
 function vistaCalendario(mes) {
@@ -226,6 +258,11 @@ document.addEventListener("click", e => {
   const b = e.target.closest("button");
   if (!b) return;
   if (b.dataset.ir) location.hash = b.dataset.ir;
+  if (b.dataset.salmo) {                       // salmo invitatorio: se repinta en su sitio, sin navegar
+    localStorage.setItem("salmoInv", b.dataset.salmo);
+    document.querySelectorAll("[data-salmo]").forEach(x => x.setAttribute("aria-pressed", x === b));
+    $("salmo-inv").innerHTML = salmoInvHtml();
+  }
   if (b.dataset.letra) {
     const v = Math.min(30, Math.max(14, (Number(localStorage.getItem("letra")) || 19) + 2 * Number(b.dataset.letra)));
     localStorage.setItem("letra", v); ajustes();

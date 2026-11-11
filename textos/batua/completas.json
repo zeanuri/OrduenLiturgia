@@ -1,0 +1,1286 @@
+{
+"completas/ant_ev": {
+"lineas": [
+{
+"t": "texto",
+"x": "Salba gaitzazu, Jauna, esna aldian; zaindu gaitzazu loaldian; Kristorekin erne bizi gaitezen, eta bakean dezagun atseden."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C4001"
+},
+"completas/f1/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Erruki zakizkit, Jauna, eta entzun nire otoitza."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1001"
+},
+"completas/f1/ant2": {
+"lineas": [
+{
+"t": "texto",
+"x": "Gauez bedeinka ezazue Jauna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1001"
+},
+"completas/f1/himno": {
+"lineas": [
+{
+"t": "estrofa",
+"x": "Otoi, guztien egile,\nargiak aldegin baitu,\nzure betiko errukiz\nzaindu ta gorde gaitzazu.\n\nGure bihotzok zaitzate\namets eder lotan senti,\nta argia hurbil denean\ngora zaitzagula beti.\n\nEmaguzu osasuna,\nemaguzu bizi-poza;\ngau beltza zure argiak\nbere dirdaiz argi beza.\n\nJesu Kristoren bitartez\ngrazia hau iguzu, Aita,\nGoi-Arnasa ta Zurekin\nbetiko Errege baita. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C0061"
+},
+"completas/f1/lectura": {
+"lineas": [
+{
+"t": "cita",
+"x": "Dt 6, 4-7"
+},
+{
+"t": "texto",
+"x": "Entzun, Israel: Jauna gure Jainkoa Jaun bakarra da. Maita ezazu Jauna zeure Jainkoa bihotz-bihotzez gogo osoz eta indar guztiz. Izan beti gogoan gaur esaten dizkizudan hitz hauek. Irakatsi behin eta berriro zeure seme-alabei, eta hitz egin horietaz etxean zaudela nahiz bidean zoazela, oheratzean nahiz jaikitzean."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C2001"
+},
+"completas/f1/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Egin dezagun otoitz."
+},
+{
+"t": "texto",
+"x": "Zaude gurekin, Jauna, gau honetan; eta egizu, goizean igandea ospatuz poztu gaitezela zure Semearen piztueraz. Errege bizi baita gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C5001"
+},
+"completas/f1/salmo1": {
+"lineas": [
+{
+"t": "salmo",
+"x": "4. Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Esker onezko otoitza"
+},
+{
+"t": "sentencia",
+"x": "Jaunak harrigarriak egin zituen, Jesu Kristo hilen artetik piztean (San Agustin)."
+},
+{
+"t": "estrofa",
+"x": "Deitzen dizudanean, erantzun, Jainko, ene defendatzaile. †\nEstualdian emadazu lasaitasun. *\nErruki zakizkit eta entzun nire otoitza. \n\nZuek, handikiok, †\nnoiz arte iraindu behar duzue nire ohorea? *\nHuskeria duzue maite †\neta gezurraren atzetik zabiltzate.\nJakizue maitasun harrigarria agertzen didala Jaunak, *\nentzun egiten didala deitzen diodanean. \n\nIkara zaitezte eta ez egin bekaturik; *\nhausnartu bihotzean, egin negar ohean.\nEskaini bidezkoak diren sakrifizioak, *\neta izan konfiantza Jaunagan. \n\nAsko ari dira esaten: «Nork emango guri zoriona? *\nAldendu egin duzu gugandik, Jauna, †\nzeure aurpegi argitsua!» \nNiri, hala ere, poz handia eman didazu, *\ngariz eta ardoz aserik dauden horiena baino handiagoa. \n\nBakean oheratzen naiz eta berehala lokartzen, *\nZeuk bakarrik bainauzu, Jauna, lasai biziarazten.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1001"
+},
+"completas/f1/salmo2": {
+"lineas": [
+{
+"t": "salmo",
+"x": "134. [133] Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Arratseko otoitza tenpluan"
+},
+{
+"t": "sentencia",
+"x": "Goretsazue gure Jainkoa Haren morroi guztiok, txiki eta handiok (Ap 19, 5)."
+},
+{
+"t": "estrofa",
+"x": "Bedeinka ezazue Jauna, Jaunaren zerbitzariok, *\ngaua Jaunaren etxean ematen duzuen guztiok. \n\nJaso eskuak santutegirantz *\neta bedeinka ezazue Jauna. \nBedeinka zaitzala Siondik Jaunak, *\nzeru-lurrak egin dituenak.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1001"
+},
+"completas/f2/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Goi-goikoaren babespean ez nau ikaratzen gaueko izuak."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1002"
+},
+"completas/f2/himno": {
+"lineas": [
+{
+"t": "titulo",
+"x": "I [II]"
+},
+{
+"t": "estrofa",
+"x": "Otoi, guztien egile,\nargiak aldegin baitu,\nzure betiko errukiz\nzaindu ta gorde gaitzazu.\n\nGure bihotzok zaitzate\namets eder lotan senti,\nta argia hurbil denean\ngora zaitzagula beti.\n\nEmaguzu osasuna,\nemaguzu bizi-poza;\ngau beltza zure argiak\nbere dirdaiz argi beza.\n\nJesu Kristoren bitartez\ngrazia hau iguzu, Aita,\nGoi-Arnasa ta Zurekin\nbetiko Errege baita. Amen."
+},
+{
+"t": "titulo",
+"x": "II [II]"
+},
+{
+"t": "estrofa",
+"x": "Gauez ez du etenik\ngizakiekiko zure jardunak.\nSalbamen-garai dugu gaua.\n\nGauez luzatu zenuen mirarizko zurubia,\nJakob lo zetzan burko harriraino.\nSalbamen-garai dugu gaua.\n\nGauez ospatu zenuen Pazkoa zeure herriarekin,\nilunpetan Herioak ziharduelarik.\nSalbamen-garai dugu gaua.\n\nGau oro izar-leinuak zenbatzen ari zen Abraham,\ngau oro helarazten zenion agintzarien oihartzuna.\nSalbamen-garai dugu gaua.\n\nGauez dantzu Samuelek hirutan bere izena,\ngau-ametsak zituen zure mintzo sarkorrena.\nSalbamen-garai dugu gaua.\n\nGauez jaio zen zure Hitza aska batean,\ngauez zuten haren berri aingeru eta izarrek eman.\nSalbamen-garai dugu gaua.\n\nGaua du testigu Kristoren hilobiak,\ngaua, haren piztuera miragarriak.\nSalbamen-garai dugu gaua.\n\nGauez izango gaitu zain zure bapateko etorrerak,\neta pizturik aurkituko dituzu gure kriseiluak."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C0062"
+},
+"completas/f2/lectura": {
+"lineas": [
+{
+"t": "cita",
+"x": "Ap 22, 4-5"
+},
+{
+"t": "texto",
+"x": "Aurrez aurre ikusiko dute, eta haren izena bekokian eramango. Ez da aurrerantzean gaurik izango; ez dute kriseilu-argirik, ez eguzki-argirik beharko, Jainko Jaunak egingo baitie argi, eta errege izango dira menderen mendetan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C2002"
+},
+"completas/f2/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Egin dezagun otoitz."
+},
+{
+"t": "texto",
+"x": "Apalki eskatzen dizugu, Jauna, gaur zure Semearen piztuera-oroipena ospatu ondoren, ezeren beldurrik gabe zure bakean atseden har dezagula, eta bihar jaiki gaitezela berriro zure gorespenak abesteko. Jesu Kristo gure Jaunaren bitartez."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C5003"
+},
+"completas/f2/salmo1": {
+"lineas": [
+{
+"t": "salmo",
+"x": "91. [90] Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Guztiz ahaltsuaren itzalpean"
+},
+{
+"t": "sentencia",
+"x": "Suge eta arrabioak... zapaltzeko ahamena eman dizue (Lk 10, 19)."
+},
+{
+"t": "estrofa",
+"x": "Goi-goikoaren aterpean bizi zaren horrek, *\ngaua Ahaltsuaren itzalpean ematen duzun horrek,\nesaiozu Jaunari: «Zu nire babesleku eta gaztelu, *\nene Jainko, Zugan dut konfiantza». \n\nHark libratuko zaitu ehiztariaren saretik *\neta izurri galgarritik.\nBere lumapean gerizatuko zaitu, † \nharen hegalpean izango duzu babesleku, *\nharen besoa babeski eta koraza. \n\nEz diozu beldurrik izango gauaren izuari, *\nez egunez hegan doan geziari,\nez ilunpetan zabaltzen den izurriari, *\nez egun-argitan jotzen duen gaitzari. \n\nEroriko dira zure ondoan mila, † \nhamar mila zure eskuinean; *\nzu ez zaituzte joko. \n\nBegiak zabaldu bezain laster *\nikusiko duzu gaiztoen zigor-ordaina,\nJauna hartu baituzu babesleku, *\nGoi-goikoa bizileku. \n\nEz zaizu zoritxarrik gertatuko, *\nez da zure etxolara izurririk hurbilduko,\nbere aingeruei agindu baitie, *\nzu bide guztietan zaintzeko. \n\nBesoetan eramango zaituzte, *\nharriekin estropezu egin ez dezazun.\nSuge eta sugegorrien gainean ibiliko zara, *\noinazpian hartuko dituzu lehoia eta herensugea. \n\n«Onik aterako dut, niri atxikia dagoelako, *\ntoki seguruan jarriko, nire izena aitortzen duelako. \n\nDei egingo dit, eta Nik erantzungo; † \nberekin izango nau larrialdian, *\nlibratuko dut eta ospez jantziko. \n\nBizitza luzea eta betea emango diot *\neta neure salbamena gozaraziko». \n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1002"
+},
+"completas/f3/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zu, Jauna, Jainko errukior zaitut eta guztiz onbera."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1003"
+},
+"completas/f3/lectura": {
+"lineas": [
+{
+"t": "cita",
+"x": "1 Ts 5, 9-10"
+},
+{
+"t": "texto",
+"x": "Jesu Kristo gure Jaunaren bitartez salbamena iristea nahi du Jainkoak. Jesu Kristo gugatik hil zen, gu, nahiz esana nahiz lo, harekin bat eginik bizi gaitezen. Horrela, bada, eman adore elkarri eta lagundu batak besteari, egiten duzuen bezala."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C2003"
+},
+"completas/f3/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Egin dezagun otoitz."
+},
+{
+"t": "texto",
+"x": "Eman, Jauna, nekaturik dauden gure gorputzei behar duten atsedena; eta egizu, gaur erein dugun zeruko erreinuaren hazia, erne eta indar dadila betiko bizitzarako. Jesu Kristo gure Jaunaren bitartez."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C5005"
+},
+"completas/f3/salmo1": {
+"lineas": [
+{
+"t": "salmo",
+"x": "86. [85] Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Ezbeharrean dagoen behartsu baten otoitza"
+},
+{
+"t": "sentencia",
+"x": "Bedeinkatua Jaungoikoa Berak pozten baikaitu saminaldi guztietan (2 Ko 1, 3. 4)."
+},
+{
+"t": "estrofa",
+"x": "Makurtu belarria, Jauna, erantzun, *\ndohakabe eta behartsu bainauzu.\nBabestu nire bizia, Zuri atxikia bainago; *\nZu zaitut neure Jainko, †\nsalba ezazu Zugan uste on duen zerbitzari hau. \n\nErruki nitaz, Jauna, *\nZuri deika ari bainaiz egun osoan.\nAlai ezazu zerbitzari honen bihotza, *\nZugana jasoa baitut gogoa, Jauna. \n\nOna zara, Jauna, eta barkabera, *\ndei egiten dizutenentzat onginahiz betea.\nAditu nire otoitza, Jauna, *\nkasu egin nire erregu-oihuari. \n\nLarrialdian dei degizut, *\nerantzuten baitidazu.\nEz da, Jauna, Zu bezalako jainkorik, *\nezta zureak bezalako egintzarik ere. \n\nEgin dituzun nazio guztiak †\nzure aurrean ahuspeztera etorriko dira, Jauna, *\neta zure izena ospatzera.\nHandia zara, eta mirarigilea, *\nZu bakarrik Jainko. \n\nErakuts iezadazu, Jauna, zeure bidea, *\nZurekin leial joka dezadan;\neman barne-batasuna nire bihotzari, *\nzure izenari begirune izan diezaiodan. \n\nJauna, ene Jainko, bihotz-bihotzez goretsiko zaitut, *\nbetiren beti ospatuko dut zure izena,\nhandia baita niretzat duzun maitasuna; *\nHerio-leize sakonetik libratu nauzu. \n\nOi Jainko, harroak aurka jaiki zaizkit, † \ngogorzaleen taldea ni hil nahian dabil, *\nzure axolarik gabe. \n\nBaina Zu, Jauna, Jainko bihozbera eta errukiorra, *\nhaserregaitza, onginahiz eta leialtasunez betea,\nitzul nigana eta erruki zakizkit, † \nemaiozu zerbitzari honi zeure indarra, *\nsalba ezazu zeure zerbitzari ezerez hau. \n\nEmadazu zeure ontasunaren ezaugarria! † \nLotsaturik geldituko dira gorroto didatenak, *\nZuk, Jauna, laguntzen eta kontsolatzen nauzula ikustean. \n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1003"
+},
+"completas/f4/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Ez ezkutatu niri zure aurpegia, Zugan baitut itxaropena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1004"
+},
+"completas/f4/himno": {
+"lineas": [
+{
+"t": "estrofa",
+"x": "Otoi, guztien egile,\nargiak aldegin baitu,\nzure betiko errukiz\nzaindu ta gorde gaitzazu.\n\nGure bihotzok zaitzate\namets eder lotan senti,\nta argia hurbil denean\ngora zaitzagula beti.\n\nEmaguzu osasuna,\nemaguzu bizi-poza;\ngau beltza zure argiak\nbere dirdaiz argi beza.\n\nJesu Kristoren bitartez\ngrazia hau iguzu, Aita,\nGoi-Arnasa ta Zurekin\nbetiko Errege baita. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C0064"
+},
+"completas/f4/lectura": {
+"lineas": [
+{
+"t": "cita",
+"x": "1 P 5, 8-9"
+},
+{
+"t": "texto",
+"x": "Izan zaitezte neurritsu eta egon erne; zuen etsaia, deabrua, zuen inguruan dabil, goseak dagoen lehoia bezala, nork irentsiko. Egiozue aurre, sinesmenean sendo."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C2004"
+},
+"completas/f4/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Egin dezagun otoitz."
+},
+{
+"t": "texto",
+"x": "Argitu, Jauna, gure gaua, eta emaguzu lo gozoa, bihar goizeko argia pozik ikus dezagun, osasun ederrean. Jesu Kristo gure Jaunaren bitartez."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C5006"
+},
+"completas/f4/salmo1": {
+"lineas": [
+{
+"t": "salmo",
+"x": "143. [142] Salmoa, 1-11"
+},
+{
+"t": "epigrafe",
+"x": "Negar-otoitza eta eskaria estualdian"
+},
+{
+"t": "sentencia",
+"x": "Gizakiak ez du bere zuzentasuna Legea betetzeagatik iristen, baizik Kristo Jesusengan sinesteagatik (Ga 2, 16)."
+},
+{
+"t": "estrofa",
+"x": "Entzun, Jauna, nire otoitza, † \nmakurtu belarria nire erregura, *\nerantzun niri, zuzena baitzara eta leiala.\nEz hasi auzitan zeure zerbitzari honekin, *\nez baita bizidunik zure aurrean errugabe denik. \n\nEtsaiak gogor erasotzen dit, *\nbizirik zanpatzen nau lurraren kontra\neta ilunpetan biziarazten, *\nbetiko hildakoen antzera.\nArnasa galtzen ari zait, * \nbihotza barnean ihartzen. \n\nAspaldiko garaiez oroitzen naiz, † \nzure egintza guztiak darabiltzat buruan, *\nzure eskuek eginak ditut hausnartzen.\nZugana ditut eskuak luzatzen, *\nzure egarri naiz, lur lehorra bezala. \n\nErantzun laster, Jauna, *\narnasarik gabe bainago.\nEz ezkuta niri zeure aurpegia, *\nHerio-leizera doazenen pareko gerta ez nadin. \n\nEmadazu goizean zeure maitasunaren berri, *\nZugan baitut konfiantza.\nErakutsi niri egin behar dudan bidea, *\nZugana baitut jasoa gogoa. \n\nLibra nazazu, Jauna, etsaiengandik, *\nZugan bainaiz babesten.\nErakuts iezadazu zure nahia egiten, *\nZu baitzaitut neure Jainkoa. \nZeure espiritu onberaz *\ngida nazazu toki zelaitik. \n\nZaindu nire bizia, Jauna, zeure izenaren ohoreagatik, *\natera ni larrialditik, zeure justiziagatik; \n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1004"
+},
+"completas/f5/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Izan zakizkit, Jauna, harkaitz, ni gordetzeko; gaztelu sendo, ni salbatzeko."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1005"
+},
+"completas/f5/ant2": {
+"lineas": [
+{
+"t": "texto",
+"x": "Barru-barrutik dei egiten dizut, Jauna. †"
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1005"
+},
+"completas/f5/himno": {
+"lineas": [
+{
+"t": "estrofa",
+"x": "Gauez ez du etenik\ngizakiekiko zure jardunak.\nSalbamen-garai dugu gaua.\n\nGauez luzatu zenuen mirarizko zurubia,\nJakob lo zetzan burko harriraino.\nSalbamen-garai dugu gaua.\n\nGauez ospatu zenuen Pazkoa zeure herriarekin,\nilunpetan Herioak ziharduelarik.\nSalbamen-garai dugu gaua.\n\nGau oro izar-leinuak zenbatzen ari zen Abraham,\ngau oro helarazten zenion agintzarien oihartzuna.\nSalbamen-garai dugu gaua.\n\nGauez dantzu Samuelek hirutan bere izena,\ngau-ametsak zituen zure mintzo sarkorrena.\nSalbamen-garai dugu gaua.\n\nGauez jaio zen zure Hitza aska batean,\ngauez zuten haren berri aingeru eta izarrek eman.\nSalbamen-garai dugu gaua.\n\nGaua du testigu Kristoren hilobiak,\ngaua, haren piztuera miragarriak.\nSalbamen-garai dugu gaua.\n\nGauez izango gaitu zain zure bapateko etorrerak,\neta pizturik aurkituko dituzu gure kriseiluak."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C0065"
+},
+"completas/f5/lectura": {
+"lineas": [
+{
+"t": "cita",
+"x": "Ef 4, 26-27"
+},
+{
+"t": "texto",
+"x": "Ez heldu bekatu egiteraino; zuen haserreak ez beza eguzkia sartu arte iraun. Ez eman inolako aukerarik deabruari."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C2005"
+},
+"completas/f5/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Egin dezagun otoitz."
+},
+{
+"t": "texto",
+"x": "Jesu Kristo gure Jauna, bihotzez otzana eta apala, uztarri leuna eta zama arina ezartzen diezu Zeuregana datozenei: onar itzazu, beraz, bukatu ditugun egun honetako lanak; atseden dezagula gau honetan, gorputz-arimetako indarrak berriturik, zure zerbitzuan zintzo jardun dezagun. Errege bizi baitzara gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C5007"
+},
+"completas/f5/salmo1": {
+"lineas": [
+{
+"t": "salmo",
+"x": "31. [30] Salmoa, 2-6"
+},
+{
+"t": "epigrafe",
+"x": "Nahigabetuaren itxaropenezko otoitza"
+},
+{
+"t": "sentencia",
+"x": "Zure eskuetan, Aita, uzten dut neure bizia (Lk 23, 46)."
+},
+{
+"t": "estrofa",
+"x": "Zugan babesten naiz, Jauna, †\nez nadila behin ere lotsagarri gerta; *\natera nazazu onik, zuzena baitzara. \n\nMakur iezadazu belarria, *\nbizkor, libra nazazu!\nIzan zakizkit harkaitz babesle, *\ngaztelu salbatzaile. \n\nZu baitzaitut neure haitz eta gaztelu, *\nzeure izenaren ohorez eraman nazazu eta gidatu.\nAtera nazazu jarri didaten saretik, *\nZu baitzaitut gordeleku. \n\nZure eskuetan uzten dut neure bizia; *\naska nazazu, Jauna, Jainko leiala.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1005"
+},
+"completas/f5/salmo2": {
+"lineas": [
+{
+"t": "salmo",
+"x": "130. [129] Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Barru-barrutik dei egiten dizut, Jauna"
+},
+{
+"t": "sentencia",
+"x": "Horrek salbatuko du bere herria bekatuetatik (Mt 1, 21)."
+},
+{
+"t": "estrofa",
+"x": "Barru-barrutik dei egiten dizut, Jauna; *\n† entzun, Jauna, nire mintzoa!\nBeude erne zure belarriak *\nnire erregu-oihura. \n\nErruak kontuan badituzu, Jauna, *\nnork iraun zutik, ene Jauna?\nBaina Zuri barkamena dagokizu, *\nZuganako begirunean bizi gaitezen. \n\nJaunaren zain nago, zain dago nire barrena, *\nharen hitza dut itxaro;\nnire barrena Jaunaren irrikaz dago, *\ngau-zaina egunsentiaren irrikaz baino gehiago. \n\nGau-zainak egunsentia bezala, *\nitxaron beza Israelek Jaunagan, \nJaunarena baita maitasuna, *\nharena askapen betea.\nHark askatuko du Israel *\nbere erru guztietatik. \n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1005"
+},
+"completas/f6/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Haragi honek bakean du atsedena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1006"
+},
+"completas/f6/himno": {
+"lineas": [
+{
+"t": "estrofa",
+"x": "Otoi, guztien egile,\nargiak aldegin baitu,\nzure betiko errukiz\nzaindu ta gorde gaitzazu.\n\nGure bihotzok zaitzate\namets eder lotan senti,\nta argia hurbil denean\ngora zaitzagula beti.\n\nEmaguzu osasuna,\nemaguzu bizi-poza;\ngau beltza zure argiak\nbere dirdaiz argi beza.\n\nJesu Kristoren bitartez\ngrazia hau iguzu, Aita,\nGoi-Arnasa ta Zurekin\nbetiko Errege baita. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C0066"
+},
+"completas/f6/lectura": {
+"lineas": [
+{
+"t": "cita",
+"x": "1 Ts 5, 23"
+},
+{
+"t": "texto",
+"x": "Bakea ematen duen Jainkoak berak egin zaitzatela oso-osorik santu, eta zuen izate osoak –espiritu, arima eta gorputz errugabe iraun dezala, Jesu Kristo gure Jaunaren etorrera arte."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C2006"
+},
+"completas/f6/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Egin dezagun otoitz."
+},
+{
+"t": "texto",
+"x": "Jainko gure Jauna, emaguzu atsedenaldi lasaia, eguneko lanean akitu ditugun indarrak susper daitezen; horrela, zure laguntzaz bizkorturik, gorputz eta arima guztiz zerbitza zaitzagun beti. Jesu Kristo gure Jaunaren bitartez."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C5008"
+},
+"completas/f6/salmo1": {
+"lineas": [
+{
+"t": "salmo",
+"x": "16. [15] Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Jauna da nire ondarea"
+},
+{
+"t": "sentencia",
+"x": "Jainkoak piztu egin zuen Jesus, heriotzaren lokarrietatik askatuz (Eg 2, 24)."
+},
+{
+"t": "estrofa",
+"x": "Gorde nazazu, Jainko, * \nZugan bainaiz babesten. \nHau diotsot Jaunari: «Zu zaitut neure Jauna, * \nez dut onik Zu gabe».\n\nLurralde honetako jainkoak, ahaltsu omen direnak, * \nnituen behinola atsegin. \nUgari dira idoloak, *\nhaien atzetik lehiatzen da jendea. \nNik ez diet sakrifizioen odolik eskainiko, * \nez dut horien izenik ezpainetan hartuko. \n\nJauna, Zu zaitut neure ondarea, neure edontzia, * \nzure esku dago nire zoria. \nZoragarria da suertatu zaidan alorra, * \nezin ederragoa nire ondarea. \n\nBedeinkatzen dut Jauna, aholku baitit ematen, * \ngauez ere berak du nire barrua hezten. \nBegi aurrean dut Jauna etengabe; *\nhura eskuinean dudala, ez naiteke dardara. \n\nHorregatik, alai dut bihotza, pozik erraiak, * \natsedenean lasai gorputza. \nEz baituzu nire bizia Herio-leizera egotziko, *\nezta ere zeure fededuna hilobian galtzen utziko. \n\nBizirako bidea erakutsiko didazu; † \nalaitasunez beteko nauzu zeure aurrean, * \nzorionez betiko zeure ondoan. \n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1006"
+},
+"completas/f7/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Jauna, ene Jainko salbatzailea, gau eta egun deiadar degizut. †"
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1007"
+},
+"completas/f7/himno": {
+"lineas": [
+{
+"t": "estrofa",
+"x": "Gauez ez du etenik\ngizakiekiko zure jardunak.\nSalbamen-garai dugu gaua.\n\nGauez luzatu zenuen mirarizko zurubia,\nJakob lo zetzan burko harriraino.\nSalbamen-garai dugu gaua.\n\nGauez ospatu zenuen Pazkoa zeure herriarekin,\nilunpetan Herioak ziharduelarik.\nSalbamen-garai dugu gaua.\n\nGau oro izar-leinuak zenbatzen ari zen Abraham,\ngau oro helarazten zenion agintzarien oihartzuna.\nSalbamen-garai dugu gaua.\n\nGauez dantzu Samuelek hirutan bere izena,\ngau-ametsak zituen zure mintzo sarkorrena.\nSalbamen-garai dugu gaua.\n\nGauez jaio zen zure Hitza aska batean,\ngauez zuten haren berri aingeru eta izarrek eman.\nSalbamen-garai dugu gaua.\n\nGaua du testigu Kristoren hilobiak,\ngaua, haren piztuera miragarriak.\nSalbamen-garai dugu gaua.\n\nGauez izango gaitu zain zure bapateko etorrerak,\neta pizturik aurkituko dituzu gure kriseiluak."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C0067"
+},
+"completas/f7/lectura": {
+"lineas": [
+{
+"t": "cita",
+"x": "Jr 14, 9"
+},
+{
+"t": "texto",
+"x": "Zu gure artean zaude, Jauna; zure izenari dei egin zaio gure alde: ez gaitzazula zeure eskutik utzi, Jauna, gure Jainkoa."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C2007"
+},
+"completas/f7/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Egin dezagun otoitz."
+},
+{
+"t": "texto",
+"x": "Jauna, Jainko guztiz ahaltsua, gure atsedenak zure Semearen hobia gogoratzen digunez gero, iguzu, arren, bihar jaikitzean piztu gaitezela bizitza berri batera. Jesu Kristo gure Jaunaren bitartez."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C5009"
+},
+"completas/f7/salmo1": {
+"lineas": [
+{
+"t": "salmo",
+"x": "88. [87] Salmoa, 2-8"
+},
+{
+"t": "epigrafe",
+"x": "Oso gaixorik dagoen gizon baten otoitza"
+},
+{
+"t": "sentencia",
+"x": "Hau da zuen ordua, ilunpearen nagusialdia (Lk 22, 53)."
+},
+{
+"t": "estrofa",
+"x": "Jauna, ene Jainko salbatzailea, *\ngau eta egun deiadar degizut.\n† Hel bekizu nire otoitza, *\nmakur belarria nire garrasira.\n\nZoritxarrez asea dut barrena, *\nHerio-leizearen ertzean neure bizia;\nzulora doazenekin naute lerrotu, *\nerabat nago indargabetua.\n\nHerioaren esku nago utzia, *\nhilobian dauden hildakoak bezala;\nez zara gehiago haietaz oroitzen, *\nerauziak izan baitira zure eskutik.\n\nZulo sakonera jaurti nauzu, *\nbarren-barreneko ilunpeetara.\nZama astuna dut gainean zure haserrea, *\nzeure atsebake-itsasoan murgiltzen nauzu.\n\nEzagunak urrundu dizkidazu, *\nhaientzat higuingarri bihurtu nauzu;\npreso nago, irtenbiderik gabe, *\nbegiok akiturik nahigabez.\n\nEgun osoan Zuri deika nago, Jauna, *\neskuak luzatuz Zugana.\nEgingo ote duzu miraririk hildakoen alde? *\nJaikiko ote dira itzalak Zu gorestera?\n\nIragartzen ote dute hilobian zure maitasuna, *\nhondamen-leizean zure leialtasuna?\nEzagutzen ote dituzte zure mirariak ilunpean, *\nzure salbamen-asmoa oroitzapenik gabeko lurraldean?\n\nBaina nik, Jauna, deiadar degizut Zuri, *\ngoiz-goizetik doa Zugana nire otoitza. \nJauna, zergatik nauzu zapuzten, *\nzergatik didazu aurpegia gordetzen?\n\nDohakabe naiz eta gaixo haurtzarotik. *\nZure izu-ikarak jasan ditut, akiturik nago.\nzure sumina gainetik igaro zait, *\nzure ikara larriak ezereztu nau.\n\nUholdeak bezala murgildua naukate egun osoan, *\nguztiek batean inguratua.\nUrrundu dituzu nigandik adiskide eta lagunak, *\nilunpeak ditut lagunarte bakar.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1007"
+},
+"completas/octava/responsorio": {
+"lineas": [
+{
+"t": "rubrica",
+"x": "Galde-erantzunaren ordez, txatala esango da:"
+},
+{
+"t": "estrofa",
+"x": "Hau da Jaunak egin duen eguna,\ngu pozteko eta alaitzeko eguna, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C3511"
+},
+"completas/pascua/ant_ev": {
+"lineas": [
+{
+"t": "texto",
+"x": "Salba gaitzazu, Jauna, esna aldian; zaindu gaitzazu loaldian; Kristorekin erne bizi gaitezen, eta bakean dezagun atseden. Aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C4501"
+},
+"completas/pascua/f1/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Aleluia, aleluia, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1501"
+},
+"completas/pascua/f1/salmo1": {
+"lineas": [
+{
+"t": "salmo",
+"x": "4. Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Esker onezko otoitza"
+},
+{
+"t": "sentencia",
+"x": "Jaunak harrigarriak egin zituen, Jesu Kristo hilen artetik piztean (San Agustin)."
+},
+{
+"t": "estrofa",
+"x": "Deitzen dizudanean, erantzun, Jainko, ene defendatzaile. †\nEstualdian emadazu lasaitasun. *\nErruki zakizkit eta entzun nire otoitza. \n\nZuek, handikiok, †\nnoiz arte iraindu behar duzue nire ohorea? *\nHuskeria duzue maite †\neta gezurraren atzetik zabiltzate.\nJakizue maitasun harrigarria agertzen didala Jaunak, *\nentzun egiten didala deitzen diodanean. \n\nIkara zaitezte eta ez egin bekaturik; *\nhausnartu bihotzean, egin negar ohean.\nEskaini bidezkoak diren sakrifizioak, *\neta izan konfiantza Jaunagan. \n\nAsko ari dira esaten: «Nork emango guri zoriona? *\nAldendu egin duzu gugandik, Jauna, †\nzeure aurpegi argitsua!» \nNiri, hala ere, poz handia eman didazu, *\ngariz eta ardoz aserik dauden horiena baino handiagoa. \n\nBakean oheratzen naiz eta berehala lokartzen, *\nZeuk bakarrik bainauzu, Jauna, lasai biziarazten.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+},
+{
+"t": "salmo",
+"x": "134. [133] Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Arratseko otoitza tenpluan"
+},
+{
+"t": "sentencia",
+"x": "Goretsazue gure Jainkoa Haren morroi guztiok, txiki eta handiok (Ap 19, 5)."
+},
+{
+"t": "estrofa",
+"x": "Bedeinka ezazue Jauna, Jaunaren zerbitzariok, *\ngaua Jaunaren etxean ematen duzuen guztiok. \n\nJaso eskuak santutegirantz *\neta bedeinka ezazue Jauna. \nBedeinka zaitzala Siondik Jaunak, *\nzeru-lurrak egin dituenak.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1501"
+},
+"completas/pascua/f2/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Aleluia, aleluia, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1502"
+},
+"completas/pascua/f3/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Aleluia, aleluia, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1503"
+},
+"completas/pascua/f4/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Aleluia, aleluia, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1504"
+},
+"completas/pascua/f5/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Aleluia, aleluia, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1505"
+},
+"completas/pascua/f5/salmo1": {
+"lineas": [
+{
+"t": "salmo",
+"x": "31. [30] Salmoa, 2-6"
+},
+{
+"t": "epigrafe",
+"x": "Nahigabetuaren itxaropenezko otoitza"
+},
+{
+"t": "sentencia",
+"x": "Zure eskuetan, Aita, uzten dut neure bizia (Lk 23, 46)."
+},
+{
+"t": "estrofa",
+"x": "Zugan babesten naiz, Jauna, †\nez nadila behin ere lotsagarri gerta; *\natera nazazu onik, zuzena baitzara. \n\nMakur iezadazu belarria, *\nbizkor, libra nazazu!\nIzan zakizkit harkaitz babesle, *\ngaztelu salbatzaile. \n\nZu baitzaitut neure haitz eta gaztelu, *\nzeure izenaren ohorez eraman nazazu eta gidatu.\nAtera nazazu jarri didaten saretik, *\nZu baitzaitut gordeleku. \n\nZure eskuetan uzten dut neure bizia; *\naska nazazu, Jauna, Jainko leiala.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+},
+{
+"t": "salmo",
+"x": "130. [129] Salmoa"
+},
+{
+"t": "epigrafe",
+"x": "Barru-barrutik dei egiten dizut, Jauna"
+},
+{
+"t": "sentencia",
+"x": "Horrek salbatuko du bere herria bekatuetatik (Mt 1, 21)."
+},
+{
+"t": "estrofa",
+"x": "Barru-barrutik dei egiten dizut, Jauna; *\nentzun, Jauna, nire mintzoa!\nBeude erne zure belarriak *\nnire erregu-oihura. \n\nErruak kontuan badituzu, Jauna, *\nnork iraun zutik, ene Jauna?\nBaina Zuri barkamena dagokizu, *\nZuganako begirunean bizi gaitezen. \n\nJaunaren zain nago, zain dago nire barrena, *\nharen hitza dut itxaro;\nnire barrena Jaunaren irrikaz dago, *\ngau-zaina egunsentiaren irrikaz baino gehiago. \n\nGau-zainak egunsentia bezala, *\nitxaron beza Israelek Jaunagan, \nJaunarena baita maitasuna, *\nharena askapen betea.\nHark askatuko du Israel *\nbere erru guztietatik. \n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1505"
+},
+"completas/pascua/f6/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Aleluia, aleluia, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1506"
+},
+"completas/pascua/f7/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Aleluia, aleluia, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1507"
+},
+"completas/pascua/f7/salmo1": {
+"lineas": [
+{
+"t": "salmo",
+"x": "88. [87] Salmoa, 2-8"
+},
+{
+"t": "epigrafe",
+"x": "Oso gaixorik dagoen gizon baten otoitza"
+},
+{
+"t": "sentencia",
+"x": "Hau da zuen ordua, ilunpearen nagusialdia (Lk 22, 53)."
+},
+{
+"t": "estrofa",
+"x": "Jauna, ene Jainko salbatzailea, *\ngau eta egun deiadar degizut.\nHel bekizu nire otoitza, *\nmakur belarria nire garrasira.\n\nZoritxarrez asea dut barrena, *\nHerio-leizearen ertzean neure bizia;\nzulora doazenekin naute lerrotu, *\nerabat nago indargabetua.\n\nHerioaren esku nago utzia, *\nhilobian dauden hildakoak bezala;\nez zara gehiago haietaz oroitzen, *\nerauziak izan baitira zure eskutik.\n\nZulo sakonera jaurti nauzu, *\nbarren-barreneko ilunpeetara.\nZama astuna dut gainean zure haserrea, *\nzeure atsebake-itsasoan murgiltzen nauzu.\n\nEzagunak urrundu dizkidazu, *\nhaientzat higuingarri bihurtu nauzu;\npreso nago, irtenbiderik gabe, *\nbegiok akiturik nahigabez.\n\nEgun osoan Zuri deika nago, Jauna, *\neskuak luzatuz Zugana.\nEgingo ote duzu miraririk hildakoen alde? *\nJaikiko ote dira itzalak Zu gorestera?\n\nIragartzen ote dute hilobian zure maitasuna, *\nhondamen-leizean zure leialtasuna?\nEzagutzen ote dituzte zure mirariak ilunpean, *\nzure salbamen-asmoa oroitzapenik gabeko lurraldean?\n\nBaina nik, Jauna, deiadar degizut Zuri, *\ngoiz-goizetik doa Zugana nire otoitza. \nJauna, zergatik nauzu zapuzten, *\nzergatik didazu aurpegia gordetzen?\n\nDohakabe naiz eta gaixo haurtzarotik. *\nZure izu-ikarak jasan ditut, akiturik nago.\nzure sumina gainetik igaro zait, *\nzure ikara larriak ezereztu nau.\n\nUholdeak bezala murgildua naukate egun osoan, *\nguztiek batean inguratua.\nUrrundu dituzu nigandik adiskide eta lagunak, *\nilunpeak ditut lagunarte bakar.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1507"
+},
+"completas/pascua/responsorio": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Zure eskuetan, Jauna, uzten du neure bizia. Aleluia, aleluia."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Zure eskuetan, Jauna, uzten du neure bizia. Aleluia, aleluia."
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Askatuko gaituzu, Jauna, Jainko leiala."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Aleluia, aleluia."
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Zure eskuetan, Jauna, uzten du neure bizia. Aleluia, aleluia."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Zure eskuetan, Jauna, uzten du neure bizia. Aleluia, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C3501"
+},
+"completas/responsorio": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Zure eskuetan, Jauna, uzten dut neure bizia."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Zure eskuetan, Jauna, uzten dut neure bizia."
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Askatuko gaituzu, Jauna, Jainko leiala."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Uzten dut neure bizia."
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Aintza Aitari, eta Semeari, eta Espiritu Santuari."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Zure eskuetan, Jauna, uzten dut neure bizia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C3001"
+},
+"completas/solemnidad/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Egin dezagun otoitz."
+},
+{
+"t": "texto",
+"x": "Bisita ezazu, Jauna, bizileku hau: urrun zaitez hemendik etsaiaren segadak; zure aingeru santuak bizi daitezela hemen eta bakean zaindu gaitzatela, eta zure bedeinkazioa gurekin egon dadila beti. Jesu Kristo gure Jaunaren bitartez."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C5002"
+},
+"completas/triduo/jue/responsorio": {
+"lineas": [
+{
+"t": "rubrica",
+"x": "Galde-erantzunaren ordez, txatala esango da:"
+},
+{
+"t": "texto",
+"x": "Kristo gugatik menpeko egin zen heriotzaraino."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C3375"
+},
+"completas/triduo/sab/responsorio": {
+"lineas": [
+{
+"t": "rubrica",
+"x": "Galde-erantzunaren ordez, txatala esango da:"
+},
+{
+"t": "estrofa",
+"x": "Kristo gugatik menpeko egin zen heriotzaraino, gurutzeko heriotzaraino.\nHorregatik Jainkoak goratu egin zuen eta izen guztien gaineko izena eman zion."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C3377"
+},
+"completas/triduo/vie/responsorio": {
+"lineas": [
+{
+"t": "rubrica",
+"x": "Galde-erantzunaren ordez, txatala esango da:"
+},
+{
+"t": "texto",
+"x": "Kristo gugatik menpeko egin zen heriotzaraino, gurutzeko heriotzaraino."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C3376"
+},
+"fijo/completas/conclusion": {
+"lineas": [
+{
+"t": "rubrica",
+"x": "Otoitza bukatutakoan, hemen ematen den bedeinkapena esango da, otoitza bakarka egin bada ere:"
+},
+{
+"t": "estrofa",
+"x": "Gau on eta azken on\neman diezagula\nJainko ahalguztidunak."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C9006"
+},
+"fijo/completas/examen": {
+"lineas": [
+{
+"t": "rubrica",
+"x": "Egoki da une honetan kontzientzia azterketa egitea, eguneko gorabeherak gogoratuz; elkarteko ospakizunean bereziki, mezako damu-otoitzekoan bezala egin daiteke:"
+},
+{
+"t": "rubrica",
+"x": "Batzarburuak esango du:"
+},
+{
+"t": "texto",
+"x": "Senideok: Jainkoak eman digun egun honen azkenera iristean, aitor ditzagun apalki gure bekatuak."
+},
+{
+"t": "rubrica",
+"x": "Une batean, guztiek beren kontzientzia aztertuko dute. Ondorengo eredu hauetakoren bat erabil daiteke:"
+},
+{
+"t": "titulo",
+"x": "I"
+},
+{
+"t": "estrofa",
+"x": "Aitortzen diot Jainko guztiz ahaltsuari, \neta zuei ere bai, ene senideoi, \nbekatu egin dudala gogapen, hitz eta egitez, \neta eginbeharrak ez eginez; \nbai, bekatari naiz. \n\nHorregatik eskatzen diet\nAndre Maria beti Birjinari, \naingeru eta santu guztiei \neta zuei ere bai, ene senideoi,\notoitz egin diezaiozuela nire alde \nJainko gure Jaunari."
+},
+{
+"t": "rubrica",
+"x": "Buru egiten duena apaiza edota diakonoa bada, berak bakarrik esango du barkamen-eskaria, bestela denek batera esango dute:"
+},
+{
+"t": "estrofa",
+"x": "Erruki dakigula Jainko guztiz ahaltsua \neta, gure bekatuak barkaturik, \neraman gaitzala betiko bizira."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+},
+{
+"t": "titulo",
+"x": "II"
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Erruki, Jauna."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Bekatu egin dugu eta."
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Agertu guri, Jauna, zeure bihotz ona."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Eta salba gaitzazu."
+},
+{
+"t": "rubrica",
+"x": "Buru egiten duena apaiza edota diakonoa bada, berak bakarrik esango du barkamen-eskaria, bestela denek batera esango dute:"
+},
+{
+"t": "estrofa",
+"x": "Erruki dakigula Jainko guztiz ahaltsua \neta, gure bekatuak barkaturik, \neraman gaitzala betiko bizira."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+},
+{
+"t": "titulo",
+"x": "III"
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Jesus Jauna, bihotz-urratuak salbatzera bidalia: erruki, Jauna."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Erruki, Jauna."
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Jesus Jauna, bekatariei dei egitera etorria: Kristo, erruki."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Kristo, erruki."
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Jesus Jauna, gure alde otoitz egiteko, Aitaren eskuinaldean zaituguna: erruki, Jauna."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Erruki, Jauna."
+},
+{
+"t": "rubrica",
+"x": "Buru egiten duena apaiza edota diakonoa bada, berak bakarrik esango du barkamen-eskaria, bestela denek batera esango dute:"
+},
+{
+"t": "estrofa",
+"x": "Erruki dakigula Jainko guztiz ahaltsua \neta, gure bekatuak barkaturik, \neraman gaitzala betiko bizira."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C9002"
+},
+"fijo/completas/maria": {
+"lineas": [
+{
+"t": "rubrica",
+"x": "Ondoren, Maria Birjinaren antifona hauetako bat abestuko edota esango da:"
+},
+{
+"t": "titulo",
+"x": "I [IV]"
+},
+{
+"t": "estrofa",
+"x": "Agur, Erregina, ama errukiorra;\ngure bizi, gozo eta itxaropena, agur!\nZuri deiez gaude Evaren ume erbestetuok;\nzuri aiezka, antsiz eta negarrez negar-herri honetan.\nEa, bada, itzul itzazu, gure bitarteko on horrek,\nitzuli gugana zure begi errukitsu horiek,\neta erbeste honen ondoren erakuts iezaguzu Jesus,\nzure sabeleko Seme bedeinkatu hori.\nOi bihotz-bera! Oi errukior! Oi Maria Birjina gozoa!"
+},
+{
+"t": "titulo",
+"x": "II [IV]"
+},
+{
+"t": "estrofa",
+"x": "Salbatzailearen Ama santua,\nzeruko ate irekia, itsasoko izarra,\nlagun iezaiozu zutitu nahi duen zure herri eroriari.\nGabrielen ahotik agurra entzunez\n–lehenik birjina eta gero ere birjina–,\nzuk erne baitzenuen, guztiak harriaraziz,\nzure Ernetzaile santua,\nerruki zakizkigu bekatarioi."
+},
+{
+"t": "titulo",
+"x": "III [IV]"
+},
+{
+"t": "estrofa",
+"x": "Agur, zeruko Erregina,\nagur aingeruen Andre;\ngora zu, sustrai, gora zu, ate,\nzu baitzaitu munduak argiaren sortzaile.\n\nPoztu zaitez, birjina eder,\norotarik ederren;\nagur zuri, guztiz paregabe,\negiozu otoitz Kristori gure alde."
+},
+{
+"t": "titulo",
+"x": "IV [IV]"
+},
+{
+"t": "estrofa",
+"x": "Zure babesera gatoz ihesi, Jainkoaren Ama;\ngure otoitzei ez eman esker txarrik\nbehar ordu estuan;\narrisku guztietatik onez atera gaitzazu,\nBirjina eder eta bedeinkatua."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C9007"
+},
+"fijo/completas/maria-pascua": {
+"lineas": [
+{
+"t": "rubrica",
+"x": "Ondoren, Maria Birjinaren antifona hau abestuko edota esango da:"
+},
+{
+"t": "estrofa",
+"x": "Zeruko Erregina, poztu zaitez, aleluia;\nsabelean ekarri zenuena, aleluia,\npiztu baita, Berak esan bezala, aleluia.\nOtoitz Jainkoari gure alde, aleluia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C9008"
+},
+"fijo/completas/nunc-dimittis": {
+"lineas": [
+{
+"t": "salmo",
+"x": "Nunc dimittis"
+},
+{
+"t": "cita",
+"x": "Lk 2, 29-32"
+},
+{
+"t": "epigrafe",
+"x": "Kristo, nazioen argia eta Israelen ospea"
+},
+{
+"t": "estrofa",
+"x": "Orain utz dezakezu, Jauna, †\nzeure morroi hau bakean hiltzen, *\nZeuk hitzeman bezala.\n\nIkusi dute nire begiok Zugandiko salbamena, *\nherri guztien aurrean Zuk aurkeztua:\n\nnazioak argitzeko argia *\neta zure herri Israelen ospea.\n\nAintza Aitari, eta Semeari, *\neta Espiritu Santuari.\nHasieran zen bezala, orain eta beti, *\ngizaldi eta gizaldietan. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C9005"
+}
+}
