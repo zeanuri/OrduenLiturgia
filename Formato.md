@@ -57,7 +57,7 @@ La `oracion` puede escribirse sin hora (`<base>/oracion`) cuando es la misma tod
 
 | Base | Qué es | Ejemplo |
 |---|---|---|
-| `fijo/…` | Lo que no cambia | `fijo/apertura`, `fijo/benedictus`, `fijo/magnificat`, `fijo/padrenuestro`, `fijo/conclusion`, `fijo/invitatorio/apertura`, `fijo/invitatorio/salmo95` |
+| `fijo/…` | Lo que no cambia. Primero el de la hora (`fijo/laudes/…`, `fijo/visperas/…`) y luego el común; `…/apertura-cuaresma` (sin «Aleluia», Cuaresma y Semana Santa) y `…/conclusion-pascua` (con «Aleluia, aleluia», octava de Pascua y Pentecostés) van delante en su tiempo | `fijo/laudes/apertura`, `fijo/benedictus`, `fijo/magnificat`, `fijo/padrenuestro`, `fijo/visperas/conclusion`, `fijo/invitatorio/apertura`, `fijo/invitatorio/salmo95` |
 | `salterio/s<1-4>/<día>` | Salterio de cuatro semanas; día = `lun` `mar` `mie` `jue` `vie` `sab` `dom` | `salterio/s4/mar/laudes/himno` |
 | `tiempo/ordinario/dom<n>-<ciclo>` | Domingo del Tiempo Ordinario (antífonas del Evangelio por ciclo) | `tiempo/ordinario/dom33-A/laudes/ant_ev` |
 | `tiempo/ordinario/s<n>/oracion` | Oración de la semana | `tiempo/ordinario/s33/oracion` |
@@ -80,9 +80,10 @@ Cada parte busca su texto en una lista de claves, de la más propia a la más ge
 |---|---|---|---|
 | Feria | salterio | tiempo → salterio | tiempo → salterio |
 | Domingo | salterio | tiempo → salterio | tiempo → salterio (en el Tiempo Ordinario, antífona del Evangelio por ciclo y oración de la semana) |
-| Memoria | salterio | tiempo → salterio | propio → comunes → tiempo → salterio |
+| Memoria | propio → salterio | propio → tiempo → salterio | propio → tiempo → salterio; si la feria solo está en batua y el común en bizkaiera, el común |
 | Fiesta y solemnidad | propio → comunes → domingo de la semana I (Laudes) | igual que los salmos | propio → comunes (sin caer al salterio) |
 
+- **Memoria:** como «Liturgia euskaraz», lo propio del santo (con su salmodia, si la tiene: San Martín) y lo demás de la feria; lo que el santo toma del común ya está en su `propio/`.
 - **Memoria libre:** el día trae dos celebraciones, la feria y la memoria marcada como opcional.
 - **Vísperas:** son las primeras vísperas de mañana cuando mañana es domingo o solemnidad (o fiesta del Señor en domingo) y precede a hoy según la tabla de precedencia; si no, las del día.
 - **Semana del salterio:** semana del tiempo módulo 4; Ceniza, IV; Semana Santa, II; Navidad, I hasta el domingo que sigue al 1 de enero y II después. Cotejada con la app oficial «Liturgia euskaraz» en once fechas (`generador/test_generar.py`).
@@ -121,7 +122,7 @@ Sin comprobar todavía con el libro: el reparto exacto de lo propio en las feria
 
 Una parte lleva `clave` y sus `lineas` (y `fuente`, si la pieza la tiene) cuando hay texto, o `falta` con la lista de claves donde se buscó. La app pinta una parte con `falta` vacía, con la nota «Bizkaierazko bertsioaren zain». `visperas_de.cuales` vale `primeras`, `segundas` o `del dia`.
 
-Los nombres de las celebraciones salen por ahora en castellano, tal como los da el motor de calendario; falta ponerlos en bizkaiera.
+`nombre_eu` y la `cabecera` llevan los nombres de «Liturgia euskaraz» (`generador/nombres_eu.json`, por `id`; la feria de la octava de Navidad, que el motor llama como al santo, con `-feria`); lo que no está en la tabla, el de lecturasdeldia.org/eu. Los rangos, con sus palabras («beharrezko oroipena», «festaburua»…), según el rango de nuestro motor.
 
 ### `indice.json`
 

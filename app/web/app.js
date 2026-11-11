@@ -124,7 +124,7 @@ async function vistaDia(fecha, c) {
        <div class="fecha">${fechaLarga(fecha)}</div>
        <h1>${esc(cab.nombre)}</h1>
        ${cab.memoria ? `<div class="memoria"><span class="estrella">&#9733;</span>${esc(cab.memoria)} <em>${esc(cab.memoria_rango)}</em></div>` : ""}
-       <div class="info">${esc(cab.tiempo)} &middot; ${esc(cab.rango)} &middot; ${R.salterio}: ${["", "I", "II", "III", "IV"][dia.semana_salterio]}</div>
+       <div class="info">${esc(cab.tiempo)} &middot; ${esc(cab.rango.charAt(0).toUpperCase() + cab.rango.slice(1))} &middot; ${R.salterio}: ${["", "I", "II", "III", "IV"][dia.semana_salterio]}</div>
      </div>${fichas}
      <ul class="horas">${orden.map(fila).join("")}
        <li><a href="${esc(dia.misa)}" target="_blank" rel="noopener"><span>${R.misa}<small>lecturasdeldia.org</small></span></a></li></ul>
@@ -134,9 +134,14 @@ async function vistaDia(fecha, c) {
 const enVentana = f => !indice || (f >= indice.desde && f <= indice.hasta);
 
 function lineas(ls) {
-  // Una marca (V., R., Ant.) se pinta en el mismo renglón que el texto que la sigue.
+  // Una marca (V., R., Ant.) se pinta en el mismo renglón que el texto que la sigue. Versículo y
+  // respuesta salen siempre «V/.» y «R/.»: en batua la marca viene sola («V.») y el texto en la
+  // línea siguiente; en bizkaiera, marca y texto en la misma («V/. Zure zintzoek…»).
   let html = "", marca = "";
   for (const l of ls || []) {
+    const vr = (l.t === "v" || l.t === "r") && /^([VR])\/?\.\s*([\s\S]*)$/.exec(l.x);
+    if (vr && vr[2]) { html += `<p class="l-texto">${marca}<span class="marca">${vr[1]}/.</span>${esc(vr[2])}</p>`; marca = ""; continue; }
+    if (vr) { marca += `<span class="marca">${vr[1]}/.</span>`; continue; }
     if (l.t === "v" || l.t === "r" || l.t === "ant") { marca += `<span class="marca">${esc(l.x)}</span>`; continue; }
     html += `<p class="l-${l.t}">${l.t === "texto" || l.t === "estrofa" ? marca : ""}${esc(l.x)}</p>`;
     if (l.t === "texto" || l.t === "estrofa") marca = "";

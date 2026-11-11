@@ -32,19 +32,33 @@ import liturgia  # noqa: E402  (copia del motor de calendario de la CEE; ver REA
 import liturgical_names_eu as eu  # noqa: E402  (nombres en euskera, los de lecturasdeldia.org/eu)
 
 # Nombres de las celebraciones como los da «Liturgia euskaraz» (decisión del usuario,
-# 11-nov-2026), por `id`: {"nombre": …, "rango": …}. Lo que no está aquí lo traduce `eu`.
+# 11-nov-2026), por `id` (o `clave_dia`): {"nombre": …, "rango": …}; los saca
+# referencia/nombres_tabla.py del proyecto. Lo que no está aquí lo traduce `eu`.
 _NOMBRES = Path(__file__).with_name("nombres_eu.json")
 NOMBRES_EU = json.loads(_NOMBRES.read_text(encoding="utf-8")) if _NOMBRES.exists() else {}
 
 
-def nombre_eu(nombre_es: str, traducido: str) -> str:
-    n = NOMBRES_EU.get(slug(nombre_es))
+def nombre_eu(clave: str, traducido: str) -> str:
+    n = NOMBRES_EU.get(clave)
     return n["nombre"] if n else traducido
 
 
-def rango_eu(nombre_es: str, rango_es: str) -> str:
-    n = NOMBRES_EU.get(slug(nombre_es))
-    return n["rango"] if n and n["rango"] else eu.localize_rank(rango_es)
+# Rango en euskera con las palabras de «Liturgia euskaraz». Sale del rango de nuestro motor y no
+# de la tabla, para que diga lo mismo que el oficio que se compone (Santa Teresa: memoria aquí, jaia allí).
+RANGOS_EU = {"Solemnidad": "festaburua", "Fiesta": "jaia", "Domingo": "igandea",
+             "Memoria Obligatoria": "beharrezko oroipena", "Memoria Libre": "nahierazko oroipena",
+             "Feria": "asteguna", "Feria privilegiada": "lehentasunezko asteguna", "Conmemoración": "oroitzapena"}
+
+
+def rango_eu(rango_es: str) -> str:
+    return RANGOS_EU.get(rango_es) or eu.localize_rank(rango_es)
+
+
+def clave_dia(r: dict) -> str:
+    """Clave del nombre del día. En la octava de Navidad el motor llama a la feria como al santo
+    del día («San Silvestre I, papa», rango Feria): la feria va aparte, con «-feria»."""
+    k = slug(r["name"])
+    return k + "-feria" if r.get("memorial") == r["name"] and tipo_de(r["rank"]) == "feria" else k
 
 DIAS_ATRAS = 40
 DIAS_ADELANTE = 365
@@ -166,9 +180,11 @@ def dia_liturgico(d: date) -> dict:
         c["tipo"] = tipo_de(c["rango"])
         c["id"] = slug(c["nombre"])
         # Nombre en euskera: el del día por `localize_name`; el de un santo, por `localize_memorial`.
-        c["nombre_eu"] = nombre_eu(c["nombre"], eu.localize_name(c["nombre"]) if c["nombre"] == r["name"]
+        es_dia = c["nombre"] == r["name"] and not c["opcional"]
+        clave = clave_dia(r) if es_dia else c["id"]
+        c["nombre_eu"] = nombre_eu(clave, eu.localize_name(c["nombre"]) if es_dia
                                    else eu.localize_memorial(c["nombre"]))
-        c["rango_eu"] = rango_eu(c["nombre"], c["rango"])
+        c["rango_eu"] = rango_eu(c["rango"])
     info["nivel"] = liturgia.get_precedence_level(
         principal["nombre"], principal["rango"], r["season"], d, d.weekday() == 6)
     return info
@@ -201,10 +217,28 @@ def bases_del_tiempo(info: dict) -> list[str]:
             "tiempo/pascua/comun-ascension" if d > ascension else "tiempo/pascua/comun"]
 
 
+def fijas(info: dict, cel: dict, hora: str, parte: str) -> list[str]:
+    """Una parte fija: la de la hora (`fijo/laudes/apertura`) antes que la común (`fijo/apertura`).
+    Cambian con el tiempo la apertura, sin «Aleluia» en Cuaresma y Semana Santa, y la conclusión,
+    con «Aleluia, aleluia» en la octava de Pascua y Pentecostés: esa variante va delante y, si no la
+    hay en la hora, la propia del día (en batua) antes que la de todo el año."""
+    if parte.startswith("fijo/invitatorio/"):
+        return [parte]
+    h = "visperas" if hora == "visperas1" else hora
+    nombre = parte.removeprefix("fijo/")
+    claves = [f"fijo/{h}/{nombre}", parte]
+    pascua = (info["tiempo"] == "pascua" and info["semana"] == 1) or cel["id"] == "domingo-de-pentecostes"
+    if nombre == "apertura" and info["tiempo"] in ("cuaresma", "semana-santa"):
+        claves.insert(0, f"fijo/{h}/apertura-cuaresma")
+    if nombre == "conclusion" and pascua:
+        claves[:0] = [f"fijo/{h}/conclusion-pascua", f"propio/{cel['id']}/{hora}/{parte}"]
+    return claves
+
+
 def candidatas(info: dict, cel: dict, hora: str, parte: str) -> list[str]:
     """Claves donde buscar `parte` de `hora`, de la más propia a la más general."""
     if parte.startswith("fijo/"):
-        return [parte]
+        return fijas(info, cel, hora, parte)
     tipo = cel["tipo"]
     dia = DIAS[info["fecha"].weekday()]
     hora_sal = "visperas1" if hora == "visperas1" and dia == "dom" else hora.replace("visperas1", "visperas")
@@ -218,12 +252,13 @@ def candidatas(info: dict, cel: dict, hora: str, parte: str) -> list[str]:
         if es_salmo or parte.startswith("ant") and parte != "ant_ev":
             # Sin salmodia propia: en Laudes, la del domingo de la semana I.
             bases.append("salterio/s1/dom" if hora == "laudes" else salterio)
-    elif es_salmo:
-        bases = [salterio]                       # ferias, domingos y memorias: salmos del salterio
-    elif parte in ("ant1", "ant2", "ant3"):
-        bases = tiempo + [salterio]
+    # Memorias, como «Liturgia euskaraz» (decisión delegada por el usuario, 11-nov-2026): lo propio
+    # del santo, si lo tiene (también salmodia propia, como San Martín); lo demás, de la feria. Sin
+    # caer a los comunes: lo que el santo toma del común ya está en su `propio/`.
     elif tipo == "memoria":
-        bases = propio + tiempo + [salterio]
+        bases = [f"propio/{cel['id']}"] + ([salterio] if es_salmo else tiempo + [salterio])
+    elif es_salmo:
+        bases = [salterio]                       # ferias y domingos: salmos del salterio
     else:
         bases = tiempo + [salterio]
 
@@ -274,6 +309,15 @@ def componer(info: dict, cel: dict, hora: str, textos: dict, faltan: dict) -> li
     for parte in ORDEN["visperas" if hora == "visperas1" else hora]:
         claves = candidatas(info, cel, hora, parte)
         clave, pieza = resolver(textos, claves)
+        if cel["tipo"] == "memoria" and not parte.startswith(("fijo/", "salmo")) and (
+                pieza is None or pieza.get("batua") and not clave.startswith("propio/")):
+            # El bizkaiera manda: si la feria solo está en batua y el común está en bizkaiera, el común.
+            # Lo propio del santo, aunque sea batua, se queda (como en las fiestas).
+            h = "visperas" if hora == "visperas1" else hora
+            comun = [f"comunes/{c}/{h}/{parte}" for c in comunes_de(cel["nombre"])]
+            c2, p2 = resolver(textos, comun)
+            if p2 is not None and not p2.get("batua"):
+                clave, pieza, claves = c2, p2, claves + comun
         nombre = parte.split("/")[-1]
         if pieza is None:
             faltan.setdefault(claves[-1], set()).add(claves[0])
@@ -318,12 +362,12 @@ def generar_dia(d: date, textos: dict, faltan: dict) -> dict:
         "color": r["color"], "celebraciones": celebraciones, "misa": WEB_MISA.format(d),
         # Cabecera del día en euskera, como la de lecturasdeldia.org/eu.
         "cabecera": {
-            "nombre": nombre_eu(r["name"], eu.localize_name(r["name"])), "tiempo": eu.localize_season(r["season"]),
-            "rango": rango_eu(r["name"], r["rank"]), "ciclo": eu.localize_sunday_cycle(r["sunday_cycle"]),
+            "nombre": nombre_eu(clave_dia(r), eu.localize_name(r["name"])), "tiempo": eu.localize_season(r["season"]),
+            "rango": rango_eu(r["rank"]), "ciclo": eu.localize_sunday_cycle(r["sunday_cycle"]),
             "ciclo_ferial": eu.localize_weekday_cycle(r["weekday_cycle"]) if r.get("weekday_cycle") else "",
-            "memoria": nombre_eu(r["memorial"], eu.localize_memorial(r["memorial"]))
-                       if r.get("memorial") and r["memorial"] != r["name"] else "",
-            "memoria_rango": rango_eu(r["memorial"], r["memorial_rank"]) if r.get("memorial_rank") else "",
+            "memoria": nombre_eu(slug(r["memorial"]), eu.localize_memorial(r["memorial"]))
+                       if r.get("memorial") and (r["memorial"] != r["name"] or clave_dia(r) in NOMBRES_EU) else "",
+            "memoria_rango": rango_eu(r["memorial_rank"]) if r.get("memorial_rank") else "",
         },
     }
 

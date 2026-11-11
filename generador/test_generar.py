@@ -54,15 +54,40 @@ def test_memoria_libre_sale_como_opcional_y_la_feria_como_principal():
 def test_cadena_de_una_memoria_va_de_lo_propio_al_salterio():
     info = generar.dia_liturgico(date(2026, 11, 10))
     cel = info["celebraciones"][0]
+    # Como «Liturgia euskaraz»: lo propio del santo y, si no, la feria (sin caer a los comunes).
     assert generar.candidatas(info, cel, "laudes", "himno") == [
         "propio/san-leon-magno-papa-y-doctor/laudes/himno",
-        "comunes/doctores/laudes/himno",
-        "comunes/pastores/laudes/himno",
-        "comunes/santos-varones/laudes/himno",
         "salterio/s4/mar/laudes/himno",
     ]
-    # Los salmos de una memoria son siempre los del salterio.
-    assert generar.candidatas(info, cel, "laudes", "salmo1") == ["salterio/s4/mar/laudes/salmo1"]
+    # Salmodia propia si el santo la tiene (San Martín); si no, la del salterio.
+    assert generar.candidatas(info, cel, "laudes", "salmo1") == [
+        "propio/san-leon-magno-papa-y-doctor/laudes/salmo1", "salterio/s4/mar/laudes/salmo1"]
+
+
+def test_memoria_prefiere_el_comun_en_bizkaiera_a_la_feria_en_batua():
+    info = generar.dia_liturgico(date(2026, 11, 10))
+    cel = info["celebraciones"][0]
+    textos = {"salterio/s4/mar/laudes/preces": {"batua": True, "lineas": [{"t": "texto", "x": "batua"}]},
+              "comunes/doctores/laudes/preces": {"lineas": [{"t": "texto", "x": "bizkaiera"}]}}
+    partes = {p["parte"]: p for p in generar.componer(info, cel, "laudes", textos, {})}
+    assert partes["preces"]["clave"] == "comunes/doctores/laudes/preces"
+    # Lo propio del santo, aunque esté en batua, se queda.
+    textos["propio/san-leon-magno-papa-y-doctor/laudes/preces"] = {"batua": True, "lineas": []}
+    partes = {p["parte"]: p for p in generar.componer(info, cel, "laudes", textos, {})}
+    assert partes["preces"]["clave"] == "propio/san-leon-magno-papa-y-doctor/laudes/preces"
+
+
+def test_partes_fijas_por_hora_y_tiempo():
+    cuaresma = generar.dia_liturgico(date(2027, 2, 16))
+    c = cuaresma["celebraciones"][0]
+    assert generar.candidatas(cuaresma, c, "laudes", "fijo/apertura") == [
+        "fijo/laudes/apertura-cuaresma", "fijo/laudes/apertura", "fijo/apertura"]
+    octava = generar.dia_liturgico(date(2027, 3, 30))
+    o = octava["celebraciones"][0]
+    assert generar.candidatas(octava, o, "visperas", "fijo/conclusion") == [
+        "fijo/visperas/conclusion-pascua", f"propio/{o['id']}/visperas/fijo/conclusion",
+        "fijo/visperas/conclusion", "fijo/conclusion"]
+    assert generar.candidatas(octava, o, "visperas1", "fijo/magnificat") == ["fijo/visperas/magnificat", "fijo/magnificat"]
 
 
 def test_domingo_busca_antes_la_antifona_de_su_ciclo():
@@ -115,10 +140,15 @@ def test_cabecera_en_euskera_y_color_del_tiempo_como_lecturasdeldia():
     dia = generar.generar_dia(date(2026, 11, 10), {}, {})
     assert dia["color"] == "Verde"                                   # el del tiempo, no el del santo
     assert dia["cabecera"] == {
-        "nombre": "Urtean Zeharreko XXXII. Asteko Asteartea", "tiempo": "Urtean Zehar", "rango": "Asteguna",
-        "ciclo": "A zikloa", "ciclo_ferial": "II urtea",
-        "memoria": "Leon Magno aita santua eta doktorea", "memoria_rango": "Nahitaezko Oroitzapena",
+        # nombres y rangos de «Liturgia euskaraz» (generador/nombres_eu.json)
+        "nombre": "Urtean Zeharreko hogeita hamabigarren asteko asteartea", "tiempo": "Urtean Zehar",
+        "rango": "asteguna", "ciclo": "A zikloa", "ciclo_ferial": "II urtea",
+        "memoria": "San Leon Handia, aita santua eta eliz irakaslea", "memoria_rango": "beharrezko oroipena",
     }
-    assert dia["celebraciones"][0]["nombre_eu"] == "Leon Magno aita santua eta doktorea"
+    assert dia["celebraciones"][0]["nombre_eu"] == "San Leon Handia, aita santua eta eliz irakaslea"
     solemnidad = generar.generar_dia(date(2026, 12, 8), {}, {})
-    assert solemnidad["cabecera"]["nombre"] == "Andre Maria Sortzez Garbia" and solemnidad["cabecera"]["memoria"] == ""
+    assert solemnidad["cabecera"]["nombre"] == "Maria Birjina Dohatsuaren Sortze Garbia" and solemnidad["cabecera"]["memoria"] == ""
+    # Octava de Navidad: el motor llama a la feria como al santo; la feria lleva su nombre propio.
+    octava = generar.generar_dia(date(2026, 12, 31), {}, {})
+    assert octava["cabecera"]["nombre"] == "Eguberri-Zortziurreneko VII. eguna"
+    assert octava["cabecera"]["memoria"] == "San Silvestre I.a, aita santua"

@@ -1,0 +1,207 @@
+{
+ "fijo/laudes/apertura": {
+  "lineas": [
+   {
+    "t": "v",
+    "x": "V/. Zatozkit lagun, ene Jainko."
+   },
+   {
+    "t": "r",
+    "x": "R/. Jauna, zatoz laster ni laguntzera."
+   },
+   {
+    "t": "v",
+    "x": "V/. Aintza Aitari eta Semeari,"
+   },
+   {
+    "t": "texto",
+    "x": "eta Espiritu Santuari."
+   },
+   {
+    "t": "texto",
+    "x": "Lehen lez, orain eta beti,"
+   },
+   {
+    "t": "texto",
+    "x": "eta amaibako egunetan. Amen. Aleluia."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/09/jaunaren-bateoa-ii.html"
+ },
+ "fijo/visperas/apertura": {
+  "ref": "fijo/laudes/apertura"
+ },
+ "fijo/laudes/apertura-cuaresma": {
+  "lineas": [
+   {
+    "t": "v",
+    "x": "V/. Zatozkit lagun, ene Jainko."
+   },
+   {
+    "t": "r",
+    "x": "R/. Jauna, zatoz laster ni laguntzera."
+   },
+   {
+    "t": "v",
+    "x": "V/. Aintza Aitari eta Semeari,"
+   },
+   {
+    "t": "texto",
+    "x": "eta Espiritu Santuari."
+   },
+   {
+    "t": "texto",
+    "x": "Lehen lez, orain eta beti,"
+   },
+   {
+    "t": "texto",
+    "x": "eta amaibako egunetan. Amen."
+   }
+  ],
+  "fuente": "https://bezperak-urteanzehar.blogspot.com/2026/08/i-astelehena.html"
+ },
+ "fijo/visperas/apertura-cuaresma": {
+  "ref": "fijo/laudes/apertura-cuaresma"
+ },
+ "fijo/laudes/benedictus": {
+  "lineas": [
+   {
+    "t": "cita",
+    "x": "Lk 1, 68-79"
+   },
+   {
+    "t": "estrofa",
+    "x": "Bedeinkatua Jauna, Israelgo Jainkoa\nagertu eta bere herria askatu dauana;\nsalbamen indarra deusku emon,\nbere morroi Dabiden etxean."
+   },
+   {
+    "t": "estrofa",
+    "x": "Halan eukan-eta berbea emonda bere santuen bidez,\nbehinola bere profeta ebazanen bidez;\nsalbamena gure arerioen menpetik,\ngorroto deuskuen guztien eskutik."
+   },
+   {
+    "t": "estrofa",
+    "x": "Horrela egin deutse gure gurasoei erruki,\nbere alkarte santuaz oroiturik;\negin eutson-eta gure guraso Abrahami zin-hitza,\nBerak emongo euskula."
+   },
+   {
+    "t": "estrofa",
+    "x": "Gure etsaien eskutik gu atarata, bildur barik,\nizan gaitezan Haren zerbitzari;\nzintzo eta zuzen Beraren aurrean,\ngure egun guztietan."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zu, barriz, seina,\nGoi-goikoaren profeta deitua izango zara,\nJaunaren aurpegi aurretik joango zara-eta,\nHari bidea prestatzera;\nerakustearren Haren herriari salbamena,\neuren pekatuen parkamena."
+   },
+   {
+    "t": "estrofa",
+    "x": "Gure Jainkoaren errai errukitsuekaitik,\nagertuko jaku Goiz-eguzkia ganetatik;\nilunpetan eta herio-gerizpean dagozanei argi egitera,\ngure oinok bake-bidean zuzentzera."
+   },
+   {
+    "t": "estrofa",
+    "x": "Aintza Aitari eta Semeari,\neta Espiritu Santuari.\nLehen lez, orain eta beti,\neta amaibako egunetan. Amen."
+   }
+  ],
+  "fuente": "https://gorespenak-garizuman.blogspot.com/2025/02/eguazten-santua.html"
+ },
+ "fijo/laudes/conclusion": {
+  "lineas": [
+   {
+    "t": "v",
+    "x": "V/. Bedeinkatu gaizala Jainko ahalguztidunak: Aitak eta Semeak eta Espiritu Santuak."
+   },
+   {
+    "t": "r",
+    "x": "R/. Amen."
+   },
+   {
+    "t": "v",
+    "x": "V/. Goazen Jaunaren bakean."
+   },
+   {
+    "t": "r",
+    "x": "R/. Eskerrak Jainkoari."
+   }
+  ],
+  "fuente": "https://abendukogorespenak.blogspot.com/2024/12/abenduaren-24.html"
+ },
+ "fijo/laudes/conclusion-pascua": {
+  "lineas": [
+   {
+    "t": "v",
+    "x": "V/. Bedeinkatu gaizala Jainko ahalguztidunak: Aitak eta Semeak eta Espiritu Santuak."
+   },
+   {
+    "t": "r",
+    "x": "R/. Amen."
+   },
+   {
+    "t": "v",
+    "x": "V/. Goazen Jaunaren bakean. Aleluia, aleluia."
+   },
+   {
+    "t": "r",
+    "x": "R/. Eskerrak Jainkoari. Aleluia, aleluia."
+   }
+  ],
+  "fuente": "https://pazkogorespenak.blogspot.com/2025/02/bigarren-domekea.html"
+ },
+ "fijo/visperas/magnificat": {
+  "lineas": [
+   {
+    "t": "cita",
+    "x": "Lk 1, 46-55"
+   },
+   {
+    "t": "estrofa",
+    "x": "Handiesten dau nire arimak Jauna,\npozaren pozez daukat nire barrua;\nJainkoa da-ta nire salbamena,\nikusi dau-ta mirabe honen ezereztasuna."
+   },
+   {
+    "t": "estrofa",
+    "x": "Dohatsu deituko nabe gaurtik gizaldi guztiek,\nhandiak egin deustaz-eta Ahalguztidunak:\nSantua da Haren izena,\neta Haren errukia, gizaldiz-gizaldi †\nbildur deutsoenengana."
+   },
+   {
+    "t": "estrofa",
+    "x": "Bere besoaren indarra erabili dau,\nburu harroak triskatu dauz;\nbota dauz euren aulkitik handikiak,\neta gora jaso dauz ezerezak;\nondasunez bete dauz gosez egozanak\neta esku hutsik bialdu asko eukenak."
+   },
+   {
+    "t": "estrofa",
+    "x": "Bere gain hartu dau Israel, bere morroia,\nerrukia gogoratu jakola;\ngure gurasoei halan eutsen emon berbea,\nAbrahami eta ondorengoei betiko esana."
+   },
+   {
+    "t": "estrofa",
+    "x": "Aintza Aitari eta Semeari,\neta Espiritu Santuari.\nLehen lez, orain eta beti,\neta amaibako egunetan. Amen."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/09/jaunaren-bateoa-ii.html"
+ },
+ "fijo/visperas/conclusion": {
+  "lineas": [
+   {
+    "t": "v",
+    "x": "V/. Jauna zuekin."
+   },
+   {
+    "t": "r",
+    "x": "R/. Eta zure Espirituarekin"
+   },
+   {
+    "t": "v",
+    "x": "V/. Bedeinkatu zaizela Jainko ahalguztidunak:"
+   },
+   {
+    "t": "texto",
+    "x": "Aitak eta Semeak eta Espiritu Santuak."
+   },
+   {
+    "t": "r",
+    "x": "R/. Amen."
+   },
+   {
+    "t": "v",
+    "x": "V/. Zoaze Jaunaren bakean."
+   },
+   {
+    "t": "r",
+    "x": "R/. Eskerrak Jainkoari."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/11/gabonetako-2-domekea-ii.html"
+ }
+}
