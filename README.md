@@ -2,7 +2,7 @@
 
 Liturgia de las Horas en euskera bizkaino para Android: **Invitatorio, Laudes y Vísperas**, con su calendario. Las Completas se añadirán más adelante.
 
-**Estado: en desarrollo, con textos de PRUEBA.** Lo que hoy hay en `textos/prueba/` es relleno marcado como tal, no textos litúrgicos.
+**Estado: en desarrollo.** Laudes y Vísperas llevan los textos en bizkaiera que su autor publica en sus blogs de Gorespenak y Bezperak, con su permiso (`textos/bizkaiera/`; cada pieza lleva en `fuente` la entrada del blog de donde sale). Lo que todavía no tiene versión en bizkaiera sale vacío con la nota «Bizkaierazko bertsioaren zain»: hoy, el Invitatorio, las partes fijas (apertura, Benedictus y Magníficat, Padre nuestro, conclusión) y parte de los himnos.
 
 ## Cómo funciona
 
@@ -18,7 +18,7 @@ Las lecturas de la misa enlazan con [lecturasdeldia.org/eu](https://lecturasdeld
 | Carpeta | Qué hay |
 |---|---|
 | `textos/` | Los textos. Formato y claves en [`Formato.md`](Formato.md) |
-| `generador/` | `generar.py` (los días), `relleno.py` (textos de prueba), `liturgia.py` (motor de calendario) y las pruebas |
+| `generador/` | `generar.py` (los días), `relleno.py` (textos de prueba, para ensayar sin los reales), `liturgia.py` (motor de calendario) y las pruebas |
 | `app/web/` | La app: HTML, CSS y JavaScript sin dependencias |
 | `app/android/` | Envoltorio de Android: un WebView que lleva dentro `app/web` y una copia de los días |
 | `.github/workflows/` | `generar.yml` (pruebas, generación nocturna y publicación) y `apk.yml` (compila el APK de pruebas) |
@@ -28,7 +28,7 @@ Las lecturas de la misa enlazan con [lecturasdeldia.org/eu](https://lecturasdeld
 ```
 python -m pytest generador -q          # pruebas
 python generador/generar.py            # escribe salida/ (no va a git)
-python generador/relleno.py            # rehace los textos de prueba de lo que falte
+python generador/relleno.py            # textos de prueba de lo que falte (solo para ensayos; no se suben)
 python -m http.server 8765             # y abrir http://127.0.0.1:8765/app/web/index.html?base=/salida/
 ```
 

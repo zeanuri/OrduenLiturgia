@@ -22,6 +22,7 @@ Cualquier número de ficheros `.json` en cualquier subcarpeta. Cada fichero es u
 ```
 
 - `titulo` (opcional) y `lineas` (lista ordenada).
+- `fuente` (opcional): de dónde sale el texto (en `textos/bizkaiera/`, la URL de la entrada del blog del autor). El generador la copia a la salida.
 - `ref`: la pieza remite a otra clave. Sirve para escribir cada salmo una sola vez (`salmos/101`) y citarlo desde cada día.
 
 ### Tipos de línea (`t`)
@@ -117,7 +118,7 @@ Sin comprobar todavía con el libro: el reparto exacto de lo propio en las feria
 }
 ```
 
-Una parte lleva `clave` y sus `lineas` cuando hay texto, o `falta` con la lista de claves donde se buscó. `visperas_de.cuales` vale `primeras`, `segundas` o `del dia`.
+Una parte lleva `clave` y sus `lineas` (y `fuente`, si la pieza la tiene) cuando hay texto, o `falta` con la lista de claves donde se buscó. La app pinta una parte con `falta` vacía, con la nota «Bizkaierazko bertsioaren zain». `visperas_de.cuales` vale `primeras`, `segundas` o `del dia`.
 
 Los nombres de las celebraciones salen por ahora en castellano, tal como los da el motor de calendario; falta ponerlos en bizkaiera.
 

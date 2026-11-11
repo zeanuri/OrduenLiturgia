@@ -13,7 +13,7 @@ const R = {
   app: "Orduen Liturgia", invitatorio: "Dei-salmoa", laudes: "Gorespenak", visperas: "Bezperak",
   primeras: "Lehenengo Bezperak", misa: "Mezako irakurgaiak", calendario: "Egutegia", hoy: "Gaur",
   prueba: "PROBAKO TESTUAK — ez dira liturgia-testuak", sinDatos: "Ezin izan da eguna kargatu.",
-  sinConexion: "Konexino barik: gordetako azkena erakusten da.", falta: "Testua falta da",
+  sinConexion: "Konexino barik: gordetako azkena erakusten da.", falta: "Bizkaierazko bertsioaren zain",
   salterio: "Salmutegiko astea", opcional: "aukerakoa",
   // Días y meses en batua, como el resto de rótulos de lecturasdeldia.org/eu.
   dias: ["Astelehena", "Asteartea", "Asteazkena", "Osteguna", "Ostirala", "Larunbata", "Igandea"],
@@ -145,7 +145,7 @@ function lineas(ls) {
 }
 
 function parteHtml(p) {
-  if (p.falta) return `<section><p class="falta">${R.falta}: ${esc(p.falta[p.falta.length - 1])}</p></section>`;
+  if (p.falta) return `<section><p class="falta" title="${esc(p.falta[0])}">${R.falta}</p></section>`;
   return `<section data-parte="${p.parte}">${p.titulo ? `<p class="l-titulo">${esc(p.titulo)}</p>` : ""}${lineas(p.lineas)}</section>`;
 }
 

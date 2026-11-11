@@ -264,7 +264,7 @@ def componer(info: dict, cel: dict, hora: str, textos: dict, faltan: dict) -> li
             partes.append({"parte": nombre, "falta": claves})
         else:
             partes.append({"parte": nombre, "clave": clave,
-                           **{k: pieza[k] for k in ("titulo", "lineas", "prueba") if k in pieza}})
+                           **{k: pieza[k] for k in ("titulo", "lineas", "prueba", "fuente") if k in pieza}})
     return partes
 
 
