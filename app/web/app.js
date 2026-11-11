@@ -194,7 +194,8 @@ function vistaCalendario(mes) {
   $("vista").innerHTML = avisos() +
     `<div class="mes"><button data-ir="#/egutegia/${otro(-1)}" aria-label="Aurreko hilea">&larr;</button>
        <span>${R.meses[m - 1]} ${a}</span><button data-ir="#/egutegia/${otro(1)}" aria-label="Hurrengo hilea">&rarr;</button></div>
-     <div class="rejilla">${celdas}</div>`;
+     <div class="rejilla">${celdas}</div>
+     <nav class="pasos"><a href="#/">${R.hoy}</a></nav>`;
 }
 
 // ── Navegación ────────────────────────────────────────────────────────────
