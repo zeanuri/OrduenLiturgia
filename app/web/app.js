@@ -290,6 +290,8 @@ document.addEventListener("click", e => {
   if ("tema" in b.dataset) { localStorage.setItem("tema", document.documentElement.dataset.tema === "oscuro" ? "claro" : "oscuro"); ajustes(); }
 });
 $("btn-cal").onclick = () => { location.hash = "#/egutegia/" + hoyIso().slice(0, 7); };
+// «Gaur»: las oraciones de hoy. Si ya se está en «#/», no hay hashchange: se vuelve a pintar.
+$("btn-gaur").onclick = () => { if (location.hash === "#/" || location.hash === "") navegar(); else location.hash = "#/"; };
 window.addEventListener("hashchange", navegar);
 
 // La app puede pasar días abierta en segundo plano: al volver a ella en otro día se carga de nuevo,
@@ -302,6 +304,10 @@ document.addEventListener("visibilitychange", () => {
 
 // Guarda las pantallas para abrir la app sin conexión (solo en la versión publicada).
 if ("serviceWorker" in navigator && location.hostname.endsWith("github.io")) navigator.serviceWorker.register("sw.js");
+
+// Al arrancar, siempre el día de hoy (decisión del usuario, 13-nov-2026): el WebView restaura la última
+// dirección (`restoreState` tras cerrar Android la app en segundo plano), y con ella el día que se miraba.
+if (location.hash && location.hash !== "#/") history.replaceState(null, "", location.pathname + location.search + "#/");
 
 ajustes();
 navegar().then(async () => {                       // en segundo plano: la semana que viene, para leer sin conexión
