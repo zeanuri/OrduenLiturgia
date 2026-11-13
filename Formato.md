@@ -93,14 +93,15 @@ Cada parte busca su texto en una lista de claves, de la más propia a la más ge
 
 | Día | Salmos | Antífonas de los salmos | Himno, lectura, responsorio, antífona del Evangelio, preces, oración |
 |---|---|---|---|
-| Feria | salterio | tiempo → salterio | tiempo → salterio |
-| Domingo | salterio | tiempo → salterio | tiempo → salterio (en el Tiempo Ordinario, antífona del Evangelio por ciclo y oración de la semana) |
-| Memoria | propio → salterio | propio → tiempo → salterio | propio → tiempo → salterio; si la feria solo está en batua y el común en bizkaiera, el común |
+| Feria | tiempo → salterio | tiempo → salterio | tiempo → salterio |
+| Domingo | tiempo → salterio | tiempo → salterio | tiempo → salterio (en el Tiempo Ordinario, antífona del Evangelio por ciclo y oración de la semana) |
+| Memoria | propio → tiempo → salterio | propio → tiempo → salterio | propio → tiempo → salterio; si la feria solo está en batua y el común en bizkaiera, el común |
 | Fiesta y solemnidad | propio → comunes → domingo de la semana I (Laudes) | igual que los salmos | propio → comunes (sin caer al salterio) |
 
 - **Memoria:** como «Liturgia euskaraz», lo propio del santo (con su salmodia, si la tiene: San Martín) y lo demás de la feria; lo que el santo toma del común ya está en su `propio/`.
-- **Memoria libre:** el día trae dos celebraciones, la feria y la memoria marcada como opcional.
-- **Vísperas:** son las primeras vísperas de mañana cuando mañana es domingo o solemnidad (o fiesta del Señor en domingo) y precede a hoy según la tabla de precedencia; si no, las del día.
+- **Memoria libre:** el día trae dos celebraciones, la feria y la memoria marcada como opcional. Si el calendario da varios santos alternativos («San Beda / San Gregorio VII / Santa M. Magdalena de Pazzi»: se elige uno), cada santo es su propia celebración opcional, con su `id` (`propio/san-beda-el-venerable/…`), su nombre y sus textos. Solo se parte por « / »: «Santos Juan Fisher y Tomás Moro» es una sola.
+- **Salmos del tiempo:** los días con salmodia propia la toman del tiempo (Miércoles de Ceniza, octava de Pascua y su domingo, octava de Navidad, que reza la del domingo de la semana I desde `tiempo/navidad/comun`). No cuentan para los salmos las carpetas por fecha (`tiempo/adviento/12-21`, `tiempo/navidad/01-04`: el blog escribe ahí los salmos del día de la semana de aquel año) ni `tiempo/navidad/comun` fuera de diciembre. Si el salmo del tiempo solo está en batua y el salterio tiene el mismo salmo o cántico en bizkaiera, sale el del salterio; «el mismo» es el mismo número de salmo o el mismo libro y capítulo del cántico, y si no se puede saber se queda el del tiempo (en Cuaresma el cántico dominical de Vísperas es 1 Pe 2, no el Ap 19 del salterio).
+- **Vísperas:** son las primeras vísperas de mañana cuando mañana es domingo o solemnidad (o fiesta del Señor en domingo) y precede a hoy según la tabla de precedencia; si no, las del día. Dos excepciones: el Triduo y el domingo de Pascua no tienen primeras vísperas (el Miércoles Santo y el Sábado Santo rezan las suyas), y a igual nivel gana el domingo de mañana (sábado después de Ceniza, sábado de la octava de Pascua).
 - **Semana del salterio:** semana del tiempo módulo 4; Ceniza, IV; Semana Santa, II; Navidad, I hasta el domingo que sigue al 1 de enero y II después. Cotejada con la app oficial «Liturgia euskaraz» en once fechas (`generador/test_generar.py`).
 - **Qué común corresponde a cada santo** se deduce del nombre («obispo», «mártir», «virgen»…). Es una heurística: hay que revisarla con el libro.
 

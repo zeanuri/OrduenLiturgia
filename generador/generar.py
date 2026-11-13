@@ -206,16 +206,23 @@ def dia_liturgico(d: date) -> dict:
     opcionales = []
     mem, rango_mem = r.get("memorial"), r.get("memorial_rank")
     if mem and rango_mem == "Memoria Libre":
-        opcionales.append({"nombre": mem, "rango": rango_mem, "opcional": True})
+        # El motor junta en una sola cadena los santos ALTERNATIVOS de una memoria libre («A / B / C»):
+        # se elige uno. Cada uno es su celebración opcional, con su `id`, su nombre y sus textos. Los
+        # nombres con «y» («Santos Juan Fisher y Tomás Moro») son UNA celebración conjunta: solo se parte por « / ».
+        alternos = mem.split(" / ")
+        for nombre in alternos:
+            opcionales.append({"nombre": nombre, "rango": rango_mem, "opcional": True, "alterna": len(alternos) > 1})
     elif mem:                                   # memoria obligatoria o fiesta: es la celebración
         principal = {"nombre": mem, "rango": rango_mem, "opcional": False}
     info["celebraciones"] = [principal, *opcionales]
     for c in info["celebraciones"]:
         c["tipo"] = tipo_de(c["rango"])
-        c["id"] = slug(c["nombre"])
         # Nombre en euskera: el del día por `localize_name`; el de un santo, por `localize_memorial`.
         es_dia = c["nombre"] == r["name"] and not c["opcional"]
-        clave = clave_dia(r) if es_dia else c["id"]
+        # El `id` del día es su clave: en la octava de Navidad (el motor llama a la feria como al santo)
+        # la feria lleva «-feria» y no comparte `id` con la memoria libre del santo.
+        c["id"] = clave_dia(r) if es_dia else slug(c["nombre"])
+        clave = c["id"]
         c["nombre_eu"] = nombre_eu(clave, eu.localize_name(c["nombre"]) if es_dia
                                    else eu.localize_memorial(c["nombre"]))
         c["rango_eu"] = rango_eu(c["rango"])
@@ -280,6 +287,11 @@ def candidatas(info: dict, cel: dict, hora: str, parte: str) -> list[str]:
     propio = [f"propio/{cel['id']}"] + [f"comunes/{c}" for c in comunes_de(cel["nombre"])]
     tiempo = bases_del_tiempo(info)
     es_salmo = parte.startswith("salmo")
+    # Los salmos del tiempo, sin lo que el blog escribe por fecha (`…/12-21`, `…/01-04`: lleva los salmos
+    # del día de la semana de aquel año) y sin la salmodia común de Navidad fuera de la octava (el 2-5 de
+    # enero se reza el salterio). Las antífonas sí buscan en todo el tiempo.
+    tiempo_salmos = [b for b in tiempo if not re.search(r"/\d\d-\d\d$", b)
+                     and not (b == "tiempo/navidad/comun" and info["fecha"].month != 12)]
 
     if tipo in ("solemnidad", "fiesta"):
         bases = list(propio)
@@ -290,11 +302,9 @@ def candidatas(info: dict, cel: dict, hora: str, parte: str) -> list[str]:
     # del santo, si lo tiene (también salmodia propia, como San Martín); lo demás, de la feria. Sin
     # caer a los comunes: lo que el santo toma del común ya está en su `propio/`.
     elif tipo == "memoria":
-        bases = [f"propio/{cel['id']}"] + ([salterio] if es_salmo else tiempo + [salterio])
-    elif es_salmo:
-        bases = [salterio]                       # ferias y domingos: salmos del salterio
-    else:
-        bases = tiempo + [salterio]
+        bases = [f"propio/{cel['id']}"] + (tiempo_salmos if es_salmo else tiempo) + [salterio]
+    else:                                        # ferias y domingos: lo propio del tiempo y, si no, el salterio
+        bases = (tiempo_salmos if es_salmo else tiempo) + [salterio]
 
     claves = []
     for b in bases:
@@ -408,6 +418,25 @@ def resolver(textos: dict, claves: list[str]) -> tuple[str | None, dict | None]:
     return None, None
 
 
+def mismo_salmo(a: dict, b: dict) -> bool:
+    """¿Dos piezas son el mismo salmo o cántico? Un salmo, por su número («65. [64] Salmoa» y «64 Salmoa»;
+    lo que sigue a la coma son versículos); un cántico, por libro y capítulo de su cita, que en batua va
+    en la línea siguiente al título («Kantika» / «Ik. 1 Pe 2, 21b-24»). Si no se sabe, no es el mismo:
+    se queda el del tiempo (en Cuaresma el cántico dominical de Vísperas no es el del salterio)."""
+    def firma(pieza: dict) -> set:
+        ls = [l["x"] for l in (pieza.get("lineas") or [])[:2] if len(l["x"]) < 60]
+        if not ls:
+            return set()
+        if ls[0].startswith("Kantika"):
+            cita = re.sub(r"Kantika|Ik(us)?\b\.?|[():]", " ", " ".join(ls))
+            m = re.search(r"((?:\d\s*)?[A-Za-z]+)\s*(\d+)", cita)
+            return {(re.sub(r"\s", "", m.group(1)).lower().replace("apk", "ap"), m.group(2))} if m else set()
+        return set(re.findall(r"\d+", ls[0].split(",")[0]))
+    fa, fb = firma(a), firma(b)
+    return bool(fa & fb)
+
+
+
 def salmos_invitatorio(textos: dict, faltan: dict) -> dict:
     """La parte `salmo` del Invitatorio: los cuatro salmos a elegir (los que tengan texto)."""
     claves = {n: f"fijo/invitatorio/salmo{n}" for n in INVITATORIO}
@@ -446,6 +475,13 @@ def componer(info: dict, cel: dict, hora: str, textos: dict, faltan: dict, noche
             c2, p2 = resolver(textos, comun)
             if p2 is not None and not p2.get("batua"):
                 clave, pieza, claves = c2, p2, claves + comun
+        if (hora != "completas" and parte.startswith("salmo") and cel["tipo"] in ("feria", "domingo", "memoria")
+                and pieza is not None and pieza.get("batua") and clave.startswith("tiempo/")):
+            # El bizkaiera manda: el salmo del tiempo que solo está en batua no desplaza al mismo salmo
+            # del salterio si este está en bizkaiera (casi todos los del tiempo repiten el del salterio).
+            c2, p2 = resolver(textos, [c for c in claves if c.startswith("salterio/")])
+            if p2 is not None and not p2.get("batua") and mismo_salmo(pieza, p2):
+                clave, pieza = c2, p2
         nombre = parte.split("/")[-1]
         cab = cabecera_de(hora, nombre, pieza, anterior, noche)
         cab = {"cabecera": cab} if cab else {}
@@ -466,10 +502,22 @@ def tiene_primeras_visperas(info: dict) -> bool:
     return tipo in ("solemnidad", "domingo") or (tipo == "fiesta" and info["fecha"].weekday() == 6)
 
 
+def primeras_visperas(info: dict, manana: dict) -> bool:
+    """¿Las Vísperas de hoy son las primeras de mañana? Si mañana las tiene y precede a hoy en la tabla
+    de precedencia. Dos excepciones: el Triduo y el domingo de Pascua no tienen primeras (el miércoles
+    santo reza las suyas), y en un empate de nivel gana el domingo de mañana (sábado después de Ceniza,
+    sábado de la octava de Pascua)."""
+    if not tiene_primeras_visperas(manana):
+        return False
+    if 0 <= (liturgia.easter(manana["fecha"].year) - manana["fecha"]).days <= 3:
+        return False
+    return manana["nivel"] < info["nivel"] or (
+        manana["nivel"] == info["nivel"] and manana["celebraciones"][0]["tipo"] == "domingo")
+
+
 def generar_dia(d: date, textos: dict, faltan: dict) -> dict:
     info, manana = dia_liturgico(d), dia_liturgico(d + timedelta(days=1))
-    # Vísperas: las primeras de mañana solo si mañana las tiene y precede a hoy.
-    primeras = tiene_primeras_visperas(manana) and manana["nivel"] < info["nivel"]
+    primeras = primeras_visperas(info, manana)
     noche = formulario_completas(info, manana, primeras)
     celebraciones = []
     for cel in info["celebraciones"]:
@@ -504,7 +552,7 @@ def generar_dia(d: date, textos: dict, faltan: dict) -> dict:
             "nombre": nombre_eu(clave_dia(r), eu.localize_name(r["name"])), "tiempo": eu.localize_season(r["season"]),
             "rango": rango_eu(r["rank"]), "ciclo": eu.localize_sunday_cycle(r["sunday_cycle"]),
             "ciclo_ferial": eu.localize_weekday_cycle(r["weekday_cycle"]) if r.get("weekday_cycle") else "",
-            "memoria": nombre_eu(slug(r["memorial"]), eu.localize_memorial(r["memorial"]))
+            "memoria": " / ".join(nombre_eu(slug(m), eu.localize_memorial(m)) for m in r["memorial"].split(" / "))
                        if r.get("memorial") and (r["memorial"] != r["name"] or clave_dia(r) in NOMBRES_EU) else "",
             "memoria_rango": rango_eu(r["memorial_rank"]) if r.get("memorial_rank") else "",
         },

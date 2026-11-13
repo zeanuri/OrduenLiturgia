@@ -1128,70 +1128,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad X9111_C"
 },
-"propio/dedicacion-de-la-basilica-de-santa-maria-la-mayor/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Santa María, Madre de Dios, siempre Virgen, bendita tú entre las mujeres, y bendito el fruto de tu vientre."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6675"
-},
-"propio/dedicacion-de-la-basilica-de-santa-maria-la-mayor/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Perdona, Señor, los pecados de tus siervos y, ya que no podemos complacerte con nuestras obras, concédenos la salvación por intercesión de la Madre de tu Hijo, nuestro Señor. Él, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6751"
-},
-"propio/dedicacion-de-la-basilica-de-santa-maria-la-mayor/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Santa María, Madre de Dios, ruega por nosotros, pecadores, ahora y en la hora de nuestra muerte."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6675"
-},
-"propio/dedicacion-de-la-basilica-de-santa-maria-la-mayor/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Perdona, Señor, los pecados de tus siervos y, ya que no podemos complacerte con nuestras obras, concédenos la salvación por intercesión de la Madre de tu Hijo, nuestro Señor. Él, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6751"
-},
 "propio/domingo-de-pentecostes/laudes/ant_ev-A": {
 "lineas": [
 {
@@ -3237,50 +3173,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6223"
-},
-"propio/el-dulce-nombre-de-maria/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Concédenos, Dios todopoderoso, que la bienaventurada Virgen María nos obtenga los beneficios de tu misericordia a cuantos celebramos su nombre glorioso. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8041"
-},
-"propio/el-dulce-nombre-de-maria/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Concédenos, Dios todopoderoso, que la bienaventurada Virgen María nos obtenga los beneficios de tu misericordia a cuantos celebramos su nombre glorioso. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8041"
 },
 "propio/inmaculado-corazon-de-la-virgen-maria/laudes/ant_ev": {
 "lineas": [
@@ -5802,16 +5694,6 @@
 "propio/la-ascension-del-senor/visperas1/salmo3": {
 "ref": "salterio/s1/jue/visperas/salmo3"
 },
-"propio/la-asuncion-de-la-virgen-maria/laudes/ant_ev-B": {
-"lineas": [
-{
-"t": "texto",
-"x": "Es bella y hermosa la hija de Jerusalén; subió al cielo resplandeciente, como la aurora cuando amanece."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6686"
-},
 "propio/la-asuncion-de-la-virgen-maria/laudes/fijo/conclusion": {
 "lineas": [
 {
@@ -6033,16 +5915,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad X9120"
-},
-"propio/la-asuncion-de-la-virgen-maria/visperas/ant_ev-B": {
-"lineas": [
-{
-"t": "texto",
-"x": "Hoy la Virgen María sube a los cielos; alegraos, porque reina con Cristo para siempre."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6686"
 },
 "propio/la-asuncion-de-la-virgen-maria/visperas/fijo/conclusion": {
 "lineas": [
@@ -6498,46 +6370,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad X9120"
 },
-"propio/la-catedra-de-san-pedro/laudes/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Cristo te llama, Pedro, y tú le sigues;\ndejas tu barca, pescador de hombres;\nroca y cimiento de la santa Iglesia\nCristo te hace.\n\nÉl te pregunta: «¿Me amas más que estos?»;\ntú le respondes: «Sabes que te quiero».\nÉl te encomienda todo su rebaño;\ntú lo apacientas.\n\nTienes las llaves, atas y desatas;\nfiel al Maestro, amas más que niegas;\nllegas a Roma, con tu magisterio;\nmueres por Cristo.\n\nDesde tu cielo, mira a nuestra tierra,\nguía los pasos de tus sucesores\nque en el primado del amor, sirviendo,\nrigen la Iglesia.\n\nGloria a Dios Padre, creador del mundo,\ngloria a Dios Hijo, redentor de todos,\ngloria al Espíritu, que nos santifica:\nDios Uno y Trino. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0430"
-},
-"propio/la-exaltacion-de-la-santa-cruz/laudes/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "Tu cruz adoramos, Señor, y tu santa resurrección alabamos y glorificamos; por el madero ha venido la alegría al mundo entero."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6806"
-},
-"propio/la-exaltacion-de-la-santa-cruz/visperas/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "¡Oh victoria de la cruz y admirable signo! Haz que alcancemos el triunfo en el cielo."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6806"
-},
-"propio/la-exaltacion-de-la-santa-cruz/visperas1/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "Era necesario que el Mesías padeciera y resucitara de entre los muertos para entrar en su gloria."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6806"
-},
 "propio/la-inmaculada-concepcion/laudes/ant_ev-C": {
 "lineas": [
 {
@@ -6547,6 +6379,46 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6874"
+},
+"propio/la-inmaculada-concepcion/visperas/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Guztiz ederra zara Maria; ez duzu jatorrizko errurik ere."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V1874"
+},
+"propio/la-inmaculada-concepcion/visperas/ant2": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zugan du Jerusalemek bere aintza; zugan Israelek bere poza; zugan gure herriak bere edertasuna."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V1874"
+},
+"propio/la-inmaculada-concepcion/visperas/ant3": {
+"lineas": [
+{
+"t": "texto",
+"x": "Elurra bezain zuriak zure jantziak; eguzkia bezain argia zure aurpegia."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V1874"
+},
+"propio/la-inmaculada-concepcion/visperas/ant_ev": {
+"lineas": [
+{
+"t": "texto",
+"x": "Poztu zaitez, Maria, graziaz bete hori: Jauna zurekin; bedeinkatua zu emakumeen artean, eta bedeinkatua zure sabeleko fruitua."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6874"
 },
 "propio/la-inmaculada-concepcion/visperas/ant_ev-C": {
 "lineas": [
@@ -6558,73 +6430,30 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6874"
 },
-"propio/la-inmaculada-concepcion/visperas1/ant1": {
-"lineas": [
-{
-"t": "texto",
-"x": "Elkarren etsai egingo zaituztet zu eta emakumea, zure eta haren ondorengoa."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P1874"
+"propio/la-inmaculada-concepcion/visperas/himno": {
+"ref": "propio/la-inmaculada-concepcion/visperas1/himno"
 },
-"propio/la-inmaculada-concepcion/visperas1/ant2": {
-"lineas": [
-{
-"t": "texto",
-"x": "Osasun- eta garaipen-estalkiz jantzi nau Jaunak."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P1874"
-},
-"propio/la-inmaculada-concepcion/visperas1/ant3": {
-"lineas": [
-{
-"t": "texto",
-"x": "Poztu zaitez, Maria, graziaz bete hori: Jauna zurekin."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P1874"
-},
-"propio/la-inmaculada-concepcion/visperas1/ant_ev": {
-"ref": "propio/la-asuncion-de-la-virgen-maria/visperas1/ant_ev"
-},
-"propio/la-inmaculada-concepcion/visperas1/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "Dohatsu deituko naute gizaldi guztiek, handiak egin baitizkit Ahalguztidunak. Aleluia."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6686"
-},
-"propio/la-inmaculada-concepcion/visperas1/himno": {
-"ref": "propio/la-inmaculada-concepcion/visperas/himno"
-},
-"propio/la-inmaculada-concepcion/visperas1/lectura": {
+"propio/la-inmaculada-concepcion/visperas/lectura": {
 "lineas": [
 {
 "t": "cita",
-"x": "Erm 8, 29a. 30a"
+"x": "Erm 5, 20b-21"
 },
 {
 "t": "texto",
-"x": "Aurrez ezagutu zituenak aukeratu ere egin zituen, bere Semearen irudiko izan zitezen. Aurrez aukeratu zituenak deitu ere egin zituen; deituak, berriz, zuzentzat hartu."
+"x": "Bekatua, heriotza ekarriz, nagusi izan zen bezala, Jainkoaren onginahia ere, gizakia zuzentzat hartuz, nagusi izango da betiko bizia emanez, Jesu Kristo gure Jaunaren bitartez."
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P5874"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V5874"
 },
-"propio/la-inmaculada-concepcion/visperas1/oracion": {
+"propio/la-inmaculada-concepcion/visperas/oracion": {
 "ref": "propio/la-inmaculada-concepcion/laudes/oracion"
 },
-"propio/la-inmaculada-concepcion/visperas1/preces": {
-"ref": "propio/la-inmaculada-concepcion/visperas/preces"
+"propio/la-inmaculada-concepcion/visperas/preces": {
+"ref": "propio/la-inmaculada-concepcion/visperas1/preces"
 },
-"propio/la-inmaculada-concepcion/visperas1/responsorio": {
+"propio/la-inmaculada-concepcion/visperas/responsorio": {
 "lineas": [
 {
 "t": "v",
@@ -6632,7 +6461,7 @@
 },
 {
 "t": "texto",
-"x": "Goratzen zaitut, Jauna, onik atera nauzulako."
+"x": "Hortatik dakit gogoko nauzula."
 },
 {
 "t": "r",
@@ -6640,7 +6469,7 @@
 },
 {
 "t": "texto",
-"x": "Goratzen zaitut, Jauna, onik atera nauzulako."
+"x": "Hortatik dakit gogoko nauzula."
 },
 {
 "t": "v",
@@ -6648,7 +6477,7 @@
 },
 {
 "t": "texto",
-"x": "Etsaiei nire lepotik pozten utzi ez diezulako."
+"x": "Etsaiak ez duelako garaipen oihurik egiten nire kontura."
 },
 {
 "t": "r",
@@ -6656,7 +6485,7 @@
 },
 {
 "t": "texto",
-"x": "Onik atera nauzulako."
+"x": "Gogoko nauzula."
 },
 {
 "t": "v",
@@ -6672,50 +6501,39 @@
 },
 {
 "t": "texto",
-"x": "Goratzen zaitut, Jauna, onik atera nauzulako."
+"x": "Hortatik dakit gogoko nauzula."
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P5874"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V5874"
 },
-"propio/la-inmaculada-concepcion/visperas1/salmo1": {
-"ref": "salterio/s4/jue/laudes/salmo3"
+"propio/la-inmaculada-concepcion/visperas/salmo1": {
+"ref": "salterio/s4/dom/visperas1/salmo1"
 },
-"propio/la-inmaculada-concepcion/visperas1/salmo2": {
-"ref": "salterio/s4/vie/laudes/salmo3"
+"propio/la-inmaculada-concepcion/visperas/salmo2": {
+"ref": "salterio/s3/mie/visperas/salmo2"
 },
-"propio/la-inmaculada-concepcion/visperas1/salmo3": {
-"ref": "salterio/s1/dom/visperas/salmo3"
+"propio/la-inmaculada-concepcion/visperas/salmo3": {
+"ref": "salterio/s1/lun/visperas/salmo3"
 },
-"propio/la-presentacion-del-senor/laudes/ant_ev-C": {
+"propio/la-inmaculada-concepcion/visperas1/ant_ev-C": {
 "lineas": [
 {
 "t": "texto",
-"x": "Cuando entraban con el niño Jesús sus padres, Simeón lo tomó en brazos y bendijo a Dios."
+"x": "Dohatsu deituko naute gizaldi guztiek, handiak egin baitizkit Ahalguztidunak. Aleluia."
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6418"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6686"
 },
-"propio/la-presentacion-del-senor/visperas/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "Hoy la bienaventurada Virgen María presentó al niño Jesús en el templo, y Simeón, lleno del Espíritu Santo, lo tomó en brazos y bendijo a Dios."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6418"
+"propio/la-presentacion-del-senor/laudes/salmo1": {
+"ref": "comunes/santas-mujeres/laudes/salmo1"
 },
-"propio/la-presentacion-del-senor/visperas1/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "El anciano llevaba al niño, el niño guiaba al anciano. La Virgen lo dio a luz, y permaneció virgen después del parto; adoró al mismo que engendró."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6418"
+"propio/la-presentacion-del-senor/laudes/salmo2": {
+"ref": "comunes/santas-mujeres/laudes/salmo2"
+},
+"propio/la-presentacion-del-senor/laudes/salmo3": {
+"ref": "comunes/santas-mujeres/laudes/salmo3"
 },
 "propio/la-sagrada-familia-de-jesus-maria-y-jose/laudes/ant_ev-A": {
 "lineas": [
@@ -6880,36 +6698,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0212"
-},
-"propio/la-transfiguracion-del-senor/laudes/ant_ev-A": {
-"lineas": [
-{
-"t": "texto",
-"x": "Una voz, desde la nube, decía: «Este es mi Hijo, el amado, mi predilecto. Escuchadlo». Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6676"
-},
-"propio/la-transfiguracion-del-senor/visperas/ant_ev-A": {
-"lineas": [
-{
-"t": "texto",
-"x": "Al oír la voz, los discípulos cayeron de bruces, llenos de espanto. Jesús se acercó y, tocándolos, les dijo: «Levantaos, no temáis». Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6676"
-},
-"propio/la-transfiguracion-del-senor/visperas1/ant_ev-A": {
-"lineas": [
-{
-"t": "texto",
-"x": "Cristo Jesús, reflejo de la gloria del Padre e impronta de su ser, sostiene el universo con su palabra poderosa y, habiendo realizado la purificación de los pecados, en una montaña alta ha manifestado hoy su gloria."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6676"
 },
 "propio/la-visitacion-de-la-virgen-maria/laudes/fijo/conclusion": {
 "lineas": [
@@ -7342,60 +7130,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0479"
-},
-"propio/los-siete-santos-fundadores-de-los-servitas/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Ved qué dulzura, qué delicia, convivir los hermanos unidos."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6428"
-},
-"propio/los-siete-santos-fundadores-de-los-servitas/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Señor, infunde benigno en nosotros la piedad con la que estos santos hermanos veneraron devotamente a la Madre de Dios y condujeron a tu pueblo hacia ti. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4281"
-},
-"propio/los-siete-santos-fundadores-de-los-servitas/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Señor, infunde benigno en nosotros la piedad con la que estos santos hermanos veneraron devotamente a la Madre de Dios y condujeron a tu pueblo hacia ti. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4281"
 },
 "propio/lunes-de-la-octava-de-pascua/laudes/fijo/conclusion": {
 "lineas": [
@@ -8693,28 +8427,29 @@
 "propio/martes-de-la-octava-de-pascua/visperas/salmo3": {
 "ref": "salterio/s1/dom/visperas/salmo3"
 },
-"propio/martirio-de-san-juan-bautista/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "El amigo del esposo, que lo asiste y lo oye, se alegra con la voz del esposo; pues esta alegría mía está colmada."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6800"
-},
-"propio/martirio-de-san-juan-bautista/laudes/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Pastor que, sin ser pastor,\nal buen Cordero nos muestras,\nprecursor que, sin ser luz,\nnos dices por dónde llega,\nenséñanos a enseñar\nla fe desde la pobreza.\n\nTú que traes un bautismo\nque es poco más que apariencia\ny al que el Cordero más puro\nbaja buscando pureza,\nenséñame a difundir\namor desde mi tibieza.\n\nTú que sientes como yo\nque la ignorancia no llega\nni a conocer al Señor\nni a desatar sus correas,\nenséñame a propagar\nla fe desde mi torpeza.\n\nTú que sabes que no fuiste\nla Palabra verdadera\ny que solo eras la voz\nque en el desierto vocea,\nenséñame, Juan, a ser\nprofeta sin ser profeta. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0800"
-},
 "propio/martirio-de-san-juan-bautista/laudes/oracion": {
 "ref": "propio/martirio-de-san-juan-bautista/visperas/oracion"
+},
+"propio/martirio-de-san-juan-bautista/laudes/preces": {
+"ref": "propio/natividad-de-san-juan-bautista/laudes/preces"
+},
+"propio/martirio-de-san-juan-bautista/laudes/salmo1": {
+"ref": "comunes/santas-mujeres/laudes/salmo1"
+},
+"propio/martirio-de-san-juan-bautista/laudes/salmo2": {
+"ref": "comunes/santas-mujeres/laudes/salmo2"
+},
+"propio/martirio-de-san-juan-bautista/laudes/salmo3": {
+"ref": "comunes/santas-mujeres/laudes/salmo3"
+},
+"propio/martirio-de-san-juan-bautista/visperas/salmo1": {
+"ref": "propio/san-lorenzo-diacono-y-martir/visperas/salmo1"
+},
+"propio/martirio-de-san-juan-bautista/visperas/salmo2": {
+"ref": "propio/la-catedra-de-san-pedro/visperas/salmo1"
+},
+"propio/martirio-de-san-juan-bautista/visperas/salmo3": {
+"ref": "propio/la-exaltacion-de-la-santa-cruz/visperas/salmo3"
 },
 "propio/miercoles-de-la-octava-de-pascua/laudes/fijo/conclusion": {
 "lineas": [
@@ -9582,16 +9317,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad X9120"
 },
-"propio/natividad-de-la-virgen-maria/laudes/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Hoy nace una clara estrella,\ntan divina y celestial,\nque, con ser estrella, es tal,\nque el mismo Sol nace de ella.\n\nDe Ana y de Joaquín, oriente\nde aquella estrella divina,\nsale su luz clara y digna\nde ser pura eternamente:\nel alba más clara y bella\nno le puede ser igual,\nque, con ser estrella, es tal,\nque el mismo Sol nace de ella.\n\nNo le iguala lumbre alguna\nde cuantas bordan el cielo,\nporque es el humilde suelo\nde sus pies la blanca luna:\nnace en el suelo tan bella\ny con luz tan celestial,\nque, con ser estrella, es tal,\nque el mismo Sol nace de ella.\n\nGloria al Padre, y gloria al Hijo,\ngloria al Espíritu Santo,\npor los siglos de los siglos. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0802"
-},
 "propio/natividad-de-la-virgen-maria/visperas/fijo/conclusion": {
 "lineas": [
 {
@@ -10188,109 +9913,23 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8791"
 },
-"propio/nuestra-senora-del-carmen/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Deseé la sabiduría con toda el alma, y creció como racimo que madura."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6660"
+"propio/nuestra-senora-de-los-dolores/laudes/salmo1": {
+"ref": "comunes/santas-mujeres/laudes/salmo1"
 },
-"propio/nuestra-senora-del-carmen/laudes/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "¿Quién eres tú, mujer, que, aunque rendida\nal parecer, al parecer postrada,\nno estás sino en los cielos ensalzada,\nno estás sino en la tierra preferida?\n\nPero, ¿qué mucho, si del sol vestida,\nqué mucho, si de estrellas coronada,\nvienes de tantas luces ilustrada,\nvienes de tantos rayos guarnecida?\n\nCielo y tierra parece que, a primores,\nse compitieron con igual desvelo,\nmezcladas sus estrellas y sus flores;\n\npara que en ti tuviesen tierra y cielo,\ncon no sé qué lejanos resplandores\nde flor del Sol plantada en el Carmelo.\n\nGloria al Padre, y al Hijo, y al Espíritu,\npor los siglos de los siglos. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0660"
+"propio/nuestra-senora-de-los-dolores/laudes/salmo2": {
+"ref": "comunes/santas-mujeres/laudes/salmo2"
 },
-"propio/nuestra-senora-del-carmen/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
+"propio/nuestra-senora-de-los-dolores/laudes/salmo3": {
+"ref": "comunes/santas-mujeres/laudes/salmo3"
 },
-{
-"t": "texto",
-"x": "Te suplicamos, Señor, que nos ayude la admirable intercesión de la gloriosa Virgen María, para que, protegidos por su ayuda, consigamos llegar hasta el monte que es Cristo. Él, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
+"propio/nuestra-senora-de-los-dolores/visperas/salmo1": {
+"ref": "propio/la-asuncion-de-la-virgen-maria/visperas/salmo1"
 },
-{
-"t": "r",
-"x": "R."
+"propio/nuestra-senora-de-los-dolores/visperas/salmo2": {
+"ref": "propio/la-asuncion-de-la-virgen-maria/visperas/salmo2"
 },
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6601"
-},
-"propio/nuestra-senora-del-carmen/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "María escuchaba la Palabra de Dios y la cumplía, meditándola en su corazón."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6660"
-},
-"propio/nuestra-senora-del-carmen/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Te suplicamos, Señor, que nos ayude la admirable intercesión de la gloriosa Virgen María, para que, protegidos por su ayuda, consigamos llegar hasta el monte que es Cristo. Él, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6601"
-},
-"propio/nuestra-senora-del-pilar/laudes/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "Dichosa eres, santa Virgen María: de ti salió el Sol de justicia, Cristo, nuestro Señor."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6832"
-},
-"propio/nuestra-senora-del-pilar/laudes/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Santa María del Pilar, escucha\nnuestra plegaria, al celebrar tu fiesta,\nMadre de Dios y Madre de los hombres,\n   Reina y Señora.\n\nTú, la alegría y el honor del pueblo,\neres dulzura y esperanza nuestra:\ndesde tu trono, miras, guardas, velas,\n   Madre de España.\n\nÁrbol de vida, que nos diste a Cristo,\nfruto bendito de tu seno virgen,\nven con nosotros hasta que lleguemos\n   contigo al puerto.\n\nGloria a Dios Padre, creador del mundo,\ngloria a Dios Hijo, redentor de todos,\ngloria al Espíritu que nos santifica:\n   al Trino y Uno. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0832"
-},
-"propio/nuestra-senora-del-pilar/visperas/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "María del Pilar, guía para el camino, columna para la esperanza, luz para la vida."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6832"
+"propio/nuestra-senora-de-los-dolores/visperas/salmo3": {
+"ref": "propio/la-asuncion-de-la-virgen-maria/visperas/salmo3"
 },
 "propio/nuestra-senora-del-rosario/laudes/ant1": {
 "lineas": [
@@ -10534,121 +10173,26 @@
 "propio/nuestra-senora-del-rosario/visperas/salmo3": {
 "ref": "salterio/s1/lun/visperas/salmo3"
 },
-"propio/nuestro-senor-jesucristo-rey-del-universo/laudes/ant_ev-A": {
-"lineas": [
-{
-"t": "texto",
-"x": "El primogénito de entre los muertos y príncipe de los reyes de la tierra nos ha convertido en un reino para Dios, su Padre. Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6641"
-},
-"propio/nuestro-senor-jesucristo-rey-del-universo/laudes/ant_ev-B": {
-"lineas": [
-{
-"t": "texto",
-"x": "El primogénito de entre los muertos y príncipe de los reyes de la tierra nos ha convertido en un reino para Dios, su Padre. Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6641"
-},
-"propio/nuestro-senor-jesucristo-rey-del-universo/laudes/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "El primogénito de entre los muertos y príncipe de los reyes de la tierra nos ha convertido en un reino para Dios, su Padre. Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6641"
-},
-"propio/nuestro-senor-jesucristo-rey-del-universo/visperas/ant_ev-A": {
-"lineas": [
-{
-"t": "texto",
-"x": "«Se me ha dado pleno poder en el cielo y en la tierra», dice el Señor."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6641"
-},
-"propio/nuestro-senor-jesucristo-rey-del-universo/visperas/ant_ev-B": {
-"lineas": [
-{
-"t": "texto",
-"x": "«Se me ha dado pleno poder en el cielo y en la tierra», dice el Señor."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6641"
-},
-"propio/nuestro-senor-jesucristo-rey-del-universo/visperas/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "«Se me ha dado pleno poder en el cielo y en la tierra», dice el Señor."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6641"
-},
-"propio/nuestro-senor-jesucristo-rey-del-universo/visperas/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Oh Príncipe absoluto de los siglos,\noh Jesucristo, Rey de las naciones:\nte confesamos árbitro supremo\nde las mentes y de los corazones.\n\nOh Jesucristo, Príncipe pacífico,\nsomete a los espíritus rebeldes,\ny haz que encuentren rumbo los perdidos,\ny que en un solo aprisco se congreguen.\n\nPara eso pendes de una cruz sangrienta\ny abres en ella tus divinos brazos;\npara eso muestras en tu pecho herido\ntu ardiente corazón atravesado.\n\nGlorificado seas, Jesucristo,\nque repartes los cetros de la tierra;\ny que contigo y con tu eterno Padre\nglorificado el Paráclito sea. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0641"
-},
 "propio/nuestro-senor-jesucristo-rey-del-universo/visperas/oracion": {
 "ref": "propio/nuestro-senor-jesucristo-rey-del-universo/laudes/oracion"
 },
-"propio/nuestro-senor-jesucristo-rey-del-universo/visperas1/ant_ev-A": {
-"lineas": [
-{
-"t": "texto",
-"x": "El Señor Dios le dará el trono de David, su padre, reinará sobre la casa de Jacob para siempre, y su reino no tendrá fin. Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6641"
+"propio/nuestro-senor-jesucristo-rey-del-universo/visperas/salmo1": {
+"ref": "propio/la-anunciacion-del-senor/visperas/salmo1"
 },
-"propio/nuestro-senor-jesucristo-rey-del-universo/visperas1/ant_ev-B": {
-"lineas": [
-{
-"t": "texto",
-"x": "El Señor Dios le dará el trono de David, su padre, reinará sobre la casa de Jacob para siempre, y su reino no tendrá fin. Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6641"
-},
-"propio/nuestro-senor-jesucristo-rey-del-universo/visperas1/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "El Señor Dios le dará el trono de David, su padre, reinará sobre la casa de Jacob para siempre, y su reino no tendrá fin. Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6641"
-},
-"propio/nuestro-senor-jesucristo-rey-del-universo/visperas1/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Oh Príncipe absoluto de los siglos,\noh Jesucristo, Rey de las naciones:\nte confesamos árbitro supremo\nde las mentes y de los corazones.\n\nOh Jesucristo, Príncipe pacífico,\nsomete a los espíritus rebeldes,\ny haz que encuentren rumbo los perdidos,\ny que en un solo aprisco se congreguen.\n\nPara eso pendes de una cruz sangrienta\ny abres en ella tus divinos brazos;\npara eso muestras en tu pecho herido\ntu ardiente corazón atravesado.\n\nGlorificado seas, Jesucristo,\nque repartes los cetros de la tierra;\ny que contigo y con tu eterno Padre\nglorificado el Paráclito sea. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0641"
+"propio/nuestro-senor-jesucristo-rey-del-universo/visperas/salmo3": {
+"ref": "propio/la-transfiguracion-del-senor/visperas1/salmo3"
 },
 "propio/nuestro-senor-jesucristo-rey-del-universo/visperas1/oracion": {
 "ref": "propio/nuestro-senor-jesucristo-rey-del-universo/laudes/oracion"
+},
+"propio/nuestro-senor-jesucristo-rey-del-universo/visperas1/salmo1": {
+"ref": "propio/la-anunciacion-del-senor/visperas1/salmo1"
+},
+"propio/nuestro-senor-jesucristo-rey-del-universo/visperas1/salmo2": {
+"ref": "propio/la-transfiguracion-del-senor/visperas1/salmo2"
+},
+"propio/nuestro-senor-jesucristo-rey-del-universo/visperas1/salmo3": {
+"ref": "propio/la-exaltacion-de-la-santa-cruz/visperas/salmo3"
 },
 "propio/presentacion-de-la-virgen-maria/laudes/ant_ev": {
 "lineas": [
@@ -11510,72 +11054,8 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4761"
 },
-"propio/san-agustin-obispo-y-doctor/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "De ti proviene, Señor, la atracción a tu alabanza, porque nos has hecho para ti, y nuestro corazón no halla sosiego hasta que descanse en ti."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6699"
-},
 "propio/san-agustin-obispo-y-doctor/laudes/himno": {
 "ref": "propio/san-ignacio-de-loyola/laudes/himno"
-},
-"propio/san-agustin-obispo-y-doctor/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Renueva, Señor, en tu Iglesia el espíritu que infundiste en tu obispo san Agustín, para que, llenos de ese mismo espíritu, tengamos sed solamente de ti, fuente de la verdadera sabiduría, y te busquemos como creador del amor supremo. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6991"
-},
-"propio/san-agustin-obispo-y-doctor/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "¡Tarde te amé, Hermosura tan antigua y tan nueva, tarde te amé! Me llamaste y clamaste, y quebrantaste mi sordera."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6699"
-},
-"propio/san-agustin-obispo-y-doctor/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Renueva, Señor, en tu Iglesia el espíritu que infundiste en tu obispo san Agustín, para que, llenos de ese mismo espíritu, tengamos sed solamente de ti, fuente de la verdadera sabiduría, y te busquemos como creador del amor supremo. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6991"
 },
 "propio/san-alberto-magno-obispo-y-doctor/laudes/ant_ev": {
 "lineas": [
@@ -12144,60 +11624,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8581"
 },
-"propio/san-alfonso-maria-de-ligorio/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que suscitas continuamente en tu Iglesia nuevos ejemplos de virtud, concédenos seguir las huellas del obispo san Alfonso María en el celo por las almas, de modo que consigamos su recompensa en el cielo. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6711"
-},
-"propio/san-alfonso-maria-de-ligorio/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que suscitas continuamente en tu Iglesia nuevos ejemplos de virtud, concédenos seguir las huellas del obispo san Alfonso María en el celo por las almas, de modo que consigamos su recompensa en el cielo. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6711"
-},
-"propio/san-ambrosio-obispo-y-doctor/laudes/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Cristo, cabeza, rey de los pastores,\nel pueblo entero, madrugando a fiesta,\ncanta a la gloria de tu sacerdote\n  himnos sagrados.\n\nCon abundancia de sagrado crisma,\nla unción profunda de tu Santo Espíritu\nle armó guerrero y le nombró en la Iglesia\n  jefe del pueblo.\n\nÉl fue pastor y forma del rebaño,\nluz para el ciego, báculo del pobre,\npadre común, presencia providente,\n  todo de todos.\n\nTú que coronas sus merecimientos,\ndanos la gracia de imitar su vida,\ny al fin, sumisos a su magisterio,\n  danos su gloria. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0873"
-},
 "propio/san-ambrosio-obispo-y-doctor/laudes/oracion": {
 "lineas": [
 {
@@ -12219,94 +11645,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8731"
-},
-"propio/san-antonio-abad/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que concediste a san Antonio, abad, servirte en el desierto con una vida admirable, concédenos, por su intercesión, que, negándonos a nosotros mismos, te amemos siempre y sobre todas las cosas. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4051"
-},
-"propio/san-antonio-abad/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que concediste a san Antonio, abad, servirte en el desierto con una vida admirable, concédenos, por su intercesión, que, negándonos a nosotros mismos, te amemos siempre y sobre todas las cosas. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4051"
-},
-"propio/san-antonio-de-padua/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios todopoderoso y eterno, que en san Antonio de Padua has dado a tu pueblo un predicador insigne y un intercesor en las necesidades, concédenos, con su ayuda, seguir las enseñanzas de la vida cristiana y experimentar tu protección en todas las adversidades. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4881"
-},
-"propio/san-antonio-de-padua/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios todopoderoso y eterno, que en san Antonio de Padua has dado a tu pueblo un predicador insigne y un intercesor en las necesidades, concédenos, con su ayuda, seguir las enseñanzas de la vida cristiana y experimentar tu protección en todas las adversidades. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4881"
 },
 "propio/san-antonio-maria-claret/laudes/ant_ev": {
 "lineas": [
@@ -12875,50 +12213,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8441"
 },
-"propio/san-antonio-maria-zaccaria/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Concédenos, Señor, según el espíritu de san Pablo apóstol, avanzar en el conocimiento incomparable de Jesucristo, que movió a san Antonio María a predicar continuamente la palabra de salvación en tu Iglesia. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6531"
-},
-"propio/san-antonio-maria-zaccaria/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Concédenos, Señor, según el espíritu de san Pablo apóstol, avanzar en el conocimiento incomparable de Jesucristo, que movió a san Antonio María a predicar continuamente la palabra de salvación en tu Iglesia. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6531"
-},
 "propio/san-atanasio-obispo-y-doctor/laudes/himno": {
 "lineas": [
 {
@@ -13031,7 +12325,7 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4581"
 },
-"propio/san-beda-el-venerable-san-gregorio-vii-santa-m-magdalena-de-pazzi/laudes/oracion": {
+"propio/san-beda-el-venerable/laudes/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -13053,7 +12347,7 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4721"
 },
-"propio/san-beda-el-venerable-san-gregorio-vii-santa-m-magdalena-de-pazzi/visperas/oracion": {
+"propio/san-beda-el-venerable/visperas/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -13119,92 +12413,8 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4681"
 },
-"propio/san-bernardo-abad-y-doctor/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "San Bernardo, cuya alma fue iluminada con los resplandores del Verbo eterno, irradió por toda la Iglesia la luz de la fe y de la doctrina."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6690"
-},
-"propio/san-bernardo-abad-y-doctor/laudes/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Experiencia de Dios fue vuestra ciencia,\nsu Espíritu veraz os dio a beberla\nen la revelación, que es su presencia\nen velos de palabra siempre nueva.\n\nAbristeis el camino para hallarla\na todo el que de Dios hambre tenía,\npalabra del Señor que, al contemplarla,\nenciende nuestras luces que iluminan.\n\nSaber de Dios en vida convertido\nes la virtud del justo, que, a su tiempo,\nsi Dios le dio la luz, fue lo debido\nque fuera su verdad, su pensamiento.\n\nEn nuestro corazón de criaturas,\nno se encendió la luz para esconderla,\nque poco puede andar quien anda a oscuras\npor sendas de verdad sin poder verla."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0690"
-},
-"propio/san-bernardo-abad-y-doctor/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, tú hiciste del abad san Bernardo, inflamado por el celo de tu casa, una lámpara ardiente y luminosa en tu Iglesia, concédenos, por su intercesión, participar de su ferviente espíritu y caminar siempre como hijos de la luz. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6901"
-},
-"propio/san-bernardo-abad-y-doctor/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "San Bernardo, doctor melifluo, amigo del Esposo, pregonero admirable de la Virgen María, destacó en Claraval como pastor insigne."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6690"
-},
-"propio/san-bernardo-abad-y-doctor/visperas/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Verbo de Dios, eterna luz divina,\nfuente eternal de toda verdad pura,\ngloria de Dios que el cosmos ilumina,\nantorcha toda luz en noche oscura.\n\nPalabra eternamente pronunciada\nen la mente del Padre sin principio,\nque en el tiempo a los hombres nos fue dada,\nde la Virgen María, hecha Hijo.\n\nLas tinieblas de muerte y de pecado\nen que yacía el hombre, así vencido,\nsu verdad y su luz han disipado,\ncon su vida y su muerte ha redimido.\n\nNo dejéis de brillar, faros divinos,\ncon destellos de luz que Dios envía,\nproclamad la verdad en los caminos\nde los hombres y pueblos, sed su guía. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0690"
-},
-"propio/san-bernardo-abad-y-doctor/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, tú hiciste del abad san Bernardo, inflamado por el celo de tu casa, una lámpara ardiente y luminosa en tu Iglesia, concédenos, por su intercesión, participar de su ferviente espíritu y caminar siempre como hijos de la luz. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6901"
-},
-"propio/san-blas-san-oscar/visperas/oracion": {
-"ref": "propio/san-blas-san-oscar/laudes/oracion"
+"propio/san-blas/visperas/oracion": {
+"ref": "propio/san-blas/laudes/oracion"
 },
 "propio/san-bonifacio-obispo-y-martir/laudes/oracion": {
 "lineas": [
@@ -13294,50 +12504,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8251"
 },
-"propio/san-buenaventura-obispo-y-doctor/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios todopoderoso, concede a cuantos hoy celebramos la fiesta anual del obispo san Buenaventura aprovechar su admirable doctrina e imitar constantemente su ardiente caridad. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6591"
-},
-"propio/san-buenaventura-obispo-y-doctor/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios todopoderoso, concede a cuantos hoy celebramos la fiesta anual del obispo san Buenaventura aprovechar su admirable doctrina e imitar constantemente su ardiente caridad. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6591"
-},
 "propio/san-calixto-i-papa-y-martir/visperas/oracion": {
 "lineas": [
 {
@@ -13359,50 +12525,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8331"
-},
-"propio/san-camilo-de-lelis/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que adornaste a san Camilo, presbítero, con el carisma singular del amor a los enfermos, infunde en nosotros, por sus méritos, el espíritu de amor, para que, sirviéndote en los hermanos, podamos llegar seguros a ti en la hora de nuestra muerte. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6581"
-},
-"propio/san-camilo-de-lelis/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que adornaste a san Camilo, presbítero, con el carisma singular del amor a los enfermos, infunde en nosotros, por sus méritos, el espíritu de amor, para que, sirviéndote en los hermanos, podamos llegar seguros a ti en la hora de nuestra muerte. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6581"
 },
 "propio/san-carlos-borromeo/laudes/oracion": {
 "lineas": [
@@ -13492,95 +12614,7 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4831"
 },
-"propio/san-cayetano-santos-sixto-ii-y-companeros/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios todopoderoso, que concediste a san Sixto y a sus compañeros entregar sus vidas por tu palabra y por el testimonio de Jesús, te pedimos que, con la fuerza del Espíritu Santo, nos hagas dóciles para creer y fuertes para confesar la fe. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6771"
-},
-"propio/san-cayetano-santos-sixto-ii-y-companeros/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios todopoderoso, que concediste a san Sixto y a sus compañeros entregar sus vidas por tu palabra y por el testimonio de Jesús, te pedimos que, con la fuerza del Espíritu Santo, nos hagas dóciles para creer y fuertes para confesar la fe. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6771"
-},
-"propio/san-cirilo-de-alejandria/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que hiciste del obispo san Cirilo de Alejandría un defensor invicto de la maternidad divina de la santísima Virgen María, concede a cuantos creemos que verdaderamente es la Madre de Dios, alcanzar la salvación por la encarnación de Jesucristo, tu Hijo. Él, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6461"
-},
-"propio/san-cirilo-de-alejandria/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que hiciste del obispo san Cirilo de Alejandría un defensor invicto de la maternidad divina de la santísima Virgen María, concede a cuantos creemos que verdaderamente es la Madre de Dios, alcanzar la salvación por la encarnación de Jesucristo, tu Hijo. Él, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6461"
-},
-"propio/san-clemente-i-san-columbano/laudes/oracion": {
+"propio/san-clemente-i/laudes/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -13602,7 +12636,7 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8651"
 },
-"propio/san-clemente-i-san-columbano/visperas/oracion": {
+"propio/san-clemente-i/visperas/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -13623,6 +12657,50 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8651"
+},
+"propio/san-columbano/laudes/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Oi Jainko, Kolunbano santuagan harrigarriro elkartu zenituen Ebanjelioa zabaltzeko zeregina eta monasterio-bizitzarako zaletasuna; egizu, haren otoitzari esker eta haren etsenpluari jarraituz, saia gaitezela Zu gauza guzien gainetik bilatzen eta fededunen herria handitzen. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8661"
+},
+"propio/san-columbano/visperas/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Oi Jainko, Kolunbano santuagan harrigarriro elkartu zenituen Ebanjelioa zabaltzeko zeregina eta monasterio-bizitzarako zaletasuna; egizu, haren otoitzari esker eta haren etsenpluari jarraituz, saia gaitezela Zu gauza guzien gainetik bilatzen eta fededunen herria handitzen. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8661"
 },
 "propio/san-damaso-i-papa/laudes/oracion": {
 "lineas": [
@@ -13712,50 +12790,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4861"
 },
-"propio/san-enrique/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que has elevado admirablemente a san Enrique, colmado por la generosidad de tu gracia, desde las preocupaciones del gobierno terrenal a la contemplación de las cosas eternas; concédenos, por su intercesión, caminar hacia ti con presteza y puro corazón en medio de las vicisitudes de este mundo. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6571"
-},
-"propio/san-enrique/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que has elevado admirablemente a san Enrique, colmado por la generosidad de tu gracia, desde las preocupaciones del gobierno terrenal a la contemplación de las cosas eternas; concédenos, por su intercesión, caminar hacia ti con presteza y puro corazón en medio de las vicisitudes de este mundo. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6571"
-},
 "propio/san-estanislao-obispo-y-martir/laudes/himno": {
 "lineas": [
 {
@@ -13790,28 +12824,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0503"
 },
-"propio/san-estanislao-obispo-y-martir/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, el santo obispo Estanislao sucumbió por tu gloria bajo la espada de los perseguidores, concédenos perseverar firmes en la fe hasta la muerte. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4441"
-},
 "propio/san-estanislao-obispo-y-martir/visperas/himno": {
 "lineas": [
 {
@@ -13845,72 +12857,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0502"
-},
-"propio/san-estanislao-obispo-y-martir/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, el santo obispo Estanislao sucumbió por tu gloria bajo la espada de los perseguidores, concédenos perseverar firmes en la fe hasta la muerte. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4441"
-},
-"propio/san-esteban-de-hungria/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios todopoderoso, concédenos que tu Iglesia merezca tener, como glorioso defensor en los cielos, a san Esteban de Hungría, que la extendió mientras reinaba en la tierra. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6871"
-},
-"propio/san-esteban-de-hungria/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios todopoderoso, concédenos que tu Iglesia merezca tener, como glorioso defensor en los cielos, a san Esteban de Hungría, que la extendió mientras reinaba en la tierra. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6871"
 },
 "propio/san-esteban-protomartir/laudes/fijo/conclusion": {
 "lineas": [
@@ -14021,94 +12967,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad X9102"
-},
-"propio/san-eusebio-de-vercelli-san-pedro-julian-eymard/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Señor y Dios nuestro, concédenos imitar la constancia del obispo san Eusebio de Vercelli en la defensa de la divinidad de Cristo, para que, perseverando en la fe que él nos enseñó, merezcamos participar de la vida de tu Hijo. Él, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6721"
-},
-"propio/san-eusebio-de-vercelli-san-pedro-julian-eymard/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Señor y Dios nuestro, concédenos imitar la constancia del obispo san Eusebio de Vercelli en la defensa de la divinidad de Cristo, para que, perseverando en la fe que él nos enseñó, merezcamos participar de la vida de tu Hijo. Él, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6721"
-},
-"propio/san-fabian-y-san-sebastian-martires/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Señor, que concediste al obispo san Fructuoso dar su vida por la Iglesia extendida de Oriente a Occidente y quisiste que sus diáconos, Augurio y Eulogio, lo acompañaran al martirio llenos de alegría, haz que tu Iglesia viva siempre gozosa en la esperanza y se consagre, sin vacilaciones, al bien de todos los pueblos. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4061"
-},
-"propio/san-fabian-y-san-sebastian-martires/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Señor, que concediste al obispo san Fructuoso dar su vida por la Iglesia extendida de Oriente a Occidente y quisiste que sus diáconos, Augurio y Eulogio, lo acompañaran al martirio llenos de alegría, haz que tu Iglesia viva siempre gozosa en la esperanza y se consagre, sin vacilaciones, al bien de todos los pueblos. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4061"
 },
 "propio/san-felipe-neri/laudes/oracion": {
 "lineas": [
@@ -14238,99 +13096,13 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8231"
 },
-"propio/san-francisco-de-sales/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, tú has querido que el santo obispo Francisco de Sales se hiciera todo para todos por la salvación de las almas, concédenos, en tu bondad, a ejemplo suyo, manifestar siempre la dulzura de tu amor en el servicio a los hermanos. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4121"
-},
-"propio/san-francisco-de-sales/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, tú has querido que el santo obispo Francisco de Sales se hiciera todo para todos por la salvación de las almas, concédenos, en tu bondad, a ejemplo suyo, manifestar siempre la dulzura de tu amor en el servicio a los hermanos. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4121"
-},
-"propio/san-gregorio-magno-papa-y-doctor/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Gregorio, pastor eximio, nos dejó un modelo y una regla de vida pastoral."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6801"
-},
 "propio/san-gregorio-magno-papa-y-doctor/laudes/himno": {
 "ref": "propio/san-ignacio-de-loyola/laudes/himno"
-},
-"propio/san-gregorio-magno-papa-y-doctor/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que cuidas a tu pueblo con misericordia y lo diriges con amor, por intercesión del papa san Gregorio Magno concede el espíritu de sabiduría a quienes confiaste la misión de gobernar, para que el progreso de los fieles sea el gozo eterno de los pastores. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8011"
-},
-"propio/san-gregorio-magno-papa-y-doctor/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "San Gregorio traducía en obras lo que enseñaba en sus sermones; por eso, fue un ejemplo vivo de doctrina espiritual."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6801"
 },
 "propio/san-gregorio-magno-papa-y-doctor/visperas/himno": {
 "ref": "propio/san-ignacio-de-loyola/visperas/himno"
 },
-"propio/san-gregorio-magno-papa-y-doctor/visperas/oracion": {
+"propio/san-gregorio-vii/laudes/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -14338,7 +13110,7 @@
 },
 {
 "t": "texto",
-"x": "Oh, Dios, que cuidas a tu pueblo con misericordia y lo diriges con amor, por intercesión del papa san Gregorio Magno concede el espíritu de sabiduría a quienes confiaste la misión de gobernar, para que el progreso de los fieles sea el gozo eterno de los pastores. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
+"x": "Emaiozu, Jauna, zeure Elizari Gregorio aita santuari eman zenion indar-espiritua eta zuzentasun-gosea, gaizki dagoen guztia baztertuz, zuzena den oro askatasunez eta maitasunez bizi dezan. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
 },
 {
 "t": "r",
@@ -14346,11 +13118,33 @@
 },
 {
 "t": "texto",
-"x": "Amén."
+"x": "Amen."
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8011"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4731"
+},
+"propio/san-gregorio-vii/visperas/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Emaiozu, Jauna, zeure Elizari Gregorio aita santuari eman zenion indar-espiritua eta zuzentasun-gosea, gaizki dagoen guztia baztertuz, zuzena den oro askatasunez eta maitasunez bizi dezan. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4731"
 },
 "propio/san-ignacio-de-antioquia-obispo-y-martir/laudes/ant_ev": {
 "lineas": [
@@ -14419,38 +13213,6 @@
 "propio/san-ildefonso-obispo/visperas/oracion": {
 "ref": "propio/san-ildefonso-obispo/laudes/oracion"
 },
-"propio/san-ireneo-obispo-y-martir/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "San Ireneo, haciendo honor a su nombre, fue hombre pacífico en su vida y en sus intenciones, y luchó ardientemente en favor de la paz de las Iglesias."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6647"
-},
-"propio/san-ireneo-obispo-y-martir/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que otorgaste al obispo san Ireneo mantener felizmente la doctrina verdadera y la paz de la Iglesia, concédenos, por su intercesión, renovados en la fe y en la caridad, fomentar siempre la unidad y la concordia. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6471"
-},
 "propio/san-isidro-labrador/visperas/himno": {
 "lineas": [
 {
@@ -14487,180 +13249,6 @@
 },
 "propio/san-isidro-labrador/visperas/oracion": {
 "ref": "propio/san-isidro-labrador/laudes/oracion"
-},
-"propio/san-jenaro-obispo-y-martir/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que nos permites venerar la memoria de tu mártir san Jenaro, concédenos gozar de su compañía en la felicidad eterna. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8101"
-},
-"propio/san-jenaro-obispo-y-martir/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que nos permites venerar la memoria de tu mártir san Jenaro, concédenos gozar de su compañía en la felicidad eterna. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8101"
-},
-"propio/san-jeronimo-emiliani-santa-josefina-bakhita/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, Padre de las misericordias, que hiciste a san Jerónimo Emiliani protector y padre de los huérfanos, concédenos, por su intercesión, guardar con fidelidad el espíritu de adopción por el que nos llamamos y somos hijos tuyos. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4231"
-},
-"propio/san-jeronimo-emiliani-santa-josefina-bakhita/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, Padre de las misericordias, que hiciste a san Jerónimo Emiliani protector y padre de los huérfanos, concédenos, por su intercesión, guardar con fidelidad el espíritu de adopción por el que nos llamamos y somos hijos tuyos. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4231"
-},
-"propio/san-jeronimo-presbitero-y-doctor/laudes/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Experiencia de Dios fue vuestra ciencia,\nsu Espíritu veraz os dio a beberla\nen la revelación, que es su presencia\nen velos de palabra siempre nueva.\n\nAbristeis el camino para hallarla\na todo el que de Dios hambre tenía,\npalabra del Señor que, al contemplarla,\nenciende nuestras luces que iluminan.\n\nSaber de Dios en vida convertido\nes la virtud del justo, que, a su tiempo,\nsi Dios le dio la luz, fue lo debido\nque fuera su verdad, su pensamiento.\n\nEn nuestro corazón de criaturas,\nno se encendió la luz para esconderla,\nque poco puede andar quien anda a oscuras\npor sendas de verdad sin poder verla."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0890"
-},
-"propio/san-jeronimo-presbitero-y-doctor/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que concediste al presbítero san Jerónimo un amor suave y vivo a la Sagrada Escritura, haz que tu pueblo se alimente de tu palabra con mayor abundancia y encuentre en ella la fuente de la vida. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8901"
-},
-"propio/san-jeronimo-presbitero-y-doctor/visperas/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Verbo de Dios, eterna luz divina,\nfuente eternal de toda verdad pura,\ngloria de Dios que el cosmos ilumina,\nantorcha toda luz en noche oscura.\n\nPalabra eternamente pronunciada\nen la mente del Padre sin principio,\nque en el tiempo a los hombres nos fue dada,\nde la Virgen María, hecha Hijo.\n\nLas tinieblas de muerte y de pecado\nen que yacía el hombre, así vencido,\nsu verdad y su luz han disipado,\ncon su vida y su muerte ha redimido.\n\nNo dejéis de brillar, faros divinos,\ncon destellos de luz que Dios envía,\nproclamad la verdad en los caminos\nde los hombres y pueblos, sed su guía. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0890"
-},
-"propio/san-jorge-martir-san-adalberto/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, proclamando tu poder te rogamos humildemente que, así como san Jorge imitó la pasión del Señor, socorra con prontitud nuestra fragilidad. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4481"
-},
-"propio/san-jorge-martir-san-adalberto/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, proclamando tu poder te rogamos humildemente que, así como san Jorge imitó la pasión del Señor, socorra con prontitud nuestra fragilidad. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4481"
 },
 "propio/san-josafat-obispo-y-martir/laudes/oracion": {
 "lineas": [
@@ -14966,28 +13554,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0502"
 },
-"propio/san-juan-bautista-de-la-salle/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que has elegido a san Juan Bautista de la Salle para educar a la juventud cristiana, suscita maestros en tu Iglesia que se entreguen de todo corazón a la formación humana y cristiana de los jóvenes. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4431"
-},
 "propio/san-juan-bautista-de-la-salle/visperas/himno": {
 "lineas": [
 {
@@ -15022,94 +13588,8 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0501"
 },
-"propio/san-juan-bautista-de-la-salle/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que has elegido a san Juan Bautista de la Salle para educar a la juventud cristiana, suscita maestros en tu Iglesia que se entreguen de todo corazón a la formación humana y cristiana de los jóvenes. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4431"
-},
 "propio/san-juan-bosco/visperas/oracion": {
 "ref": "propio/san-juan-bosco/laudes/oracion"
-},
-"propio/san-juan-crisostomo-obispo-y-doctor/laudes/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Experiencia de Dios fue vuestra ciencia,\nsu Espíritu veraz os dio a beberla\nen la revelación, que es su presencia\nen velos de palabra siempre nueva.\n\nAbristeis el camino para hallarla\na todo el que de Dios hambre tenía,\npalabra del Señor que, al contemplarla,\nenciende nuestras luces que iluminan.\n\nSaber de Dios en vida convertido\nes la virtud del justo, que, a su tiempo,\nsi Dios le dio la luz, fue lo debido\nque fuera su verdad, su pensamiento.\n\nEn nuestro corazón de criaturas,\nno se encendió la luz para esconderla,\nque poco puede andar quien anda a oscuras\npor sendas de verdad sin poder verla."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0805"
-},
-"propio/san-juan-crisostomo-obispo-y-doctor/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, fortaleza de los que en ti esperan, que has hecho brillar al obispo san Juan Crisóstomo por su admirable elocuencia y su fortaleza en la tribulación, te pedimos que, instruidos por sus enseñanzas, nos fortalezca el ejemplo de su invencible paciencia. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8051"
-},
-"propio/san-juan-crisostomo-obispo-y-doctor/visperas/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Verbo de Dios, eterna luz divina,\nfuente eternal de toda verdad pura,\ngloria de Dios que el cosmos ilumina,\nantorcha toda luz en noche oscura.\n\nPalabra eternamente pronunciada\nen la mente del Padre sin principio,\nque en el tiempo a los hombres nos fue dada,\nde la Virgen María, hecha Hijo.\n\nLas tinieblas de muerte y de pecado\nen que yacía el hombre, así vencido,\nsu verdad y su luz han disipado,\ncon su vida y su muerte ha redimido.\n\nNo dejéis de brillar, faros divinos,\ncon destellos de luz que Dios envía,\nproclamad la verdad en los caminos\nde los hombres y pueblos, sed su guía. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0805"
-},
-"propio/san-juan-crisostomo-obispo-y-doctor/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, fortaleza de los que en ti esperan, que has hecho brillar al obispo san Juan Crisóstomo por su admirable elocuencia y su fortaleza en la tribulación, te pedimos que, instruidos por sus enseñanzas, nos fortalezca el ejemplo de su invencible paciencia. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8051"
 },
 "propio/san-juan-damasceno/laudes/oracion": {
 "lineas": [
@@ -15155,28 +13635,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8711"
 },
-"propio/san-juan-de-avila/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que hiciste de san Juan de Ávila un maestro ejemplar para tu pueblo por la santidad de su vida y por su celo apostólico; haz que también en nuestros días crezca la Iglesia en santidad por el celo ejemplar de tus ministros. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4601"
-},
 "propio/san-juan-de-avila/visperas/himno": {
 "lineas": [
 {
@@ -15210,28 +13668,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0502"
-},
-"propio/san-juan-de-avila/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que hiciste de san Juan de Ávila un maestro ejemplar para tu pueblo por la santidad de su vida y por su celo apostólico; haz que también en nuestros días crezca la Iglesia en santidad por el celo ejemplar de tus ministros. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4601"
 },
 "propio/san-juan-de-capistrano/laudes/oracion": {
 "lineas": [
@@ -15357,50 +13793,6 @@
 "propio/san-juan-de-la-cruz/visperas/salmo3": {
 "ref": "salterio/s3/lun/visperas/salmo3"
 },
-"propio/san-juan-eudes/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que, para anunciar las insondables riquezas de Cristo, elegiste al presbítero san Juan Eudes, concédenos, por su palabra y ejemplo, crecer en tu conocimiento y vivir fielmente a la luz del Evangelio. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6881"
-},
-"propio/san-juan-eudes/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que, para anunciar las insondables riquezas de Cristo, elegiste al presbítero san Juan Eudes, concédenos, por su palabra y ejemplo, crecer en tu conocimiento y vivir fielmente a la luz del Evangelio. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6881"
-},
 "propio/san-juan-i-papa-y-martir/laudes/oracion": {
 "lineas": [
 {
@@ -15445,7 +13837,7 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4671"
 },
-"propio/san-juan-maria-vianney/laudes/oracion": {
+"propio/san-juan-leonardi/laudes/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -15453,7 +13845,7 @@
 },
 {
 "t": "texto",
-"x": "Dios de poder y misericordia, que hiciste admirable a san Juan María Vianney, presbítero, por su celo pastoral, concédenos, por su ejemplo e intercesión, ganar para Cristo nuevos hermanos en el amor y poder alcanzar con ellos la gloria eterna. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
+"x": "Oi Jainko, on guztien emailea, Ebanjelioa helarazi zenien herriei Joan Leonardi presbitero santuaren bidez; egizu, haren otoitzari esker, zabaldu dadila egiazko fedea nonahi eta beti. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
 },
 {
 "t": "r",
@@ -15461,13 +13853,13 @@
 },
 {
 "t": "texto",
-"x": "Amén."
+"x": "Amen."
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6741"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8281"
 },
-"propio/san-juan-maria-vianney/visperas/oracion": {
+"propio/san-juan-leonardi/visperas/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -15475,7 +13867,7 @@
 },
 {
 "t": "texto",
-"x": "Dios de poder y misericordia, que hiciste admirable a san Juan María Vianney, presbítero, por su celo pastoral, concédenos, por su ejemplo e intercesión, ganar para Cristo nuevos hermanos en el amor y poder alcanzar con ellos la gloria eterna. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
+"x": "Oi Jainko, on guztien emailea, Ebanjelioa helarazi zenien herriei Joan Leonardi presbitero santuaren bidez; egizu, haren otoitzari esker, zabaldu dadila egiazko fedea nonahi eta beti. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
 },
 {
 "t": "r",
@@ -15483,11 +13875,11 @@
 },
 {
 "t": "texto",
-"x": "Amén."
+"x": "Amen."
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6741"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8281"
 },
 "propio/san-juan-pablo-ii-papa/laudes/oracion": {
 "lineas": [
@@ -15877,104 +14269,6 @@
 "propio/san-lucas-evangelista/laudes/salmo3": {
 "ref": "salterio/s1/dom/laudes/salmo3"
 },
-"propio/san-luis-gonzaga/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, autor de los dones del cielo, que en san Luis Gonzaga has unido penitencia con admirable pureza de vida, concédenos, por sus méritos e intercesión, que, si no le hemos seguido en la castidad, lo imitemos como penitente. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4911"
-},
-"propio/san-luis-gonzaga/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, autor de los dones del cielo, que en san Luis Gonzaga has unido penitencia con admirable pureza de vida, concédenos, por sus méritos e intercesión, que, si no le hemos seguido en la castidad, lo imitemos como penitente. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4911"
-},
-"propio/san-luis-san-jose-de-calasanz/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que has trasladado a san Luis de Francia de los afanes del gobierno temporal a la gloria del reino de los cielos, concédenos, por su intercesión, que, en medio de nuestras ocupaciones temporales, busquemos tu reino eterno. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6951"
-},
-"propio/san-luis-san-jose-de-calasanz/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que has trasladado a san Luis de Francia de los afanes del gobierno temporal a la gloria del reino de los cielos, concédenos, por su intercesión, que, en medio de nuestras ocupaciones temporales, busquemos tu reino eterno. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6951"
-},
-"propio/san-martin-de-porres/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Bendito sea el Señor, porque ha redimido a todos los pueblos y los ha llamado a salir de la tiniebla y a entrar en su luz maravillosa."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6848"
-},
 "propio/san-martin-de-porres/laudes/oracion": {
 "lineas": [
 {
@@ -15996,16 +14290,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8481"
-},
-"propio/san-martin-de-porres/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Proclamemos la grandeza del Señor, que ha enaltecido con dones celestiales a su humilde siervo Martín."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6848"
 },
 "propio/san-martin-de-porres/visperas/oracion": {
 "lineas": [
@@ -16639,38 +14923,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad X9464"
 },
-"propio/san-maximiliano-kolbe-martir/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Cristo será glorificado en mi cuerpo, sea por mi vida o por mi muerte. Para mí la vida es Cristo, y una ganancia el morir."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6685"
-},
-"propio/san-maximiliano-kolbe-martir/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que al presbítero y mártir san Maximiliano María, inflamado de amor a la Virgen Inmaculada, lo llenaste de celo por las almas y de amor al prójimo, concédenos en tu bondad, por su intercesión, trabajar generosamente por tu gloria en el servicio de los hombres y ser semejantes a tu Hijo hasta la muerte. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6851"
-},
 "propio/san-nicolas-obispo/laudes/oracion": {
 "lineas": [
 {
@@ -16715,495 +14967,76 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8721"
 },
+"propio/san-pablo-de-la-cruz/laudes/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Jauna, Gurutzeko Paulo presbitero santuak Kristoren gurutzea izan zuen bere maitasun bakarra; irits diezagula berak grazia, haren etsenpluak biziki eraginik, kementsu besarka dezagun geure gurutzea. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8411"
+},
+"propio/san-pablo-de-la-cruz/visperas/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Jauna, Gurutzeko Paulo presbitero santuak Kristoren gurutzea izan zuen bere maitasun bakarra; irits diezagula berak grazia, haren etsenpluak biziki eraginik, kementsu besarka dezagun geure gurutzea. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8411"
+},
 "propio/san-pablo-miki-y-companeros-martires/visperas/oracion": {
 "ref": "propio/san-pablo-miki-y-companeros-martires/laudes/oracion"
-},
-"propio/san-paulino-de-nola-santos-juan-fisher-y-tomas-moro/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que has querido enaltecer al obispo san Paulino de Nola por su amor a la pobreza y su solicitud pastoral, concede, por tu bondad, a cuantos celebramos sus méritos imitar los ejemplos de su caridad. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4921"
-},
-"propio/san-pedro-chanel-martir/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que coronaste con el martirio a san Pedro Chanel para la extensión de tu Iglesia, concédenos, en medio de las alegrías pascuales, celebrar de tal modo los misterios de Cristo, muerto y resucitado, que merezcamos ser testigos de la vida nueva. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4531"
-},
-"propio/san-pedro-chanel-martir/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que coronaste con el martirio a san Pedro Chanel para la extensión de tu Iglesia, concédenos, en medio de las alegrías pascuales, celebrar de tal modo los misterios de Cristo, muerto y resucitado, que merezcamos ser testigos de la vida nueva. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4531"
-},
-"propio/san-pedro-claver/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que hiciste a san Pedro Claver esclavo de los esclavos y, para ayudarlos, lo fortaleciste con admirable caridad y paciencia, concédenos, por su intercesión, procurar cumplir el mandato de Jesucristo amando al prójimo con obras y de verdad. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8031"
-},
-"propio/san-pedro-claver/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que hiciste a san Pedro Claver esclavo de los esclavos y, para ayudarlos, lo fortaleciste con admirable caridad y paciencia, concédenos, por su intercesión, procurar cumplir el mandato de Jesucristo amando al prójimo con obras y de verdad. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8031"
-},
-"propio/san-pedro-crisologo/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que hiciste del obispo san Pedro Crisólogo un insigne predicador de tu Verbo encarnado, concédenos, por su intercesión, meditar siempre en nuestro corazón los misterios de tu salvación y manifestarlos fielmente en las obras. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6691"
-},
-"propio/san-pedro-crisologo/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que hiciste del obispo san Pedro Crisólogo un insigne predicador de tu Verbo encarnado, concédenos, por su intercesión, meditar siempre en nuestro corazón los misterios de tu salvación y manifestarlos fielmente en las obras. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6691"
-},
-"propio/san-pio-de-pietrelcina/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios todopoderoso y eterno, que concediste a san Pío, presbítero, la gracia singular de participar en la cruz de tu Hijo, y por su ministerio renovaste las maravillas de tu misericordia, concédenos, por su intercesión, que, asociados siempre a los sufrimientos de Cristo, lleguemos felizmente a la gloria de la resurrección. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8131"
-},
-"propio/san-pio-de-pietrelcina/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios todopoderoso y eterno, que concediste a san Pío, presbítero, la gracia singular de participar en la cruz de tu Hijo, y por su ministerio renovaste las maravillas de tu misericordia, concédenos, por su intercesión, que, asociados siempre a los sufrimientos de Cristo, lleguemos felizmente a la gloria de la resurrección. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8131"
-},
-"propio/san-pio-v-papa/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que suscitaste providencialmente en tu Iglesia al papa san Pío, para proteger la fe y darte culto más dignamente, concédenos, por su intercesión, participar en tus misterios con fe viva y caridad fecunda. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4561"
-},
-"propio/san-pio-v-papa/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que suscitaste providencialmente en tu Iglesia al papa san Pío, para proteger la fe y darte culto más dignamente, concédenos, por su intercesión, participar en tus misterios con fe viva y caridad fecunda. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4561"
-},
-"propio/san-pio-x-papa/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que, para defender la fe católica e instaurar todas las cosas en Cristo, colmaste al papa san Pío de sabiduría divina y fortaleza apostólica, concédenos, por tu bondad, que, siguiendo su ejemplo y doctrina, podamos alcanzar la recompensa eterna. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6911"
-},
-"propio/san-pio-x-papa/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que, para defender la fe católica e instaurar todas las cosas en Cristo, colmaste al papa san Pío de sabiduría divina y fortaleza apostólica, concédenos, por tu bondad, que, siguiendo su ejemplo y doctrina, podamos alcanzar la recompensa eterna. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6911"
-},
-"propio/san-policarpo-obispo-y-martir/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios de todas las criaturas, que te has dignado agregar a san Policarpo, obispo, al número de los mártires, concédenos, por su intercesión, que, participando con él en el cáliz de Cristo, por el Espíritu Santo resucitemos a la vida eterna. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4311"
-},
-"propio/san-policarpo-obispo-y-martir/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Dios de todas las criaturas, que te has dignado agregar a san Policarpo, obispo, al número de los mártires, concédenos, por su intercesión, que, participando con él en el cáliz de Cristo, por el Espíritu Santo resucitemos a la vida eterna. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4311"
-},
-"propio/san-roberto-belarmino/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que dotaste a san Roberto Belarmino, obispo, de admirable sabiduría y santidad para defender la fe de tu Iglesia, concede a tu pueblo, por su intercesión, alegrarse siempre en la integridad de esta misma fe. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8091"
-},
-"propio/san-roberto-belarmino/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que dotaste a san Roberto Belarmino, obispo, de admirable sabiduría y santidad para defender la fe de tu Iglesia, concede a tu pueblo, por su intercesión, alegrarse siempre en la integridad de esta misma fe. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8091"
-},
-"propio/san-vicente-de-paul/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "San Vicente fue consuelo de los que sufren, defensor de los huérfanos y protector de las viudas."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6816"
-},
-"propio/san-vicente-de-paul/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que llenaste de virtudes apostólicas al presbítero san Vicente de Paúl para la salvación de los pobres y la formación del clero, concédenos, te rogamos, que, enardecidos por su mismo espíritu, amemos cuanto él amó y practiquemos sus enseñanzas. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8161"
-},
-"propio/san-vicente-de-paul/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "«Lo que hicisteis con uno de estos, mis humildes hermanos, conmigo lo hicisteis», dice el Señor."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6816"
-},
-"propio/san-vicente-de-paul/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que llenaste de virtudes apostólicas al presbítero san Vicente de Paúl para la salvación de los pobres y la formación del clero, concédenos, te rogamos, que, enardecidos por su mismo espíritu, amemos cuanto él amó y practiquemos sus enseñanzas. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8161"
 },
 "propio/san-vicente-diacono-y-martir/visperas/oracion": {
 "ref": "propio/san-vicente-diacono-y-martir/laudes/oracion"
 },
-"propio/santa-agueda-virgen-y-martir/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Señor Jesucristo, maestro bueno, te doy gracias porque me ayudaste a vencer los tormentos de los verdugos, haz, Señor, que llegue felizmente a la gloria imperecedera."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6421"
-},
 "propio/santa-agueda-virgen-y-martir/visperas/oracion": {
 "ref": "propio/santa-agueda-virgen-y-martir/laudes/oracion"
 },
-"propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Santa Catalina no cesaba de suplicar al Señor que volviese la paz a su santa Iglesia. Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6455"
-},
-"propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/laudes/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Nos apremia el amor, vírgenes santas;\nvosotras, que seguisteis su camino,\nguiadnos por las sendas de las almas\nque hicieron de su amar amor divino.\n\nEsperasteis en vela a vuestro Esposo\nen la noche fugaz de vuestra vida,\ncuando llamó a la puerta, vuestro gozo\nfue contemplar su gloria sin medida.\n\nVuestra fe y vuestro amor fue fuego ardiente\nque mantuvo la llama en la tardanza,\nvuestra antorcha encendida asiduamente\nha colmado de luz vuestra esperanza.\n\nPues gozáis ya las nupcias que el Cordero\ncon la Iglesia de Dios ha celebrado,\nno dejéis que se apague nuestro fuego\nen la pereza y sueño del pecado.\n\nDemos gracias a Dios y, humildemente,\npidamos al Señor que su llamada\nnos encuentre en vigilia permanente,\ndespiertos en la fe y en veste blanca. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0455"
+"propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/laudes/lectura": {
+"ref": "comunes/virgenes/laudes/lectura"
 },
 "propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/laudes/oracion": {
 "ref": "propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/visperas/oracion"
 },
-"propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/visperas/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "Dichosa tú, que, entre todas,\nfuiste por Dios sorprendida\ncon tu lámpara encendida\npara el banquete de bodas.\n\nCon el abrazo inocente\nde un hondo pacto amoroso,\nvienes a unirte al Esposo\npor virgen y por prudente.\n\nEnséñanos a vivir;\nayúdenos tu oración;\ndanos en la tentación\nla gracia de resistir.\n\nHonor a la Trinidad\npor esta limpia victoria.\nY gloria por esta gloria\nque alegra la cristiandad. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0455"
+"propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/laudes/preces": {
+"ref": "propio/santa-teresa-benedicta-de-la-cruz-edith-stein-patrona-de-europa/laudes/preces"
+},
+"propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/laudes/salmo1": {
+"ref": "comunes/santas-mujeres/laudes/salmo1"
+},
+"propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/laudes/salmo2": {
+"ref": "comunes/santas-mujeres/laudes/salmo2"
+},
+"propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/laudes/salmo3": {
+"ref": "comunes/santas-mujeres/laudes/salmo3"
 },
 "propio/santa-cecilia-virgen-y-martir/visperas/ant_ev": {
 "lineas": [
@@ -17218,7 +15051,7 @@
 "propio/santa-cecilia-virgen-y-martir/visperas/oracion": {
 "ref": "propio/santa-cecilia-virgen-y-martir/laudes/oracion"
 },
-"propio/santa-clara/laudes/oracion": {
+"propio/santa-eduvigis/visperas/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -17226,7 +15059,7 @@
 },
 {
 "t": "texto",
-"x": "Oh, Dios, que guiaste misericordiosamente a santa Clara hacia el amor a la pobreza, concédenos, por su intercesión, que, siguiendo a Cristo en la pobreza de espíritu, merezcamos llegar a contemplarte en el reino celestial. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
+"x": "Jainko ahalguztiduna, apaltasunean eredu izan zen guztientzat Eduvigis santuaren bizitza; emaguzu, haren otoitz beneragarriari esker, zerutar laguntza. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
 },
 {
 "t": "r",
@@ -17234,180 +15067,91 @@
 },
 {
 "t": "texto",
-"x": "Amén."
+"x": "Amen."
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6821"
-},
-"propio/santa-clara/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que guiaste misericordiosamente a santa Clara hacia el amor a la pobreza, concédenos, por su intercesión, que, siguiendo a Cristo en la pobreza de espíritu, merezcamos llegar a contemplarte en el reino celestial. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6821"
-},
-"propio/santa-escolastica/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Esta es la virgen prudente que, unida a Cristo, resplandece como el sol en el reino celestial."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6425"
-},
-"propio/santa-escolastica/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Ven, esposa de Cristo, recibe la corona eterna que el Señor te tiene preparada."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6425"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8351"
 },
 "propio/santa-escolastica/visperas/oracion": {
 "ref": "propio/santa-escolastica/laudes/oracion"
 },
-"propio/santa-ines-virgen-y-martir/laudes/himno": {
+"propio/santa-gertrudis/laudes/oracion": {
 "lineas": [
 {
-"t": "estrofa",
-"x": "Nos apremia el amor, vírgenes santas;\nvosotras, que seguisteis su camino,\nguiadnos por las sendas de las almas\nque hicieron de su amar amor divino.\n\nEsperasteis en vela a vuestro Esposo\nen la noche fugaz de vuestra vida,\ncuando llamó a la puerta, vuestro gozo\nfue contemplar su gloria sin medida.\n\nVuestra fe y vuestro amor fue fuego ardiente\nque mantuvo la llama en la tardanza,\nvuestra antorcha encendida asiduamente\nha colmado de luz vuestra esperanza.\n\nPues gozáis ya las nupcias que el Cordero\ncon la Iglesia de Dios ha celebrado,\nno dejéis que se apague nuestro fuego\nen la pereza y sueño del pecado.\n\nDemos gracias a Dios y, humildemente,\npidamos al Señor que su llamada\nnos encuentre en vigilia permanente,\ndespiertos en la fe y en veste blanca. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0409"
+"t": "v",
+"x": "V."
 },
-"propio/santa-ines-virgen-y-martir/visperas/ant_ev": {
-"lineas": [
 {
 "t": "texto",
-"x": "Santa Inés, con las manos extendidas, oraba: «Padre santo, imploro tu ayuda; siempre te he amado, te he buscado, te he deseado, y ahora vengo a ti»."
+"x": "Oi Jainko, Gertrudis birjina santuaren bihotzean bizileku atsegina egin zenuen Zuretzat; haren otoitzari esker, argi itzazu gure bihotzeko ilunpeak, pozik senti dezagun geuregan zaitugula eta gugan ari zarela. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6409"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8601"
 },
-"propio/santa-ines-virgen-y-martir/visperas/himno": {
+"propio/santa-gertrudis/visperas/oracion": {
 "lineas": [
 {
-"t": "estrofa",
-"x": "Dichosa tú, que, entre todas,\nfuiste por Dios sorprendida\ncon tu lámpara encendida\npara el banquete de bodas.\n\nCon el abrazo inocente\nde un hondo pacto amoroso,\nvienes a unirte al Esposo\npor virgen y por prudente.\n\nEnséñanos a vivir;\nayúdenos tu oración;\ndanos en la tentación\nla gracia de resistir.\n\nHonor a la Trinidad\npor esta limpia victoria.\nY gloria por esta gloria\nque alegra la cristiandad. Amén."
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Oi Jainko, Gertrudis birjina santuaren bihotzean bizileku atsegina egin zenuen Zuretzat; haren otoitzari esker, argi itzazu gure bihotzeko ilunpeak, pozik senti dezagun geuregan zaitugula eta gugan ari zarela. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0409"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8601"
+},
+"propio/santa-ines-virgen-y-martir/laudes/salmo1": {
+"ref": "comunes/santas-mujeres/laudes/salmo1"
+},
+"propio/santa-ines-virgen-y-martir/laudes/salmo2": {
+"ref": "comunes/santas-mujeres/laudes/salmo2"
+},
+"propio/santa-ines-virgen-y-martir/laudes/salmo3": {
+"ref": "comunes/santas-mujeres/laudes/salmo3"
+},
+"propio/santa-ines-virgen-y-martir/visperas/himno": {
+"ref": "propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/visperas/himno"
+},
+"propio/santa-ines-virgen-y-martir/visperas/lectura": {
+"ref": "propio/santos-pedro-y-pablo-apostoles/laudes/lectura"
 },
 "propio/santa-ines-virgen-y-martir/visperas/oracion": {
 "ref": "propio/santa-ines-virgen-y-martir/laudes/oracion"
 },
+"propio/santa-ines-virgen-y-martir/visperas/responsorio": {
+"ref": "propio/santa-brigida-religiosa-patrona-de-europa/visperas/responsorio"
+},
+"propio/santa-ines-virgen-y-martir/visperas/salmo1": {
+"ref": "propio/san-lorenzo-diacono-y-martir/visperas/salmo1"
+},
+"propio/santa-ines-virgen-y-martir/visperas/salmo2": {
+"ref": "propio/la-catedra-de-san-pedro/visperas/salmo1"
+},
+"propio/santa-ines-virgen-y-martir/visperas/salmo3": {
+"ref": "propio/la-exaltacion-de-la-santa-cruz/visperas/salmo3"
+},
 "propio/santa-isabel-de-hungria/visperas/oracion": {
 "ref": "propio/santa-isabel-de-hungria/laudes/oracion"
-},
-"propio/santa-isabel-de-portugal/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que creas la paz y amas la caridad, haciendo brillar a santa Isabel de Portugal con la gracia admirable de reconciliar a los enemigos; concédenos, por su intercesión, ser constructores de paz para que podamos ser llamados hijos de Dios. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6521"
-},
-"propio/santa-isabel-de-portugal/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que creas la paz y amas la caridad, haciendo brillar a santa Isabel de Portugal con la gracia admirable de reconciliar a los enemigos; concédenos, por su intercesión, ser constructores de paz para que podamos ser llamados hijos de Dios. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6521"
-},
-"propio/santa-juana-francisca-de-chantal/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que adornaste con excelsas virtudes a santa Juana Francisca en los distintos estados de su vida, concédenos, por su intercesión, que, caminando fielmente según nuestra vocación, manifestemos siempre las obras de la luz. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6831"
-},
-"propio/santa-juana-francisca-de-chantal/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que adornaste con excelsas virtudes a santa Juana Francisca en los distintos estados de su vida, concédenos, por su intercesión, que, caminando fielmente según nuestra vocación, manifestemos siempre las obras de la luz. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6831"
 },
 "propio/santa-lucia-virgen-y-martir/laudes/ant_ev": {
 "lineas": [
@@ -17441,7 +15185,51 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8801"
 },
-"propio/santa-margarita-de-escocia-santa-gertrudis/laudes/oracion": {
+"propio/santa-m-magdalena-de-pazzi/laudes/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Birjintasuna maite duzun Jainkoa, zerutar dohainez apaindu zenuen Maria Magdalena Pazzi, birjina santua, eta zeure maitasunaz sutu zenion bihotza; egizu, gaur haren oroipena ospatzen dugunok imita dezagula haren garbitasun- eta maitasun-etsenplua. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4741"
+},
+"propio/santa-m-magdalena-de-pazzi/visperas/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Birjintasuna maite duzun Jainkoa, zerutar dohainez apaindu zenuen Maria Magdalena Pazzi, birjina santua, eta zeure maitasunaz sutu zenion bihotza; egizu, gaur haren oroipena ospatzen dugunok imita dezagula haren garbitasun- eta maitasun-etsenplua. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4741"
+},
+"propio/santa-margarita-de-escocia/laudes/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -17463,7 +15251,7 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8591"
 },
-"propio/santa-margarita-de-escocia-santa-gertrudis/visperas/oracion": {
+"propio/santa-margarita-de-escocia/visperas/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -17471,7 +15259,7 @@
 },
 {
 "t": "texto",
-"x": "Martin Porres santua apaltasun-bidetik zeruko osperaino eraman zenuen Jainkoa, egizu, jarrai diezaiogula haren etsenplu miresgarriari harekin batean zeruan goratuak izan gaitezen. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+"x": "Oi Jainko, Eskoziako Margarita santua harrigarria egin zenuen behartsuenganako izan zuen maitasunaz; egizu, haren otoitzari esker eta haren etsenpluari jarraituz, izan gaitezela gizon-emakumeen artean zure ontasunaren irudi. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
 },
 {
 "t": "r",
@@ -17483,9 +15271,9 @@
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8481"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8591"
 },
-"propio/santa-margarita-maria-de-alacoque-santa-eduvigis/visperas/oracion": {
+"propio/santa-margarita-maria-de-alacoque/visperas/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -17493,7 +15281,7 @@
 },
 {
 "t": "texto",
-"x": "Jainko ahalguztiduna, apaltasunean eredu izan zen guztientzat Eduvigis santuaren bizitza; emaguzu, haren otoitz beneragarriari esker, zerutar laguntza. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+"x": "Isur ezazu gure bihotzean, Jauna, Margarita Maria santuari oparo eman zenion espiritua, horrela ezagut dezagun jakintza ororen gainetik dagoen Kristoren maitasuna eta zure izatearen betetasun guztiaz bete gaitezen. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
 },
 {
 "t": "r",
@@ -17505,51 +15293,7 @@
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8351"
-},
-"propio/santa-maria-goretti-virgen-y-martir/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, fuente de la inocencia y amante de la castidad, que concediste a tu sierva santa María Goretti la gracia del martirio en edad juvenil, y le entregaste la corona de virgen por su combate; concédenos, por su intercesión, constancia en el cumplimiento de tus mandatos. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6541"
-},
-"propio/santa-maria-goretti-virgen-y-martir/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, fuente de la inocencia y amante de la castidad, que concediste a tu sierva santa María Goretti la gracia del martirio en edad juvenil, y le entregaste la corona de virgen por su combate; concédenos, por su intercesión, constancia en el cumplimiento de tus mandatos. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6541"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8361"
 },
 "propio/santa-maria-madre-de-dios/laudes/ant_ev-A": {
 "lineas": [
@@ -17581,159 +15325,11 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6219"
 },
-"propio/santa-maria-virgen-reina/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Santa María, siempre Virgen, Reina del mundo, tú engendraste a Cristo, el Señor, Salvador universal."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6692"
-},
 "propio/santa-maria-virgen-reina/laudes/oracion": {
 "ref": "propio/santa-maria-virgen-reina/visperas/oracion"
 },
-"propio/santa-marta-maria-y-lazaro/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Jesús, levantando los ojos a lo alto, gritó con voz potente: «¡Lázaro, sal fuera!»."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6668"
-},
-"propio/santa-marta-maria-y-lazaro/laudes/himno": {
-"lineas": [
-{
-"t": "estrofa",
-"x": "¡Qué allegada estuviste, oh, Marta, \nal corazón de Cristo! \nque tus méritos nos hagan provechoso \neste himno que entonamos en tu alabanza.\n\nEl Señor se hospedó a menudo \nen la quietud apacible de tu casa; \nallí se complacía en tus palabras\ny en la premura de tus desvelos.\n\nEres la primera en lamentar la muerte de Lázaro \ny te deshaces en lágrimas con María, \ncuando ves repentinamente \nque el grito del Maestro lo ha devuelto a la vida.\n\nTú, que después que Jesús te probara, \nconfesaste con fe pronta tu esperanza en la resurrección, \nhaz ardientes nuestros pasos \nen el camino que lleva al reino de los cielos.\n\nEl honor, la fuerza y el poder al Padre, \nal Hijo y al santo Pneuma; \nque nos concedan contemplar \neternamente contigo su gloria. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0668"
-},
-"propio/santa-marta-maria-y-lazaro/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, tu Hijo llamó a Lázaro del sepulcro a la vida, y se dignó hospedarse en casa de Marta, haz que, sirviéndole a él fielmente en nuestros hermanos, merezcamos, con María, ser alimentados con la meditación de su palabra. Él, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6681"
-},
-"propio/santa-marta-maria-y-lazaro/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Jesús amaba a Marta, a su hermana y a su hermano Lázaro."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6668"
-},
 "propio/santa-marta-maria-y-lazaro/visperas/himno": {
 "ref": "propio/santa-brigida-religiosa-patrona-de-europa/visperas/himno"
-},
-"propio/santa-marta-maria-y-lazaro/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, tu Hijo llamó a Lázaro del sepulcro a la vida, y se dignó hospedarse en casa de Marta, haz que, sirviéndole a él fielmente en nuestros hermanos, merezcamos, con María, ser alimentados con la meditación de su palabra. Él, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6681"
-},
-"propio/santa-monica/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "La escuchaste, Señor, y no despreciaste sus lágrimas abundantes, que regaron la tierra cuando oraba."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6698"
-},
-"propio/santa-monica/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, consuelo de los que lloran, que acogiste misericordiosamente las piadosas lágrimas de santa Mónica en la conversión de su hijo Agustín, concédenos, por intercesión de madre e hijo, llorar nuestros pecados y alcanzar la gracia de tu perdón. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6981"
-},
-"propio/santa-monica/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Mónica, vivificada por la gracia de Cristo, mientras estuvo en este mundo vivió de tal manera que su fe y sus costumbres fueron una perfecta alabanza al nombre de Dios."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6698"
-},
-"propio/santa-monica/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, consuelo de los que lloran, que acogiste misericordiosamente las piadosas lágrimas de santa Mónica en la conversión de su hijo Agustín, concédenos, por intercesión de madre e hijo, llorar nuestros pecados y alcanzar la gracia de tu perdón. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6981"
 },
 "propio/santa-rita-de-casia/laudes/oracion": {
 "lineas": [
@@ -17778,104 +15374,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4701"
-},
-"propio/santa-rosa-de-lima/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, tú hiciste que santa Rosa de Lima, encendida en tu amor, se apartara del mundo y se consagrara solo a ti en la austeridad de la penitencia, concédenos, por su intercesión, que, siguiendo en la tierra los caminos que conducen a la vida, gocemos en el cielo del torrente de tus delicias. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6931"
-},
-"propio/santa-rosa-de-lima/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, tú hiciste que santa Rosa de Lima, encendida en tu amor, se apartara del mundo y se consagrara solo a ti en la austeridad de la penitencia, concédenos, por su intercesión, que, siguiendo en la tierra los caminos que conducen a la vida, gocemos en el cielo del torrente de tus delicias. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6931"
-},
-"propio/santa-teresa-de-jesus-jornet-e-ibars-virgen/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Como el Padre me ha amado, así os he amado yo; permaneced en mi amor."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6697"
-},
-"propio/santa-teresa-de-jesus-jornet-e-ibars-virgen/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que has guiado a la virgen santa Teresa de Jesús Jornet a la perfecta caridad en el cuidado de los ancianos, concédenos, a ejemplo suyo, servir a Cristo en el prójimo para ser testigos de su amor. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6971"
-},
-"propio/santa-teresa-de-jesus-jornet-e-ibars-virgen/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que has guiado a la virgen santa Teresa de Jesús Jornet a la perfecta caridad en el cuidado de los ancianos, concédenos, a ejemplo suyo, servir a Cristo en el prójimo para ser testigos de su amor. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6971"
 },
 "propio/santa-teresa-de-jesus/laudes/ant1": {
 "lineas": [
@@ -18059,36 +15557,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8201"
-},
-"propio/santiago-apostol-patron-de-espana/laudes/ant_ev-B": {
-"lineas": [
-{
-"t": "texto",
-"x": "Jesús tomó consigo a Pedro, a Santiago y a su hermano Juan y se los llevó aparte a una montaña alta y se transfiguró delante de ellos."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6666"
-},
-"propio/santiago-apostol-patron-de-espana/visperas/ant_ev-B": {
-"lineas": [
-{
-"t": "texto",
-"x": "¡Oh glorioso apóstol Santiago, elegido entre los primeros! Tú fuiste el primero, entre los apóstoles, en beber el cáliz del Señor. ¡Oh feliz pueblo de España, protegido por un tal patrono! Por ti el Poderoso ha hecho obras grandes. Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6666"
-},
-"propio/santiago-apostol-patron-de-espana/visperas1/ant_ev-B": {
-"lineas": [
-{
-"t": "texto",
-"x": "Astro brillante de España, apóstol Santiago, tu cuerpo descansa en la paz, tu gloria pervive entre nosotros. Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6666"
 },
 "propio/santisima-trinidad/laudes/ant_ev-A": {
 "lineas": [
@@ -19013,112 +16481,14 @@
 "propio/santo-domingo-de-guzman/laudes/himno": {
 "ref": "propio/san-ignacio-de-loyola/laudes/himno"
 },
-"propio/santo-domingo-de-guzman/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Te pedimos, Señor, que santo Domingo de Guzmán, insigne predicador de tu verdad, ayude a tu Iglesia con sus enseñanzas y sus méritos, e interceda piadosamente por nosotros. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6791"
-},
 "propio/santo-domingo-de-guzman/visperas/himno": {
 "ref": "propio/san-ignacio-de-loyola/visperas/himno"
-},
-"propio/santo-domingo-de-guzman/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Te pedimos, Señor, que santo Domingo de Guzmán, insigne predicador de tu verdad, ayude a tu Iglesia con sus enseñanzas y sus méritos, e interceda piadosamente por nosotros. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6791"
-},
-"propio/santo-tomas-de-aquino/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Dios le concedió una sabiduría extraordinaria; él la aprendió sin malicia y la repartió sin envidia."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6416"
 },
 "propio/santo-tomas-de-aquino/visperas/oracion": {
 "ref": "propio/santo-tomas-de-aquino/laudes/oracion"
 },
 "propio/santos-andres-dung-lac-y-companeros-martires/visperas/oracion": {
 "ref": "propio/santos-andres-dung-lac-y-companeros-martires/laudes/oracion"
-},
-"propio/santos-andres-kim-pablo-chong-y-companeros-martires/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que te has dignado multiplicar los hijos de adopción en todo el orbe de la tierra, e hiciste que la sangre de los santos mártires Andrés y compañeros fuera semilla fecunda de cristianos, concédenos que, fortalecidos por su ayuda, avancemos continuamente siguiendo su ejemplo. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8111"
-},
-"propio/santos-andres-kim-pablo-chong-y-companeros-martires/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que te has dignado multiplicar los hijos de adopción en todo el orbe de la tierra, e hiciste que la sangre de los santos mártires Andrés y compañeros fuera semilla fecunda de cristianos, concédenos que, fortalecidos por su ayuda, avancemos continuamente siguiendo su ejemplo. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8111"
 },
 "propio/santos-angeles-custodios/laudes/ant1": {
 "lineas": [
@@ -19536,20 +16906,7 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V1821"
 },
-"propio/santos-cirilo-y-metodio-patronos-de-europa/laudes/himno": {
-"ref": "comunes/pastores/laudes/himno"
-},
-"propio/santos-cornelio-y-cipriano-martires/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Oh muerte preciosa, que compra la inmortalidad al precio de su sangre."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6808"
-},
-"propio/santos-cornelio-y-cipriano-martires/laudes/oracion": {
+"propio/santos-dionisio-y-companeros/laudes/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -19557,105 +16914,7 @@
 },
 {
 "t": "texto",
-"x": "Oh, Dios, que has puesto al frente de tu pueblo como abnegados pastores y mártires invencibles a los santos Cornelio y Cipriano, concédenos, por su intercesión, ser fortalecidos en la fe y en la constancia para trabajar con empeño por la unidad de tu Iglesia. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8081"
-},
-"propio/santos-cornelio-y-cipriano-martires/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Oh dichosa Iglesia nuestra, ennoblecida por la gloriosa sangre de los mártires de Cristo."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6808"
-},
-"propio/santos-cornelio-y-cipriano-martires/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que has puesto al frente de tu pueblo como abnegados pastores y mártires invencibles a los santos Cornelio y Cipriano, concédenos, por su intercesión, ser fortalecidos en la fe y en la constancia para trabajar con empeño por la unidad de tu Iglesia. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8081"
-},
-"propio/santos-cosme-y-damian-martires/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Proclame tu grandeza, Señor, la admirable memoria de tus santos Cosme y Damián, porque a ellos les diste la gloria eterna y a nosotros nos proteges con tu maravillosa providencia. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8151"
-},
-"propio/santos-cosme-y-damian-martires/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Proclame tu grandeza, Señor, la admirable memoria de tus santos Cosme y Damián, porque a ellos les diste la gloria eterna y a nosotros nos proteges con tu maravillosa providencia. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8151"
-},
-"propio/santos-dionisio-y-companeros-san-juan-leonardi/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oi Jainko, on guztien emailea, Ebanjelioa helarazi zenien herriei Joan Leonardi presbitero santuaren bidez; egizu, haren otoitzari esker, zabaldu dadila egiazko fedea nonahi eta beti. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+"x": "Oi Jainko, jentilei zure aintza predikatzera bidali zenituen Dionisio santua eta lagunak, eta beren oinazeetan zeure indarrez eta iraupenez bete zenituen; egizu, haiek eredu ditugula, mundu honetako ondasun engainagarriak gutxiets ditzagula eta ez gaitezela munduko ezbeharren beldur izan. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
 },
 {
 "t": "r",
@@ -19667,9 +16926,9 @@
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8281"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8271"
 },
-"propio/santos-dionisio-y-companeros-san-juan-leonardi/visperas/oracion": {
+"propio/santos-dionisio-y-companeros/visperas/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -19677,7 +16936,7 @@
 },
 {
 "t": "texto",
-"x": "Oi Jainko, on guztien emailea, Ebanjelioa helarazi zenien herriei Joan Leonardi presbitero santuaren bidez; egizu, haren otoitzari esker, zabaldu dadila egiazko fedea nonahi eta beti. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+"x": "Oi Jainko, jentilei zure aintza predikatzera bidali zenituen Dionisio santua eta lagunak, eta beren oinazeetan zeure indarrez eta iraupenez bete zenituen; egizu, haiek eredu ditugula, mundu honetako ondasun engainagarriak gutxiets ditzagula eta ez gaitezela munduko ezbeharren beldur izan. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
 },
 {
 "t": "r",
@@ -19689,71 +16948,24 @@
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8281"
-},
-"propio/santos-joaquin-y-ana/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Bendito sea el Señor, Dios de Israel, porque nos ha suscitado una fuerza de salvación en la casa de David, su siervo."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6667"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8271"
 },
 "propio/santos-joaquin-y-ana/laudes/himno": {
 "ref": "comunes/santos-varones/laudes/himno"
 },
-"propio/santos-joaquin-y-ana/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Señor, Dios de nuestros padres, que concediste a los santos Joaquín y Ana la gracia de que naciera de ellos la Madre de tu Hijo encarnado, concédenos, por la plegaria de ambos, la salvación prometida a tu pueblo. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6671"
-},
-"propio/santos-joaquin-y-ana/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "La muy noble descendencia de Jesé ha producido un hermoso renuevo, del cual ha brotado un vástago lleno de suave fragancia."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6667"
+"propio/santos-joaquin-y-ana/laudes/preces": {
+"ref": "propio/san-benito-abad-patrono-de-europa/laudes/preces"
 },
 "propio/santos-joaquin-y-ana/visperas/himno": {
 "ref": "propio/san-benito-abad-patrono-de-europa/visperas/himno"
 },
 "propio/santos-joaquin-y-ana/visperas/lectura": {
-"lineas": [
-{
-"t": "cita",
-"x": "Rom 9, 4-5"
+"ref": "propio/natividad-de-la-virgen-maria/visperas/lectura"
 },
-{
-"t": "texto",
-"x": "Los descendientes de Israel fueron adoptados como hijos, tienen la presencia de Dios, la alianza, la ley, el culto y las promesas. Suyos son los patriarcas, de quienes, según la carne, nació el Mesías, el que está por encima de todo: Dios bendito por los siglos. Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V5667"
+"propio/santos-joaquin-y-ana/visperas/preces": {
+"ref": "propio/san-benito-abad-patrono-de-europa/visperas/preces"
 },
-"propio/santos-joaquin-y-ana/visperas/oracion": {
+"propio/santos-juan-de-brebeuf-isaac-jogues-y-companeros/laudes/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -19761,83 +16973,7 @@
 },
 {
 "t": "texto",
-"x": "Señor, Dios de nuestros padres, que concediste a los santos Joaquín y Ana la gracia de que naciera de ellos la Madre de tu Hijo encarnado, concédenos, por la plegaria de ambos, la salvación prometida a tu pueblo. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6671"
-},
-"propio/santos-joaquin-y-ana/visperas/responsorio": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Auxilia a Israel, su siervo, acordándose de su misericordia."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Auxilia a Israel, su siervo, acordándose de su misericordia."
-},
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Como lo había prometido a nuestros padres."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Acordándose de su misericordia."
-},
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Gloria al Padre, y al Hijo, y al Espíritu Santo."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Auxilia a Israel, su siervo, acordándose de su misericordia."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V5667"
-},
-"propio/santos-juan-de-brebeuf-isaac-jogues-y-companeros-san-pablo-de-la-cruz/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Jainko gure Jauna, Alcantarako Pedro santua ospetsu egin zenuen, bai bere penitentzia miragarriaz, bai goren-goreneko bere ikuskariez; egizu, haren merezimenduei esker, geure buruari bizitzan gogor eginez, errazago irits ditzagula zeruko ondasunak. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+"x": "Oi Jainko, Joan, Isaak eta haien lagun santuen bizitzaz eta haiek isuritako odolez adierazi nahi izan duzu betiko erreinuaren itxaropen zoriontsua; egizu, zeure bihotz onez, haien otoitzari esker, sendo dadila egunetik egunera kristauen fedea. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
 },
 {
 "t": "r",
@@ -19849,9 +16985,9 @@
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8391"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8401"
 },
-"propio/santos-juan-de-brebeuf-isaac-jogues-y-companeros-san-pablo-de-la-cruz/visperas/oracion": {
+"propio/santos-juan-de-brebeuf-isaac-jogues-y-companeros/visperas/oracion": {
 "lineas": [
 {
 "t": "v",
@@ -19859,7 +16995,7 @@
 },
 {
 "t": "texto",
-"x": "Jainko gure Jauna, Alcantarako Pedro santua ospetsu egin zenuen, bai bere penitentzia miragarriaz, bai goren-goreneko bere ikuskariez; egizu, haren merezimenduei esker, geure buruari bizitzan gogor eginez, errazago irits ditzagula zeruko ondasunak. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+"x": "Oi Jainko, Joan, Isaak eta haien lagun santuen bizitzaz eta haiek isuritako odolez adierazi nahi izan duzu betiko erreinuaren itxaropen zoriontsua; egizu, zeure bihotz onez, haien otoitzari esker, sendo dadila egunetik egunera kristauen fedea. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
 },
 {
 "t": "r",
@@ -19871,7 +17007,7 @@
 }
 ],
 "batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8391"
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8401"
 },
 "propio/santos-marcelino-y-pedro-martires/laudes/oracion": {
 "lineas": [
@@ -19995,16 +17131,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4611"
 },
-"propio/santos-pedro-poveda-inocencio-de-la-inmaculada-y-companeros-martires/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Una multitud innumerable de mártires perseveró en el amor fraterno, porque tenían un mismo espíritu y una misma fe."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6851"
-},
 "propio/santos-pedro-poveda-inocencio-de-la-inmaculada-y-companeros-martires/laudes/oracion": {
 "lineas": [
 {
@@ -20027,16 +17153,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8511"
 },
-"propio/santos-pedro-poveda-inocencio-de-la-inmaculada-y-companeros-martires/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Oh dichosa Iglesia nuestra, ennoblecida por la gloriosa sangre de los mártires de Cristo."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6851"
-},
 "propio/santos-pedro-poveda-inocencio-de-la-inmaculada-y-companeros-martires/visperas/oracion": {
 "lineas": [
 {
@@ -20058,144 +17174,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8511"
-},
-"propio/santos-pedro-y-pablo-apostoles/laudes/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "Dijo Simón Pedro: «Señor, ¿a quién vamos a acudir? Tú tienes palabras de vida eterna; nosotros creemos y sabemos que tú eres el Santo consagrado por Dios». Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6648"
-},
-"propio/santos-pedro-y-pablo-apostoles/visperas/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "Pedro, el apóstol, y Pablo, el maestro de los gentiles, nos enseñaron tu ley, Señor."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6648"
-},
-"propio/santos-pedro-y-pablo-apostoles/visperas1/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "Estos gloriosos apóstoles, que se amaron tanto en la vida, tampoco se separaron en la muerte."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6648"
-},
-"propio/santos-ponciano-e-hipolito-martires/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Te rogamos, Señor, que la inestimable paciencia de los santos aumente en nosotros el deseo de amarte y fortalezca siempre la fe santa en nuestros corazones. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6841"
-},
-"propio/santos-ponciano-e-hipolito-martires/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Te rogamos, Señor, que la inestimable paciencia de los santos aumente en nosotros el deseo de amarte y fortalezca siempre la fe santa en nuestros corazones. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6841"
-},
-"propio/santos-timoteo-y-tito/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Proclama la palabra, insiste a tiempo y a destiempo, reprende, reprocha, exhorta, con toda paciencia y deseo de instruir."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6414"
-},
-"propio/santos-timoteo-y-tito/laudes/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que hiciste brillar con virtudes apostólicas a los santos Timoteo y Tito, concédenos, por su intercesión, que, viviendo en este mundo con piedad y justicia, merezcamos llegar a la patria celestial. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4141"
-},
-"propio/santos-timoteo-y-tito/visperas/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Llevemos una vida honrada y religiosa, aguardando la dicha que esperamos: la aparición del Señor."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6414"
-},
-"propio/santos-timoteo-y-tito/visperas/oracion": {
-"lineas": [
-{
-"t": "v",
-"x": "V."
-},
-{
-"t": "texto",
-"x": "Oh, Dios, que hiciste brillar con virtudes apostólicas a los santos Timoteo y Tito, concédenos, por su intercesión, que, viviendo en este mundo con piedad y justicia, merezcamos llegar a la patria celestial. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos."
-},
-{
-"t": "r",
-"x": "R."
-},
-{
-"t": "texto",
-"x": "Amén."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4141"
 },
 "propio/todos-los-santos/laudes/ant_ev-A": {
 "lineas": [
@@ -22425,6 +19403,9 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O1571"
+},
+"tiempo/adviento/12-24/laudes/salmo3": {
+"ref": "propio/la-exaltacion-de-la-santa-cruz/visperas1/salmo1"
 },
 "tiempo/adviento/12-24/oracion": {
 "lineas": [
@@ -24843,16 +21824,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O3111"
 },
-"tiempo/cuaresma/s1/dom/visperas/ant_ev-B": {
-"lineas": [
-{
-"t": "texto",
-"x": "Vela sobre nosotros, Salvador eterno, sé tú nuestro protector; que no nos sorprenda el tentador astuto."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6311_B"
-},
 "tiempo/cuaresma/s1/dom/visperas/salmo1": {
 "ref": "salterio/s1/dom/visperas/salmo1"
 },
@@ -27171,24 +24142,6 @@
 "tiempo/navidad/comun/visperas1/salmo3": {
 "ref": "salterio/s1/dom/visperas1/salmo3"
 },
-"tiempo/ordinario/dom10/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "Todo se les podrá perdonar a los hombres, pero el que blasfema contra el Espíritu Santo no tendrá perdón jamás."
-},
-{
-"t": "rubrica",
-"x": "O bien, en el presente año B se puede utilizar la siguiente antífona:"
-},
-{
-"t": "texto",
-"x": "Cuando un hombre fuerte y bien armado guarda su palacio, sus bienes están seguros."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6610_B"
-},
 "tiempo/ordinario/dom10/oracion": {
 "lineas": [
 {
@@ -27761,52 +24714,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6331"
 },
-"tiempo/ordinario/dom33/visperas/ant_ev-A": {
-"lineas": [
-{
-"t": "texto",
-"x": "Muy bien. Eres un empleado fiel y cumplidor; como has sido fiel en lo poco, pasa al banquete de tu Señor."
-},
-{
-"t": "rubrica",
-"x": "O bien, en el presente año A se puede utilizar la siguiente antífona:"
-},
-{
-"t": "texto",
-"x": "Muy bien, empleado cumplidor, fiel en lo poco; pasa al banquete de tu señor."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6633_A"
-},
-"tiempo/ordinario/dom33/visperas/ant_ev-C": {
-"lineas": [
-{
-"t": "texto",
-"x": "«Con vuestra perseverancia salvaréis vuestras almas», dice el Señor."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6633_C"
-},
-"tiempo/ordinario/dom33/visperas1/ant_ev-B": {
-"lineas": [
-{
-"t": "texto",
-"x": "El cielo y la tierra pasarán, mis palabras no pasarán."
-},
-{
-"t": "rubrica",
-"x": "O bien, en el presente año B se puede utilizar la siguiente antífona:"
-},
-{
-"t": "texto",
-"x": "Verán venir al Hijo del hombre sobre las nubes con gran poder y majestad. Aleluya."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad P6633_B"
-},
 "tiempo/ordinario/dom4/oracion": {
 "lineas": [
 {
@@ -27894,16 +24801,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6071"
-},
-"tiempo/ordinario/dom8/laudes/ant_ev": {
-"lineas": [
-{
-"t": "texto",
-"x": "No hay árbol sano que dé fruto dañado, ni árbol dañado que dé fruto sano."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6608_C"
 },
 "tiempo/ordinario/dom8/oracion": {
 "lineas": [

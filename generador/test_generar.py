@@ -1,10 +1,16 @@
 """Pruebas del generador. Correr: py -3.14 -m pytest projects/OrduenLiturgia/generador -q"""
 import json
+import re
 from datetime import date, timedelta
 
 import pytest
 
 import generar
+
+
+@pytest.fixture(scope="module")
+def textos_reales():
+    return generar.cargar_textos(generar.PROYECTO / "textos")
 
 # Semana del salterio de cada fecha, cotejada con la app oficial «Liturgia euskaraz»
 # el 10-nov-2026.
@@ -36,6 +42,9 @@ def test_semana_salterio_coincide_con_la_app_oficial(fecha, semana):
     ("2026-11-10", "del dia", "San León Magno, papa y doctor"),                 # memoria obligatoria
     ("2027-03-27", "segundas", None),                                           # Sábado Santo: no hay primeras de Pascua
     ("2027-03-30", "segundas", "Martes de la Octava de Pascua"),                # octava: cada día las suyas
+    ("2027-03-24", "del dia", "Miércoles Santo"),                               # no hay primeras del Jueves Santo
+    ("2027-02-13", "primeras", "I Domingo de Cuaresma"),                        # sábado después de Ceniza (empate de nivel)
+    ("2027-04-03", "primeras", "II Domingo de Pascua"),                         # sábado de la octava (empate de nivel)
 ])
 def test_visperas_de_quien(fecha, cuales, de):
     dia = generar.generar_dia(date.fromisoformat(fecha), {}, {})
@@ -47,7 +56,7 @@ def test_visperas_de_quien(fecha, cuales, de):
 
 def test_memoria_libre_sale_como_opcional_y_la_feria_como_principal():
     dia = generar.generar_dia(date(2026, 11, 16), {}, {})   # santa Margarita de Escocia / santa Gertrudis
-    assert [c["opcional"] for c in dia["celebraciones"]] == [False, True]
+    assert [c["opcional"] for c in dia["celebraciones"]] == [False, True, True]   # feria + una por santo
     assert dia["celebraciones"][0]["rango"] == "Feria"
 
 
@@ -159,7 +168,7 @@ def test_cabecera_en_euskera_y_color_del_tiempo_como_lecturasdeldia():
 def noche(fecha: str) -> dict:
     d = date.fromisoformat(fecha)
     info, man = generar.dia_liturgico(d), generar.dia_liturgico(d + timedelta(days=1))
-    return generar.formulario_completas(info, man, generar.tiene_primeras_visperas(man) and man["nivel"] < info["nivel"])
+    return generar.formulario_completas(info, man, generar.primeras_visperas(info, man))
 
 
 @pytest.mark.parametrize("fecha,f,primeras,solemnidad", [
@@ -286,3 +295,281 @@ def test_benedictus_y_magnificat_llevan_titulo_y_epigrafe():
     for clave, titulo in (("fijo/laudes/benedictus", "Benedictus"), ("fijo/visperas/magnificat", "Magnificat")):
         ls = textos[clave]["lineas"]
         assert [l["t"] for l in ls[:4]] == ["salmo", "cita", "epigrafe", "estrofa"] and ls[0]["x"] == titulo
+
+
+# ── Primeras Vísperas: Triduo y empates de nivel ────────────────────────────
+
+def test_el_triduo_y_su_vispera_no_tienen_primeras_visperas():
+    for año in range(2021, 2032):
+        pascua = generar.liturgia.easter(año)
+        # Miércoles Santo, Jueves, Viernes y Sábado Santo: cada noche reza las Vísperas de su propio día.
+        for dias in (-4, -3, -2, -1):
+            d = pascua + timedelta(days=dias)
+            cel = generar.generar_dia(d, {}, {})["celebraciones"][0]
+            assert cel["visperas_de"]["cuales"] != "primeras" and cel["visperas_de"]["de"] == cel["nombre"], d
+        # Sábado después de Ceniza y sábado de la octava: primeras del domingo siguiente.
+        ceniza = pascua - timedelta(days=46)
+        for d, domingo in ((ceniza + timedelta(days=3), "I Domingo de Cuaresma"),
+                           (pascua + timedelta(days=6), "II Domingo de Pascua")):
+            v = generar.generar_dia(d, {}, {})["celebraciones"][0]["visperas_de"]
+            assert (v["cuales"], v["de"]) == ("primeras", domingo), d
+
+
+def test_las_tres_noches_corregidas_no_dejan_partes_vacias_por_la_eleccion(textos_reales):
+    for fecha in ("2027-03-24", "2027-02-13", "2027-04-03"):
+        dia = generar.generar_dia(date.fromisoformat(fecha), textos_reales, {})
+        faltas = [p["parte"] for p in dia["celebraciones"][0]["horas"]["visperas"] if "falta" in p]
+        assert faltas == [], (fecha, faltas)
+
+
+# ── Salmos propios del tiempo ───────────────────────────────────────────────
+
+def salmo(dia, hora, parte, cel=0):
+    p = {p["parte"]: p for p in dia["celebraciones"][cel]["horas"][hora]}[parte]
+    titulo = next(l["x"] for l in p["lineas"] if l["t"] == "salmo")
+    return p["clave"], int(re.search(r"\d+", titulo).group())
+
+
+def test_ceniza_y_ii_domingo_de_pascua_rezan_sus_salmos_propios(textos_reales):
+    # «Liturgia euskaraz»: Ceniza, salmos 50 y 99; II de Pascua, 62 y 149.
+    ceniza = generar.generar_dia(date(2027, 2, 10), textos_reales, {})
+    assert salmo(ceniza, "laudes", "salmo1") == ("tiempo/cuaresma/ceniza/mie/laudes/salmo1", 50)
+    assert salmo(ceniza, "laudes", "salmo3") == ("tiempo/cuaresma/ceniza/mie/laudes/salmo3", 99)
+    pascua = generar.generar_dia(date(2027, 4, 4), textos_reales, {})
+    assert salmo(pascua, "laudes", "salmo1") == ("tiempo/pascua/s2/dom/laudes/salmo1", 62)
+    assert salmo(pascua, "laudes", "salmo3") == ("tiempo/pascua/s2/dom/laudes/salmo3", 149)
+    # La antífona sale de la misma carpeta que su salmo.
+    for dia, base in ((ceniza, "tiempo/cuaresma/ceniza/mie"), (pascua, "tiempo/pascua/s2/dom")):
+        partes = {p["parte"]: p for p in dia["celebraciones"][0]["horas"]["laudes"]}
+        assert partes["ant1"]["clave"].startswith(base) and partes["salmo1"]["clave"].startswith(base)
+
+
+def test_octava_de_navidad_reza_la_salmodia_del_domingo_i(textos_reales):
+    for fecha in ("2026-12-29", "2026-12-30", "2026-12-31"):
+        dia = generar.generar_dia(date.fromisoformat(fecha), textos_reales, {})
+        for cel in range(len(dia["celebraciones"])):          # la feria y, si la hay, la memoria libre
+            assert salmo(dia, "laudes", "salmo1", cel) == ("tiempo/navidad/comun/laudes/salmo1", 62), (fecha, cel)
+            assert salmo(dia, "laudes", "salmo3", cel) == ("tiempo/navidad/comun/laudes/salmo3", 149), (fecha, cel)
+    # También las Vísperas del 29 y el 30.
+    for fecha in ("2026-12-29", "2026-12-30"):
+        dia = generar.generar_dia(date.fromisoformat(fecha), textos_reales, {})
+        assert salmo(dia, "visperas", "salmo1")[0] == "tiempo/navidad/comun/visperas/salmo1"
+        assert salmo(dia, "visperas", "salmo2") == ("tiempo/navidad/comun/visperas/salmo2", 129)
+    # Las antífonas siguen siendo las propias del día.
+    dia = generar.generar_dia(date(2026, 12, 30), textos_reales, {})
+    laudes = {p["parte"]: p for p in dia["celebraciones"][0]["horas"]["laudes"]}
+    assert laudes["ant1"]["clave"] == "tiempo/navidad/12-30/laudes/ant1"
+
+
+def test_los_salmos_del_tiempo_no_invaden_lo_que_reza_el_salterio(textos_reales):
+    # Del 2 al 5 de enero y en las ferias de Adviento 17-24 el blog escribe los salmos por fecha (con los de
+    # otro día de la semana): no valen, y salen los salmos del salterio (aunque sea su copia del tiempo).
+    for fecha in ("2027-01-04", "2026-12-21", "2026-12-22", "2027-01-12"):
+        d = date.fromisoformat(fecha)
+        dia = generar.generar_dia(d, textos_reales, {})
+        sal = f"salterio/s{generar.dia_liturgico(d)['salterio']}/{generar.DIAS[d.weekday()]}"
+        for hora in ("laudes", "visperas"):
+            for p in dia["celebraciones"][0]["horas"][hora]:
+                if p["parte"].startswith("salmo"):
+                    esperado = generar.resolver(textos_reales, [f"{sal}/{hora}/{p['parte']}"])[1]
+                    assert generar.mismo_salmo(p, esperado), (fecha, hora, p["clave"])
+    # Ninguna cadena de salmos de la ventana lleva una carpeta de fecha ni la salmodia común de Navidad fuera de diciembre.
+    for n in range(-40, 366):
+        d = date(2026, 11, 13) + timedelta(days=n)
+        info = generar.dia_liturgico(d)
+        for cel in info["celebraciones"]:
+            for hora in ("laudes", "visperas"):
+                for parte in ("salmo1", "salmo2", "salmo3"):
+                    for clave in generar.candidatas(info, cel, hora, parte):
+                        assert not re.search(r"/\d\d-\d\d/", clave), (d, clave)
+                        assert not (clave.startswith("tiempo/navidad/comun/") and d.month != 12), (d, clave)
+
+
+def test_cadena_de_salmos_de_feria_y_memoria_pasa_por_el_tiempo():
+    info = generar.dia_liturgico(date(2027, 2, 10))                  # Miércoles de Ceniza
+    assert generar.candidatas(info, info["celebraciones"][0], "laudes", "salmo1") == [
+        "tiempo/cuaresma/ceniza/mie/laudes/salmo1", "tiempo/cuaresma/comun/laudes/salmo1", "salterio/s4/mie/laudes/salmo1"]
+    info = generar.dia_liturgico(date(2026, 12, 29))                 # memoria libre de Becket en la octava
+    assert generar.candidatas(info, info["celebraciones"][1], "laudes", "salmo1") == [
+        "propio/santo-tomas-becket-obispo-y-martir/laudes/salmo1",
+        "tiempo/navidad/comun/laudes/salmo1", "salterio/s1/mar/laudes/salmo1"]
+
+
+def test_el_bizkaiera_del_salterio_manda_sobre_el_mismo_salmo_en_batua_del_tiempo():
+    pieza = lambda titulo, **k: {"lineas": [{"t": "salmo", "x": titulo}], **k}
+    info = generar.dia_liturgico(date(2027, 3, 23))                  # Martes Santo
+    cel = info["celebraciones"][0]
+    textos = {"tiempo/semana-santa/mar/laudes/salmo3": pieza("65. [64] Salmoa", batua=True),
+              "salterio/s2/mar/laudes/salmo3": pieza("64 Salmoa")}
+    laudes = {p["parte"]: p for p in generar.componer(info, cel, "laudes", textos, {})}
+    assert laudes["salmo3"]["clave"] == "salterio/s2/mar/laudes/salmo3"          # mismo salmo: el bizkaiera
+    textos["tiempo/semana-santa/mar/laudes/salmo3"] = pieza("97. [96] Salmoa", batua=True)
+    laudes = {p["parte"]: p for p in generar.componer(info, cel, "laudes", textos, {})}
+    assert laudes["salmo3"]["clave"] == "tiempo/semana-santa/mar/laudes/salmo3"  # otro salmo: el del tiempo
+    textos["tiempo/semana-santa/mar/laudes/salmo3"] = pieza("97. [96] Salmoa")   # en bizkaiera: el del tiempo
+    laudes = {p["parte"]: p for p in generar.componer(info, cel, "laudes", textos, {})}
+    assert laudes["salmo3"]["clave"] == "tiempo/semana-santa/mar/laudes/salmo3"
+
+
+# ── Identidad de la feria y de la memoria libre ─────────────────────────────
+
+@pytest.mark.parametrize("fecha,feria,santo", [
+    ("2026-12-29", "santo-tomas-becket-obispo-y-martir-feria", "santo-tomas-becket-obispo-y-martir"),
+    ("2026-12-31", "san-silvestre-i-papa-feria", "san-silvestre-i-papa"),
+])
+def test_la_feria_de_la_octava_tiene_id_propio(fecha, feria, santo):
+    dia = generar.generar_dia(date.fromisoformat(fecha), {}, {})
+    assert [(c["id"], c["opcional"]) for c in dia["celebraciones"]] == [(feria, False), (santo, True)]
+    assert dia["celebraciones"][0]["nombre_eu"].startswith("Eguberri-Zortziurreneko ")      # el nombre no cambia
+    # El `id` de la feria no cambia qué textos resuelve: no entra en sus cadenas de claves.
+    info = generar.dia_liturgico(date.fromisoformat(fecha))
+    cel = info["celebraciones"][0]
+    sin_sufijo = {**cel, "id": santo}
+    for hora in ("laudes", "visperas"):
+        for parte in generar.ORDEN[hora]:
+            assert generar.candidatas(info, cel, hora, parte) == generar.candidatas(info, sin_sufijo, hora, parte)
+
+
+def test_santos_alternativos_son_una_celebracion_opcional_cada_uno(textos_reales):
+    """«San Beda / San Gregorio VII / Santa M. Magdalena de Pazzi» (el motor los da en una cadena) se elige
+    uno: feria y tres opcionales, cada una con su id, su nombre y sus textos."""
+    dia = generar.generar_dia(date(2027, 5, 25), textos_reales, {})
+    cels = dia["celebraciones"]
+    assert [c["opcional"] for c in cels] == [False, True, True, True]
+    assert [c["id"] for c in cels[1:]] == ["san-beda-el-venerable", "san-gregorio-vii", "santa-m-magdalena-de-pazzi"]
+    assert len({c["id"] for c in cels}) == 4
+    assert not any(" / " in c["nombre"] for c in cels)
+    # La oración de cada santo es la suya: la de Beda solo está en la celebración de Beda.
+    def oracion(c):
+        p = next(p for p in c["horas"]["laudes"] if p["parte"] == "oracion")
+        return p["clave"], " ".join(l["x"] for l in p["lineas"])
+    claves = {c["id"]: oracion(c) for c in cels[1:]}
+    for santo, (clave, texto) in claves.items():
+        assert clave == f"propio/{santo}/laudes/oracion"
+    assert "Beda" in claves["san-beda-el-venerable"][1]
+    assert "Gregorio" in claves["san-gregorio-vii"][1]
+    assert "Pazzi" in claves["santa-m-magdalena-de-pazzi"][1]
+    for santo, (_, texto) in claves.items():
+        assert ("Beda" in texto) == (santo == "san-beda-el-venerable"), santo
+    # Y la feria no se lleva ninguna oración de santo.
+    assert not any(l["x"].count("Beda") for p in cels[0]["horas"]["laudes"] for l in p.get("lineas", []))
+
+
+def test_una_celebracion_conjunta_no_se_parte():
+    """Solo se parte por « / »: «Santos Juan Fisher y Tomás Moro» es UNA celebración (de dos mártires)."""
+    dia = generar.generar_dia(date(2027, 6, 22), {}, {})   # San Paulino de Nola / Santos Juan Fisher y Tomás Moro
+    assert [c["nombre"] for c in dia["celebraciones"][1:]] == ["San Paulino de Nola", "Santos Juan Fisher y Tomás Moro"]
+    assert [c["id"] for c in dia["celebraciones"][1:]] == ["san-paulino-de-nola", "santos-juan-fisher-y-tomas-moro"]
+    dia = generar.generar_dia(date(2026, 10, 19), {}, {})  # Santos Juan de Brébeuf, Isaac Jogues y compañeros / San Pablo de la Cruz
+    assert [c["nombre"] for c in dia["celebraciones"][1:]] == [
+        "Santos Juan de Brébeuf, Isaac Jogues y compañeros", "San Pablo de la Cruz"]
+
+
+def test_las_16_fechas_de_santos_alternativos_de_la_ventana():
+    """Cada fecha con «A / B» da feria + un opcional por santo, sin «/» en los nombres ni ids repetidos, y la
+    cabecera del día (memoria) sigue juntando sus nombres en euskera con « / »."""
+    fechas = [d for d in (date(2026, 11, 13) + timedelta(days=n) for n in range(-40, 366))
+              if " / " in (generar.liturgia.calculate(d).get("memorial") or "")]
+    assert len(fechas) == 16
+    for d in fechas:
+        cels = generar.dia_liturgico(d)["celebraciones"]
+        mem = generar.liturgia.calculate(d)["memorial"]
+        assert [c["nombre"] for c in cels[1:]] == mem.split(" / ")
+        assert all(c["opcional"] and c["alterna"] and c["rango"] == "Memoria Libre" for c in cels[1:])
+        assert len({c["id"] for c in cels}) == len(cels)
+        assert generar.generar_dia(d, {}, {})["cabecera"]["memoria"].count(" / ") == len(cels) - 2
+
+
+def test_ningun_dia_de_la_ventana_repite_id():
+    for n in range(-40, 366):
+        d = date(2026, 11, 13) + timedelta(days=n)
+        ids = [c["id"] for c in generar.dia_liturgico(d)["celebraciones"]]
+        assert len(ids) == len(set(ids)), (d, ids)
+
+
+def test_cantico_de_visperas_dominical_en_cuaresma_y_adviento():
+    """En Cuaresma el cántico de las II Vísperas del domingo es 1 Pe 2 (el del salterio, Ap 19, lleva
+    «Alleluia»): aunque solo esté en batua, no lo desplaza el del salterio. En Adviento es el mismo
+    cántico (Ap 19) y manda el bizkaiera del salterio."""
+    textos = generar.cargar_textos(generar.PROYECTO / "textos")
+    def salmo3(fecha):
+        dia = generar.generar_dia(date.fromisoformat(fecha), textos, {})
+        return next(p for p in dia["celebraciones"][0]["horas"]["visperas"] if p["parte"] == "salmo3")
+    for fecha in ("2027-02-14", "2027-02-21", "2027-03-14"):
+        p = salmo3(fecha)
+        assert p["clave"].startswith("tiempo/cuaresma/"), (fecha, p["clave"])
+        assert "1 Pe 2" in p["lineas"][1]["x"], (fecha, p["lineas"][1]["x"])
+    assert salmo3("2026-12-13")["clave"].startswith("salterio/")
+
+
+# ── Himnos escritos en la entrada, primeras Vísperas del XXXIII, Inmaculada y Presentación (13-nov-2026) ──
+
+def parte(dia, hora, nombre, cel=0):
+    return next(p for p in dia["celebraciones"][cel]["horas"][hora] if p["parte"] == nombre)
+
+
+def test_el_himno_que_la_entrada_trae_escrito_no_se_pierde(textos_reales):
+    """Laudes del Pilar: el blog enlaza «Goratzarrea» a una página sin ancla, pero trae el himno escrito."""
+    dia = generar.generar_dia(date(2026, 10, 12), textos_reales, {})
+    himno = parte(dia, "laudes", "himno")
+    assert "falta" not in himno
+    assert himno["clave"] == "propio/nuestra-senora-del-pilar/laudes/himno"
+    assert himno["lineas"][0]["x"].startswith("Agur, Jainkoaren\nAma maite ederra")
+    assert not himno.get("batua")
+
+
+def test_primeras_visperas_del_xxxiii_llevan_la_antifona_del_ciclo_y_no_el_marcador(textos_reales):
+    # El 14-nov-2026 (ciclo A) y el 13-nov-2027 (ciclo B): antes salía «⇒Domekakoa», el marcador del salterio.
+    for fecha, ciclo, empieza in (("2026-11-14", "A", "Badaukanari emon egingo jako"),
+                                  ("2027-11-13", "B", "Zeru-lurrak igaroko dira")):
+        dia = generar.generar_dia(date.fromisoformat(fecha), textos_reales, {})
+        assert dia["celebraciones"][0]["visperas_de"]["cuales"] == "primeras"
+        ant = parte(dia, "visperas", "ant_ev")
+        assert ant["clave"] == f"tiempo/ordinario/dom33/visperas1/ant_ev-{ciclo}", fecha
+        assert ant["lineas"][0]["x"].startswith(empieza), fecha
+        assert not any("⇒" in l["x"] for l in ant["lineas"]), fecha
+
+
+def test_ningun_dia_de_la_ventana_saca_el_marcador_del_salterio_ni_el_del_comun_como_texto(textos_reales):
+    """«⇒Domekakoa» (antífona del Magníficat de las primeras Vísperas del domingo) y «Salmoak eta Kantika,
+    astearen egunekoak.» (el marcador de comunes/doctores en lugar del salmo 62) no salen como texto litúrgico."""
+    for n in range(-40, 366):
+        dia = generar.generar_dia(date(2026, 11, 13) + timedelta(days=n), textos_reales, {})
+        for c in dia["celebraciones"]:
+            for hora, partes in c["horas"].items():
+                for p in partes:
+                    if p["parte"].startswith(("ant", "salmo")):
+                        for l in p.get("lineas") or []:
+                            assert "⇒" not in l["x"] and "astearen egunekoak" not in l["x"], (dia["fecha"], hora, p["parte"])
+
+
+def test_inmaculada_primeras_visperas_del_blog_y_segundas_de_la_referencia(textos_reales):
+    # Primeras (7-dic): la entrada del blog, que no lleva marca I/II, es la de las primeras (antífonas, 147,
+    # lectura, responsorio, Magníficat) y entra entera, con su salmo 112 y su cántico Ef 1 (la salmodia del común
+    # de Santa María), aunque la referencia (P1874) da 147 [146] 1-11 y Ap 19: aquí manda el bizkaiera del autor.
+    # Segundas (8-dic): la referencia, salmos 121 y 126 (el bizkaiera de la Asunción, por remisión) y cántico Ef 1.
+    primeras = generar.generar_dia(date(2026, 12, 7), textos_reales, {})
+    v = primeras["celebraciones"][0]["visperas_de"]
+    assert (v["cuales"], v["de"]) == ("primeras", "La Inmaculada Concepción")
+    assert salmo(primeras, "visperas", "salmo1") == ("propio/la-inmaculada-concepcion/visperas1/salmo1", 112)
+    assert salmo(primeras, "visperas", "salmo2") == ("propio/la-inmaculada-concepcion/visperas1/salmo2", 147)
+    assert "Ef 1" in parte(primeras, "visperas", "salmo3")["lineas"][0]["x"]
+    assert parte(primeras, "visperas", "ant1")["lineas"][0]["x"].startswith("Hasarrea sortuko dot")
+    assert parte(primeras, "visperas", "ant_ev")["lineas"][0]["x"].startswith("Dohatsu deituko nabe")
+    assert not [p for p in primeras["celebraciones"][0]["horas"]["visperas"] if "falta" in p]
+    segundas = generar.generar_dia(date(2026, 12, 8), textos_reales, {})
+    assert segundas["celebraciones"][0]["visperas_de"]["cuales"] == "segundas"
+    assert salmo(segundas, "visperas", "salmo1") == ("propio/la-inmaculada-concepcion/visperas/salmo1", 121)
+    assert salmo(segundas, "visperas", "salmo2") == ("propio/la-inmaculada-concepcion/visperas/salmo2", 126)
+    assert "Ef 1" in parte(segundas, "visperas", "salmo3")["lineas"][0]["x"]
+    assert parte(segundas, "visperas", "ant1")["lineas"][0]["x"].startswith("Guztiz ederra zara")
+    assert not [p for p in segundas["celebraciones"][0]["horas"]["visperas"] if "falta" in p]
+
+
+def test_presentacion_reza_en_laudes_la_salmodia_del_domingo_i_con_sus_antifonas_propias(textos_reales):
+    dia = generar.generar_dia(date(2027, 2, 2), textos_reales, {})
+    assert salmo(dia, "laudes", "salmo1")[1] == 62
+    assert "57-88. 56" in parte(dia, "laudes", "salmo2")["lineas"][0]["x"]
+    assert salmo(dia, "laudes", "salmo3")[1] == 149
+    for n in (1, 2, 3):
+        assert parte(dia, "laudes", f"ant{n}")["clave"] == f"propio/la-presentacion-del-senor/laudes/ant{n}"

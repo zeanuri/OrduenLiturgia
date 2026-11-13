@@ -879,6 +879,10 @@
   "nombre": "Jesusen Bihotz Guztiz Santua",
   "rango": "festaburua"
  },
+ "san-adalberto": {
+  "nombre": "San Adalberto, gotzaina eta martiria",
+  "rango": "nahierazko oroipena"
+ },
  "san-agustin-de-canterbury": {
   "nombre": "Canterburyko San Agustin, gotzaina",
   "rango": "nahierazko oroipena"
@@ -911,8 +915,8 @@
   "nombre": "Sienako San Bernardino, presbiteroa",
   "rango": "nahierazko oroipena"
  },
- "san-blas-san-oscar": {
-  "nombre": "San Blas, gotzaina eta martiria / San Oscar, gotzaina",
+ "san-blas": {
+  "nombre": "San Blas, gotzaina eta martiria",
   "rango": "nahierazko oroipena"
  },
  "san-bonifacio-obispo-y-martir": {
@@ -947,8 +951,12 @@
   "nombre": "Alexandriako San Zirilo, gotzaina eta eliz irakaslea",
   "rango": "nahierazko oroipena"
  },
- "san-clemente-i-san-columbano": {
-  "nombre": "San Klemente I.a, aita santu eta martiria / San Kolunbano, abadea",
+ "san-clemente-i": {
+  "nombre": "San Klemente I.a, aita santu eta martiria",
+  "rango": "nahierazko oroipena"
+ },
+ "san-columbano": {
+  "nombre": "San Kolunbano, abadea",
   "rango": "nahierazko oroipena"
  },
  "san-damaso-i-papa": {
@@ -999,12 +1007,12 @@
   "nombre": "San Isidro Nekazaria",
   "rango": "beharrezko oroipena"
  },
- "san-jeronimo-emiliani-santa-josefina-bakhita": {
-  "nombre": "San Jeronimo Emiliani / Santa Josefina Bakhita",
+ "san-jeronimo-emiliani": {
+  "nombre": "San Jeronimo Emiliani",
   "rango": "nahierazko oroipena"
  },
- "san-jorge-martir-san-adalberto": {
-  "nombre": "San Jorje, martiria / San Adalberto, gotzaina eta martiria",
+ "san-jorge-martir": {
+  "nombre": "San Jorje, martiria",
   "rango": "nahierazko oroipena"
  },
  "san-josafat-obispo-y-martir": {
@@ -1039,6 +1047,10 @@
   "nombre": "San Joan I.a, aita santua eta martiria",
   "rango": "nahierazko oroipena"
  },
+ "san-juan-leonardi": {
+  "nombre": "San Joan Leonardi, presbiteroa",
+  "rango": "nahierazko oroipena"
+ },
  "san-juan-pablo-ii-papa": {
   "nombre": "San Joan Paulo II.a, aita santua",
   "rango": "nahierazko oroipena"
@@ -1071,12 +1083,20 @@
   "nombre": "San Matias, apostolua",
   "rango": "jaia"
  },
+ "san-oscar": {
+  "nombre": "San Oscar, gotzaina",
+  "rango": "nahierazko oroipena"
+ },
+ "san-pablo-de-la-cruz": {
+  "nombre": "Gurutzeko San Paulo, presbiteroa",
+  "rango": "nahierazko oroipena"
+ },
  "san-pablo-miki-y-companeros-martires": {
   "nombre": "San Paulo Miki eta lagunak, martiriak",
   "rango": "beharrezko oroipena"
  },
- "san-paulino-de-nola-santos-juan-fisher-y-tomas-moro": {
-  "nombre": "Nolatar San Paulino, gotzaina / Joan Fisher, gotzaina, eta Tomas Moro Santuak, martiriak",
+ "san-paulino-de-nola": {
+  "nombre": "Nolatar San Paulino, gotzaina",
   "rango": "nahierazko oroipena"
  },
  "san-pedro-chanel-martir": {
@@ -1115,6 +1135,14 @@
   "nombre": "Sienako Santa Katalina, birjina eta eliz irakaslea, Europako zaindaria",
   "rango": "jaia"
  },
+ "santa-eduvigis": {
+  "nombre": "Santa Eduvigis, erlijiosa",
+  "rango": "nahierazko oroipena"
+ },
+ "santa-gertrudis": {
+  "nombre": "Santa Gertrudis, birjina",
+  "rango": "nahierazko oroipena"
+ },
  "santa-ines-virgen-y-martir": {
   "nombre": "Santa Ines, birjina eta martiria",
   "rango": "beharrezko oroipena"
@@ -1127,12 +1155,16 @@
   "nombre": "Portugalgo Santa Elisabet",
   "rango": "nahierazko oroipena"
  },
- "santa-margarita-de-escocia-santa-gertrudis": {
-  "nombre": "Eskoziako Santa Margarita / Santa Gertrudis, birjina",
+ "santa-josefina-bakhita": {
+  "nombre": "Santa Josefina Bakhita",
   "rango": "nahierazko oroipena"
  },
- "santa-margarita-maria-de-alacoque-santa-eduvigis": {
-  "nombre": "Santa Margarita Maria Alacoque, birjina / Santa Eduvigis, erlijiosa",
+ "santa-margarita-de-escocia": {
+  "nombre": "Eskoziako Santa Margarita",
+  "rango": "nahierazko oroipena"
+ },
+ "santa-margarita-maria-de-alacoque": {
+  "nombre": "Santa Margarita Maria Alacoque, birjina",
   "rango": "nahierazko oroipena"
  },
  "santa-maria-goretti-virgen-y-martir": {
@@ -1199,8 +1231,8 @@
   "nombre": "Aingeru Zaindari Santuak",
   "rango": "beharrezko oroipena"
  },
- "santos-dionisio-y-companeros-san-juan-leonardi": {
-  "nombre": "San Joan Leonardi, presbiteroa",
+ "santos-dionisio-y-companeros": {
+  "nombre": "San Dionisio, gotzaina eta Lagunak, martiriak",
   "rango": "nahierazko oroipena"
  },
  "santos-felipe-y-santiago-apostoles": {
@@ -1211,8 +1243,12 @@
   "nombre": "Haurtxo Erregugabe Santuak, Martiriak",
   "rango": "jaia"
  },
- "santos-juan-de-brebeuf-isaac-jogues-y-companeros-san-pablo-de-la-cruz": {
-  "nombre": "Joan Brebeuf eta Isaak Jogues, presbiteroak, eta Lagunak, Santuak, martiriak / Gurutzeko San Paulo, presbiteroa",
+ "santos-juan-de-brebeuf-isaac-jogues-y-companeros": {
+  "nombre": "Joan Brebeuf eta Isaak Jogues, presbiteroak, eta Lagunak, Santuak, martiriak",
+  "rango": "nahierazko oroipena"
+ },
+ "santos-juan-fisher-y-tomas-moro": {
+  "nombre": "Joan Fisher, gotzaina, eta Tomas Moro Santuak, martiriak",
   "rango": "nahierazko oroipena"
  },
  "santos-marcelino-y-pedro-martires": {
@@ -1360,8 +1396,8 @@
   "rango": "asteguna"
  },
  "viernes-de-la-xxvii-semana-del-tiempo-ordinario": {
-  "nombre": "San Dionisio, gotzaina eta Lagunak, martiriak",
-  "rango": "nahierazko oroipena"
+  "nombre": "Urtean Zeharreko hogeita zazpigarren asteko ostirala",
+  "rango": "asteguna"
  },
  "viernes-de-la-xxviii-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hogeita zortzigarren asteko ostirala",

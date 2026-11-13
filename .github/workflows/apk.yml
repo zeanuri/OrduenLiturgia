@@ -1,13 +1,15 @@
 name: Construir la app (APK)
 
 # El APK solo hace falta cuando cambia el envoltorio de Android: las pantallas
-# y los textos llegan a la app por la red (generar.yml). Cada compilación se
+# y los textos llegan a la app por la red (generar.yml). También se compila al
+# cambiar la web, para que la copia que lleva dentro (la que se abre si no hay
+# red en el primer arranque) no se quede vieja. Cada compilación se
 # firma con la clave fija y sustituye a la anterior en la descarga «pruebas»:
 #   https://github.com/zeanuri/OrduenLiturgia/releases/download/pruebas/OrduenLiturgia.apk
 on:
   push:
     branches: [main]
-    paths: ['app/android/**', '.github/workflows/apk.yml']
+    paths: ['app/android/**', 'app/web/**', '.github/workflows/apk.yml']
   workflow_dispatch:
 
 permissions:
@@ -23,6 +25,9 @@ jobs:
           python-version: '3.13'
       - name: Generar los días que la app lleva dentro
         run: python generador/generar.py
+      - name: "Puerta: ningún texto de prueba en lo que se publica"
+        run: |
+          if grep -rl '"prueba":true' salida/dias; then echo "Hay partes con texto de prueba"; exit 1; fi
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -49,5 +54,6 @@ jobs:
         run: |
           gh release view pruebas >/dev/null 2>&1 || gh release create pruebas --prerelease --target main \
             --title "Versión de pruebas" \
-            --notes "APK de pruebas de OrduenLiturgia. Lleva textos de RELLENO, no textos litúrgicos. Se sustituye en cada compilación."
+            --notes "APK de pruebas de OrduenLiturgia. Se sustituye en cada compilación."
+          gh release edit pruebas --notes "APK de pruebas de OrduenLiturgia, compilación ${{ github.run_number }}. Se sustituye en cada compilación."
           gh release upload pruebas OrduenLiturgia.apk --clobber

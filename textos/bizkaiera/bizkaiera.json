@@ -3285,7 +3285,7 @@
   "lineas": [
    {
     "t": "salmo",
-    "x": "6 Salmoa"
+    "x": "76 Salmoa"
    },
    {
     "t": "estrofa",
@@ -35450,7 +35450,7 @@
   ],
   "fuente": "https://santuen-gorespenak.blogspot.com/2025/02/0206igokundeko-san-martin.html"
  },
- "propio/san-blas-san-oscar/laudes/himno": {
+ "propio/san-blas/laudes/himno": {
   "lineas": [
    {
     "t": "estrofa",
@@ -35475,7 +35475,7 @@
   ],
   "fuente": "https://santuen-gorespenak.blogspot.com/2025/02/0203san-blas.html"
  },
- "propio/san-blas-san-oscar/laudes/oracion": {
+ "propio/san-blas/laudes/oracion": {
   "lineas": [
    {
     "t": "texto",
@@ -35664,83 +35664,6 @@
   ],
   "fuente": "https://santuen-gorespenak.blogspot.com/2025/01/0202jaunaren-aurkezpena.html"
  },
- "propio/la-presentacion-del-senor/laudes/salmo1": {
-  "lineas": [
-   {
-    "t": "salmo",
-    "x": "117 Salmoa"
-   },
-   {
-    "t": "estrofa",
-    "x": "Eskerrak Jaunari, ona da-ta,\nHaren maitasuna betikoa daeta.\nIsrael-etxeak hauxe esan bei:\n«Haren maitasuna betikoa»."
-   },
-   {
-    "t": "estrofa",
-    "x": "Aaron-etxeak hauxe esan bei:\n«Haren maitasuna betikoa».\nEsan beie Jaunaren bildur diranek:\n«Haren maitasuna betikoa»."
-   },
-   {
-    "t": "estrofa",
-    "x": "Deitu neuntsan larrialdian Jaunari,\nentzun eustan eta onez atara.\nJauna dot neugaz: ez deutsat bildurrik,\ngizonak egin leikidanari.\nNigaz Jauna, niri lagun egiteko,\nnik etsaiak lotsatuak ikusteko."
-   },
-   {
-    "t": "estrofa",
-    "x": "Hobe da Jaunagana batzea,\neta ez gizakiengan uste on izatea;\nhobe da Jaunagana batzea,\neta ez handikiengan uste on izatea."
-   },
-   {
-    "t": "estrofa",
-    "x": "Atzerri-jende guztiek inguratu ninduen:\nJaunaren izenean xehatu nebazan.\nAlde guztitik jendeek inguratu ninduen:\nJaunaren izenean xehatu nebazan.\nErleek lez inguratu ninduen,\nbiztu ziran sua sasian lez:\nJaunaren izenean xehatu nebazan."
-   },
-   {
-    "t": "estrofa",
-    "x": "Gogor bultzatu ninduen jausteko,\nhantxe egoan Jauna niri laguntzeko.\nNire indar eta nire kemen Jauna,\nBera suertatu da nire salbazinoa."
-   },
-   {
-    "t": "estrofa",
-    "x": "Poz eta garaipen-oihuak zintzoen txabolan:\n«Jaunaren eskoiak bizkor jokatu dau,\nJaunaren eskoiak nau altxatu,\nJaunaren eskoiak bizkor dau jokatu»."
-   },
-   {
-    "t": "estrofa",
-    "x": "Ez naz hilgo, bizi izan baino,\nJaunaren eginak nik oihukatuko.\nZigortu nau Jaunak, zigortu,\nbaina ez nau heriotzaratu."
-   },
-   {
-    "t": "estrofa",
-    "x": "Edegi niri zintzotasunaren ateak,\nhortik sarturik emon deiodazan Jaunari eskerrak.\nHauxe da Jaunaren atea,\nzintzoak sartuko dira aurrera."
-   },
-   {
-    "t": "estrofa",
-    "x": "Eskerrak Zuri, entzun nozulako,\nsalbazino suertatu zaiatazalako."
-   },
-   {
-    "t": "estrofa",
-    "x": "Etxegileek baztertutako harria,\nberori suertatu da giltz-harria.\nJaunak egin dau hori,\ngure begien harrigarri."
-   },
-   {
-    "t": "estrofa",
-    "x": "Hauxe da Jaunak egin dauan eguna,\ngu poztutzeko eta alaitzeko eguna.\nEmon, Jauna, salbazinoa,\nemon, Jauna, zoriona."
-   },
-   {
-    "t": "estrofa",
-    "x": "Bedeinkatua Jaunaren izenean datorrena,\nbedeinkatzen zaituegu Jaunaren etxean.\nJainkoa da Jauna,\nguri argi egin deuskuna."
-   },
-   {
-    "t": "estrofa",
-    "x": "Antolatu eizue jente-lerroa\nabar-hostoak eskuetan dabezala,\naltarearen ertzetaraino doazala."
-   },
-   {
-    "t": "estrofa",
-    "x": "Zeu zara nire Jainko,\neskerrak emoten deutsudaz;\nene Jainko, goresten zaitut."
-   },
-   {
-    "t": "estrofa",
-    "x": "Eskerrak Jaunari, ona da-ta,\nHaren maitasuna betikoa da-ta."
-   },
-   {
-    "t": "estrofa",
-    "x": "Aintza Aitari eta Semeari\neta Espiritu Santuari.\nLehen lez, orain eta beti,\neta amaibako egunetan. Amen."
-   }
-  ],
-  "fuente": "https://santuen-gorespenak.blogspot.com/2025/01/0202jaunaren-aurkezpena.html"
- },
  "propio/la-presentacion-del-senor/laudes/ant2": {
   "lineas": [
    {
@@ -35750,77 +35673,11 @@
   ],
   "fuente": "https://santuen-gorespenak.blogspot.com/2025/01/0202jaunaren-aurkezpena.html"
  },
- "propio/la-presentacion-del-senor/laudes/salmo2": {
-  "lineas": [
-   {
-    "t": "salmo",
-    "x": "Kantika: Dn 3, 52-57"
-   },
-   {
-    "t": "estrofa",
-    "x": "Bedeinkatua Zu, Jauna, gure arbasoen Jainkoa:\naintza ta gorespen Zuri gizaldietan."
-   },
-   {
-    "t": "estrofa",
-    "x": "Bedeinkatua zure izen santu eta aintzagarria:\naintza ta gorespen Berari gizaldietan."
-   },
-   {
-    "t": "estrofa",
-    "x": "Bedeinkatua Zu, jauretxe santu eta aintzagarrian:\naintza ta gorespen Zuri gizaldietan."
-   },
-   {
-    "t": "estrofa",
-    "x": "Bedeinkatua Zu, zure erreinuko aurkian:\naintza ta gorespen Zuri gizaldietan."
-   },
-   {
-    "t": "estrofa",
-    "x": "Bedeinkatua Zu, kerubin-ganean jesarrita,\nlezak ikusten dozuzana:\naintza ta gorespen Zuri gizaldietan."
-   },
-   {
-    "t": "estrofa",
-    "x": "Bedeinkatua Zu, zeru-sabaian:\naintza ta gorespen Zuri gizaldietan."
-   },
-   {
-    "t": "estrofa",
-    "x": "Jaunak egindako guztiak, bedeinkatu eizue Jauna:\ngoretsi eta ospatu gizaldietan."
-   },
-   {
-    "t": "estrofa",
-    "x": "Aintza Aitari eta Semeari,\neta Espiritu santuari.\nLehen lez, orain eta beti,\neta amaibako egunetan. Amen."
-   }
-  ],
-  "fuente": "https://santuen-gorespenak.blogspot.com/2025/01/0202jaunaren-aurkezpena.html"
- },
  "propio/la-presentacion-del-senor/laudes/ant3": {
   "lineas": [
    {
     "t": "texto",
     "x": "Atzerriak argitzeko argia, eta zure herri Israelen edergarria."
-   }
-  ],
-  "fuente": "https://santuen-gorespenak.blogspot.com/2025/01/0202jaunaren-aurkezpena.html"
- },
- "propio/la-presentacion-del-senor/laudes/salmo3": {
-  "lineas": [
-   {
-    "t": "salmo",
-    "x": "150 Salmoa"
-   },
-   {
-    "t": "estrofa",
-    "x": "Goretsi eizue Jauna bere jauretxean,\nGoretsi eizue bere zeru ospetsuan.\nGoretsi eizue, Berak egin-lan handiakaitik,\nGoretsi eizue bere handiaren handiagaitik."
-   },
-   {
-    "t": "estrofa",
-    "x": "Goretsi eizue turutaren hotsez,\nGoretsi eizue salterioz eta kitar-hotsez.\nGoretsi eizue zaldabai eta dantzarekin,\nGoretsi eizue zurda-soinu eta txistuarekin."
-   },
-   {
-    "t": "estrofa",
-    "x": "Goretsi eizue txilin ozenekin,\nGoretsi eizue txilin alaiekin.\nArnasa duen guztik Jauna beza goretsi."
-   },
-   {
-    "t": "estrofa",
-    "x": "Aintza Aitari eta Semeari,\neta Espiritu Santuari.\nLehen lez, orain eta beti,\neta amaibako egunetan. Amen."
    }
   ],
   "fuente": "https://santuen-gorespenak.blogspot.com/2025/01/0202jaunaren-aurkezpena.html"
@@ -38142,6 +37999,103 @@
    }
   ],
   "fuente": "https://santuen-gorespenak.blogspot.com/p/mariarenak.html"
+ },
+ "propio/nuestra-senora-del-pilar/laudes/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Agur, Jainkoaren\nAma maite ederra\nzeruko atea,\nitsasoko izarra.\nGabrielen ahoz\nAve» pozgarria;\ngeroztik zaitugu\nzu «Eva» berria.\nEva-ren izena\naldatua duzu,\neta Jaunarekin\nbaketu gaituzu.\nPekatu-kateak\nhautsi, arren, guri,\ngaitzak kendu eta\ngrazia isuri.\nErakus ezazu\nama zaitugula;\nSemeak zugatik\nentzun dezaigula.\nBirjina ta ama\ndenen gain eztia:\nEmaiguzu bihotz\napal ta garbia.\nJesus bedi gure\nbizi ta bidea,\nazken-poza dadin\nHura ikustea.\nAintza Aitari ta\naintza Semeari,\naintza bera bien\nEspirituari. Amen."
+   }
+  ],
+  "fuente": "https://santuen-gorespenak.blogspot.com/2025/10/1012pilarreko-maria-birjina.html"
+ },
+ "propio/natividad-de-la-virgen-maria/laudes/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Agur, Ama, errukiz betea,\nJainkoaren grazizko lorea,\nitxaropen ustelik gabea,\nAma pozez Jainkoak asea,\nzu Maria!"
+   },
+   {
+    "t": "estrofa",
+    "x": "Gizadian haurrik ederrena,\nneskatxetan agurgarriena,\nbirjinetan garbiz garbiena,\nta gorago zeruan zaudena,\nzu Maria!\nEgin zaitu Jaunak miragarri;\nhautu zaitu mirabetzat, Mari,\naukeratu andre zoragarri,\nzeruko ta lurreko mirari,\nzu Maria!"
+   },
+   {
+    "t": "estrofa",
+    "x": "Nahi zaitugu dohatsu aitortu,\neginahalez ezin dugu lortu,\nesan, jardun, hitzetan agortu,\nZu goratzen geldi gera mutu,\noi Maria!"
+   },
+   {
+    "t": "estrofa",
+    "x": "Zakigu, Ama, bizian atsegin,\ngauden beti pozetan zurekin,\natzerritik irtetearekin\nbil zeruan gu aingeruekin,\noi Maria!"
+   }
+  ],
+  "fuente": "https://santuen-gorespenak.blogspot.com/2025/08/0908maria-birjina-dohatsuaren-jaiotza.html"
+ },
+ "propio/la-asuncion-de-la-virgen-maria/laudes/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Agur, Ama, errukiz betea,\nJainkoaren grazizko lorea,\nitxaropen ustelik gabea,\nAma pozez Jainkoak asea,\nzu Maria!"
+   },
+   {
+    "t": "estrofa",
+    "x": "Gizadian haurrik ederrena,\nneskatxetan agurgarriena,\nbirjinetan garbiz garbiena,\nta gorago zeruan zaudena,\nzu Maria!"
+   },
+   {
+    "t": "estrofa",
+    "x": "Egin zaitu Jaunak miragarri;\nhautu zaitu mirabetzat, Mari,\naukeratu andre zoragarri,\nzeruko ta lurreko mirari,\nzu Maria!"
+   },
+   {
+    "t": "estrofa",
+    "x": "Nahi zaitugu dohatsu aitortu,\neginalez ezin dugu lortu,\nesan, jardun, hitzetan agortu,\nZu goratzen geldi gera mutu,\noi Maria!"
+   },
+   {
+    "t": "estrofa",
+    "x": "Zakigu, Ama, bizian atsegin,\ngauden beti pozetan zurekin,\natzerritik irtetearekin\nbil zeruan gu aingeruekin,\noi Maria!"
+   }
+  ],
+  "fuente": "https://santuen-gorespenak.blogspot.com/2025/07/0815maria-birjinaren-zeruratzea.html"
+ },
+ "propio/la-catedra-de-san-pedro/laudes/himno": {
+  "lineas": [
+   {
+    "t": "r",
+    "x": "R/. Kristo berpiztuaren lekuko zaretenok,"
+   },
+   {
+    "t": "estrofa",
+    "x": "zaindu Jainko-herria\nfedean eta batasunean."
+   },
+   {
+    "t": "estrofa",
+    "x": "Gure fedea eri denean,\nnora jo, zuengana ezik?\nZuek zaituztegu lekuko eta zaintzaile.\nZuek hotsegin duzue askatasunez\nhasieran bazena,\nzeuron begiz ikusia,\neta zeuron eskuz ukitua:\nBiziaren hitza."
+   },
+   {
+    "t": "estrofa",
+    "x": "Gure kezkak eta esperantzak,\nnon bakerik, zuengan ezik?\nZuek zaituztegu Elizaren oinarri,\nzuek ikusi duzue berbiztua den Jauna,\nzuek entzun Espiritua,\nsuz eta hitzez azaltzen\nKristoren misterioa,\nbetidanik Jainkoarengan\nezkutu zegoen misterioa."
+   }
+  ],
+  "fuente": "https://santuen-gorespenak.blogspot.com/2025/02/0222san-pedroren-gotzain-aurkia.html"
+ },
+ "propio/santos-cirilo-y-metodio-patronos-de-europa/laudes/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Buru zera, Kristo, / artzainen Errege:\nherriak osoan, / festa-giro argiz,\nzure apaizaren / aintza du kantagai\neresietan."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zure Espirituaz / krisma ugaritan\nbarne igurtzia / emanez, Zuk duzu\negin Elizako / gudari ta buru\nzure herrian."
+   },
+   {
+    "t": "estrofa",
+    "x": "Artzain zuen eta / neurri artaldeak,\nitsuak argi ta / lagun behartsuak,\naita zuten denek, / eta denek ura\nberena zuten."
+   },
+   {
+    "t": "estrofa",
+    "x": "Haren lana sariz / ordaintzen duzuna,\nharen jarraitzaile / egin gaitzazula;\neta gero eman / haren ikasleoi\nzure zerua."
+   }
+  ],
+  "fuente": "https://santuen-gorespenak.blogspot.com/2025/02/0214zirilo-eta-metodio.html"
  },
  "himnos/bezperak-urteanzehar/2026_08_goratzarreak01/1": {
   "lineas": [
@@ -46499,6 +46453,33 @@
   ],
   "fuente": "https://bezperak-urteanzehar.blogspot.com/p/i-asteko-antifona-otoitzak_0264925050.html"
  },
+ "tiempo/ordinario/dom33/visperas1/ant_ev-A": {
+  "lineas": [
+   {
+    "t": "texto",
+    "x": "Badaukanari emon egingo jako eta ganezka eukiko dau; baina ez daukanari, daukan haxe ere kendu egingo jako —dino Jaunak—."
+   }
+  ],
+  "fuente": "https://bezperak-urteanzehar.blogspot.com/p/i-asteko-antifona-otoitzak_0264925050.html"
+ },
+ "tiempo/ordinario/dom33/visperas1/ant_ev-B": {
+  "lineas": [
+   {
+    "t": "texto",
+    "x": "Zeru-lurrak igaroko dira —dino Jaunak— nire hitzak, ostera, ez dira igaroko."
+   }
+  ],
+  "fuente": "https://bezperak-urteanzehar.blogspot.com/p/i-asteko-antifona-otoitzak_0264925050.html"
+ },
+ "tiempo/ordinario/dom33/visperas1/ant_ev-C": {
+  "lineas": [
+   {
+    "t": "texto",
+    "x": "Nire izenari bildur deutsoenak, hegoetan osasuna daroan zuzentasun-eguzkiak argituko ditu."
+   }
+  ],
+  "fuente": "https://bezperak-urteanzehar.blogspot.com/p/i-asteko-antifona-otoitzak_0264925050.html"
+ },
  "himnos/garizumakobezperak/2026_09_goratzarreak/2": {
   "lineas": [
    {
@@ -53255,6 +53236,71 @@
  "tiempo/cuaresma/ceniza/mie/visperas/himno": {
   "ref": "himnos/garizumakobezperak/egile-on-entzun",
   "fuente": "https://garizumakobezperak.blogspot.com/2026/09/hautseguna.html"
+ },
+ "tiempo/cuaresma/s1/lun/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Noiz etorriko / zera Zu, Jauna, /\n—noiz etorriko?\nIzango ote da / askatasunik /\n—gizonontzako?"
+   },
+   {
+    "t": "estrofa",
+    "x": "–Bihar omen zatoz, eta /\n—- ez zera inoiz irixten;\n–hhor omen zaude Zu, eta /\n—- guk ez zaitugu ikusten;\n–maitasuna omen zera; /\n—- gu, berriz, dena gorroto;\n–batasuna zerala Zu; /\n—- ta gu banaturik gaude."
+   },
+   {
+    "t": "estrofa",
+    "x": "Ludi hau ez da / zure erreinua; /\n–ez da, ez, Jauna!"
+   },
+   {
+    "t": "estrofa",
+    "x": "–Bizitzaren eremuan /\nbihotzez sartzen bagera:\n–gure ogitik emanez /\ngoserik den anaiari;\n–elkarrengandik baztertuz /\ngorroto-bide guztiak;\n–ona baizik ez eginez /\ngure bide guztietan:"
+   },
+   {
+    "t": "estrofa",
+    "x": "Orduan, bai, / lur hau zure erreinu,\n—orduan, Jauna!"
+   },
+   {
+    "t": "estrofa",
+    "x": "Noiz etorriko / zera Zu, Jauna, /\n—noiz etorriko?\nIzango ote da / askatasunik /\n—gizonontzako?"
+   },
+   {
+    "t": "estrofa",
+    "x": "Etsian bizi zaitezte, /\nhala esaten digute,\n–pozten duzula gizona /\neta bizkortzen, diote;\n–baina hemen azpi-janak du /\nbere lana egiten,\n–baina hemen gorrotoa da /\ngu-baitan jaun ta jabe."
+   },
+   {
+    "t": "estrofa",
+    "x": "Ludi hau ez da / zure erreinua; /\n–ez da, ez, Jauna!"
+   },
+   {
+    "t": "estrofa",
+    "x": "–Bizitzaren eremuan, /\nbihotzez sartzen bagera:\n–bihotz batez elkarturik, /\nzaratarik egin gabe;\n–puskatuaz zapalduen /\nmorrontzak eta kateak;\n–erromesei zabalduaz /\ngure etxeko ateak:"
+   },
+   {
+    "t": "estrofa",
+    "x": "Orduan, bai, / lur hau zure erreinu,\n—orduan, Jauna!"
+   },
+   {
+    "t": "estrofa",
+    "x": "Noiz etorriko / zera Zu, Jauna, /\n—noiz etorriko?\nIzango ote da / askatasunik /\n—gizonontzako?"
+   },
+   {
+    "t": "estrofa",
+    "x": "–Zure mintzoen zentzua /\nzeharo aldatu dute,\n–min estuaren oihua /\nito beharrez dabiltza;\n–beren neurriko jainko bat /\negina dute Zurekin;\n–saiatu-faltan ez dira /\nzure zerua erosten."
+   },
+   {
+    "t": "estrofa",
+    "x": "Ludi hau ez da / zure erreinua; /\n–ez da, ez, Jauna!"
+   },
+   {
+    "t": "estrofa",
+    "x": "–Bizitzaren eremuan /\nbihotzez sartzen bagera:\n–gure haragi bihurtuz /\nzure Ebanjelioa;\n–esanez, iratzartzea /\nbeharrezkoa dugula;\n–zintzoek badakustela /\njadanik zure erreinua:"
+   },
+   {
+    "t": "estrofa",
+    "x": "Orduan, bai, / lur hau zure erreinu,\n—orduan, Jauna!"
+   }
+  ],
+  "fuente": "https://garizumakobezperak.blogspot.com/2026/10/i-astelehena.html"
  },
  "tiempo/navidad/01-02/visperas/ant1": {
   "lineas": [
@@ -60870,6 +60916,335 @@
   ],
   "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/08/abenduaren-17an.html"
  },
+ "tiempo/navidad/01-02/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "ASPALDIAN"
+   },
+   {
+    "t": "estrofa",
+    "x": "Aspaldian, urrunean,\nsortu zen Jainko-Semea,\ngaur sortzen da gure artean:\nzabalik euki etxea,\nzabalik bihotz-barnea."
+   },
+   {
+    "t": "estrofa",
+    "x": "–Gaur sortzen da gure artean:\n–zabalik euki etxea,\n–zabalik bihotz-barnea."
+   },
+   {
+    "t": "estrofa",
+    "x": "Ilunpetan, giltzapetan\nhor zaudetenak, gaur jaiki!\nHorra, Jauna bizi hontan:\negin da gizon osoki;\nmunduak hori baleki!"
+   },
+   {
+    "t": "estrofa",
+    "x": "Jainko-seme gera denak,\nJainkoa gizon hor bait da.\nHartu ditu gure minak:\nbihotzez Hari josita,\nJainko gaitezen gu gerta."
+   },
+   {
+    "t": "estrofa",
+    "x": "Bihotzetan dugu orai\nEguberriko izarra.\nEgin gaitu Kristok anai:\nHura dugu Jaun bakarra,\nHura barneko indarra."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/11/gabonetako-2-domekea-ii.html"
+ },
+ "tiempo/navidad/01-04/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "—Aspaldian, urrunean,\n—sortu zen Jainko-Semea,\n—gaur sortzen da gure artean:\n—zabalik euki etxea,\n—zabalik bihotz-barnea."
+   },
+   {
+    "t": "estrofa",
+    "x": "—–Gaur sortzen da gure artean:\n—–zabalik euki etxea,\n—–zabalik bihotz-barnea."
+   },
+   {
+    "t": "estrofa",
+    "x": "—Ilunpetan, giltzapetan\n—hor zaudetenak, gaur jaiki!\n—Horra, Jauna bizi hontan:\n—egin da gizon osoki;\n—munduak hori baleki!"
+   },
+   {
+    "t": "estrofa",
+    "x": "—Jainko-seme gera denak,\n—Jainkoa gizon hor bait da.\n—Hartu ditu gure minak:\n—bihotzez Hari josita,\n—Jainko gaitezen gu gerta."
+   },
+   {
+    "t": "estrofa",
+    "x": "—Bihotzetan dugu orai\n—Eguberriko izarra.\n—Egin gaitu Kristok anai:\n—Hura dugu Jaun bakarra,\n—Hura barneko indarra."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/09/urtarrilaren-4.html"
+ },
+ "tiempo/navidad/01-03/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "— Gaur ikusiko duzue Haren dirdaia,\nhona hemen zuen Jaungoikoa.\n— Gaur jaio da gure Salbatzailea,\nKristo Jauna.\n— Jaunak dio: Zu zera nire Seme,\n— egun zaitut Nik Zu erne,\n— jaiotegunetik zera Errege."
+   },
+   {
+    "t": "estrofa",
+    "x": "— Gaur ikusiko duzue argia,\nhona hemen zuen Jaungoikoa.\n— Gaur jaio da gure Salbatzailea,\n— Kristo Jauna.\n— Argitik argi, gizartean gizon,\nhaur bat jaio zaigu, Seme bat eman:\n— «Bake-Seme» du izena."
+   },
+   {
+    "t": "estrofa",
+    "x": "— Bakea lurrean gizonei,\n— aintza Jainkoari.\nGaur jaio da gure Salbatzailea,\n— Kristo Jauna.\n— Urak itsasoa betetzen duen bezala,\n— bakeak hala hartuko du lurra.\n— Hau da Jaunak egin-eguna."
+   },
+   {
+    "t": "estrofa",
+    "x": "— Berri on bat hotsegiten dizuegu:\n— hona hemen zuen Jaungoikoa.\n— Gaur jaio da gure Salbatzailea,\n— Kristo Jauna.\n— Argitik argi, gizartean gizon,\n— haur bat jaio zaigu, Seme bat eman:\n«Bake-Seme» du izena."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/09/urtarrilaren-3.html"
+ },
+ "tiempo/navidad/01-02/visperas1/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "ASPALDIAN"
+   },
+   {
+    "t": "estrofa",
+    "x": "Aspaldian, urrunean,\nsortu zen Jainko-Semea,\ngaur sortzen da gure artean:\nzabalik euki etxea,\nzabalik bihotz-barnea."
+   },
+   {
+    "t": "estrofa",
+    "x": "–Gaur sortzen da gure artean:\n–zabalik euki etxea,\n–zabalik bihotz-barnea."
+   },
+   {
+    "t": "estrofa",
+    "x": "Ilunpetan, giltzapetan\nhor zaudetenak, gaur jaiki!\nHorra, Jauna bizi hontan:\negin da gizon osoki;\nmunduak hori baleki!"
+   },
+   {
+    "t": "estrofa",
+    "x": "Jainko-seme gera denak,\nJainkoa gizon hor bait da.\nHartu ditu gure minak:\nbihotzez Hari josita,\nJainko gaitezen gu gerta."
+   },
+   {
+    "t": "estrofa",
+    "x": "Bihotzetan dugu orai\nEguberriko izarra.\nEgin gaitu Kristok anai:\nHura dugu Jaun bakarra,\nHura barneko indarra."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/08/gabon-ii-domekea.html"
+ },
+ "tiempo/adviento/s3/mie/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Gaur zai duzu mundua,\n—zorigaitzez / hain da hondatua!\nZatoz, Jauna! / Zabal, otoi, zerua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Nausi bait da dirua:\n—jendea maiz / dauka zapaldua.\nEntzun, Jauna, / behartsuen oihua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Hor gabiltza gauez gau:\n—piztu gugan / fedearen sua.\nZatoz, Jauna! / Argi ezazu mundu hau:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Maitasunez gu bete:\n—jendeek elkar / ezin hartu dute.\nZatoz, Jauna! / Zuk bat egin mundua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Lokarriak Zuk hautsi.\n—Munduz mundu / bihotzetan mintza.\nZatoz, Jauna! / Ager zaitez, ta jaitsi.\n—Etor bedi / Zure erreinua."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/08/3-eguaztena.html"
+ },
+ "tiempo/adviento/s3/lun/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Gaur zai duzu mundua,\n—zorigaitzez / hain da hondatua!\nZatoz, Jauna! / Zabal, otoi, zerua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Nausi bait da dirua:\n—jendea maiz / dauka zapaldua.\nEntzun, Jauna, / behartsuen oihua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Hor gabiltza gauez gau:\n—piztu gugan / fedearen sua.\nZatoz, Jauna! / Argi ezazu mundu hau:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Maitasunez gu bete:\n—jendeek elkar / ezin hartu dute.\nZatoz, Jauna! / Zuk bat egin mundua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Lokarriak Zuk hautsi.\n—Munduz mundu / bihotzetan mintza.\nZatoz, Jauna! / Ager zaitez, ta jaitsi.\n—Etor bedi / Zure erreinua."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/08/3-astelehena.html"
+ },
+ "tiempo/adviento/s3/dom/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Gaur zai duzu mundua,\n—zorigaitzez / hain da hondatua!\nZatoz, Jauna! / Zabal, otoi, zerua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Nausi bait da dirua:\n—jendea maiz / dauka zapaldua.\nEntzun, Jauna, / behartsuen oihua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Hor gabiltza gauez gau:\n—piztu gugan / fedearen sua.\nZatoz, Jauna! / Argi ezazu mundu hau:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Maitasunez gu bete:\n—jendeek elkar / ezin hartu dute.\nZatoz, Jauna! / Zuk bat egin mundua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Lokarriak Zuk hautsi.\n—Munduz mundu / bihotzetan mintza.\nZatoz, Jauna! / Ager zaitez, ta jaitsi.\n—Etor bedi / Zure erreinua."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/08/3-domekea-ii.html"
+ },
+ "tiempo/adviento/s2/vie/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Gaur zai duzu mundua,\n—zorigaitzez / hain da hondatua!\nZatoz, Jauna! / Zabal, otoi, zerua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Nausi bait da dirua:\n—jendea maiz / dauka zapaldua.\nEntzun, Jauna, / behartsuen oihua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Hor gabiltza gauez gau:\n—piztu gugan / fedearen sua.\nZatoz, Jauna! / Argi ezazu mundu hau:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Maitasunez gu bete:\n—jendeek elkar / ezin hartu dute.\nZatoz, Jauna! / Zuk bat egin mundua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Lokarriak Zuk hautsi.\n—Munduz mundu / bihotzetan mintza.\nZatoz, Jauna! / Ager zaitez, ta jaitsi.\n—Etor bedi / Zure erreinua."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/08/2-barikua.html"
+ },
+ "tiempo/adviento/s2/mie/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Gaur zai duzu mundua,\n—zorigaitzez / hain da hondatua!\nZatoz, Jauna! / Zabal, otoi, zerua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Nausi bait da dirua:\n—jendea maiz / dauka zapaldua.\nEntzun, Jauna, / behartsuen oihua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Hor gabiltza gauez gau:\n—piztu gugan / fedearen sua.\nZatoz, Jauna! / Argi ezazu mundu hau:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Maitasunez gu bete:\n—jendeek elkar / ezin hartu dute.\nZatoz, Jauna! / Zuk bat egin mundua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Lokarriak Zuk hautsi.\n—Munduz mundu / bihotzetan mintza.\nZatoz, Jauna! / Ager zaitez, ta jaitsi.\n—Etor bedi / Zure erreinua."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/08/2-eguaztena.html"
+ },
+ "tiempo/adviento/s2/lun/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Gaur zai duzu mundua,\n—zorigaitzez / hain da hondatua!\nZatoz, Jauna! / Zabal, otoi, zerua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Nausi bait da dirua:\n—jendea maiz / dauka zapaldua.\nEntzun, Jauna, / behartsuen oihua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Hor gabiltza gauez gau:\n—piztu gugan / fedearen sua.\nZatoz, Jauna! / Argi ezazu mundu hau:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Maitasunez gu bete:\n—jendeek elkar / ezin hartu dute.\nZatoz, Jauna! / Zuk bat egin mundua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Lokarriak Zuk hautsi.\n—Munduz mundu / bihotzetan mintza.\nZatoz, Jauna! / Ager zaitez, ta jaitsi.\n—Etor bedi / Zure erreinua."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/08/ii-astelehena.html"
+ },
+ "tiempo/adviento/s2/dom/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Gaur zai duzu mundua,\n—zorigaitzez / hain da hondatua!\nZatoz, Jauna! / Zabal, otoi, zerua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Nausi bait da dirua:\n—jendea maiz / dauka zapaldua.\nEntzun, Jauna, / behartsuen oihua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Hor gabiltza gauez gau:\n—piztu gugan / fedearen sua.\nZatoz, Jauna! / Argi ezazu mundu hau:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Maitasunez gu bete:\n—jendeek elkar / ezin hartu dute.\nZatoz, Jauna! / Zuk bat egin mundua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Lokarriak Zuk hautsi.\n—Munduz mundu / bihotzetan mintza.\nZatoz, Jauna! / Ager zaitez, ta jaitsi.\n—Etor bedi / Zure erreinua."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/08/ii-domekea-ii.html"
+ },
+ "tiempo/adviento/s1/jue/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Gaur zai duzu mundua,\n—zorigaitzez / hain da hondatua!\nZatoz, Jauna! / Zabal, otoi, zerua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Nausi bait da dirua:\n—jendea maiz / dauka zapaldua.\nEntzun, Jauna, / behartsuen oihua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Hor gabiltza gauez gau:\n—piztu gugan / fedearen sua.\nZatoz, Jauna! / Argi ezazu mundu hau:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Maitasunez gu bete:\n—jendeek elkar / ezin hartu dute.\nZatoz, Jauna! / Zuk bat egin mundua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Lokarriak Zuk hautsi.\n—Munduz mundu / bihotzetan mintza.\nZatoz, Jauna! / Ager zaitez, ta jaitsi.\n—Etor bedi / Zure erreinua."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/08/i-eguena.html"
+ },
+ "tiempo/adviento/s1/mar/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Gaur zai duzu mundua,\n—zorigaitzez / hain da hondatua!\nZatoz, Jauna! / Zabal, otoi, zerua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Nausi bait da dirua:\n—jendea maiz / dauka zapaldua.\nEntzun, Jauna, / behartsuen oihua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Hor gabiltza gauez gau:\n—piztu gugan / fedearen sua.\nZatoz, Jauna! / Argi ezazu mundu hau:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Maitasunez gu bete:\n—jendeek elkar / ezin hartu dute.\nZatoz, Jauna! / Zuk bat egin mundua:\n—Etor bedi / Zure erreinua."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zatoz, Jauna! / Lokarriak Zuk hautsi.\n—Munduz mundu / bihotzetan mintza.\nZatoz, Jauna! / Ager zaitez, ta jaitsi.\n—Etor bedi / Zure erreinua."
+   }
+  ],
+  "fuente": "https://bezperak-abendugabonak.blogspot.com/2026/08/1-martitzena.html"
+ },
  "propio/martirio-de-san-juan-bautista/visperas/himno": {
   "lineas": [
    {
@@ -67953,7 +68328,7 @@
   "lineas": [
    {
     "t": "salmo",
-    "x": "125 Salmoa"
+    "x": "145 Salmoa"
    },
    {
     "t": "estrofa",
@@ -69285,213 +69660,6 @@
   ],
   "fuente": "https://santuenbezperak.blogspot.com/2026/09/kristogana-san-pauloren-bihurtzea.html"
  },
- "propio/la-inmaculada-concepcion/visperas/ant1": {
-  "lineas": [
-   {
-    "t": "texto",
-    "x": "Hasarrea sortuko dot zure eta emakumearen artean, zure jatorriaren eta harenaren artean."
-   }
-  ],
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
- },
- "propio/la-inmaculada-concepcion/visperas/salmo1": {
-  "lineas": [
-   {
-    "t": "salmo",
-    "x": "112 Salmoa"
-   },
-   {
-    "t": "estrofa",
-    "x": "Jaunaren morroiak, goretsi eizue,\nJaunaren izena goretsi eizue.\nJaunaren izena\nbedeinkatua izan bedi,\norain eta gizaldiz gizaldi.\nEguzkia sortu-lekutik sartzen danera,\ngoretsia izan bedi Jaunaren izena."
-   },
-   {
-    "t": "estrofa",
-    "x": "Jauna garai dago herri guztien aldean,\nHaren ospea ortziaren ganean.\nNor da Jauna,\ngure Jainkoa, hainakorik?\nGoian jesarrita dago;\neta begia jaitsiten dau\nzeru eta lurreraino."
-   },
-   {
-    "t": "estrofa",
-    "x": "Jasoten dau dohakabea hautsetatik,\nataraten behartsua sats artetik;\njesarriazo daian nagusiekin,\nbere herriaren nagusiekin.\nAgor zana biziazoten dau etxean,\nseme-alaben ama eginik pozetan."
-   },
-   {
-    "t": "estrofa",
-    "x": "Aintza Aitari eta Semeari,\neta Espiritu Santuari.\nLehen lez, orain eta beti,\neta amaibako egunetan. Amen."
-   }
-  ],
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
- },
- "propio/la-inmaculada-concepcion/visperas/ant2": {
-  "lineas": [
-   {
-    "t": "texto",
-    "x": "Osasun-soinekoz jantzi nau Jaunak, eta garaipen-estalkiz apaindu."
-   }
-  ],
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
- },
- "propio/la-inmaculada-concepcion/visperas/salmo2": {
-  "lineas": [
-   {
-    "t": "salmo",
-    "x": "147 Salmoa"
-   },
-   {
-    "t": "estrofa",
-    "x": "Jerusalem, ospatu eizu Jauna,\nSion, goretsi eizu zure Jainkoa.\nZure ateen sarrailak\n—indartu ditu-ta,\n—zure seme-alabak zure barruan\n—bedeinkatu ditu.\nZure mugetan bakea ezarri dau-ta,\n—gari-maminez asetu zaitu."
-   },
-   {
-    "t": "estrofa",
-    "x": "Bialtzen dau lurrera bere berbea,\neta Haren hitza bizkor eta arin doa.\nEmoten dau edurra ardi-ulea lez,\nzabaltzen dau antzigarra\nhautsa lez."
-   },
-   {
-    "t": "estrofa",
-    "x": "Ogi-apurraren antzera\n—jaurtitzen dau bere izotza:\n—Nork jasan daike haren hotza?\nBialtzen dau bere hitza,\n—eta harekin urtu egiten dira,\n—bere haizeari eraginez\n—urak isurika doaz."
-   },
-   {
-    "t": "estrofa",
-    "x": "Iragarri deutso bere hitza Jakobi,\n—bere erabagi eta aginduak Israeli.\nEz deutso egin holakorik beste herriri,\n—bere aginduak\n—ez deutsoz agertu beste inori."
-   },
-   {
-    "t": "estrofa",
-    "x": "Aintza Aitari eta Semeari,\neta Espiritu Santuari.\nLehen lez, orain eta beti,\neta amaibako egunetan. Amen."
-   }
-  ],
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
- },
- "propio/la-inmaculada-concepcion/visperas/ant3": {
-  "lineas": [
-   {
-    "t": "texto",
-    "x": "Poztu zaitez, Maria, graziaz bete hori: Jauna zurekin."
-   }
-  ],
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
- },
- "propio/la-inmaculada-concepcion/visperas/salmo3": {
-  "lineas": [
-   {
-    "t": "salmo",
-    "x": "Kantika Ef 1, 3-10"
-   },
-   {
-    "t": "estrofa",
-    "x": "Bedeinkatua izan bedi Jainkoa,\nJesu Kristo gure Jaunaren Aita,\nEspirituaren era guztietako\nbedeinkapenez,\nzeruan Kristogan\nbedeinkatu gaituana."
-   },
-   {
-    "t": "estrofa",
-    "x": "Harengan aukeratu ginduzan-eta,\nmundua sortu baino lehen,\nbere aurrean, maitasunez,\nsantu eta errugabe izan gaitezan."
-   },
-   {
-    "t": "estrofa",
-    "x": "Aurrez aukeratu ginduzan\nbere seme-alaba-orde izateko,\nJesu Kristoren bidez,\nbere nahiaren onberatasunez;\nbere Seme maiteagan\nhain ugari emon deuskun\ngraziaren aintzak\nBera gorespenez bete daian."
-   },
-   {
-    "t": "estrofa",
-    "x": "Seme honengan,\nbere odolaz dogu erospena,\neta pekatuen parkamena;\nhalakoa izan da\nHaren grazia-aberastasuna.\nOparo isuri deusku-ta bere grazia\nezaguera osoz eta jakituriaz:"
-   },
-   {
-    "t": "estrofa",
-    "x": "bere nahiaren misterioa\nezagutuazo deusku,\nbere onginahiez erabagita eukana,\ngaraia etortean beteko ebana.\nZeruko eta lurreko gauza guztiak\nKristogan batuko dituala,\nBerau buru dala."
-   },
-   {
-    "t": "estrofa",
-    "x": "Aintza Aitari eta Semeari\neta Espiritu Santuari.\nLehen lez orain eta beti\neta amaibako egunetan. Amen."
-   }
-  ],
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
- },
- "propio/la-inmaculada-concepcion/visperas/lectura": {
-  "lineas": [
-   {
-    "t": "cita",
-    "x": "Erm 8, 29a. 30"
-   },
-   {
-    "t": "texto",
-    "x": "Jainkoak ezagutu ebazanak aukeratu ere egin ebazan, bere Semearen irudiko izan eitezan. Aurrez aukeratu ebazanak, deitu ere egin ebazan; deituei, barriz, bere zuzentasuna emon eutsen."
-   }
-  ],
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
- },
- "propio/la-inmaculada-concepcion/visperas/responsorio": {
-  "lineas": [
-   {
-    "t": "v",
-    "x": "V/. Goretsiko zaitut, Jauna, * onik atara nozulako."
-   },
-   {
-    "t": "r",
-    "x": "R/. Goretsiko zaitut, Jauna, * onik atara nozulako."
-   },
-   {
-    "t": "v",
-    "x": "V/. Arerioei nitaz poztutzen itzi ez deutsezulako."
-   },
-   {
-    "t": "r",
-    "x": "R/. Onik atara nozulako."
-   },
-   {
-    "t": "v",
-    "x": "V/. Aintza Aitari eta Semeari eta Espiritu Santuari."
-   },
-   {
-    "t": "r",
-    "x": "R/. Goretsiko zaitut, Jauna, * onik atara nozulako."
-   }
-  ],
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
- },
- "propio/la-inmaculada-concepcion/visperas/ant_ev": {
-  "lineas": [
-   {
-    "t": "texto",
-    "x": "Dohatsu deituko nabe gizaldi guztiek, Ahalguztidunak handiak egin deustazalako, alleluia."
-   }
-  ],
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
- },
- "propio/la-inmaculada-concepcion/visperas/preces": {
-  "lineas": [
-   {
-    "t": "texto",
-    "x": "Goretsi daigun Jainkoa, Aita ahalguztiduna; eta Maria, Haren Semearen ama, gizaldi guztiek goraltzea nahi izan dau-ta, egin deiogun otoitz, esanez:"
-   },
-   {
-    "t": "texto",
-    "x": "Graziaz beteak egin bei otoitz gure alde."
-   },
-   {
-    "t": "texto",
-    "x": "—Jainko mirarigile, Maria guztiz garbiak zeruan gorputz eta arimaz Kristoren aintzan parte izatea nahi izan dozun Horrek, * zuzendu eizuz aintza beratara zure seme-alabon bihotzak."
-   },
-   {
-    "t": "texto",
-    "x": "—Maria gure ama egin dozun Jauna, emon haren bitartez, gaixoei osasuna, nahigabetuei alaitasuna, pekatariei parkamena, * eta guztiei salbazinoa eta bakea ugari."
-   },
-   {
-    "t": "texto",
-    "x": "—Maria errukizko Ama egin dozun Jauna, * izan daigula Haren laguntza arriskuetan aurkitzen garanean."
-   },
-   {
-    "t": "texto",
-    "x": "—Mariari Jesusen eta Joseren etxean ama izateko eginkizuna emon zeutsan Jauna, * egizu, ama guztiak, Harek lagunduta, euren etxeetan maitasuna eta santutasuna gehitzen ahalegindu daitezala."
-   },
-   {
-    "t": "texto",
-    "x": "—Mariari erregina-koroia emon zeutsan Jauna, * egizu, gure hildakoak beti izan daitezala zoriontsu zeruan santu guztien artean."
-   }
-  ],
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
- },
- "propio/la-inmaculada-concepcion/visperas/oracion": {
-  "lineas": [
-   {
-    "t": "texto",
-    "x": "Jainko Jauna, Maria Birjinaren Sortze Garbiaz, egoitza egokia prestatu zeutsan zure Semeari, eta Semearen heriotzatik etorren graziari esker, pekatu guztietatik gorde zenduan ama; egizu, Maria Birjinaren otoitzez, gu Zugana garbi heldu gaitezala. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi da-eta gizaldi eta gizaldietan."
-   }
-  ],
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
- },
  "himnos/santuen-gorespenak/ama-zera-ta-birjina": {
   "titulo": "AMA ZERA TA BIRJINA",
   "lineas": [
@@ -69521,10 +69689,6 @@
    }
   ],
   "fuente": "https://santuen-gorespenak.blogspot.com/p/mariarenak_23.html"
- },
- "propio/la-inmaculada-concepcion/visperas/himno": {
-  "ref": "himnos/santuen-gorespenak/ama-zera-ta-birjina",
-  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
  },
  "propio/san-francisco-javier/visperas/himno": {
   "lineas": [
@@ -73179,5 +73343,241 @@
  "propio/natividad-de-la-virgen-maria/visperas/himno": {
   "ref": "himnos/gorespenak-uz/agur-ama-errukiz-betea",
   "fuente": "https://santuenbezperak.blogspot.com/2026/09/irailaren-8.html"
+ },
+ "propio/santa-catalina-de-siena-virgen-y-doctora-patrona-de-europa/visperas/himno": {
+  "lineas": [
+   {
+    "t": "estrofa",
+    "x": "Zorioneko zera, birjina,\nhainbat jenderen artean.\nEsna aurkitu zintuen Jaunak\neztaietako gauean.\nOngi-etorri egin zenion\nkrisailu piztuz atean."
+   },
+   {
+    "t": "estrofa",
+    "x": "Zer abegia egin zizuna!\nHurbil zitzaizun maiteki;\nemaztetako hartu zintuen;\nbirjina zuhur izaki.\nZurekin egin zuen elkartez\nberea zaitu biziki."
+   },
+   {
+    "t": "estrofa",
+    "x": "Jesu Kristoren mirabe zintzo,\nerakus guri bizitzen;\nlagun eiguzu, zure otoitzez,\narrisku oro gainditzen;\nbeharretan den urko laguna\nbihotz zabalez serbitzen."
+   },
+   {
+    "t": "estrofa",
+    "x": "Birjinen buru zeran Maria,\nentzun gaitzazu zuk ere:\njar gaitezela dagokigunez\njatortasunaren alde,\nzeruarekin har-emanetan\ngizonarekin lankide."
+   },
+   {
+    "t": "estrofa",
+    "x": "Eskerrak Zuri, Hirutasuna,\nmila bider ospe Zuri.\nBirjina honen argaltasunak\nzure indarra dagerki.\nKristauok pozten gaituen jai hau\nzure aintzarako bedi."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/0429sienako-santa-katalina.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/ant1": {
+  "lineas": [
+   {
+    "t": "texto",
+    "x": "Hasarrea sortuko dot zure eta emakumearen artean, zure jatorriaren eta harenaren artean."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/salmo1": {
+  "lineas": [
+   {
+    "t": "salmo",
+    "x": "112 Salmoa"
+   },
+   {
+    "t": "estrofa",
+    "x": "Jaunaren morroiak, goretsi eizue,\nJaunaren izena goretsi eizue.\nJaunaren izena\nbedeinkatua izan bedi,\norain eta gizaldiz gizaldi.\nEguzkia sortu-lekutik sartzen danera,\ngoretsia izan bedi Jaunaren izena."
+   },
+   {
+    "t": "estrofa",
+    "x": "Jauna garai dago herri guztien aldean,\nHaren ospea ortziaren ganean.\nNor da Jauna,\ngure Jainkoa, hainakorik?\nGoian jesarrita dago;\neta begia jaitsiten dau\nzeru eta lurreraino."
+   },
+   {
+    "t": "estrofa",
+    "x": "Jasoten dau dohakabea hautsetatik,\nataraten behartsua sats artetik;\njesarriazo daian nagusiekin,\nbere herriaren nagusiekin.\nAgor zana biziazoten dau etxean,\nseme-alaben ama eginik pozetan."
+   },
+   {
+    "t": "estrofa",
+    "x": "Aintza Aitari eta Semeari,\neta Espiritu Santuari.\nLehen lez, orain eta beti,\neta amaibako egunetan. Amen."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/ant2": {
+  "lineas": [
+   {
+    "t": "texto",
+    "x": "Osasun-soinekoz jantzi nau Jaunak, eta garaipen-estalkiz apaindu."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/salmo2": {
+  "lineas": [
+   {
+    "t": "salmo",
+    "x": "147 Salmoa"
+   },
+   {
+    "t": "estrofa",
+    "x": "Jerusalem, ospatu eizu Jauna,\nSion, goretsi eizu zure Jainkoa.\nZure ateen sarrailak\n—indartu ditu-ta,\n—zure seme-alabak zure barruan\n—bedeinkatu ditu.\nZure mugetan bakea ezarri dau-ta,\n—gari-maminez asetu zaitu."
+   },
+   {
+    "t": "estrofa",
+    "x": "Bialtzen dau lurrera bere berbea,\neta Haren hitza bizkor eta arin doa.\nEmoten dau edurra ardi-ulea lez,\nzabaltzen dau antzigarra\nhautsa lez."
+   },
+   {
+    "t": "estrofa",
+    "x": "Ogi-apurraren antzera\n—jaurtitzen dau bere izotza:\n—Nork jasan daike haren hotza?\nBialtzen dau bere hitza,\n—eta harekin urtu egiten dira,\n—bere haizeari eraginez\n—urak isurika doaz."
+   },
+   {
+    "t": "estrofa",
+    "x": "Iragarri deutso bere hitza Jakobi,\n—bere erabagi eta aginduak Israeli.\nEz deutso egin holakorik beste herriri,\n—bere aginduak\n—ez deutsoz agertu beste inori."
+   },
+   {
+    "t": "estrofa",
+    "x": "Aintza Aitari eta Semeari,\neta Espiritu Santuari.\nLehen lez, orain eta beti,\neta amaibako egunetan. Amen."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/ant3": {
+  "lineas": [
+   {
+    "t": "texto",
+    "x": "Poztu zaitez, Maria, graziaz bete hori: Jauna zurekin."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/salmo3": {
+  "lineas": [
+   {
+    "t": "salmo",
+    "x": "Kantika Ef 1, 3-10"
+   },
+   {
+    "t": "estrofa",
+    "x": "Bedeinkatua izan bedi Jainkoa,\nJesu Kristo gure Jaunaren Aita,\nEspirituaren era guztietako\nbedeinkapenez,\nzeruan Kristogan\nbedeinkatu gaituana."
+   },
+   {
+    "t": "estrofa",
+    "x": "Harengan aukeratu ginduzan-eta,\nmundua sortu baino lehen,\nbere aurrean, maitasunez,\nsantu eta errugabe izan gaitezan."
+   },
+   {
+    "t": "estrofa",
+    "x": "Aurrez aukeratu ginduzan\nbere seme-alaba-orde izateko,\nJesu Kristoren bidez,\nbere nahiaren onberatasunez;\nbere Seme maiteagan\nhain ugari emon deuskun\ngraziaren aintzak\nBera gorespenez bete daian."
+   },
+   {
+    "t": "estrofa",
+    "x": "Seme honengan,\nbere odolaz dogu erospena,\neta pekatuen parkamena;\nhalakoa izan da\nHaren grazia-aberastasuna.\nOparo isuri deusku-ta bere grazia\nezaguera osoz eta jakituriaz:"
+   },
+   {
+    "t": "estrofa",
+    "x": "bere nahiaren misterioa\nezagutuazo deusku,\nbere onginahiez erabagita eukana,\ngaraia etortean beteko ebana.\nZeruko eta lurreko gauza guztiak\nKristogan batuko dituala,\nBerau buru dala."
+   },
+   {
+    "t": "estrofa",
+    "x": "Aintza Aitari eta Semeari\neta Espiritu Santuari.\nLehen lez orain eta beti\neta amaibako egunetan. Amen."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/lectura": {
+  "lineas": [
+   {
+    "t": "cita",
+    "x": "Erm 8, 29a. 30"
+   },
+   {
+    "t": "texto",
+    "x": "Jainkoak ezagutu ebazanak aukeratu ere egin ebazan, bere Semearen irudiko izan eitezan. Aurrez aukeratu ebazanak, deitu ere egin ebazan; deituei, barriz, bere zuzentasuna emon eutsen."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/responsorio": {
+  "lineas": [
+   {
+    "t": "v",
+    "x": "V/. Goretsiko zaitut, Jauna, * onik atara nozulako."
+   },
+   {
+    "t": "r",
+    "x": "R/. Goretsiko zaitut, Jauna, * onik atara nozulako."
+   },
+   {
+    "t": "v",
+    "x": "V/. Arerioei nitaz poztutzen itzi ez deutsezulako."
+   },
+   {
+    "t": "r",
+    "x": "R/. Onik atara nozulako."
+   },
+   {
+    "t": "v",
+    "x": "V/. Aintza Aitari eta Semeari eta Espiritu Santuari."
+   },
+   {
+    "t": "r",
+    "x": "R/. Goretsiko zaitut, Jauna, * onik atara nozulako."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/ant_ev": {
+  "lineas": [
+   {
+    "t": "texto",
+    "x": "Dohatsu deituko nabe gizaldi guztiek, Ahalguztidunak handiak egin deustazalako, alleluia."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/preces": {
+  "lineas": [
+   {
+    "t": "texto",
+    "x": "Goretsi daigun Jainkoa, Aita ahalguztiduna; eta Maria, Haren Semearen ama, gizaldi guztiek goraltzea nahi izan dau-ta, egin deiogun otoitz, esanez:"
+   },
+   {
+    "t": "texto",
+    "x": "Graziaz beteak egin bei otoitz gure alde."
+   },
+   {
+    "t": "texto",
+    "x": "—Jainko mirarigile, Maria guztiz garbiak zeruan gorputz eta arimaz Kristoren aintzan parte izatea nahi izan dozun Horrek, * zuzendu eizuz aintza beratara zure seme-alabon bihotzak."
+   },
+   {
+    "t": "texto",
+    "x": "—Maria gure ama egin dozun Jauna, emon haren bitartez, gaixoei osasuna, nahigabetuei alaitasuna, pekatariei parkamena, * eta guztiei salbazinoa eta bakea ugari."
+   },
+   {
+    "t": "texto",
+    "x": "—Maria errukizko Ama egin dozun Jauna, * izan daigula Haren laguntza arriskuetan aurkitzen garanean."
+   },
+   {
+    "t": "texto",
+    "x": "—Mariari Jesusen eta Joseren etxean ama izateko eginkizuna emon zeutsan Jauna, * egizu, ama guztiak, Harek lagunduta, euren etxeetan maitasuna eta santutasuna gehitzen ahalegindu daitezala."
+   },
+   {
+    "t": "texto",
+    "x": "—Mariari erregina-koroia emon zeutsan Jauna, * egizu, gure hildakoak beti izan daitezala zoriontsu zeruan santu guztien artean."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/oracion": {
+  "lineas": [
+   {
+    "t": "texto",
+    "x": "Jainko Jauna, Maria Birjinaren Sortze Garbiaz, egoitza egokia prestatu zeutsan zure Semeari, eta Semearen heriotzatik etorren graziari esker, pekatu guztietatik gorde zenduan ama; egizu, Maria Birjinaren otoitzez, gu Zugana garbi heldu gaitezala. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi da-eta gizaldi eta gizaldietan."
+   }
+  ],
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
+ },
+ "propio/la-inmaculada-concepcion/visperas1/himno": {
+  "ref": "himnos/santuen-gorespenak/ama-zera-ta-birjina",
+  "fuente": "https://santuenbezperak.blogspot.com/2026/09/maria-birjinaren-sortze-garbia.html"
  }
 }

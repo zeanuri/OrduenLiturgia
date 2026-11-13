@@ -49,15 +49,16 @@ const pedir = async (url) => {
   return r.json();
 };
 
-let indice = null, enLinea = true;
+let indice = null, enLinea = true, indiceT = 0;       // indiceT: cuándo llegó el último índice de la red
 
 async function cargarIndice() {
   try {
     indice = await pedir(BASE + "indice.json");
+    enLinea = true; indiceT = Date.now();
     almacen.guardar("indice", indice);
   } catch (e) {
     enLinea = false;
-    indice = await almacen.leer("indice") || await pedir(SEMILLA + "indice.json").catch(() => null);
+    indice = indice || await almacen.leer("indice") || await pedir(SEMILLA + "indice.json").catch(() => null);   // el que ya había manda
   }
   return indice;
 }
@@ -68,9 +69,11 @@ async function cargarDia(fecha) {
   if (guardado && guardado.huella === huella) return guardado.dia;
   try {
     const dia = await pedir(BASE + "dias/" + fecha + ".json");
+    enLinea = true;
     almacen.guardar("dia:" + fecha, { huella, dia });
     return dia;
   } catch (e) {
+    if (e instanceof TypeError) enLinea = false;             // fallo de red (no un 404 de un día sin publicar)
     if (guardado) return guardado.dia;                       // lo último que se bajó
     return pedir(SEMILLA + "dias/" + fecha + ".json").catch(() => null);
   }
@@ -101,8 +104,12 @@ function avisos(extra) {
   return (enLinea ? "" : `<p class="aviso">${R.sinConexion}</p>`) + (extra || "");
 }
 
-async function vistaDia(fecha, c) {
+// Identificador de navegación: una vista asíncrona solo pinta si sigue siendo la vigente.
+let navId = 0;
+
+async function vistaDia(fecha, c, id) {
   const dia = await cargarDia(fecha);
+  if (id !== navId) return;
   if (!dia) { cabecera(fechaLarga(fecha), "", null); $("vista").innerHTML = avisos(`<p class="aviso">${R.sinDatos}</p>`); return; }
   const cel = dia.celebraciones[c] || dia.celebraciones[0];
   c = dia.celebraciones.indexOf(cel);
@@ -129,7 +136,7 @@ async function vistaDia(fecha, c) {
        <div class="info">${esc(cab.tiempo)} &middot; ${esc(cab.rango.charAt(0).toUpperCase() + cab.rango.slice(1))} &middot; ${R.salterio}: ${["", "I", "II", "III", "IV"][dia.semana_salterio]}</div>
      </div>${fichas}
      <ul class="horas">${orden.map(fila).join("")}
-       <li><a href="${esc(dia.misa)}" target="_blank" rel="noopener"><span>${R.misa}<small>lecturasdeldia.org</small></span></a></li></ul>
+       ${fecha >= mas(hoyIso(), -30) ? `<li><a href="${esc(dia.misa)}" target="_blank" rel="noopener"><span>${R.misa}<small>lecturasdeldia.org</small></span></a></li>` : ""}</ul>
      ${fecha !== hoyIso() ? `<nav class="pasos"><a href="#/">${R.hoy}</a></nav>` : ""}`;
 }
 
@@ -198,14 +205,23 @@ function selectorSalmoInv() {
     `</div></section><div id="salmo-inv">${n ? salmoInvHtml(n) : ""}</div>`;
 }
 
+// Con el Dei-salmoa abierto, la apertura del Invitatorio sustituye a la de Laudes. Devuelve si hubo cambio.
+function aperturaInv(abierto) {
+  const l = document.querySelector('[data-apertura="laudes"]'), i = document.querySelector('[data-apertura="inv"]');
+  if (!l || !i) return false;
+  l.hidden = abierto; i.hidden = !abierto;
+  return true;
+}
+
 function plegarSalmoInv() {
   document.querySelectorAll("[data-salmo]").forEach(x => x.setAttribute("aria-pressed", false));
   $("salmo-inv").innerHTML = "";
   $("dei-salmoa").scrollIntoView({ block: "center" });
 }
 
-async function vistaHora(fecha, c, hora) {
+async function vistaHora(fecha, c, hora, id) {
   const dia = await cargarDia(fecha);
+  if (id !== navId) return;
   const cel = dia && dia.celebraciones[c];
   if (!cel || !cel.horas[hora]) { location.hash = "#/dia/" + fecha; return; }
   const partes = cel.horas[hora];
@@ -222,7 +238,10 @@ async function vistaHora(fecha, c, hora) {
     if (hora === "invitatorio" && p.parte === "ant") { ant = p; return; }     // la antífona entra en el salmo
     if (p.opciones) { invActual = { p, ant }; ant = null; cuerpo += selectorSalmoInv(); return; }
     const esAnt = p.parte.startsWith("ant");
-    cuerpo += parteHtml(p, esAnt ? marcaAnt(p, false, varias) : "");
+    // Con un salmo abierto, la apertura del Invitatorio ocupa el sitio de la de Laudes (data-apertura).
+    const apInv = invSalmo && p.parte === "apertura" && inv.find(x => x.parte === "apertura");
+    cuerpo += apInv && !apInv.falta ? `<div data-apertura="laudes">${parteHtml(p, "")}</div><div data-apertura="inv" hidden>${parteHtml(apInv, "")}</div>`
+      : parteHtml(p, esAnt ? marcaAnt(p, false, varias) : "");
     if (invSalmo && p.parte === "apertura") { invActual = { p: invSalmo, ant: inv.find(x => x.parte === "ant") }; cuerpo += selectorSalmoInv(); }
     if (esAnt) ant = p;
     else if (ant) { if (!ant.falta) cuerpo += parteHtml(ant, marcaAnt(ant, true, varias), true); ant = null; }
@@ -245,6 +264,7 @@ function vistaCalendario(mes) {
     const f = `${mes}-${String(d).padStart(2, "0")}`, info = indice && indice.dias[f];
     celdas += info
       ? `<a href="#/dia/${f}" class="${f === hoyIso() ? "hoy " : ""}${/Solemnidad|Fiesta|Domingo/.test(info.rango) ? "fiesta" : ""}" title="${esc(info.nombre)}">${d}${punto(info.color)}</a>`
+      : !indice ? `<a href="#/dia/${f}" class="${f === hoyIso() ? "hoy" : ""}">${d}</a>`      // sin índice: se prueba el día igualmente
       : `<span class="d">${d}</span>`;
   }
   $("vista").innerHTML = avisos() +
@@ -255,14 +275,33 @@ function vistaCalendario(mes) {
 }
 
 // ── Navegación ────────────────────────────────────────────────────────────
-async function navegar() {
-  const p = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+async function navegar(quieto) {
+  const id = ++navId, hash = location.hash;
+  const p = hash.replace(/^#\/?/, "").split("/").filter(Boolean);
   if (!indice) await cargarIndice();
+  if (id !== navId) return;
   if (p[0] === "egutegia") vistaCalendario(p[1] || hoyIso().slice(0, 7));
-  else if (p[0] === "dia" && p[3]) await vistaHora(p[1], Number(p[2]) || 0, p[3]);
-  else await vistaDia(p[0] === "dia" && p[1] ? p[1] : hoyIso(), Number(p[2]) || 0);
-  window.scrollTo(0, 0);
-  document.documentElement.dataset.lista = location.hash || "#/";      // señal para las pruebas
+  else if (p[0] === "dia" && p[3]) await vistaHora(p[1], Number(p[2]) || 0, p[3], id);
+  else await vistaDia(p[0] === "dia" && p[1] ? p[1] : hoyIso(), Number(p[2]) || 0, id);
+  if (id !== navId) return;                                // otra navegación se adelantó: no se toca la pantalla
+  if (!quieto) window.scrollTo(0, 0);
+  document.documentElement.dataset.lista = hash || "#/";      // señal para las pruebas
+}
+
+// El índice se renueva al volver a primer plano y con «Gaur» si tiene más de 30 minutos y hay red. Si
+// cambia lo que se está viendo (huella del día, o el aviso de conexión) se repinta en el sitio; dentro
+// de una hora no se repinta (se perdería la lectura): la próxima navegación ya usa lo nuevo.
+let renovando = false;
+async function renovarIndice() {
+  if (renovando || !navigator.onLine || Date.now() - indiceT < 30 * 60 * 1000) return;
+  renovando = true;
+  const antes = indice, estaba = enLinea;
+  try { await cargarIndice(); } finally { renovando = false; }
+  const p = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+  if (p[0] === "dia" && p[3]) return;
+  const f = p[0] === "dia" && p[1] ? p[1] : hoyIso();
+  const huella = i => i && i.dias[f] && i.dias[f].huella;
+  if (enLinea !== estaba || (p[0] !== "egutegia" && huella(indice) !== huella(antes))) navegar(true);
 }
 
 function ajustes() {
@@ -276,11 +315,13 @@ document.addEventListener("click", e => {
   if (!b) return;
   if (b.dataset.ir) location.hash = b.dataset.ir;
   if (b.dataset.salmo) {                       // salmo invitatorio: se repinta en su sitio, sin navegar
-    if (invPlegable && b.getAttribute("aria-pressed") === "true") plegarSalmoInv();      // el abierto: se pliega
+    const y = b.getBoundingClientRect().top;
+    if (invPlegable && b.getAttribute("aria-pressed") === "true") { aperturaInv(false); plegarSalmoInv(); }      // el abierto: se pliega
     else {
       localStorage.setItem("salmoInv", b.dataset.salmo);
       document.querySelectorAll("[data-salmo]").forEach(x => x.setAttribute("aria-pressed", x === b));
       $("salmo-inv").innerHTML = salmoInvHtml(b.dataset.salmo);
+      if (aperturaInv(true)) window.scrollBy(0, b.getBoundingClientRect().top - y);     // el botón no se mueve bajo el dedo
     }
   }
   if (b.dataset.letra) {
@@ -291,15 +332,17 @@ document.addEventListener("click", e => {
 });
 $("btn-cal").onclick = () => { location.hash = "#/egutegia/" + hoyIso().slice(0, 7); };
 // «Gaur»: las oraciones de hoy. Si ya se está en «#/», no hay hashchange: se vuelve a pintar.
-$("btn-gaur").onclick = () => { if (location.hash === "#/" || location.hash === "") navegar(); else location.hash = "#/"; };
-window.addEventListener("hashchange", navegar);
+$("btn-gaur").onclick = () => { if (location.hash === "#/" || location.hash === "") navegar(); else location.hash = "#/"; renovarIndice(); };
+window.addEventListener("hashchange", () => navegar());
 
 // La app puede pasar días abierta en segundo plano: al volver a ella en otro día se carga de nuevo,
 // para abrir en el día de hoy y con la última versión publicada (el código viejo no sabe pintar
 // datos de un formato posterior: el 13-nov-2026 el Dei-salmoa salía sin salmo por eso).
 const cargada = hoyIso();
 document.addEventListener("visibilitychange", () => {
-  if (!document.hidden && hoyIso() !== cargada && navigator.onLine) location.replace(location.pathname + location.search);
+  if (document.hidden) return;
+  if (hoyIso() !== cargada && navigator.onLine) location.replace(location.pathname + location.search);
+  else renovarIndice();
 });
 
 // Guarda las pantallas para abrir la app sin conexión (solo en la versión publicada).
