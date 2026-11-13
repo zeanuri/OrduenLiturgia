@@ -14,7 +14,7 @@ const R = {
   primeras: "Lehenengo Bezperak", misa: "Mezako irakurgaiak", calendario: "Egutegia", hoy: "Gaur",
   prueba: "PROBAKO TESTUAK — ez dira liturgia-testuak", sinDatos: "Ezin izan da eguna kargatu.",
   sinConexion: "Konexino barik: gordetako azkena erakusten da.", falta: "Bizkaierazko bertsioaren zain", pendiente: "Oraindik osatu gabe", ant: "Ant.",
-  salterio: "Salmutegiko astea", opcional: "aukerakoa", salmoa: "Salmoa", salmos: "95., 100., 67., 24.", cerrar: "Itxi",
+  salterio: "Salmutegiko astea", opcional: "aukerakoa", salmoa: "Salmoa", salmos: "95., 100., 67., 24.",
   // Días y meses en batua, como el resto de rótulos de lecturasdeldia.org/eu.
   dias: ["Astelehena", "Asteartea", "Asteazkena", "Osteguna", "Ostirala", "Larunbata", "Igandea"],
   diasCortos: ["al", "ar", "az", "og", "or", "lr", "ig"],
@@ -174,7 +174,7 @@ function marcaAnt(p, repetida, varias) {
 const salmoInv = () => localStorage.getItem("salmoInv") || "95";
 let invActual = null;                 // {p, ant}: la parte `salmo` con sus opciones y la antífona del invitatorio
 // Dentro de Gorespenak el Dei-salmoa va plegado: solo los botones; al pulsar uno se abre su salmo, y se
-// pliega pulsándolo otra vez o con «Itxi» al final del salmo.
+// pliega pulsándolo otra vez.
 let invPlegable = false;
 
 // El salmo elegido: encabezado, y la antífona antes de la primera estrofa y detrás de cada una (Gloria
@@ -187,8 +187,7 @@ function salmoInvHtml(n) {
   const nota = (!conAnt ? `<p class="falta" title="${esc(ant && ant.falta ? ant.falta[0] : "")}">${R.pendiente}</p>` : "") +
     (o.batua || (conAnt && ant.batua) ? `<p class="batua" title="${esc(o.fuente || "")}">${R.falta}</p>` : "");
   const a = conAnt ? `<section>${lineas([{ t: "ant", x: R.ant }, ...ant.lineas])}</section>` : "";
-  return nota + `<section>${lineas(cab)}</section>` + a + estrofas.map(e => `<section>${lineas([e])}</section>` + a).join("") +
-    (invPlegable ? `<div class="fichas"><button class="ficha" data-cerrar-inv>${R.cerrar}</button></div>` : "");
+  return nota + `<section>${lineas(cab)}</section>` + a + estrofas.map(e => `<section>${lineas([e])}</section>` + a).join("");
 }
 
 // Fila de botones 95 · 100 · 67 · 24 y, debajo, el salmo elegido (se repinta al pulsar, sin navegar).
@@ -284,7 +283,6 @@ document.addEventListener("click", e => {
       $("salmo-inv").innerHTML = salmoInvHtml(b.dataset.salmo);
     }
   }
-  if ("cerrarInv" in b.dataset) plegarSalmoInv();
   if (b.dataset.letra) {
     const v = Math.min(30, Math.max(14, (Number(localStorage.getItem("letra")) || 19) + 2 * Number(b.dataset.letra)));
     localStorage.setItem("letra", v); ajustes();
