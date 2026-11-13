@@ -248,3 +248,41 @@ def test_invitatorio_ofrece_los_salmos_que_existen():
     vacio = generar.generar_dia(date(2026, 11, 10), {}, {})
     salmo = {p["parte"]: p for p in vacio["celebraciones"][0]["horas"]["invitatorio"]}["salmo"]
     assert salmo["falta"] == [f"fijo/invitatorio/salmo{n}" for n in ("95", "100", "67", "24")]
+
+
+# ── Cabeceras de las partes, como «Liturgia euskaraz» ───────────────────────
+
+def test_cabeceras_de_las_partes_como_liturgia_euskaraz():
+    dia = generar.generar_dia(date(2026, 11, 13), {}, {})          # sin textos: la cabecera sale igual
+    horas = dia["celebraciones"][0]["horas"]
+    cab = lambda h: {p["parte"]: p.get("cabecera") for p in horas[h]}
+    comunes = {"apertura": "Hasierako deia", "himno": "Gorazarrea", "ant1": "Salmoak", "salmo1": None, "ant2": None,
+               "lectura": "Irakurgai laburra", "responsorio": "Galde-erantzuna", "ant_ev": "Ebanjelioko kantika",
+               "preces": "Eskariak", "padrenuestro": "Jaunaren otoitza", "oracion": "Otoitza", "conclusion": "Amaiera"}
+    for h, cantico in (("laudes", "benedictus"), ("visperas", "magnificat")):
+        assert {k: cab(h)[k] for k in comunes} == comunes and cab(h)[cantico] is None
+    assert not any(cab("invitatorio").values())                    # su «Hasierako txatala» va en la apertura
+    c = cab("completas")                                           # viernes: un solo salmo
+    assert (c["examen"], c["ant1"], c["maria"]) == (
+        "Kontzientzia azterketa", "Salmoa", "Maria Birjina Dohatsuari azken kantuak")
+    sab = generar.generar_dia(date(2026, 11, 14), {}, {})          # sábado: dos salmos
+    assert {p["parte"]: p.get("cabecera") for p in sab["celebraciones"][0]["horas"]["completas"]}["ant1"] == "Salmoak"
+
+
+def test_cabecera_no_se_repite_si_el_texto_ya_la_trae():
+    t = lambda *ls: {"lineas": [{"t": a, "x": b} for a, b in ls]}
+    textos = {"salterio/s4/vie/laudes/preces": t(("texto", "…"), ("titulo", "Jaunaren otoitza"), ("texto", "…")),
+              "salterio/s4/vie/laudes/responsorio": t(("titulo", "Galde-erantzuna"), ("texto", "…")),
+              "fijo/padrenuestro": t(("estrofa", "Gure Aita"))}
+    dia = generar.generar_dia(date(2026, 11, 13), textos, {})
+    horas = dia["celebraciones"][0]["horas"]
+    lau = {p["parte"]: p for p in horas["laudes"]}
+    assert "cabecera" not in lau["padrenuestro"] and "cabecera" not in lau["responsorio"]
+    assert {p["parte"]: p for p in horas["visperas"]}["padrenuestro"]["cabecera"] == "Jaunaren otoitza"
+
+
+def test_benedictus_y_magnificat_llevan_titulo_y_epigrafe():
+    textos = generar.cargar_textos(generar.PROYECTO / "textos")
+    for clave, titulo in (("fijo/laudes/benedictus", "Benedictus"), ("fijo/visperas/magnificat", "Magnificat")):
+        ls = textos[clave]["lineas"]
+        assert [l["t"] for l in ls[:4]] == ["salmo", "cita", "epigrafe", "estrofa"] and ls[0]["x"] == titulo

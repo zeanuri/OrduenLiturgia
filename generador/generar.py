@@ -88,6 +88,33 @@ ORDEN = {
 INVITATORIO = ["95", "100", "67", "24"]
 # Parte que vale para todas las horas del día: se busca también sin la hora en la clave.
 COMPARTIDAS = {"oracion"}
+# Cabecera de cada parte, con las palabras de «Liturgia euskaraz» (decisión del usuario, 13-nov-2026).
+# Allí van como líneas de título dentro de cada unidad; aquí las pone el generador, en `cabecera`.
+# El Invitatorio no lleva: su «Hasierako txatala» viene dentro de la apertura.
+CABECERAS = {
+    "apertura": "Hasierako deia", "himno": "Gorazarrea", "ant1": "Salmoak", "lectura": "Irakurgai laburra",
+    "responsorio": "Galde-erantzuna", "ant_ev": "Ebanjelioko kantika", "preces": "Eskariak",
+    "padrenuestro": "Jaunaren otoitza", "oracion": "Otoitza", "conclusion": "Amaiera",
+    "examen": "Kontzientzia azterketa", "maria": "Maria Birjina Dohatsuari azken kantuak",
+}
+# Las preces en batua ya traen al final la cabecera del Padre nuestro (una, en castellano en el servidor).
+YA_EN_LA_ANTERIOR = {"padrenuestro": {"Jaunaren otoitza", "Oración dominical"}}
+
+
+def titulos(pieza: dict | None) -> set[str]:
+    return {l["x"] for l in (pieza or {}).get("lineas", []) if l["t"] == "titulo"}
+
+
+def cabecera_de(hora: str, nombre: str, pieza: dict | None, anterior: dict | None, noche: dict | None) -> str | None:
+    """Cabecera de la parte, o None si no lleva o si el texto ya la trae (en la pieza o al final de la anterior)."""
+    if hora == "invitatorio":
+        return None
+    cab = CABECERAS.get(nombre)
+    if hora == "completas" and nombre == "ant1" and not noche["dos_salmos"]:
+        cab = "Salmoa"                                     # noche de un solo salmo
+    if cab is None or cab in titulos(pieza) or YA_EN_LA_ANTERIOR.get(nombre, set()) & titulos(anterior):
+        return None
+    return cab
 
 
 # ── Calendario ──────────────────────────────────────────────────────────────
@@ -398,7 +425,7 @@ def salmos_invitatorio(textos: dict, faltan: dict) -> dict:
 
 
 def componer(info: dict, cel: dict, hora: str, textos: dict, faltan: dict, noche: dict | None = None) -> list[dict]:
-    partes = []
+    partes, anterior = [], None
     for parte in ORDEN["visperas" if hora == "visperas1" else hora]:
         if parte == "salmos":
             partes.append(salmos_invitatorio(textos, faltan))
@@ -420,12 +447,15 @@ def componer(info: dict, cel: dict, hora: str, textos: dict, faltan: dict, noche
             if p2 is not None and not p2.get("batua"):
                 clave, pieza, claves = c2, p2, claves + comun
         nombre = parte.split("/")[-1]
+        cab = cabecera_de(hora, nombre, pieza, anterior, noche)
+        cab = {"cabecera": cab} if cab else {}
         if pieza is None:
             faltan.setdefault(claves[-1], set()).add(claves[0])
-            partes.append({"parte": nombre, "falta": claves})
+            partes.append({"parte": nombre, **cab, "falta": claves})
         else:
-            partes.append({"parte": nombre, "clave": clave,
+            partes.append({"parte": nombre, **cab, "clave": clave,
                            **{k: pieza[k] for k in ("titulo", "lineas", "prueba", "fuente", "batua") if k in pieza}})
+        anterior = pieza
     return partes
 
 

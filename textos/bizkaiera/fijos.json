@@ -66,8 +66,16 @@
  "fijo/laudes/benedictus": {
   "lineas": [
    {
+    "t": "salmo",
+    "x": "Benedictus"
+   },
+   {
     "t": "cita",
     "x": "Lk 1, 68-79"
+   },
+   {
+    "t": "epigrafe",
+    "x": "Mesias eta haren bide-prestatzailea"
    },
    {
     "t": "estrofa",
@@ -145,8 +153,16 @@
  "fijo/visperas/magnificat": {
   "lineas": [
    {
+    "t": "salmo",
+    "x": "Magnificat"
+   },
+   {
     "t": "cita",
     "x": "Lk 1, 46-55"
+   },
+   {
+    "t": "epigrafe",
+    "x": "Arimaren poza Jaunarengan"
    },
    {
     "t": "estrofa",

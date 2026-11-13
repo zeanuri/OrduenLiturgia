@@ -150,12 +150,15 @@ function lineas(ls) {
   return html + (marca ? `<p>${marca}</p>` : "");
 }
 
-function parteHtml(p, marca) {
-  if (p.falta) return `<section><p class="falta" title="${esc(p.falta[0])}">${R.pendiente}</p></section>`;
+// `repetida`: la antífona que vuelve detrás de su salmo; no repite la cabecera de la parte.
+function parteHtml(p, marca, repetida) {
+  // Cabecera de la parte («Irakurgai laburra», «Eskariak»…), con las palabras de «Liturgia euskaraz».
+  const cab = p.cabecera && !repetida ? `<p class="l-titulo">${esc(p.cabecera)}</p>` : "";
+  if (p.falta) return `<section>${cab}<p class="falta" title="${esc(p.falta[0])}">${R.pendiente}</p></section>`;
   const ls = marca ? [{ t: "ant", x: marca }, ...(p.lineas || [])] : p.lineas;
   // Texto en batua de «Liturgia euskaraz» donde aún no hay bizkaiera: se dice encima.
   const batua = p.batua ? `<p class="batua" title="${esc(p.fuente || "")}">${R.falta}</p>` : "";
-  return `<section data-parte="${p.parte}">${batua}${p.titulo ? `<p class="l-titulo">${esc(p.titulo)}</p>` : ""}${lineas(ls)}</section>`;
+  return `<section data-parte="${p.parte}">${cab}${batua}${p.titulo ? `<p class="l-titulo">${esc(p.titulo)}</p>` : ""}${lineas(ls)}</section>`;
 }
 
 // Marca de la antífona, como en «Liturgia euskaraz»: «1. Ant.» antes del salmo y «Ant.»
@@ -208,7 +211,7 @@ async function vistaHora(fecha, c, hora) {
     const esAnt = p.parte.startsWith("ant");
     cuerpo += parteHtml(p, esAnt ? marcaAnt(p, false, varias) : "");
     if (esAnt) ant = p;
-    else if (ant) { if (!ant.falta) cuerpo += parteHtml(ant, marcaAnt(ant, true, varias)); ant = null; }
+    else if (ant) { if (!ant.falta) cuerpo += parteHtml(ant, marcaAnt(ant, true, varias), true); ant = null; }
   });
   if (ant && hora === "invitatorio") cuerpo += parteHtml(ant, R.ant);         // sin salmos que elegir: la antífona sola
   const prueba = partes.some(p => p.prueba);
@@ -271,6 +274,14 @@ document.addEventListener("click", e => {
 });
 $("btn-cal").onclick = () => { location.hash = "#/egutegia/" + hoyIso().slice(0, 7); };
 window.addEventListener("hashchange", navegar);
+
+// La app puede pasar días abierta en segundo plano: al volver a ella en otro día se carga de nuevo,
+// para abrir en el día de hoy y con la última versión publicada (el código viejo no sabe pintar
+// datos de un formato posterior: el 13-nov-2026 el Dei-salmoa salía sin salmo por eso).
+const cargada = hoyIso();
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden && hoyIso() !== cargada && navigator.onLine) location.replace(location.pathname + location.search);
+});
 
 // Guarda las pantallas para abrir la app sin conexión (solo en la versión publicada).
 if ("serviceWorker" in navigator && location.hostname.endsWith("github.io")) navigator.serviceWorker.register("sw.js");
