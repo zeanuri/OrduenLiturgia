@@ -245,16 +245,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1711"
 },
-"propio/dedicacion-de-la-basilica-de-santa-maria-la-mayor/invitatorio/ant": {
-"lineas": [
-{
-"t": "texto",
-"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
-},
 "propio/domingo-de-pentecostes/invitatorio/ant": {
 "lineas": [
 {
@@ -455,16 +445,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1645"
 },
-"propio/san-alberto-magno-obispo-y-doctor/invitatorio/ant": {
-"lineas": [
-{
-"t": "texto",
-"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
-},
 "propio/san-andres-apostol/invitatorio/ant": {
 "lineas": [
 {
@@ -474,16 +454,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1725"
-},
-"propio/san-antonio-maria-claret/invitatorio/ant": {
-"lineas": [
-{
-"t": "texto",
-"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
 },
 "propio/san-bartolome-apostol/invitatorio/ant": {
 "lineas": [
@@ -504,16 +474,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1487_F"
-},
-"propio/san-calixto-i-papa-y-martir/invitatorio/ant": {
-"lineas": [
-{
-"t": "texto",
-"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
 },
 "propio/san-efren-diacono-y-doctor/invitatorio/ant": {
 "lineas": [
@@ -554,36 +514,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1725"
-},
-"propio/san-juan-de-capistrano/invitatorio/ant": {
-"lineas": [
-{
-"t": "texto",
-"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
-},
-"propio/san-juan-eudes/invitatorio/ant": {
-"lineas": [
-{
-"t": "texto",
-"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
-},
-"propio/san-juan-pablo-ii-papa/invitatorio/ant": {
-"lineas": [
-{
-"t": "texto",
-"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
 },
 "propio/san-justino-martir/invitatorio/ant": {
 "lineas": [
@@ -645,37 +575,7 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1726"
 },
-"propio/san-pedro-claver/invitatorio/ant": {
-"lineas": [
-{
-"t": "texto",
-"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
-},
-"propio/san-pedro-crisologo/invitatorio/ant": {
-"lineas": [
-{
-"t": "texto",
-"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
-},
-"propio/san-roberto-belarmino/invitatorio/ant": {
-"lineas": [
-{
-"t": "texto",
-"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
-},
-"propio/santa-juana-francisca-de-chantal/invitatorio/ant": {
+"propio/santa-maria-en-sabado/invitatorio/ant": {
 "lineas": [
 {
 "t": "texto",
@@ -744,16 +644,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1887"
-},
-"propio/santos-ponciano-e-hipolito-martires/invitatorio/ant": {
-"lineas": [
-{
-"t": "texto",
-"x": "Zatozte, gurtu dezagun Kristo, Maria Birjinaren Semea.\nEdota:\nGorets dezagun Jauna Maria Birjinaren oroipen honetan."
-}
-],
-"batua": true,
-"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1717"
 },
 "propio/santos-simon-y-judas-apostoles/invitatorio/ant": {
 "lineas": [

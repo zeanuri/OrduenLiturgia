@@ -472,12 +472,14 @@ def test_las_16_fechas_de_santos_alternativos_de_la_ventana():
               if " / " in (generar.liturgia.calculate(d).get("memorial") or "")]
     assert len(fechas) == 16
     for d in fechas:
-        cels = generar.dia_liturgico(d)["celebraciones"]
+        todas = generar.dia_liturgico(d)["celebraciones"]
+        # Si el día es sábado de Tiempo Ordinario, a los santos se añade Santa María en sábado (no alterna con ellos).
+        cels = [c for c in todas if c["id"] != "santa-maria-en-sabado"]
         mem = generar.liturgia.calculate(d)["memorial"]
         assert [c["nombre"] for c in cels[1:]] == mem.split(" / ")
         assert all(c["opcional"] and c["alterna"] and c["rango"] == "Memoria Libre" for c in cels[1:])
-        assert len({c["id"] for c in cels}) == len(cels)
-        assert generar.generar_dia(d, {}, {})["cabecera"]["memoria"].count(" / ") == len(cels) - 2
+        assert len({c["id"] for c in todas}) == len(todas)
+        assert generar.generar_dia(d, {}, {})["cabecera"]["memoria"].count(" / ") == len(todas) - 2
 
 
 def test_ningun_dia_de_la_ventana_repite_id():
@@ -498,7 +500,8 @@ def test_cantico_de_visperas_dominical_en_cuaresma_y_adviento():
     for fecha in ("2027-02-14", "2027-02-21", "2027-03-14"):
         p = salmo3(fecha)
         assert p["clave"].startswith("tiempo/cuaresma/"), (fecha, p["clave"])
-        assert "1 Pe 2" in p["lineas"][1]["x"], (fecha, p["lineas"][1]["x"])
+        cabeza = " / ".join(l["x"] for l in p["lineas"][:2])        # batua: título y cita; bizkaiera: «Kantika: Ik 1 Pe 2…»
+        assert "1 Pe 2" in cabeza, (fecha, cabeza)
     assert salmo3("2026-12-13")["clave"].startswith("salterio/")
 
 
@@ -573,3 +576,232 @@ def test_presentacion_reza_en_laudes_la_salmodia_del_domingo_i_con_sus_antifonas
     assert salmo(dia, "laudes", "salmo3")[1] == 149
     for n in (1, 2, 3):
         assert parte(dia, "laudes", f"ant{n}")["clave"] == f"propio/la-presentacion-del-senor/laudes/ant{n}"
+
+
+# ── Oración propia que solo existe en castellano ────────────────────────────
+# «Liturgia euskaraz» da a esas memorias su oración (en castellano, que no entra: `referencia/batua.py` la
+# anota en `sin_euskera.json`). La feria ni el común la sustituyen: sería otra oración bajo el nombre del santo.
+
+def oracion(dia, hora, cel=0):
+    return {p["parte"]: p for p in dia["celebraciones"][cel]["horas"][hora]}["oracion"]
+
+
+def test_memoria_con_oracion_propia_sin_euskera_no_reza_la_de_la_feria_ni_la_del_comun(monkeypatch):
+    info = generar.dia_liturgico(date(2026, 11, 10))
+    cel = info["celebraciones"][0]                       # San León Magno, memoria obligatoria
+    propia = "propio/san-leon-magno-papa-y-doctor/laudes/oracion"
+    textos = {"salterio/s4/mar/laudes/oracion": {"lineas": [{"t": "texto", "x": "feria"}]},
+              "comunes/doctores/laudes/oracion": {"lineas": [{"t": "texto", "x": "común"}]}}
+    faltan = {}
+    monkeypatch.setattr(generar, "SIN_EUSKERA", {propia: "O0001"})
+    p = {p["parte"]: p for p in generar.componer(info, cel, "laudes", textos, faltan)}["oracion"]
+    assert "clave" not in p and p["falta"] == [propia]
+    assert faltan[propia] == {propia}
+    # Solo la oración y solo esa hora: las demás partes siguen siendo las de la feria.
+    textos["salterio/s4/mar/laudes/himno"] = {"lineas": [{"t": "texto", "x": "himno de feria"}]}
+    partes = {p["parte"]: p for p in generar.componer(info, cel, "laudes", textos, {})}
+    assert partes["himno"]["clave"] == "salterio/s4/mar/laudes/himno"
+    textos["salterio/s4/mar/visperas/oracion"] = {"lineas": [{"t": "texto", "x": "feria"}]}
+    partes = {p["parte"]: p for p in generar.componer(info, cel, "visperas", textos, {})}
+    assert partes["oracion"]["clave"] == "salterio/s4/mar/visperas/oracion"
+    # Sin la anotación, o con el texto propio ya en euskera, nada cambia.
+    monkeypatch.setattr(generar, "SIN_EUSKERA", {})
+    partes = {p["parte"]: p for p in generar.componer(info, cel, "laudes", textos, {})}
+    assert partes["oracion"]["clave"] == "salterio/s4/mar/laudes/oracion"
+    monkeypatch.setattr(generar, "SIN_EUSKERA", {propia: "O0001"})
+    textos[propia] = {"batua": True, "lineas": [{"t": "texto", "x": "propia"}]}
+    partes = {p["parte"]: p for p in generar.componer(info, cel, "laudes", textos, {})}
+    assert partes["oracion"]["clave"] == propia
+
+
+def test_san_oscar_no_reza_la_oracion_de_la_feria(textos_reales):
+    dia = generar.generar_dia(date(2027, 2, 3), textos_reales, {})
+    santo = next(i for i, c in enumerate(dia["celebraciones"]) if c["id"] == "san-oscar")
+    for hora in ("laudes", "visperas"):
+        p = oracion(dia, hora, santo)
+        assert "clave" not in p and p["falta"] == [f"propio/san-oscar/{hora}/oracion"], hora
+    # La feria del mismo día sí reza la suya.
+    assert oracion(dia, "laudes", 0)["clave"].startswith("salterio/")
+
+
+def test_san_calixto_reza_en_laudes_su_oracion_en_euskera(textos_reales):
+    # El servidor de «Liturgia euskaraz» da en 2026 las Laudes con la oración de la feria; en 2021-2025 (y
+    # en sus Vísperas de 2026) la del santo, en euskera: `llaves.subir` ya no deja que la feria la tape.
+    dia = generar.generar_dia(date(2026, 10, 14), textos_reales, {})
+    santo = next(i for i, c in enumerate(dia["celebraciones"]) if c["id"] == "san-calixto-i-papa-y-martir")
+    assert oracion(dia, "laudes", santo)["clave"] == "propio/san-calixto-i-papa-y-martir/laudes/oracion"
+    assert oracion(dia, "visperas", santo)["clave"] == "propio/san-calixto-i-papa-y-martir/visperas/oracion"
+    assert oracion(dia, "laudes", santo)["lineas"]
+
+
+def test_octava_de_navidad_el_santo_conmemorado_reza_la_oracion_del_dia(textos_reales):
+    # Santo Tomás Becket (29-dic): en la octava solo se conmemora (su «oración» en el servidor es la rúbrica
+    # de la conmemoración, en castellano); la oración del día es la de la octava y no falta.
+    dia = generar.generar_dia(date(2026, 12, 29), textos_reales, {})
+    santo = next(i for i, c in enumerate(dia["celebraciones"]) if c["id"] == "santo-tomas-becket-obispo-y-martir")
+    assert oracion(dia, "laudes", santo)["clave"] == "tiempo/navidad/12-29/laudes/oracion"
+    assert "propio/santo-tomas-becket-obispo-y-martir/laudes/oracion" not in generar.SIN_EUSKERA
+
+
+def test_sin_euskera_json_solo_anota_oraciones_propias_sin_texto(textos_reales):
+    assert generar.SIN_EUSKERA, "falta repo/generador/sin_euskera.json (referencia/batua.py)"
+    for clave in generar.SIN_EUSKERA:
+        assert re.fullmatch(r"propio/[a-z0-9-]+/(laudes|visperas|visperas1)/oracion", clave), clave
+        assert clave not in textos_reales, f"{clave} ya tiene texto"
+
+
+def test_ninguna_memoria_de_la_ventana_reza_la_feria_donde_el_santo_tiene_oracion_propia(textos_reales):
+    anotadas, vistas = 0, 0
+    hoy = date(2026, 11, 14)
+    for n in range(-generar.DIAS_ATRAS, generar.DIAS_ADELANTE + 1):
+        dia = generar.generar_dia(hoy + timedelta(days=n), textos_reales, {})
+        for cel in dia["celebraciones"]:
+            if not cel["rango"].startswith("Memoria"):
+                continue
+            for hora in ("laudes", "visperas"):
+                if hora == "visperas" and cel["visperas_de"]["cuales"] == "primeras":
+                    continue
+                p = {p["parte"]: p for p in cel["horas"][hora]}["oracion"]
+                propia = f"propio/{cel['id']}/{hora}/oracion"
+                vistas += 1
+                if propia in generar.SIN_EUSKERA:
+                    anotadas += 1
+                    assert "clave" not in p, (dia["fecha"], propia, p.get("clave"))
+    assert anotadas > 50 and vistas > anotadas       # hay casos reales y la regla no alcanza a todas las memorias
+
+
+def test_llaves_oracion_propia_no_se_pierde_porque_el_ultimo_ano_traiga_la_de_la_feria():
+    # `referencia/llaves.py` no está en el repositorio público: la prueba solo corre en el clon de ZClaude.
+    ref = generar.PROYECTO.parent / "referencia"
+    if not (ref / "llaves.py").exists():
+        pytest.skip("sin referencia/")
+    import sys
+    sys.path.insert(0, str(ref))
+    import llaves
+
+    def occ(fecha, firma, papel, feria=False):
+        cadena = [f"propio/x/laudes/{papel}", f"salterio/s4/mie/laudes/{papel}"]
+        return {"fecha": fecha, "llave": "x", "hora": "laudes", "papel": papel, "u": firma, "firma": firma,
+                "cadena": cadena[1:] if feria else cadena, "feria": feria}
+    for papel, se_pierde in (("oracion", False), ("himno", True)):   # el himno sigue la regla del año más reciente
+        lista = [occ("2026-10-14", "FERIA", papel, feria=True),
+                 occ("2025-10-14", "SANTO", papel), occ("2026-10-14", "FERIA", papel)]
+        llaves.subir(lista)
+        assert lista[1]["de_feria"] is se_pierde, papel
+        assert lista[2]["de_feria"] is True
+
+
+# ── Santa María en sábado (memoria libre; decisión del usuario, 14-nov-2026) ──
+
+SM = "santa-maria-en-sabado"
+# Los 26 sábados de la ventana (hoy = 2026-11-13) que la ofrecen: sábado de Tiempo Ordinario sin memoria
+# obligatoria, fiesta ni solemnidad. Los 8 primeros, hasta enero, los sirve también «Liturgia euskaraz».
+SABADOS_SANTA_MARIA = [
+    "2026-10-10", "2026-10-24", "2026-10-31", "2026-11-07", "2026-11-14", "2026-11-28", "2027-01-16", "2027-01-30",
+    "2027-05-22", "2027-05-29", "2027-06-12", "2027-06-19", "2027-06-26", "2027-07-10", "2027-07-17", "2027-07-24",
+    "2027-08-07", "2027-09-04", "2027-09-11", "2027-09-18", "2027-09-25", "2027-10-09", "2027-10-16", "2027-10-23",
+    "2027-10-30", "2027-11-13"]
+
+
+def ids_del_dia(fecha: str) -> list[str]:
+    return [c["id"] for c in generar.dia_liturgico(date.fromisoformat(fecha))["celebraciones"]]
+
+
+@pytest.mark.parametrize("fecha", ["2026-11-14", "2026-11-28"])
+def test_santa_maria_en_sabado_es_una_celebracion_opcional_con_su_laudes(textos_reales, fecha):
+    dia = generar.generar_dia(date.fromisoformat(fecha), textos_reales, {})
+    feria, sm = dia["celebraciones"][0], dia["celebraciones"][-1]
+    assert [c["id"] for c in dia["celebraciones"]] == [feria["id"], SM]
+    assert (sm["nombre"], sm["rango"], sm["opcional"]) == ("Santa María en sábado", "Memoria Libre", True)
+    assert sm["nombre_eu"] == "Maria Birjina Dohatsuaren oroipena larunbatean" and sm["rango_eu"] == "nahierazko oroipena"
+    # Laudes: el himno, la lectura breve, el responsorio, la antífona del Benedictus y la oración, los suyos.
+    for nombre in ("himno", "lectura", "responsorio", "ant_ev", "oracion"):
+        assert parte(dia, "laudes", nombre, -1)["clave"] == f"propio/{SM}/laudes/{nombre}", nombre
+    assert parte(dia, "invitatorio", "ant", -1)["clave"] == f"propio/{SM}/invitatorio/ant"
+    # La salmodia es la de la feria (salterio del sábado), y las Vísperas y las Completas son las del día.
+    for nombre in ("ant1", "salmo1", "salmo2", "salmo3"):
+        assert parte(dia, "laudes", nombre, -1)["clave"] == parte(dia, "laudes", nombre, 0)["clave"], nombre
+    assert sm["horas"]["visperas"] == feria["horas"]["visperas"] and sm["horas"]["completas"] == feria["horas"]["completas"]
+    assert sm["visperas_de"]["cuales"] == "primeras"
+    # La cabecera del día la anuncia como a un santo de memoria libre.
+    assert dia["cabecera"]["memoria"] == sm["nombre_eu"] and dia["cabecera"]["memoria_rango"] == "nahierazko oroipena"
+    # Y la de la feria no se lleva nada de ella.
+    assert not any(SM in p.get("clave", "") for h in ("invitatorio", "laudes", "visperas") for p in feria["horas"][h])
+
+
+def test_santa_maria_en_sabado_sale_junto_a_los_santos_de_memoria_libre(textos_reales):
+    dia = generar.generar_dia(date(2026, 10, 24), textos_reales, {})      # San Antonio María Claret
+    assert [c["id"] for c in dia["celebraciones"]][1:] == ["san-antonio-maria-claret", SM]
+    assert [c["opcional"] for c in dia["celebraciones"]] == [False, True, True]
+    assert dia["cabecera"]["memoria"] == "San Antonio Maria Claret, gotzaina / Maria Birjina Dohatsuaren oroipena larunbatean"
+    assert dia["cabecera"]["memoria_rango"] == "nahierazko oroipena"
+    # Claret no se lleva las piezas de Santa María en sábado (el emparejamiento de la referencia las confundía).
+    claret = dia["celebraciones"][1]
+    assert not any(SM in p.get("clave", "") for h in ("invitatorio", "laudes") for p in claret["horas"][h])
+    assert parte(dia, "laudes", "himno", 2)["clave"] == f"propio/{SM}/laudes/himno"
+
+
+def test_santa_maria_en_sabado_solo_en_sabados_de_tiempo_ordinario_sin_memoria_obligatoria_fiesta_ni_solemnidad():
+    hoy = date(2026, 11, 13)
+    con = [d.isoformat() for d in (hoy + timedelta(days=n) for n in range(-generar.DIAS_ATRAS, generar.DIAS_ADELANTE + 1))
+           if SM in ids_del_dia(d.isoformat())]
+    assert con == SABADOS_SANTA_MARIA
+    assert ids_del_dia("2026-11-21") == ["presentacion-de-la-virgen-maria"]            # memoria obligatoria
+    assert ids_del_dia("2027-07-03") == ["santo-tomas-apostol"]                       # fiesta
+    assert ids_del_dia("2028-06-24") == ["natividad-de-san-juan-bautista"]            # solemnidad
+    for fecha in ("2026-12-05", "2027-02-20", "2027-01-02", "2027-03-27", "2027-04-17"):   # Adviento, Cuaresma, Navidad, Triduo, Pascua
+        assert SM not in ids_del_dia(fecha), fecha
+        assert date.fromisoformat(fecha).weekday() == 5
+    for fecha in ("2026-11-13", "2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19", "2026-11-20"):
+        assert SM not in ids_del_dia(fecha), fecha                                    # ni viernes ni domingo ni entre semana
+
+
+def test_llaves_santa_maria_en_sabado_solo_se_empareja_con_su_titulo():
+    # `referencia/llaves.py` no está en el repositorio público: la prueba solo corre en el clon de ZClaude.
+    ref = generar.PROYECTO.parent / "referencia"
+    if not (ref / "llaves.py").exists():
+        pytest.skip("sin referencia/")
+    import sys
+    sys.path.insert(0, str(ref))
+    import llaves
+
+    def suyas(*titulos):
+        return [(f"c{i}", {"lista": "liturgiasFeria" if i == 0 else "liturgiasMemoria", "titulo": t})
+                for i, t in enumerate(titulos)]
+    feria = "SÁBADO DE LA XXIX SEMANA DEL TIEMPO ORDINARIO, feria"
+    claret = "SAN ANTONIO MARÍA CLARET, obispo, memoria libre"
+    mia, _ = llaves.nuestras(date(2026, 10, 24))                                   # feria + Claret + Santa María en sábado
+    for orden in ((claret, "SANTA MARÍA EN SÁBADO, memoria libre"), ("SANTA MARÍA EN SÁBADO, memoria libre", claret)):
+        pares, sin, sobra = llaves.emparejar(mia, suyas(feria, *orden))
+        assert {m["llave"]: s[1]["titulo"] for m, s in pares} == {
+            "sabado-de-la-xxix-semana-del-tiempo-ordinario": feria, "san-antonio-maria-claret": claret,
+            SM: "SANTA MARÍA EN SÁBADO, memoria libre"}
+        assert not sin and not sobra
+    # La referencia no la trae ese día: queda sin pareja y no toma el santo que sobra.
+    pares, sin, sobra = llaves.emparejar(llaves.nuestras(date(2026, 10, 31))[0], suyas(
+        "SÁBADO DE LA XXX SEMANA DEL TIEMPO ORDINARIO, feria", "SAN ALGUIEN, memoria libre"))
+    assert [m["llave"] for m in sin] == [SM] and not any(m["llave"] == SM for m, _ in pares)
+
+
+def test_batua_partir_lectura_reparte_las_opciones_de_una_unidad():
+    ref = generar.PROYECTO.parent / "referencia"
+    if not (ref / "batua.py").exists():
+        pytest.skip("sin referencia/")
+    import sys
+    sys.path.insert(0, str(ref))
+    import batua
+
+    def r(tipo, texto):
+        return {"tipo": tipo, "texto": texto}
+    unidad = [r("R2", "Irakurgai laburra"), r("R2", "I [II]"), r("R6", "Ga 4, 4-5"), r("N4", "lectura uno"),
+              r("R2", "Galde-erantzuna"), r("N4", "responsorio uno"),
+              r("R2", "II [II]"), r("R6", "Ap 12, 1"), r("N4", "lectura dos"),
+              r("R2", "Galde-erantzuna"), r("N4", "responsorio dos")]
+    partes = batua.partir_lectura(unidad)
+    texto = lambda p: [l["texto"] for l in partes[p]]
+    assert texto("lectura") == ["Ga 4, 4-5", "lectura uno", "II [II]", "Ap 12, 1", "lectura dos"]
+    assert texto("responsorio") == ["responsorio uno", "II [II]", "responsorio dos"]
+    # Una unidad sin opciones se parte como siempre: lectura hasta el segundo título, y el responsorio detrás.
+    simple = [r("R2", "Irakurgai laburra"), r("R6", "Rm 1, 1"), r("N4", "lectura"), r("R2", "Galde-erantzuna"), r("N4", "resp")]
+    p = batua.partir_lectura(simple)
+    assert [l["texto"] for l in p["lectura"]] == ["Irakurgai laburra", "Rm 1, 1", "lectura"] and [l["texto"] for l in p["responsorio"]] == ["resp"]

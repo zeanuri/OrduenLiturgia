@@ -115,6 +115,11 @@ async function vistaDia(fecha, c, id) {
   c = dia.celebraciones.indexOf(cel);
   cabecera(R.app, "", null);
   const cab = dia.cabecera;
+  // Memoria obligatoria: lo que se reza es la memoria, así que el santo va de título y la feria debajo, en pequeño.
+  // Una fiesta cuyo nombre ya es el del día no se repite debajo.
+  const c0 = dia.celebraciones[0], conMem = cab.memoria && cab.memoria !== cab.nombre;
+  const oblig = conMem && !c0.opcional && c0.nombre_eu === cab.memoria;
+  const rangoCab = oblig ? cab.memoria_rango : cab.rango;
   const tarde = new Date().getHours() >= 13;
   const ahora = fecha === hoyIso() ? (tarde ? "visperas" : "laudes") : null;
   const fichas = dia.celebraciones.length < 2 ? "" : `<div class="fichas">` + dia.celebraciones.map((x, i) =>
@@ -131,9 +136,10 @@ async function vistaDia(fecha, c, id) {
        ${enVentana(mas(fecha, -1)) ? `<a class="flecha ant" href="#/dia/${mas(fecha, -1)}" aria-label="Aurreko eguna">&larr;</a>` : ""}
        ${enVentana(mas(fecha, 1)) ? `<a class="flecha sig" href="#/dia/${mas(fecha, 1)}" aria-label="Hurrengo eguna">&rarr;</a>` : ""}
        <div class="fecha">${fechaLarga(fecha)}</div>
-       <h1>${esc(cab.nombre)}</h1>
-       ${cab.memoria ? `<div class="memoria"><span class="estrella">&#9733;</span>${esc(cab.memoria)} <em>${esc(cab.memoria_rango)}</em></div>` : ""}
-       <div class="info">${esc(cab.tiempo)} &middot; ${esc(cab.rango.charAt(0).toUpperCase() + cab.rango.slice(1))} &middot; ${R.salterio}: ${["", "I", "II", "III", "IV"][dia.semana_salterio]}</div>
+       <h1>${esc(oblig ? cab.memoria : cab.nombre)}</h1>
+       ${oblig ? `<div class="memoria">${esc(cab.nombre)}</div>`
+         : conMem ? `<div class="memoria"><span class="estrella">&#9733;</span>${esc(cab.memoria)} <em>${esc(cab.memoria_rango)}</em></div>` : ""}
+       <div class="info">${esc(cab.tiempo)} &middot; ${esc(rangoCab.charAt(0).toUpperCase() + rangoCab.slice(1))} &middot; ${R.salterio}: ${["", "I", "II", "III", "IV"][dia.semana_salterio]}</div>
      </div>${fichas}
      <ul class="horas">${orden.map(fila).join("")}
        ${fecha >= mas(hoyIso(), -30) ? `<li><a href="${esc(dia.misa)}" target="_blank" rel="noopener"><span>${R.misa}<small>lecturasdeldia.org</small></span></a></li>` : ""}</ul>

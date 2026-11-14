@@ -38,6 +38,12 @@ _NOMBRES = Path(__file__).with_name("nombres_eu.json")
 NOMBRES_EU = json.loads(_NOMBRES.read_text(encoding="utf-8")) if _NOMBRES.exists() else {}
 
 
+# Partes propias de una celebración que existen en «Liturgia euskaraz» pero solo en castellano (clave →
+# unidad del servidor), por `referencia/batua.py`. Hoy solo la oración.
+_SIN_EUSKERA = Path(__file__).with_name("sin_euskera.json")
+SIN_EUSKERA = json.loads(_SIN_EUSKERA.read_text(encoding="utf-8")) if _SIN_EUSKERA.exists() else {}
+
+
 def nombre_eu(clave: str, traducido: str) -> str:
     n = NOMBRES_EU.get(clave)
     return n["nombre"] if n else traducido
@@ -173,7 +179,14 @@ COMUNES = [  # (patrón sobre el nombre en castellano, común). Heurística: rev
 ]
 
 
+# Memoria libre que el motor no da (ver `dia_liturgico`). Su `id` es el slug del nombre y lleva sus textos
+# propios (`propio/santa-maria-en-sabado/…`); el resto, de la feria o del común de la Virgen.
+SANTA_MARIA_SABADO = "Santa María en sábado"
+
+
 def comunes_de(nombre: str) -> list[str]:
+    if nombre == SANTA_MARIA_SABADO:             # no es una santa: solo el común de la Virgen
+        return ["santa-maria"]
     lista = [c for patron, c in COMUNES if re.search(patron, nombre)]
     if re.match(r"Santas? ", nombre):
         lista.append("santas-mujeres")
@@ -214,6 +227,11 @@ def dia_liturgico(d: date) -> dict:
             opcionales.append({"nombre": nombre, "rango": rango_mem, "opcional": True, "alterna": len(alternos) > 1})
     elif mem:                                   # memoria obligatoria o fiesta: es la celebración
         principal = {"nombre": mem, "rango": rango_mem, "opcional": False}
+    if d.weekday() == 5 and tiempo == "ordinario" and tipo_de(principal["rango"]) == "feria":
+        # Santa María en sábado: memoria libre de los sábados del Tiempo Ordinario sin memoria obligatoria,
+        # fiesta ni solemnidad. El motor de calendario no la da; «Liturgia euskaraz» la ofrece como una
+        # celebración opcional más, junto a la feria y a los santos de memoria libre (decisión del usuario, 14-nov-2026).
+        opcionales.append({"nombre": SANTA_MARIA_SABADO, "rango": "Memoria Libre", "opcional": True})
     info["celebraciones"] = [principal, *opcionales]
     for c in info["celebraciones"]:
         c["tipo"] = tipo_de(c["rango"])
@@ -466,11 +484,18 @@ def componer(info: dict, cel: dict, hora: str, textos: dict, faltan: dict, noche
         else:
             claves = candidatas(info, cel, hora, parte)
         clave, pieza = resolver(textos, claves)
-        if hora != "completas" and cel["tipo"] == "memoria" and not parte.startswith(("fijo/", "salmo")) and (
+        h = "visperas" if hora == "visperas1" else hora
+        propia = f"propio/{cel['id']}/{h}/{parte}"
+        if (hora != "completas" and cel["tipo"] == "memoria" and propia in SIN_EUSKERA
+                and not (clave or "").startswith(f"propio/{cel['id']}/")):
+            # La memoria TIENE esta parte propia (el servidor de «Liturgia euskaraz» la da, solo que en
+            # castellano: `sin_euskera.json`, de `referencia/batua.py`): no se sustituye por la de la feria ni
+            # la del común, que serían otra oración bajo el nombre del santo. Sale vacía, con la nota.
+            clave, pieza, claves = None, None, [propia]
+        elif hora != "completas" and cel["tipo"] == "memoria" and not parte.startswith(("fijo/", "salmo")) and (
                 pieza is None or pieza.get("batua") and not clave.startswith("propio/")):
             # El bizkaiera manda: si la feria solo está en batua y el común está en bizkaiera, el común.
             # Lo propio del santo, aunque sea batua, se queda (como en las fiestas).
-            h = "visperas" if hora == "visperas1" else hora
             comun = [f"comunes/{c}/{h}/{parte}" for c in comunes_de(cel["nombre"])]
             c2, p2 = resolver(textos, comun)
             if p2 is not None and not p2.get("batua"):
@@ -543,6 +568,12 @@ def generar_dia(d: date, textos: dict, faltan: dict) -> dict:
             "visperas_de": visperas_de, "completas_de": completas_de, "horas": horas,
         })
     r = info["r"]
+    # Memoria de la cabecera: la del motor (los santos, partidos por « / ») y, al final, Santa María en sábado.
+    memorias = [nombre_eu(slug(m), eu.localize_memorial(m)) for m in r["memorial"].split(" / ")] \
+        if r.get("memorial") and (r["memorial"] != r["name"] or clave_dia(r) in NOMBRES_EU) else []
+    sabado = next((c for c in celebraciones if c["id"] == slug(SANTA_MARIA_SABADO)), None)
+    if sabado:
+        memorias.append(sabado["nombre_eu"])
     return {
         "fecha": d.isoformat(), "dia_semana": DIAS[d.weekday()], "tiempo": info["tiempo"],
         "semana": info["semana"], "semana_salterio": info["salterio"], "ciclo_dominical": info["ciclo"],
@@ -552,9 +583,9 @@ def generar_dia(d: date, textos: dict, faltan: dict) -> dict:
             "nombre": nombre_eu(clave_dia(r), eu.localize_name(r["name"])), "tiempo": eu.localize_season(r["season"]),
             "rango": rango_eu(r["rank"]), "ciclo": eu.localize_sunday_cycle(r["sunday_cycle"]),
             "ciclo_ferial": eu.localize_weekday_cycle(r["weekday_cycle"]) if r.get("weekday_cycle") else "",
-            "memoria": " / ".join(nombre_eu(slug(m), eu.localize_memorial(m)) for m in r["memorial"].split(" / "))
-                       if r.get("memorial") and (r["memorial"] != r["name"] or clave_dia(r) in NOMBRES_EU) else "",
-            "memoria_rango": rango_eu(r["memorial_rank"]) if r.get("memorial_rank") else "",
+            "memoria": " / ".join(memorias),
+            "memoria_rango": rango_eu(r["memorial_rank"]) if r.get("memorial_rank") else (
+                sabado["rango_eu"] if sabado else ""),
         },
     }
 
