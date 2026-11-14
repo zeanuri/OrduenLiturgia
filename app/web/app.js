@@ -14,7 +14,7 @@ const R = {
   primeras: "Lehenengo Bezperak", misa: "Mezako irakurgaiak", calendario: "Egutegia", hoy: "Gaur",
   prueba: "PROBAKO TESTUAK — ez dira liturgia-testuak", sinDatos: "Ezin izan da eguna kargatu.",
   sinConexion: "Konexino barik: gordetako azkena erakusten da.", falta: "Bizkaierazko bertsioaren zain", pendiente: "Oraindik osatu gabe", ant: "Ant.",
-  salterio: "Salmutegiko astea", opcional: "aukerakoa", salmoa: "Salmoa", salmos: "95., 100., 67., 24.",
+  salterio: "Salmutegiko astea", delDia: "Eguneko ofizioa", andraMari: "Andra Maria larunbatean", salmoa: "Salmoa", salmos: "95., 100., 67., 24.",
   // Días y meses en batua, como el resto de rótulos de lecturasdeldia.org/eu.
   dias: ["Astelehena", "Asteartea", "Asteazkena", "Osteguna", "Ostirala", "Larunbata", "Igandea"],
   diasCortos: ["al", "ar", "az", "og", "or", "lr", "ig"],
@@ -123,7 +123,7 @@ async function vistaDia(fecha, c, id) {
   const tarde = new Date().getHours() >= 13;
   const ahora = fecha === hoyIso() ? (tarde ? "visperas" : "laudes") : null;
   const fichas = dia.celebraciones.length < 2 ? "" : `<div class="fichas">` + dia.celebraciones.map((x, i) =>
-    `<button class="ficha" aria-pressed="${i === c}" data-ir="#/dia/${fecha}/${i}">${esc(x.nombre_eu)}${x.opcional ? ` (${R.opcional})` : ""}</button>`).join("") + `</div>`;
+    `<button class="ficha" aria-pressed="${i === c}" data-ir="#/dia/${fecha}/${i}">${esc(!x.opcional ? R.delDia : x.id === "santa-maria-en-sabado" ? R.andraMari : x.nombre_eu.split(",")[0])}</button>`).join("") + `</div>`;
   const fila = h => {
     const pv = h === "visperas" && cel.visperas_de.cuales === "primeras";
     const pc = h === "completas" && cel.completas_de && cel.completas_de.cuales === "primeras";   // primeras Completas: el nombre de mañana
