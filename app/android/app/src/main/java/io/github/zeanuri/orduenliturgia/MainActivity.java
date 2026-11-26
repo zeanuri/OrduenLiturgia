@@ -3,7 +3,14 @@ package io.github.zeanuri.orduenliturgia;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
+import android.view.WindowInsets;
+import android.widget.LinearLayout;
+import android.window.OnBackInvokedCallback;
+import android.window.OnBackInvokedDispatcher;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
@@ -24,12 +31,18 @@ public class MainActivity extends Activity {
     private static final String HOST_COPIA = "appassets.androidplatform.net";
     private static final String COPIA = "https://" + HOST_COPIA + "/assets/index.html";
     private WebView web;
+    /** Android 13+: «Atrás» vuelve en la web mientras haya adónde; si no, lo maneja el sistema. */
+    private OnBackInvokedCallback atrasWeb;
+    private boolean atrasRegistrado;
 
     @Override
     protected void onCreate(Bundle estado) {
         super.onCreate(estado);
         web = new WebView(this);
-        setContentView(web);
+        setContentView(montarPantalla(web));
+        if (Build.VERSION.SDK_INT >= 33) {
+            atrasWeb = () -> web.goBack();
+        }
         final WebViewAssetLoader assets = new WebViewAssetLoader.Builder()
                 .addPathHandler("/assets/", new WebViewAssetLoader.AssetsPathHandler(this))
                 .build();
@@ -53,6 +66,11 @@ public class MainActivity extends Activity {
             }
 
             @Override
+            public void doUpdateVisitedHistory(WebView v, String url, boolean recarga) {
+                actualizarAtras();
+            }
+
+            @Override
             public void onReceivedError(WebView v, WebResourceRequest r, WebResourceError e) {
                 abrirCopiaSiFalla(v, r);
             }
@@ -66,7 +84,46 @@ public class MainActivity extends Activity {
             web.loadUrl(PUBLICADA);
         } else {
             web.restoreState(estado);
+            actualizarAtras();
         }
+    }
+
+    /**
+     * Desde Android 15 la app ocupa también la franja de la barra de estado y la
+     * de navegación (no se puede desactivar al apuntar a Android 16). Se deja
+     * arriba una franja del color de antes y la web empieza debajo.
+     */
+    private View montarPantalla(WebView w) {
+        LinearLayout raiz = new LinearLayout(this);
+        raiz.setOrientation(LinearLayout.VERTICAL);
+        raiz.setBackgroundColor(Color.parseColor("#F6F4F1"));
+        View franja = new View(this);
+        franja.setBackgroundColor(Color.parseColor("#3D4458"));
+        raiz.addView(franja, new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0));
+        raiz.addView(w, new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0, 1f));
+        if (Build.VERSION.SDK_INT >= 35) {
+            raiz.setOnApplyWindowInsetsListener((v, ins) -> {
+                android.graphics.Insets b = ins.getInsets(WindowInsets.Type.systemBars() | WindowInsets.Type.displayCutout());
+                franja.getLayoutParams().height = b.top;
+                franja.requestLayout();
+                v.setPadding(b.left, 0, b.right, b.bottom);
+                return WindowInsets.CONSUMED;
+            });
+        }
+        return raiz;
+    }
+
+    private void actualizarAtras() {
+        if (Build.VERSION.SDK_INT < 33) return;
+        boolean hace = web.canGoBack();
+        if (hace == atrasRegistrado) return;
+        OnBackInvokedDispatcher d = getOnBackInvokedDispatcher();
+        if (hace) {
+            d.registerOnBackInvokedCallback(OnBackInvokedDispatcher.PRIORITY_DEFAULT, atrasWeb);
+        } else {
+            d.unregisterOnBackInvokedCallback(atrasWeb);
+        }
+        atrasRegistrado = hace;
     }
 
     /** Solo cuando lo que falla es la página misma (no una imagen o un dato). */
@@ -82,6 +139,7 @@ public class MainActivity extends Activity {
         web.saveState(estado);
     }
 
+    /** Hasta Android 12; desde el 13, actualizarAtras(). */
     @Override
     public void onBackPressed() {
         if (web.canGoBack()) {
