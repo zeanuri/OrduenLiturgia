@@ -11,6 +11,10 @@
   "nombre": "Letrango Basilika Sagaratzea",
   "rango": "jaia"
  },
+ "dedicacion-de-la-basilica-de-santa-maria-la-mayor": {
+  "nombre": "Santa Maria Basilika Sagaratzea",
+  "rango": "nahierazko oroipena"
+ },
  "dia-6-de-la-octava-de-navidad": {
   "nombre": "Eguberri-Zortziurreneko VI. eguna",
   "rango": ""
@@ -62,10 +66,6 @@
  "feria-del-17-24-de-diciembre-24-dic": {
   "nombre": "Abenduaren 24a",
   "rango": "asteguna"
- },
- "feria-del-tiempo-de-navidad-2-enero": {
-  "nombre": "Basilio Handia eta Naziantzoko Gregorio Santuak, gotzainak eta eliz irakasleak",
-  "rango": "beharrezko oroipena"
  },
  "feria-del-tiempo-de-navidad-4-enero": {
   "nombre": "Urtarrilaren 4a",
@@ -132,7 +132,7 @@
   "rango": ""
  },
  "inmaculado-corazon-de-la-virgen-maria": {
-  "nombre": "Maria Birjina Dohatsuaren Bihotz Guztia Garbia",
+  "nombre": "Maria Birjina Dohatsuaren Bihotz Guztiz Garbia",
   "rango": "beharrezko oroipena"
  },
  "iv-domingo-de-adviento": {
@@ -228,12 +228,12 @@
   "rango": "asteguna"
  },
  "jueves-de-la-viii-semana-del-tiempo-ordinario": {
-  "nombre": "Jesu Kristo Gure Jauna, Betiereko Apaiz Nagusia",
-  "rango": "jaia"
+  "nombre": "Urtean Zeharreko zortzigarren asteko osteguna",
+  "rango": "asteguna"
  },
  "jueves-de-la-x-semana-del-tiempo-ordinario": {
-  "nombre": "San Bernabe, apostolua",
-  "rango": "beharrezko oroipena"
+  "nombre": "Urtean Zeharreko hamargarren asteko osteguna",
+  "rango": "asteguna"
  },
  "jueves-de-la-xi-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hamaikagarren asteko osteguna",
@@ -251,16 +251,60 @@
   "nombre": "Urtean Zeharreko hamalaugarren asteko osteguna",
   "rango": "asteguna"
  },
+ "jueves-de-la-xix-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hemeretzigarren asteko osteguna",
+  "rango": "asteguna"
+ },
+ "jueves-de-la-xv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamabosgarren asteko osteguna",
+  "rango": "asteguna"
+ },
  "jueves-de-la-xvii-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hamazazpigarren asteko osteguna",
+  "rango": "asteguna"
+ },
+ "jueves-de-la-xviii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamazortzigarren asteko osteguna",
+  "rango": "asteguna"
+ },
+ "jueves-de-la-xx-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeigarren asteko osteguna",
+  "rango": "asteguna"
+ },
+ "jueves-de-la-xxi-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita batgarren asteko osteguna",
+  "rango": "asteguna"
+ },
+ "jueves-de-la-xxii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita bigarren asteko osteguna",
+  "rango": "asteguna"
+ },
+ "jueves-de-la-xxiii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita hirugarren asteko osteguna",
+  "rango": "asteguna"
+ },
+ "jueves-de-la-xxiv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita laugarren asteko osteguna",
   "rango": "asteguna"
  },
  "jueves-de-la-xxix-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hogeita bederatzigarren asteko osteguna",
   "rango": "asteguna"
  },
+ "jueves-de-la-xxv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita bosgarren asteko osteguna",
+  "rango": "asteguna"
+ },
+ "jueves-de-la-xxvi-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita seigarren asteko osteguna",
+  "rango": "asteguna"
+ },
  "jueves-de-la-xxvii-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hogeita zazpigarren asteko osteguna",
+  "rango": "asteguna"
+ },
+ "jueves-de-la-xxviii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita zortzigarren asteko osteguna",
   "rango": "asteguna"
  },
  "jueves-de-la-xxx-semana-del-tiempo-ordinario": {
@@ -280,7 +324,7 @@
   "rango": "asteguna"
  },
  "jueves-de-la-xxxiv-semana-del-tiempo-ordinario": {
-  "nombre": "Hogeita hamalaugarren asteko osteguna",
+  "nombre": "Urtean Zeharreko hogeita hamalaugarren asteko osteguna",
   "rango": "asteguna"
  },
  "jueves-despues-de-ceniza": {
@@ -299,16 +343,24 @@
   "nombre": "VII. Pazko igandea. Jaunaren Igokundea",
   "rango": "festaburua"
  },
+ "la-asuncion-de-la-virgen-maria": {
+  "nombre": "Maria Birjina Dohatsuaren Zeruratzea",
+  "rango": "festaburua"
+ },
  "la-catedra-de-san-pedro": {
-  "nombre": "San Pedro Apostoluaren Katedra",
+  "nombre": "San Pedro Apostoluaren Gotzain Aulkia",
   "rango": "jaia"
  },
  "la-conversion-de-san-pablo": {
-  "nombre": "San Paulo Apostoluaren Bihurketa",
+  "nombre": "San Paulo Apostoluaren Kristoganatzea",
+  "rango": "jaia"
+ },
+ "la-exaltacion-de-la-santa-cruz": {
+  "nombre": "Gurutze Santuaren Gorapena",
   "rango": "jaia"
  },
  "la-inmaculada-concepcion": {
-  "nombre": "Maria Birjina Dohatsuaren Sortze Garbia",
+  "nombre": "Maria Birjina Dohatsuaren Sortze Garbia, Espainiako zaindaria",
   "rango": "festaburua"
  },
  "la-presentacion-del-senor": {
@@ -317,6 +369,14 @@
  },
  "la-sagrada-familia-de-jesus-maria-y-jose": {
   "nombre": "Familia Santua: Jesus, Maria eta Jose",
+  "rango": "jaia"
+ },
+ "la-transfiguracion-del-senor": {
+  "nombre": "Jaunaren Antzaldatzea",
+  "rango": "jaia"
+ },
+ "la-visitacion-de-la-virgen-maria": {
+  "nombre": "Maria Birjina Dohatsuaren Ikustaldia",
   "rango": "jaia"
  },
  "lunes-de-la-i-semana-de-cuaresma": {
@@ -391,6 +451,10 @@
   "nombre": "Pazkoaldiko zazpigarren asteko astelehena",
   "rango": "asteguna"
  },
+ "lunes-de-la-viii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko zortzigarren asteko astelehena",
+  "rango": "asteguna"
+ },
  "lunes-de-la-x-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hamargarren asteko astelehena",
   "rango": "asteguna"
@@ -401,6 +465,10 @@
  },
  "lunes-de-la-xii-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hamabigarren asteko astelehena",
+  "rango": "asteguna"
+ },
+ "lunes-de-la-xiii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamahirugarren asteko astelehena",
   "rango": "asteguna"
  },
  "lunes-de-la-xiv-semana-del-tiempo-ordinario": {
@@ -419,12 +487,56 @@
   "nombre": "Urtean Zeharreko hamazazpigarren asteko astelehena",
   "rango": "asteguna"
  },
+ "lunes-de-la-xviii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamazortzigarren asteko astelehena",
+  "rango": "asteguna"
+ },
+ "lunes-de-la-xx-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeigarren asteko astelehena",
+  "rango": "asteguna"
+ },
+ "lunes-de-la-xxi-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita batgarren asteko astelehena",
+  "rango": "asteguna"
+ },
+ "lunes-de-la-xxii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita bigarren asteko astelehena",
+  "rango": "asteguna"
+ },
+ "lunes-de-la-xxiii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita hirugarren asteko astelehena",
+  "rango": "asteguna"
+ },
+ "lunes-de-la-xxiv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita laugarren asteko astelehena",
+  "rango": "asteguna"
+ },
  "lunes-de-la-xxix-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hogeita bederatzigarren asteko astelehena",
   "rango": "asteguna"
  },
+ "lunes-de-la-xxv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita bosgarren asteko astelehena",
+  "rango": "asteguna"
+ },
+ "lunes-de-la-xxvi-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita seigarren asteko astelehena",
+  "rango": "asteguna"
+ },
+ "lunes-de-la-xxvii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita zazpigarren asteko astelehena",
+  "rango": "asteguna"
+ },
+ "lunes-de-la-xxviii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita zortzigarren asteko astelehena",
+  "rango": "asteguna"
+ },
  "lunes-de-la-xxx-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hogeita hamargarren asteko astelehena",
+  "rango": "asteguna"
+ },
+ "lunes-de-la-xxxii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita hamabigarren asteko astelehena",
   "rango": "asteguna"
  },
  "lunes-de-la-xxxiii-semana-del-tiempo-ordinario": {
@@ -432,7 +544,7 @@
   "rango": "asteguna"
  },
  "lunes-de-la-xxxiv-semana-del-tiempo-ordinario": {
-  "nombre": "Hogeita hamalaugarren asteko astelehena",
+  "nombre": "Urtean Zeharreko hogeita hamalaugarren asteko astelehena",
   "rango": "asteguna"
  },
  "lunes-santo": {
@@ -511,6 +623,14 @@
   "nombre": "Pazkoaldiko zazpigarren asteko asteartea",
   "rango": "asteguna"
  },
+ "martes-de-la-vii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko zazpigarren asteko asteartea",
+  "rango": "asteguna"
+ },
+ "martes-de-la-viii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko zortzigarren asteko asteartea",
+  "rango": "asteguna"
+ },
  "martes-de-la-x-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hamargarren asteko asteartea",
   "rango": "asteguna"
@@ -543,8 +663,28 @@
   "nombre": "Urtean Zeharreko hamazazpigarren asteko asteartea",
   "rango": "asteguna"
  },
+ "martes-de-la-xviii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamazortzigarren asteko asteartea",
+  "rango": "asteguna"
+ },
+ "martes-de-la-xx-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeigarren asteko asteartea",
+  "rango": "asteguna"
+ },
+ "martes-de-la-xxii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita bigarren asteko asteartea",
+  "rango": "asteguna"
+ },
+ "martes-de-la-xxiii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita hirugarren asteko asteartea",
+  "rango": "asteguna"
+ },
  "martes-de-la-xxix-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hogeita bederatzigarren asteko asteartea",
+  "rango": "asteguna"
+ },
+ "martes-de-la-xxvi-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita seigarren asteko asteartea",
   "rango": "asteguna"
  },
  "martes-de-la-xxvii-semana-del-tiempo-ordinario": {
@@ -572,7 +712,7 @@
   "rango": "asteguna"
  },
  "martes-de-la-xxxiv-semana-del-tiempo-ordinario": {
-  "nombre": "Hogeita hamalaugarren asteko asteartea",
+  "nombre": "Urtean Zeharreko hogeita hamalaugarren asteko asteartea",
   "rango": "asteguna"
  },
  "martes-santo": {
@@ -663,6 +803,10 @@
   "nombre": "Pazkoaldiko zazpigarren asteko asteazkena",
   "rango": "asteguna"
  },
+ "miercoles-de-la-vii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko zazpigarren asteko asteazkena",
+  "rango": "asteguna"
+ },
  "miercoles-de-la-viii-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko zortzigarren asteko asteazkena",
   "rango": "asteguna"
@@ -675,6 +819,10 @@
   "nombre": "Urtean Zeharreko hamaikagarren asteko asteazkena",
   "rango": "asteguna"
  },
+ "miercoles-de-la-xii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamabigarren asteko asteazkena",
+  "rango": "asteguna"
+ },
  "miercoles-de-la-xiii-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hamahirugarren asteko asteazkena",
   "rango": "asteguna"
@@ -683,12 +831,60 @@
   "nombre": "Urtean Zeharreko hamalaugarren asteko asteazkena",
   "rango": "asteguna"
  },
+ "miercoles-de-la-xix-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hemeretzigarren asteko asteazkena",
+  "rango": "asteguna"
+ },
+ "miercoles-de-la-xv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamabosgarren asteko asteazkena",
+  "rango": "asteguna"
+ },
+ "miercoles-de-la-xvi-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamaseigarren asteko asteazkena",
+  "rango": "asteguna"
+ },
+ "miercoles-de-la-xvii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamazazpigarren asteko asteazkena",
+  "rango": "asteguna"
+ },
+ "miercoles-de-la-xviii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamazortzigarren asteko asteazkena",
+  "rango": "asteguna"
+ },
+ "miercoles-de-la-xx-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeigarren asteko asteazkena",
+  "rango": "asteguna"
+ },
+ "miercoles-de-la-xxi-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita batgarren asteko asteazkena",
+  "rango": "asteguna"
+ },
+ "miercoles-de-la-xxii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita bigarren asteko asteazkena",
+  "rango": "asteguna"
+ },
+ "miercoles-de-la-xxiv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita laugarren asteko asteazkena",
+  "rango": "asteguna"
+ },
  "miercoles-de-la-xxix-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hogeita bederatzigarren asteko asteazkena",
   "rango": "asteguna"
  },
+ "miercoles-de-la-xxv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita bosgarren asteko asteazkena",
+  "rango": "asteguna"
+ },
+ "miercoles-de-la-xxvii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita zazpigarren asteko asteazkena",
+  "rango": "asteguna"
+ },
  "miercoles-de-la-xxviii-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hogeita zortzigarren asteko asteazkena",
+  "rango": "asteguna"
+ },
+ "miercoles-de-la-xxx-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita hamargarren asteko asteazkena",
   "rango": "asteguna"
  },
  "miercoles-de-la-xxxi-semana-del-tiempo-ordinario": {
@@ -704,15 +900,23 @@
   "rango": "asteguna"
  },
  "miercoles-de-la-xxxiv-semana-del-tiempo-ordinario": {
-  "nombre": "Hogeita hamalaugarren asteko asteazkena",
+  "nombre": "Urtean Zeharreko hogeita hamalaugarren asteko asteazkena",
   "rango": "asteguna"
  },
  "miercoles-santo": {
   "nombre": "Asteazken Santua",
   "rango": "asteguna"
  },
+ "natividad-de-la-virgen-maria": {
+  "nombre": "Maria Birjina Dohatsuaren Jaiotza",
+  "rango": "jaia"
+ },
  "natividad-de-san-juan-bautista": {
   "nombre": "San Joan Bataiatzailearen Jaiotza",
+  "rango": "festaburua"
+ },
+ "natividad-del-senor": {
+  "nombre": "Jaunaren Jaiotza",
   "rango": "festaburua"
  },
  "nuestra-senora-de-fatima": {
@@ -722,6 +926,10 @@
  "nuestra-senora-de-guadalupe": {
   "nombre": "Guadalupeko Maria Birjina Dohatsua",
   "rango": "nahierazko oroipena"
+ },
+ "nuestra-senora-de-los-dolores": {
+  "nombre": "Doloreetako Maria Birjina Dohatsua",
+  "rango": "beharrezko oroipena"
  },
  "nuestra-senora-del-carmen": {
   "nombre": "Karmel Mendiko Maria Birjina Dohatsua",
@@ -735,8 +943,12 @@
   "nombre": "Arrosarioko Maria Birjina Dohatsua",
   "rango": "beharrezko oroipena"
  },
+ "nuestro-senor-jesucristo-rey-del-universo": {
+  "nombre": "Jesu Kristo Gure Jauna, Diren Guztien Erregea",
+  "rango": "festaburua"
+ },
  "presentacion-de-la-virgen-maria": {
-  "nombre": "Maria Birjina Dohatsuaren Aurpezpena",
+  "nombre": "Maria Birjina Dohatsuaren Aurkezpena",
   "rango": "beharrezko oroipena"
  },
  "sabado-de-la-i-semana-de-adviento": {
@@ -815,8 +1027,16 @@
   "nombre": "Pazkoaldiko zazpigarren asteko larunbata",
   "rango": "asteguna"
  },
+ "sabado-de-la-vii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko zazpigarren asteko larunbata",
+  "rango": "asteguna"
+ },
  "sabado-de-la-viii-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko zortzigarren asteko larunbata",
+  "rango": "asteguna"
+ },
+ "sabado-de-la-x-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamargarren asteko larunbata",
   "rango": "asteguna"
  },
  "sabado-de-la-xi-semana-del-tiempo-ordinario": {
@@ -831,12 +1051,56 @@
   "nombre": "Urtean Zeharreko hamahirugarren asteko larunbata",
   "rango": "asteguna"
  },
+ "sabado-de-la-xiv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamalaugarren asteko larunbata",
+  "rango": "asteguna"
+ },
+ "sabado-de-la-xix-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hemeretzigarren asteko larunbata",
+  "rango": "asteguna"
+ },
  "sabado-de-la-xv-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hamabosgarren asteko larunbata",
   "rango": "asteguna"
  },
+ "sabado-de-la-xvi-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamaseigarren asteko larunbata",
+  "rango": "asteguna"
+ },
+ "sabado-de-la-xvii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamazazpigarren asteko larunbata",
+  "rango": "asteguna"
+ },
+ "sabado-de-la-xviii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamazortzigarren asteko larunbata",
+  "rango": "asteguna"
+ },
+ "sabado-de-la-xx-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeigarren asteko larunbata",
+  "rango": "asteguna"
+ },
+ "sabado-de-la-xxi-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita batgarren asteko larunbata",
+  "rango": "asteguna"
+ },
+ "sabado-de-la-xxii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita bigarren asteko larunbata",
+  "rango": "asteguna"
+ },
+ "sabado-de-la-xxiii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita hirugarren asteko larunbata",
+  "rango": "asteguna"
+ },
+ "sabado-de-la-xxiv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita laugarren asteko larunbata",
+  "rango": "asteguna"
+ },
  "sabado-de-la-xxix-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hogeita bederatzigarren asteko larunbata",
+  "rango": "asteguna"
+ },
+ "sabado-de-la-xxv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita bosgarren asteko larunbata",
   "rango": "asteguna"
  },
  "sabado-de-la-xxvi-semana-del-tiempo-ordinario": {
@@ -845,6 +1109,10 @@
  },
  "sabado-de-la-xxvii-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hogeita zazpigarren asteko larunbata",
+  "rango": "asteguna"
+ },
+ "sabado-de-la-xxviii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita zortzigarren asteko larunbata",
   "rango": "asteguna"
  },
  "sabado-de-la-xxx-semana-del-tiempo-ordinario": {
@@ -864,7 +1132,7 @@
   "rango": "asteguna"
  },
  "sabado-de-la-xxxiv-semana-del-tiempo-ordinario": {
-  "nombre": "Hogeita hamalaugarren asteko larunbata",
+  "nombre": "Urtean Zeharreko hogeita hamalaugarren asteko larunbata",
   "rango": "asteguna"
  },
  "sabado-despues-de-ceniza": {
@@ -887,6 +1155,14 @@
   "nombre": "Canterburyko San Agustin, gotzaina",
   "rango": "nahierazko oroipena"
  },
+ "san-agustin-obispo-y-doctor": {
+  "nombre": "San Agustin, gotzaina eta eliz irakaslea",
+  "rango": "beharrezko oroipena"
+ },
+ "san-alberto-magno-obispo-y-doctor": {
+  "nombre": "San Alberto Handia, gotzaina eta eliz irakaslea",
+  "rango": "nahierazko oroipena"
+ },
  "san-ambrosio-obispo-y-doctor": {
   "nombre": "San Anbrosio, gotzaina eta eliz irakaslea",
   "rango": "beharrezko oroipena"
@@ -899,9 +1175,21 @@
   "nombre": "San Antonio Maria Claret, gotzaina",
   "rango": "nahierazko oroipena"
  },
+ "san-antonio-maria-zaccaria": {
+  "nombre": "San Antonio Maria Zaccaria, presbiteroa",
+  "rango": "nahierazko oroipena"
+ },
  "san-atanasio-obispo-y-doctor": {
   "nombre": "San Atanasio, gotzaina eta eliz irakaslea",
   "rango": "beharrezko oroipena"
+ },
+ "san-bartolome-apostol": {
+  "nombre": "San Bartolome, apostolua",
+  "rango": "jaia"
+ },
+ "san-beda-el-venerable": {
+  "nombre": "San Beda Agurgarria, presbiteroa eta eliz irakaslea",
+  "rango": "nahierazko oroipena"
  },
  "san-benito-abad-patrono-de-europa": {
   "nombre": "San Benito, abadea, Europako zaindaria",
@@ -914,6 +1202,10 @@
  "san-bernardino-de-siena": {
   "nombre": "Sienako San Bernardino, presbiteroa",
   "rango": "nahierazko oroipena"
+ },
+ "san-bernardo-abad-y-doctor": {
+  "nombre": "San Bernardo, abadea eta eliz irakaslea",
+  "rango": "beharrezko oroipena"
  },
  "san-blas": {
   "nombre": "San Blas, gotzaina eta martiria",
@@ -932,7 +1224,7 @@
   "rango": "beharrezko oroipena"
  },
  "san-calixto-i-papa-y-martir": {
-  "nombre": "San Kalixto I.a, aita santua eta martiria",
+  "nombre": "San Kalisto I.a, aita santua eta martiria",
   "rango": "nahierazko oroipena"
  },
  "san-camilo-de-lelis": {
@@ -941,18 +1233,22 @@
  },
  "san-carlos-borromeo": {
   "nombre": "San Karlos Borromeo, gotzaina",
-  "rango": "nahierazko oroipena"
+  "rango": "beharrezko oroipena"
  },
  "san-carlos-lwanga-y-companeros-martires": {
   "nombre": "San Karlos Lwanga eta Lagunak, martiriak",
   "rango": "beharrezko oroipena"
+ },
+ "san-cayetano": {
+  "nombre": "San Kaietano, presbiteroa",
+  "rango": "nahierazko oroipena"
  },
  "san-cirilo-de-alejandria": {
   "nombre": "Alexandriako San Zirilo, gotzaina eta eliz irakaslea",
   "rango": "nahierazko oroipena"
  },
  "san-clemente-i": {
-  "nombre": "San Klemente I.a, aita santu eta martiria",
+  "nombre": "San Klemente I.a, aita santua eta martiria",
   "rango": "nahierazko oroipena"
  },
  "san-columbano": {
@@ -965,15 +1261,23 @@
  },
  "san-efren-diacono-y-doctor": {
   "nombre": "San Efrem, diakonoa eta eliz irakaslea",
-  "rango": ""
+  "rango": "nahierazko oroipena"
  },
  "san-enrique": {
   "nombre": "San Henrike",
   "rango": "nahierazko oroipena"
  },
+ "san-esteban-de-hungria": {
+  "nombre": "Hungariako San Esteban",
+  "rango": "nahierazko oroipena"
+ },
  "san-esteban-protomartir": {
   "nombre": "San Esteban, lehen Martiria",
   "rango": "jaia"
+ },
+ "san-eusebio-de-vercelli": {
+  "nombre": "Vercelliko San Eusebio, gotzaina",
+  "rango": "nahierazko oroipena"
  },
  "san-fabian-y-san-sebastian-martires": {
   "nombre": "San Fabian, aita santua eta martiria",
@@ -983,9 +1287,21 @@
   "nombre": "San Felipe Neri, presbiteroa",
   "rango": "beharrezko oroipena"
  },
+ "san-francisco-de-asis": {
+  "nombre": "Asisko San Frantzisko",
+  "rango": "beharrezko oroipena"
+ },
  "san-francisco-javier": {
   "nombre": "Xabierko San Frantzisko, presbiteroa",
   "rango": "beharrezko oroipena"
+ },
+ "san-gregorio-magno-papa-y-doctor": {
+  "nombre": "San Gregorio Handia, aita santua eta eliz irakaslea",
+  "rango": "beharrezko oroipena"
+ },
+ "san-gregorio-vii": {
+  "nombre": "San Gregorio VII.a, aita santua",
+  "rango": "nahierazko oroipena"
  },
  "san-ignacio-de-antioquia-obispo-y-martir": {
   "nombre": "Antiokiako San Ignazio, gotzaina eta martiria",
@@ -997,6 +1313,10 @@
  },
  "san-ildefonso-obispo": {
   "nombre": "San Ildefontso, gotzaina",
+  "rango": "beharrezko oroipena"
+ },
+ "san-ireneo-obispo-y-martir": {
+  "nombre": "San Ireneo, gotzaina eta martiria",
   "rango": "beharrezko oroipena"
  },
  "san-isidoro-obispo-y-doctor": {
@@ -1011,13 +1331,21 @@
   "nombre": "San Jeronimo Emiliani",
   "rango": "nahierazko oroipena"
  },
+ "san-jeronimo-presbitero-y-doctor": {
+  "nombre": "San Jeronimo, presbiteroa eta eliz irakaslea",
+  "rango": "beharrezko oroipena"
+ },
  "san-jorge-martir": {
   "nombre": "San Jorje, martiria",
   "rango": "nahierazko oroipena"
  },
  "san-josafat-obispo-y-martir": {
-  "nombre": "San Josafat, gotzaina eta matiria",
+  "nombre": "San Josafat, gotzaina eta martiria",
   "rango": "beharrezko oroipena"
+ },
+ "san-jose-de-calasanz": {
+  "nombre": "San Jose Calasanz, presbiteroa",
+  "rango": "nahierazko oroipena"
  },
  "san-jose-esposo-de-la-virgen-maria": {
   "nombre": "San Jose, Maria Birjina Dohatsuaren Senarra",
@@ -1026,6 +1354,10 @@
  "san-jose-obrero": {
   "nombre": "San Jose Langilea",
   "rango": "nahierazko oroipena"
+ },
+ "san-juan-crisostomo-obispo-y-doctor": {
+  "nombre": "San Joan Krisostomo, gotzaina eta eliz irakaslea",
+  "rango": "beharrezko oroipena"
  },
  "san-juan-damasceno": {
   "nombre": "Damaskotar San Joan, presbiteroa eta eliz irakaslea",
@@ -1043,6 +1375,10 @@
   "nombre": "Gurutzeko San Joan, presbiteroa eta eliz irakaslea",
   "rango": "beharrezko oroipena"
  },
+ "san-juan-eudes": {
+  "nombre": "San Joan Eudes, presbiteroa",
+  "rango": "nahierazko oroipena"
+ },
  "san-juan-i-papa-y-martir": {
   "nombre": "San Joan I.a, aita santua eta martiria",
   "rango": "nahierazko oroipena"
@@ -1050,6 +1386,10 @@
  "san-juan-leonardi": {
   "nombre": "San Joan Leonardi, presbiteroa",
   "rango": "nahierazko oroipena"
+ },
+ "san-juan-maria-vianney": {
+  "nombre": "San Joan Maria Vianney, presbiteroa",
+  "rango": "beharrezko oroipena"
  },
  "san-juan-pablo-ii-papa": {
   "nombre": "San Joan Paulo II.a, aita santua",
@@ -1061,6 +1401,22 @@
  },
  "san-leon-magno-papa-y-doctor": {
   "nombre": "San Leon Handia, aita santua eta eliz irakaslea",
+  "rango": "beharrezko oroipena"
+ },
+ "san-lorenzo-diacono-y-martir": {
+  "nombre": "San Lorentzo, diakonoa eta martiria",
+  "rango": "jaia"
+ },
+ "san-lucas-evangelista": {
+  "nombre": "San Lukas, ebanjelaria",
+  "rango": "jaia"
+ },
+ "san-luis": {
+  "nombre": "San Luis",
+  "rango": "nahierazko oroipena"
+ },
+ "san-luis-gonzaga": {
+  "nombre": "San Luis Gontzaga, erlijiosoa",
   "rango": "beharrezko oroipena"
  },
  "san-marcos-evangelista": {
@@ -1079,12 +1435,20 @@
   "nombre": "San Martin I.a, aita santua eta martiria",
   "rango": "nahierazko oroipena"
  },
+ "san-mateo-apostol-y-evangelista": {
+  "nombre": "San Mateo, apostolua eta ebanjelaria",
+  "rango": "jaia"
+ },
  "san-matias-apostol": {
   "nombre": "San Matias, apostolua",
   "rango": "jaia"
  },
+ "san-maximiliano-kolbe-martir": {
+  "nombre": "San Maximiliano Maria Kolbe, presbiteroa eta martiria",
+  "rango": "beharrezko oroipena"
+ },
  "san-oscar": {
-  "nombre": "San Oscar, gotzaina",
+  "nombre": "San Oskar, gotzaina",
   "rango": "nahierazko oroipena"
  },
  "san-pablo-de-la-cruz": {
@@ -1103,21 +1467,45 @@
   "nombre": "San Pedro Chanel, presbiteroa eta martiria",
   "rango": "nahierazko oroipena"
  },
+ "san-pedro-claver": {
+  "nombre": "San Pedro Claver, presbiteroa",
+  "rango": "nahierazko oroipena"
+ },
  "san-pedro-crisologo": {
   "nombre": "San Pedro Krisologo, gotzaina eta eliz irakaslea",
   "rango": "nahierazko oroipena"
+ },
+ "san-pedro-julian-eymard": {
+  "nombre": "San Pedro Julian Eymard, presbiteroa",
+  "rango": "nahierazko oroipena"
+ },
+ "san-pio-de-pietrelcina": {
+  "nombre": "Pietrelcinako San Pio, presbiteroa",
+  "rango": "beharrezko oroipena"
  },
  "san-pio-v-papa": {
   "nombre": "San Pio V.a, aita santua",
   "rango": "nahierazko oroipena"
  },
+ "san-pio-x-papa": {
+  "nombre": "San Pio X.a, aita santua",
+  "rango": "beharrezko oroipena"
+ },
+ "san-roberto-belarmino": {
+  "nombre": "San Roberto Belarmino, gotzaina eta eliz irakaslea",
+  "rango": "nahierazko oroipena"
+ },
  "san-silvestre-i-papa": {
   "nombre": "San Silvestre I.a, aita santua",
-  "rango": ""
+  "rango": "oroitzapena"
  },
  "san-silvestre-i-papa-feria": {
   "nombre": "Eguberri-Zortziurreneko VII. eguna",
   "rango": ""
+ },
+ "san-vicente-de-paul": {
+  "nombre": "San Bizente Paul, presbiteroa",
+  "rango": "beharrezko oroipena"
  },
  "san-vicente-diacono-y-martir": {
   "nombre": "San Bizente, diakonoa eta martiria",
@@ -1135,6 +1523,14 @@
   "nombre": "Sienako Santa Katalina, birjina eta eliz irakaslea, Europako zaindaria",
   "rango": "jaia"
  },
+ "santa-cecilia-virgen-y-martir": {
+  "nombre": "Santa Zezilia, birjina eta martiria",
+  "rango": "beharrezko oroipena"
+ },
+ "santa-clara": {
+  "nombre": "Santa Klara, birjina",
+  "rango": "beharrezko oroipena"
+ },
  "santa-eduvigis": {
   "nombre": "Santa Eduvigis, erlijiosa",
   "rango": "nahierazko oroipena"
@@ -1148,7 +1544,7 @@
   "rango": "beharrezko oroipena"
  },
  "santa-isabel-de-hungria": {
-  "nombre": "Hungariako Santa Elisabet, erliiosa",
+  "nombre": "Hungariako Santa Elisabet, erlijiosa",
   "rango": "beharrezko oroipena"
  },
  "santa-isabel-de-portugal": {
@@ -1156,7 +1552,15 @@
   "rango": "nahierazko oroipena"
  },
  "santa-josefina-bakhita": {
-  "nombre": "Santa Josefina Bakhita",
+  "nombre": "Santa Josefina Bakhita, birjina",
+  "rango": "nahierazko oroipena"
+ },
+ "santa-juana-francisca-de-chantal": {
+  "nombre": "Santa Joana Frantziska Chantal, erlijiosa",
+  "rango": "nahierazko oroipena"
+ },
+ "santa-m-magdalena-de-pazzi": {
+  "nombre": "Santa Maria Magdalena Pazzi, birjina",
   "rango": "nahierazko oroipena"
  },
  "santa-margarita-de-escocia": {
@@ -1176,7 +1580,7 @@
   "rango": "nahierazko oroipena"
  },
  "santa-maria-madre-de-dios": {
-  "nombre": "Jaunaren Jaiotzaren Zortziurrena. Jainkoaren Ama Maria Santuaren Festaburua",
+  "nombre": "Eguberri-Zortzigarrena. Jainkoaren Ama Maria Santuaren Festaburua",
   "rango": ""
  },
  "santa-maria-magdalena": {
@@ -1187,20 +1591,36 @@
   "nombre": "Marta, Maria eta Lazaro Santuak",
   "rango": "beharrezko oroipena"
  },
+ "santa-monica": {
+  "nombre": "Santa Monika",
+  "rango": "beharrezko oroipena"
+ },
  "santa-rita-de-casia": {
   "nombre": "Casiako Santa Rita, erlijiosa",
   "rango": "nahierazko oroipena"
  },
+ "santa-rosa-de-lima": {
+  "nombre": "Limako Arrosa Santua, birjina",
+  "rango": "nahierazko oroipena"
+ },
+ "santa-teresa-benedicta-de-la-cruz-edith-stein-patrona-de-europa": {
+  "nombre": "Santa Teresa Benedikta Gurutzekoa, birjina eta martiria, Europako zaindaria",
+  "rango": "jaia"
+ },
  "santa-teresa-de-jesus": {
   "nombre": "Santa Teresa Jesusena, birjina eta eliz irakaslea",
   "rango": "jaia"
+ },
+ "santa-teresa-de-jesus-jornet-e-ibars-virgen": {
+  "nombre": "Santa Teresa Jesusena Jornet eta Ibars, birjina",
+  "rango": "beharrezko oroipena"
  },
  "santa-teresa-del-nino-jesus": {
   "nombre": "Santa Teresa Jesus Haurrarena, birjina eta eliz irakaslea",
   "rango": "beharrezko oroipena"
  },
  "santiago-apostol-patron-de-espana": {
-  "nombre": "Santiago, apostolua",
+  "nombre": "Santiago, apostolua, Espainiako zaindaria",
   "rango": "festaburua"
  },
  "santisima-trinidad": {
@@ -1224,15 +1644,27 @@
   "rango": ""
  },
  "santo-tomas-de-aquino": {
-  "nombre": "Akinoko San Tomas, presbiteroa eta eliz irakaslea",
+  "nombre": "Aquinoko San Tomas, presbiteroa eta eliz irakaslea",
   "rango": "beharrezko oroipena"
  },
  "santos-andres-dung-lac-y-companeros-martires": {
-  "nombre": "San Andres Dung-Lac, presbiteroa, eta Bere Lagunak, martiriak",
-  "rango": "oroipena"
+  "nombre": "San Andres Dung-Lac, presbiteroa, eta Lagunak, martiriak",
+  "rango": "beharrezko oroipena"
+ },
+ "santos-andres-kim-pablo-chong-y-companeros-martires": {
+  "nombre": "Andres Kim Taegon, presbiteroa, Paulo Chong Hasang eta Lagunak, Santuak, martiriak",
+  "rango": "beharrezko oroipena"
  },
  "santos-angeles-custodios": {
   "nombre": "Aingeru Zaindari Santuak",
+  "rango": "beharrezko oroipena"
+ },
+ "santos-arcangeles-miguel-gabriel-y-rafael": {
+  "nombre": "Goiaingeru Santuak: Mikel, Gabriel eta Rafael",
+  "rango": "jaia"
+ },
+ "santos-cornelio-y-cipriano-martires": {
+  "nombre": "Kornelio, aita santua, eta Zipriano, gotzaina, Santuak, martiriak",
   "rango": "beharrezko oroipena"
  },
  "santos-dionisio-y-companeros": {
@@ -1244,8 +1676,12 @@
   "rango": "jaia"
  },
  "santos-inocentes-martires": {
-  "nombre": "Haurtxo Erregugabe Santuak, Martiriak",
+  "nombre": "Haurtxo Errugabe Santuak, Martiriak",
   "rango": "jaia"
+ },
+ "santos-joaquin-y-ana": {
+  "nombre": "Joakim eta Ana Santuak, Maria Birjina dohatsuaren gurasoak",
+  "rango": "beharrezko oroipena"
  },
  "santos-juan-de-brebeuf-isaac-jogues-y-companeros": {
   "nombre": "Joan Brebeuf eta Isaak Jogues, presbiteroak, eta Lagunak, Santuak, martiriak",
@@ -1264,19 +1700,27 @@
   "rango": "nahierazko oroipena"
  },
  "santos-pedro-poveda-inocencio-de-la-inmaculada-y-companeros-martires": {
-  "nombre": "Pedro Poveda Castroverde eta Inozentzio Sortzez Garbiarena Canoura Arnau, presbiteroak, Santuak, eta Lagunak, martiriak",
+  "nombre": "Pedro Poveda Castroverde eta Inozentzio Sortzez Garbiarena Canoura Arnau, presbiteroak, eta lagunak, santuak, martiriak",
   "rango": "beharrezko oroipena"
  },
  "santos-pedro-y-pablo-apostoles": {
   "nombre": "Pedro eta Paulo Santuak, apostoluak",
   "rango": "festaburua"
  },
+ "santos-ponciano-e-hipolito-martires": {
+  "nombre": "Pontziano, aita santua, eta Hipolito, presbiteroa, Santuak, martiriak",
+  "rango": "nahierazko oroipena"
+ },
  "santos-simon-y-judas-apostoles": {
   "nombre": "Simon eta Judas Santuak, apostoluak",
-  "rango": ""
+  "rango": "jaia"
+ },
+ "santos-sixto-ii-y-companeros": {
+  "nombre": "San Sixto II.a, aita santua, eta Lagunak, martiriak",
+  "rango": "nahierazko oroipena"
  },
  "santos-timoteo-y-tito": {
-  "nombre": "San Timoteo eta San Tito, gotzainak",
+  "nombre": "Timoteo eta Tito Santuak, gotzainak",
   "rango": "beharrezko oroipena"
  },
  "todos-los-santos": {
@@ -1371,6 +1815,10 @@
   "nombre": "Pazkoaldiko zazpigarren asteko ostirala",
   "rango": "asteguna"
  },
+ "viernes-de-la-vii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko zazpigarren asteko ostirala",
+  "rango": "asteguna"
+ },
  "viernes-de-la-viii-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko zortzigarren asteko ostirala",
   "rango": "asteguna"
@@ -1383,8 +1831,16 @@
   "nombre": "Urtean Zeharreko hamabigarren asteko ostirala",
   "rango": "asteguna"
  },
+ "viernes-de-la-xiii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamahirugarren asteko ostirala",
+  "rango": "asteguna"
+ },
  "viernes-de-la-xiv-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hamalaugarren asteko ostirala",
+  "rango": "asteguna"
+ },
+ "viernes-de-la-xix-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hemeretzigarren asteko ostirala",
   "rango": "asteguna"
  },
  "viernes-de-la-xv-semana-del-tiempo-ordinario": {
@@ -1395,8 +1851,40 @@
   "nombre": "Urtean Zeharreko hamaseigarren asteko ostirala",
   "rango": "asteguna"
  },
+ "viernes-de-la-xvii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hamazazpigarren asteko ostirala",
+  "rango": "asteguna"
+ },
+ "viernes-de-la-xx-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeigarren asteko ostirala",
+  "rango": "asteguna"
+ },
+ "viernes-de-la-xxi-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita batgarren asteko ostirala",
+  "rango": "asteguna"
+ },
+ "viernes-de-la-xxii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita bigarren asteko ostirala",
+  "rango": "asteguna"
+ },
+ "viernes-de-la-xxiii-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita hirugarren asteko ostirala",
+  "rango": "asteguna"
+ },
+ "viernes-de-la-xxiv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita laugarren asteko ostirala",
+  "rango": "asteguna"
+ },
  "viernes-de-la-xxix-semana-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko hogeita bederatzigarren asteko ostirala",
+  "rango": "asteguna"
+ },
+ "viernes-de-la-xxv-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita bosgarren asteko ostirala",
+  "rango": "asteguna"
+ },
+ "viernes-de-la-xxvi-semana-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko hogeita seigarren asteko ostirala",
   "rango": "asteguna"
  },
  "viernes-de-la-xxvii-semana-del-tiempo-ordinario": {
@@ -1424,7 +1912,7 @@
   "rango": "asteguna"
  },
  "viernes-de-la-xxxiv-semana-del-tiempo-ordinario": {
-  "nombre": "Hogeita hamalaugarren asteko ostirala",
+  "nombre": "Urtean Zeharreko hogeita hamalaugarren asteko ostirala",
   "rango": "asteguna"
  },
  "viernes-despues-de-ceniza": {
@@ -1433,6 +1921,10 @@
  },
  "viernes-santo-la-pasion-del-senor": {
   "nombre": "Jaunaren Heriotzako Ostiral Santua",
+  "rango": ""
+ },
+ "x-domingo-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko X. igandea",
   "rango": ""
  },
  "xi-domingo-del-tiempo-ordinario": {
@@ -1451,6 +1943,10 @@
   "nombre": "Urtean Zeharreko XIV. igandea",
   "rango": ""
  },
+ "xix-domingo-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko XIX. igandea",
+  "rango": ""
+ },
  "xv-domingo-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko XV. igandea",
   "rango": ""
@@ -1463,8 +1959,36 @@
   "nombre": "Urtean Zeharreko XVII. igandea",
   "rango": ""
  },
+ "xviii-domingo-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko XVIII. igandea",
+  "rango": ""
+ },
+ "xxi-domingo-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko XXI. igandea",
+  "rango": ""
+ },
+ "xxii-domingo-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko XXII. igandea",
+  "rango": ""
+ },
+ "xxiii-domingo-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko XXIII. igandea",
+  "rango": ""
+ },
+ "xxiv-domingo-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko XXIV. igandea",
+  "rango": ""
+ },
  "xxix-domingo-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko XXIX. igandea",
+  "rango": ""
+ },
+ "xxv-domingo-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko XXV. igandea",
+  "rango": ""
+ },
+ "xxvi-domingo-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko XXVI. igandea",
   "rango": ""
  },
  "xxvii-domingo-del-tiempo-ordinario": {
@@ -1477,6 +2001,10 @@
  },
  "xxx-domingo-del-tiempo-ordinario": {
   "nombre": "Urtean Zeharreko XXX. igandea",
+  "rango": ""
+ },
+ "xxxi-domingo-del-tiempo-ordinario": {
+  "nombre": "Urtean Zeharreko XXXI. igandea",
   "rango": ""
  },
  "xxxii-domingo-del-tiempo-ordinario": {

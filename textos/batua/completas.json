@@ -227,6 +227,28 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C1003"
 },
+"completas/f3/himno": {
+"lineas": [
+{
+"t": "titulo",
+"x": "I [II]"
+},
+{
+"t": "estrofa",
+"x": "Otoi, guztien egile,\nargiak aldegin baitu,\nzure betiko errukiz\nzaindu ta gorde gaitzazu.\n\nGure bihotzok zaitzate\namets eder lotan senti,\nta argia hurbil denean\ngora zaitzagula beti.\n\nEmaguzu osasuna,\nemaguzu bizi-poza;\ngau beltza zure argiak\nbere dirdaiz argi beza.\n\nJesu Kristoren bitartez\ngrazia hau iguzu, Aita,\nGoi-Arnasa ta Zurekin\nbetiko Errege baita. Amen."
+},
+{
+"t": "titulo",
+"x": "II [II]"
+},
+{
+"t": "estrofa",
+"x": "Gauez ez du etenik\ngizakiekiko zure jardunak.\nSalbamen-garai dugu gaua.\n\nGauez luzatu zenuen mirarizko zurubia,\nJakob lo zetzan burko harriraino.\nSalbamen-garai dugu gaua.\n\nGauez ospatu zenuen Pazkoa zeure herriarekin,\nilunpetan Herioak ziharduelarik.\nSalbamen-garai dugu gaua.\n\nGau oro izar-leinuak zenbatzen ari zen Abraham,\ngau oro helarazten zenion agintzarien oihartzuna.\nSalbamen-garai dugu gaua.\n\nGauez dantzu Samuelek hirutan bere izena,\ngau-ametsak zituen zure mintzo sarkorrena.\nSalbamen-garai dugu gaua.\n\nGauez jaio zen zure Hitza aska batean,\ngauez zuten haren berri aingeru eta izarrek eman.\nSalbamen-garai dugu gaua.\n\nGaua du testigu Kristoren hilobiak,\ngaua, haren piztuera miragarriak.\nSalbamen-garai dugu gaua.\n\nGauez izango gaitu zain zure bapateko etorrerak,\neta pizturik aurkituko dituzu gure kriseiluak."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad C0063"
+},
 "completas/f3/lectura": {
 "lineas": [
 {
@@ -631,7 +653,7 @@
 "lineas": [
 {
 "t": "salmo",
-"x": "88. [87] Salmoa, 2-8"
+"x": "88. [87] Salmoa"
 },
 {
 "t": "epigrafe",
@@ -643,7 +665,7 @@
 },
 {
 "t": "estrofa",
-"x": "Jauna, ene Jainko salbatzailea, *\ngau eta egun deiadar degizut.\n† Hel bekizu nire otoitza, *\nmakur belarria nire garrasira.\n\nZoritxarrez asea dut barrena, *\nHerio-leizearen ertzean neure bizia;\nzulora doazenekin naute lerrotu, *\nerabat nago indargabetua.\n\nHerioaren esku nago utzia, *\nhilobian dauden hildakoak bezala;\nez zara gehiago haietaz oroitzen, *\nerauziak izan baitira zure eskutik.\n\nZulo sakonera jaurti nauzu, *\nbarren-barreneko ilunpeetara.\nZama astuna dut gainean zure haserrea, *\nzeure atsebake-itsasoan murgiltzen nauzu.\n\nEzagunak urrundu dizkidazu, *\nhaientzat higuingarri bihurtu nauzu;\npreso nago, irtenbiderik gabe, *\nbegiok akiturik nahigabez.\n\nEgun osoan Zuri deika nago, Jauna, *\neskuak luzatuz Zugana.\nEgingo ote duzu miraririk hildakoen alde? *\nJaikiko ote dira itzalak Zu gorestera?\n\nIragartzen ote dute hilobian zure maitasuna, *\nhondamen-leizean zure leialtasuna?\nEzagutzen ote dituzte zure mirariak ilunpean, *\nzure salbamen-asmoa oroitzapenik gabeko lurraldean?\n\nBaina nik, Jauna, deiadar degizut Zuri, *\ngoiz-goizetik doa Zugana nire otoitza. \nJauna, zergatik nauzu zapuzten, *\nzergatik didazu aurpegia gordetzen?\n\nDohakabe naiz eta gaixo haurtzarotik. *\nZure izu-ikarak jasan ditut, akiturik nago.\nzure sumina gainetik igaro zait, *\nzure ikara larriak ezereztu nau.\n\nUholdeak bezala murgildua naukate egun osoan, *\nguztiek batean inguratua.\nUrrundu dituzu nigandik adiskide eta lagunak, *\nilunpeak ditut lagunarte bakar.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+"x": "Jauna, ene Jainko salbatzailea, *\ngau eta egun deiadar degizut.\n† Hel bekizu nire otoitza, *\nmakur belarria nire garrasira.\n\nZoritxarrez asea dut barrena, *\nHerio-leizearen ertzean neure bizia;\nzulora doazenekin naute lerrotu, *\nerabat nago indargabetua.\n\nHerioaren esku nago utzia, *\nhilobian dauden hildakoak bezala;\nez zara gehiago haietaz oroitzen, *\nerauziak izan baitira zure eskutik.\n\nZulo sakonera jaurti nauzu, *\nbarren-barreneko ilunpeetara.\nZama astuna dut gainean zure haserrea, *\nzeure atsekabe-itsasoan murgiltzen nauzu.\n\nEzagunak urrundu dizkidazu, *\nhaientzat higuingarri bihurtu nauzu;\npreso nago, irtenbiderik gabe, *\nbegiok akiturik nahigabez.\n\nEgun osoan Zuri deika nago, Jauna, *\neskuak luzatuz Zugana.\nEgingo ote duzu miraririk hildakoen alde? *\nJaikiko ote dira itzalak Zu gorestera?\n\nIragartzen ote dute hilobian zure maitasuna, *\nhondamen-leizean zure leialtasuna?\nEzagutzen ote dituzte zure mirariak ilunpean, *\nzure salbamen-asmoa oroitzapenik gabeko lurraldean?\n\nBaina nik, Jauna, deiadar degizut Zuri, *\ngoiz-goizetik doa Zugana nire otoitza. \nJauna, zergatik nauzu zapuzten, *\nzergatik didazu aurpegia gordetzen?\n\nDohakabe naiz eta gaixo haurtzarotik. *\nZure izu-ikarak jasan ditut, akiturik nago.\nzure sumina gainetik igaro zait, *\nzure ikara larriak ezereztu nau.\n\nUholdeak bezala murgildua naukate egun osoan, *\nguztiek batean inguratua.\nUrrundu dituzu nigandik adiskide eta lagunak, *\nilunpeak ditut lagunarte bakar.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
 }
 ],
 "batua": true,
@@ -823,7 +845,7 @@
 "lineas": [
 {
 "t": "salmo",
-"x": "88. [87] Salmoa, 2-8"
+"x": "88. [87] Salmoa"
 },
 {
 "t": "epigrafe",
@@ -835,7 +857,7 @@
 },
 {
 "t": "estrofa",
-"x": "Jauna, ene Jainko salbatzailea, *\ngau eta egun deiadar degizut.\nHel bekizu nire otoitza, *\nmakur belarria nire garrasira.\n\nZoritxarrez asea dut barrena, *\nHerio-leizearen ertzean neure bizia;\nzulora doazenekin naute lerrotu, *\nerabat nago indargabetua.\n\nHerioaren esku nago utzia, *\nhilobian dauden hildakoak bezala;\nez zara gehiago haietaz oroitzen, *\nerauziak izan baitira zure eskutik.\n\nZulo sakonera jaurti nauzu, *\nbarren-barreneko ilunpeetara.\nZama astuna dut gainean zure haserrea, *\nzeure atsebake-itsasoan murgiltzen nauzu.\n\nEzagunak urrundu dizkidazu, *\nhaientzat higuingarri bihurtu nauzu;\npreso nago, irtenbiderik gabe, *\nbegiok akiturik nahigabez.\n\nEgun osoan Zuri deika nago, Jauna, *\neskuak luzatuz Zugana.\nEgingo ote duzu miraririk hildakoen alde? *\nJaikiko ote dira itzalak Zu gorestera?\n\nIragartzen ote dute hilobian zure maitasuna, *\nhondamen-leizean zure leialtasuna?\nEzagutzen ote dituzte zure mirariak ilunpean, *\nzure salbamen-asmoa oroitzapenik gabeko lurraldean?\n\nBaina nik, Jauna, deiadar degizut Zuri, *\ngoiz-goizetik doa Zugana nire otoitza. \nJauna, zergatik nauzu zapuzten, *\nzergatik didazu aurpegia gordetzen?\n\nDohakabe naiz eta gaixo haurtzarotik. *\nZure izu-ikarak jasan ditut, akiturik nago.\nzure sumina gainetik igaro zait, *\nzure ikara larriak ezereztu nau.\n\nUholdeak bezala murgildua naukate egun osoan, *\nguztiek batean inguratua.\nUrrundu dituzu nigandik adiskide eta lagunak, *\nilunpeak ditut lagunarte bakar.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
+"x": "Jauna, ene Jainko salbatzailea, *\ngau eta egun deiadar degizut.\nHel bekizu nire otoitza, *\nmakur belarria nire garrasira.\n\nZoritxarrez asea dut barrena, *\nHerio-leizearen ertzean neure bizia;\nzulora doazenekin naute lerrotu, *\nerabat nago indargabetua.\n\nHerioaren esku nago utzia, *\nhilobian dauden hildakoak bezala;\nez zara gehiago haietaz oroitzen, *\nerauziak izan baitira zure eskutik.\n\nZulo sakonera jaurti nauzu, *\nbarren-barreneko ilunpeetara.\nZama astuna dut gainean zure haserrea, *\nzeure atsekabe-itsasoan murgiltzen nauzu.\n\nEzagunak urrundu dizkidazu, *\nhaientzat higuingarri bihurtu nauzu;\npreso nago, irtenbiderik gabe, *\nbegiok akiturik nahigabez.\n\nEgun osoan Zuri deika nago, Jauna, *\neskuak luzatuz Zugana.\nEgingo ote duzu miraririk hildakoen alde? *\nJaikiko ote dira itzalak Zu gorestera?\n\nIragartzen ote dute hilobian zure maitasuna, *\nhondamen-leizean zure leialtasuna?\nEzagutzen ote dituzte zure mirariak ilunpean, *\nzure salbamen-asmoa oroitzapenik gabeko lurraldean?\n\nBaina nik, Jauna, deiadar degizut Zuri, *\ngoiz-goizetik doa Zugana nire otoitza. \nJauna, zergatik nauzu zapuzten, *\nzergatik didazu aurpegia gordetzen?\n\nDohakabe naiz eta gaixo haurtzarotik. *\nZure izu-ikarak jasan ditut, akiturik nago.\nzure sumina gainetik igaro zait, *\nzure ikara larriak ezereztu nau.\n\nUholdeak bezala murgildua naukate egun osoan, *\nguztiek batean inguratua.\nUrrundu dituzu nigandik adiskide eta lagunak, *\nilunpeak ditut lagunarte bakar.\n\nAintza Aitari, eta Semeari, * \neta Espiritu Santuari. \nHasieran zen bezala, orain eta beti, * \ngizaldi eta gizaldietan. Amen."
 }
 ],
 "batua": true,
@@ -961,7 +983,7 @@
 },
 {
 "t": "texto",
-"x": "Bisita ezazu, Jauna, bizileku hau: urrun zaitez hemendik etsaiaren segadak; zure aingeru santuak bizi daitezela hemen eta bakean zaindu gaitzatela, eta zure bedeinkazioa gurekin egon dadila beti. Jesu Kristo gure Jaunaren bitartez."
+"x": "Zatoz, Jauna, etxe honetara, eta urrundu gugandik etsaiaren maltzurkeria guztiak; beude hemen zure aingeru santuak gu bakean zaintzen, eta bego beti gugan zure bedeinkapena. Jesu Kristo gure Jaunaren bitartez."
 },
 {
 "t": "r",

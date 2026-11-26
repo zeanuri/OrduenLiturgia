@@ -156,7 +156,7 @@ def test_cabecera_en_euskera_y_color_del_tiempo_como_lecturasdeldia():
     }
     assert dia["celebraciones"][0]["nombre_eu"] == "San Leon Handia, aita santua eta eliz irakaslea"
     solemnidad = generar.generar_dia(date(2026, 12, 8), {}, {})
-    assert solemnidad["cabecera"]["nombre"] == "Maria Birjina Dohatsuaren Sortze Garbia" and solemnidad["cabecera"]["memoria"] == ""
+    assert solemnidad["cabecera"]["nombre"] == "Maria Birjina Dohatsuaren Sortze Garbia, Espainiako zaindaria" and solemnidad["cabecera"]["memoria"] == ""
     # Octava de Navidad: el motor llama a la feria como al santo; la feria lleva su nombre propio.
     octava = generar.generar_dia(date(2026, 12, 31), {}, {})
     assert octava["cabecera"]["nombre"] == "Eguberri-Zortziurreneko VII. eguna"
@@ -617,9 +617,10 @@ def test_memoria_con_oracion_propia_sin_euskera_no_reza_la_de_la_feria_ni_la_del
 def test_san_oscar_no_reza_la_oracion_de_la_feria(textos_reales):
     dia = generar.generar_dia(date(2027, 2, 3), textos_reales, {})
     santo = next(i for i, c in enumerate(dia["celebraciones"]) if c["id"] == "san-oscar")
+    # Hasta el 25-nov-2026 el servidor la daba en castellano (salía vacía con la nota); ahora, en euskera.
     for hora in ("laudes", "visperas"):
         p = oracion(dia, hora, santo)
-        assert "clave" not in p and p["falta"] == [f"propio/san-oscar/{hora}/oracion"], hora
+        assert p["clave"] == f"propio/san-oscar/{hora}/oracion" and p["lineas"], hora
     # La feria del mismo día sí reza la suya.
     assert oracion(dia, "laudes", 0)["clave"].startswith("salterio/")
 
@@ -635,8 +636,10 @@ def test_san_calixto_reza_en_laudes_su_oracion_en_euskera(textos_reales):
 
 
 def test_octava_de_navidad_el_santo_conmemorado_reza_la_oracion_del_dia(textos_reales):
-    # Santo Tomás Becket (29-dic): en la octava solo se conmemora (su «oración» en el servidor es la rúbrica
-    # de la conmemoración, en castellano); la oración del día es la de la octava y no falta.
+    # Santo Tomás Becket (29-dic): en la octava solo se conmemora; la oración del día es la de la octava (en
+    # bizkaiera) y no falta. El servidor da como «oración» del santo la conmemoración (OLEO 239): hasta el
+    # 25-nov-2026, la rúbrica en castellano; desde entonces, en batua con la oración del día dentro.
+    # `referencia/batua.py` (CONMEMORACION) la deja fuera.
     dia = generar.generar_dia(date(2026, 12, 29), textos_reales, {})
     santo = next(i for i, c in enumerate(dia["celebraciones"]) if c["id"] == "santo-tomas-becket-obispo-y-martir")
     assert oracion(dia, "laudes", santo)["clave"] == "tiempo/navidad/12-29/laudes/oracion"
@@ -644,7 +647,8 @@ def test_octava_de_navidad_el_santo_conmemorado_reza_la_oracion_del_dia(textos_r
 
 
 def test_sin_euskera_json_solo_anota_oraciones_propias_sin_texto(textos_reales):
-    assert generar.SIN_EUSKERA, "falta repo/generador/sin_euskera.json (referencia/batua.py)"
+    # Vacío desde el 25-nov-2026: el servidor ya da en euskera todas las oraciones propias.
+    assert generar._SIN_EUSKERA.exists(), "falta repo/generador/sin_euskera.json (referencia/batua.py)"
     for clave in generar.SIN_EUSKERA:
         assert re.fullmatch(r"propio/[a-z0-9-]+/(laudes|visperas|visperas1)/oracion", clave), clave
         assert clave not in textos_reales, f"{clave} ya tiene texto"
@@ -667,7 +671,7 @@ def test_ninguna_memoria_de_la_ventana_reza_la_feria_donde_el_santo_tiene_oracio
                 if propia in generar.SIN_EUSKERA:
                     anotadas += 1
                     assert "clave" not in p, (dia["fecha"], propia, p.get("clave"))
-    assert anotadas > 50 and vistas > anotadas       # hay casos reales y la regla no alcanza a todas las memorias
+    assert vistas > anotadas       # la regla no alcanza a todas las memorias (0 anotadas desde el 25-nov-2026)
 
 
 def test_llaves_oracion_propia_no_se_pierde_porque_el_ultimo_ano_traiga_la_de_la_feria():
