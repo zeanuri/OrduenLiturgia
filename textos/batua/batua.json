@@ -17269,15 +17269,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8431"
 },
-"propio/san-juan-de-la-cruz/laudes/ant1": {
-"ref": "salterio/s3/lun/laudes/ant1"
-},
-"propio/san-juan-de-la-cruz/laudes/ant2": {
-"ref": "salterio/s3/lun/laudes/ant2"
-},
-"propio/san-juan-de-la-cruz/laudes/ant3": {
-"ref": "salterio/s3/lun/laudes/ant3"
-},
 "propio/san-juan-de-la-cruz/laudes/oracion": {
 "lineas": [
 {
@@ -17300,24 +17291,6 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8811"
 },
-"propio/san-juan-de-la-cruz/laudes/salmo1": {
-"ref": "salterio/s3/lun/laudes/salmo1"
-},
-"propio/san-juan-de-la-cruz/laudes/salmo2": {
-"ref": "salterio/s3/lun/laudes/salmo2"
-},
-"propio/san-juan-de-la-cruz/laudes/salmo3": {
-"ref": "salterio/s3/lun/laudes/salmo3"
-},
-"propio/san-juan-de-la-cruz/visperas/ant1": {
-"ref": "salterio/s3/lun/visperas/ant1"
-},
-"propio/san-juan-de-la-cruz/visperas/ant2": {
-"ref": "salterio/s3/lun/visperas/ant2"
-},
-"propio/san-juan-de-la-cruz/visperas/ant3": {
-"ref": "salterio/s3/lun/visperas/ant3"
-},
 "propio/san-juan-de-la-cruz/visperas/oracion": {
 "lineas": [
 {
@@ -17339,15 +17312,6 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O8811"
-},
-"propio/san-juan-de-la-cruz/visperas/salmo1": {
-"ref": "salterio/s3/lun/visperas/salmo1"
-},
-"propio/san-juan-de-la-cruz/visperas/salmo2": {
-"ref": "salterio/s3/lun/visperas/salmo2"
-},
-"propio/san-juan-de-la-cruz/visperas/salmo3": {
-"ref": "salterio/s3/lun/visperas/salmo3"
 },
 "propio/san-juan-eudes/laudes/oracion": {
 "lineas": [
@@ -19531,6 +19495,50 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4311"
+},
+"propio/san-raimundo-de-penyafort/laudes/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Oi Jainko, bekatari eta gatibuenganako maitasun harrigarria isuri zenuen Peñaforteko Erraimundo presbitero santuaren bihotzean; emaguzu, haren otoitzari esker, bekatuaren esklabotzatik askaturik, atsegin zaizuna gogoz eta askatasunez egitea. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4021"
+},
+"propio/san-raimundo-de-penyafort/visperas/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Oi Jainko, bekatari eta gatibuenganako maitasun harrigarria isuri zenuen Peñaforteko Erraimundo presbitero santuaren bihotzean; emaguzu, haren otoitzari esker, bekatuaren esklabotzatik askaturik, atsegin zaizuna gogoz eta askatasunez egitea. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4021"
 },
 "propio/san-roberto-belarmino/laudes/oracion": {
 "lineas": [
@@ -25146,6 +25154,223 @@
 ],
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V1821"
+},
+"propio/santos-basilio-magno-y-gregorio-nacianceno/laudes/ant_ev": {
+"ref": "comunes/doctores/laudes/ant_ev"
+},
+"propio/santos-basilio-magno-y-gregorio-nacianceno/laudes/lectura": {
+"ref": "tiempo/navidad/01-09/laudes/lectura"
+},
+"propio/santos-basilio-magno-y-gregorio-nacianceno/laudes/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Oi Jainko, Basilio Handia eta Naziantzoko Gregorio gotzain santuen bizieraz eta irakaspenez argi egin zenion zeure Elizari; egizu, ikas dezagula apalki zure egia eta bete leialki maitasunean. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4001"
+},
+"propio/santos-basilio-magno-y-gregorio-nacianceno/laudes/preces": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Jesu Kristori, gizon zerutar eta Adam berriari, zuzen diezazkiogun gure eskariak, esanez:"
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Erruki, Jauna."
+},
+{
+"t": "texto",
+"x": "Oi Kristo, zuzentasun-eguzki, aitalehenei egindako ituna betetzeko gure gizatasuna hartuz zure aintza agertu zenuen:"
+},
+{
+"t": "texto",
+"x": "—zabal ezazu guregan zure argia."
+},
+{
+"t": "texto",
+"x": "Oi Kristo, aingeruek goratua, artzainek ezagutua, Simeonek eta Anak aitortua:"
+},
+{
+"t": "texto",
+"x": "—egizu, zure promesen jabe den herriak har dezala Berri Ona."
+},
+{
+"t": "texto",
+"x": "Oi Kristo, Zu jaiotzean, aingeruek aintza hots egin zuten zeruan eta bakea lurrean;"
+},
+{
+"t": "texto",
+"x": "—egizu, zure bakea zabal dadila lurbira osoan."
+},
+{
+"t": "texto",
+"x": "Oi Kristo, gizaki hilkorra bizi-berritu eta zeure erreinuan bizitoki bat eratu zenigun Adam berria:"
+},
+{
+"t": "texto",
+"x": "—emaiezu itxaropena etsita daudenei."
+},
+{
+"t": "rubrica",
+"x": "Nork bere eskariak ere egin ditzake."
+},
+{
+"t": "titulo",
+"x": "Jaunaren otoitza"
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Eta orain, Jesu Kristo gure Jaunaren nahiari jarraituz, beldur gabe esan dezagun:"
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L7231"
+},
+"propio/santos-basilio-magno-y-gregorio-nacianceno/laudes/responsorio": {
+"ref": "tiempo/navidad/01-04/laudes/responsorio"
+},
+"propio/santos-basilio-magno-y-gregorio-nacianceno/visperas/ant_ev": {
+"lineas": [
+{
+"t": "texto",
+"x": "Betetzen duena eta betetzen irakasten, handia izango da zeruetako erreinuan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6400"
+},
+"propio/santos-basilio-magno-y-gregorio-nacianceno/visperas/lectura": {
+"ref": "propio/san-esteban-protomartir/visperas/lectura"
+},
+"propio/santos-basilio-magno-y-gregorio-nacianceno/visperas/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Oi Jainko, Basilio Handia eta Naziantzoko Gregorio gotzain santuen bizieraz eta irakaspenez argi egin zenion zeure Elizari; egizu, ikas dezagula apalki zure egia eta bete leialki maitasunean. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O4001"
+},
+"propio/santos-basilio-magno-y-gregorio-nacianceno/visperas/preces": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Kristo etorri zenean, Jainkoaren herri santuak lore erne-muin berriak eman zituen. Horregatik, pozaren pozez eta esker onez beterik, esan diezaiogun gure Salbatzaileari:"
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Zure jaiotzak poztu beza mundua."
+},
+{
+"t": "texto",
+"x": "Kristo, gure bizia, Elizaren Buru izateko etorri zinen:"
+},
+{
+"t": "texto",
+"x": "—jarraitu zeure gorputzaren hazkundea sustatzen, maitasunean eraiki dadin."
+},
+{
+"t": "texto",
+"x": "Bi izatetan gurtzen zaitugu:"
+},
+{
+"t": "texto",
+"x": "—egin gaitzazu partaide zure Jainkotasunean."
+},
+{
+"t": "texto",
+"x": "Gizakundeaz gure bitarteko egin zinen:"
+},
+{
+"t": "texto",
+"x": "—egizu Elizaren zerbitzariak bat egin dezatela eraginkor zure ministeritzarekin, beren bizitzak santutzeko."
+},
+{
+"t": "texto",
+"x": "Mundura etortzean, gizon-emakumeei jokabide berria erakutsi zenien:"
+},
+{
+"t": "texto",
+"x": "—erakar itzazu herri guztiak zure salbamenera."
+},
+{
+"t": "rubrica",
+"x": "Nork bere eskariak ere egin ditzake."
+},
+{
+"t": "texto",
+"x": "Jaiotzan herio-lokarriak askatu zenituen:"
+},
+{
+"t": "texto",
+"x": "—aska itzazu hildakoak kate guztietatik."
+},
+{
+"t": "titulo",
+"x": "Jaunaren otoitza"
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Jarrai dezagun otoitzean Jainkoaren erreinuaren bila:"
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V7232"
+},
+"propio/santos-basilio-magno-y-gregorio-nacianceno/visperas/responsorio": {
+"ref": "propio/san-esteban-protomartir/visperas/responsorio"
 },
 "propio/santos-cirilo-y-metodio-patronos-de-europa/laudes/fijo/conclusion": {
 "lineas": [

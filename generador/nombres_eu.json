@@ -1491,6 +1491,10 @@
   "nombre": "San Pio X.a, aita santua",
   "rango": "beharrezko oroipena"
  },
+ "san-raimundo-de-penyafort": {
+  "nombre": "Peñaforteko San Erraimundo, presbiteroa",
+  "rango": "nahierazko oroipena"
+ },
  "san-roberto-belarmino": {
   "nombre": "San Roberto Belarmino, gotzaina eta eliz irakaslea",
   "rango": "nahierazko oroipena"
@@ -1662,6 +1666,10 @@
  "santos-arcangeles-miguel-gabriel-y-rafael": {
   "nombre": "Goiaingeru Santuak: Mikel, Gabriel eta Rafael",
   "rango": "jaia"
+ },
+ "santos-basilio-magno-y-gregorio-nacianceno": {
+  "nombre": "Basilio Handia eta Naziantzoko Gregorio Santuak, gotzainak eta eliz irakasleak",
+  "rango": "beharrezko oroipena"
  },
  "santos-cornelio-y-cipriano-martires": {
   "nombre": "Kornelio, aita santua, eta Zipriano, gotzaina, Santuak, martiriak",

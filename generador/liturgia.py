@@ -866,6 +866,16 @@ def calculate(d: date) -> dict:
         else:
             result["name"] = f"Feria del Tiempo de Navidad ({day} enero)"
             result["rank"] = "Feria"
+        # Ferias de Navidad tras la Octava (2 de enero en adelante): no son
+        # privilegiadas y sus memorias se celebran, con lecturas feriales
+        # (Normas Universales 59 III.13). Antes se perdían San Basilio y San
+        # Gregorio (2-ene) y San Raimundo de Penyafort (7-ene).
+        if m == 1 and result["rank"] == "Feria" and key in OBLIGATORY_MEMORIALS:
+            mem_name, mem_rank, mem_color = parse_memorial(OBLIGATORY_MEMORIALS[key])
+            result["memorial"] = mem_name
+            result["memorial_rank"] = mem_rank
+            result["memorial_color"] = mem_color
+            result["readings_source"] = "feriales"
 
     # -- Tiempo Ordinario --
     else:

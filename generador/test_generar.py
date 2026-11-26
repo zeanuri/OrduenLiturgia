@@ -625,6 +625,18 @@ def test_san_oscar_no_reza_la_oracion_de_la_feria(textos_reales):
     assert oracion(dia, "laudes", 0)["clave"].startswith("salterio/")
 
 
+def test_san_basilio_y_san_gregorio_con_su_oracion_y_los_salmos_del_dia(textos_reales):
+    # 26-nov-2026: el motor ya da la memoria del 2-ene (antes se perdía tras la octava). Reza su oración;
+    # los salmos son los del día, no el salterio del sábado en que cayó en 2027 fijado como propio.
+    dia = generar.generar_dia(date(2027, 1, 2), textos_reales, {})
+    santo = next(i for i, c in enumerate(dia["celebraciones"])
+                 if c["id"] == "santos-basilio-magno-y-gregorio-nacianceno")
+    assert oracion(dia, "laudes", santo)["clave"] == \
+        "propio/santos-basilio-magno-y-gregorio-nacianceno/laudes/oracion"
+    claves = {p["parte"]: p["clave"] for p in dia["celebraciones"][santo]["horas"]["laudes"]}
+    assert not any(claves[p].startswith("propio/") for p in ("ant1", "salmo1", "ant3", "salmo3"))
+
+
 def test_san_calixto_reza_en_laudes_su_oracion_en_euskera(textos_reales):
     # El servidor de «Liturgia euskaraz» da en 2026 las Laudes con la oración de la feria; en 2021-2025 (y
     # en sus Vísperas de 2026) la del santo, en euskera: `llaves.subir` ya no deja que la feria la tape.
