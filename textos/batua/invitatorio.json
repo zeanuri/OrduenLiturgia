@@ -575,6 +575,16 @@
 "batua": true,
 "fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1641"
 },
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/invitatorio/ant": {
+"lineas": [
+{
+"t": "texto",
+"x": "Goraipa dezagun Kristo betiereko apaizgoa duena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad I1642"
+},
 "propio/sabado-de-la-octava-de-pascua/invitatorio/ant": {
 "lineas": [
 {

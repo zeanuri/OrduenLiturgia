@@ -62,6 +62,7 @@ FIESTAS_DEL_SENOR = {
     "La Exaltación de la Santa Cruz",
     "El Bautismo del Señor",
     "La Sagrada Familia de Jesús, María y José",
+    "Nuestro Señor Jesucristo, Sumo y Eterno Sacerdote",
 }
 
 # ── I.2 level celebrations (Art. 59) ────────────────────────────────────
@@ -440,6 +441,10 @@ def movable_feasts(year: int) -> dict:
     e = easter(year)
     pent = e + timedelta(days=49)
     feasts = {}
+
+    # Nuestro Senor Jesucristo, Sumo y Eterno Sacerdote: jueves despues de Pentecostes,
+    # fiesta propia de Espana (CLP de la CEE; lecturas del Leccionario IV, 572ter)
+    feasts[pent + timedelta(days=4)] = ("Nuestro Señor Jesucristo, Sumo y Eterno Sacerdote", "Fiesta", "Blanco")
 
     # Santisima Trinidad: domingo despues de Pentecostes
     trinity = pent + timedelta(days=7)
@@ -1036,6 +1041,7 @@ def _build_dominical_key(result: dict) -> str | None:
     if "Resurreccion" in name or "Resurrección" in name: return "pascua_resurreccion"
 
     # Solemnities after Easter
+    if "Sumo y Eterno Sacerdote" in name: return "jesucristo_sacerdote"
     if "Pentecostés" in name or "Pentecostes" in name: return "pentecostes"
     if "Trinidad" in name: return "trinidad"
     if "Corpus" in name or "Cuerpo" in name: return "corpus"

@@ -148,6 +148,9 @@ EXACT_NAME_ES_TO_EU = {
     "Pentecostés": "Pentekoste Igandea",
 
     # ── Solemnities after Pentecost ─────────────────────────────────
+    # Jueves despues de Pentecostes, fiesta en Espana: titulo del MEZAKO IRAKURGAIAK MMXXI, 3. lib., 496. or.
+    "Nuestro Senor Jesucristo, Sumo y Eterno Sacerdote": "Jesu Kristo gure Jauna, Betiereko Abade Nagusia",
+    "Nuestro Señor Jesucristo, Sumo y Eterno Sacerdote": "Jesu Kristo gure Jauna, Betiereko Abade Nagusia",
     "Santisima Trinidad": "Hirutasun Igandea",
     "Santísima Trinidad": "Hirutasun Igandea",
     "Santisimo Cuerpo y Sangre de Cristo (Corpus Christi)": "Kristoren Gorputz-Odol Santuak",

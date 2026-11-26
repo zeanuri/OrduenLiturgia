@@ -625,6 +625,16 @@ def test_san_oscar_no_reza_la_oracion_de_la_feria(textos_reales):
     assert oracion(dia, "laudes", 0)["clave"].startswith("salterio/")
 
 
+def test_jesucristo_sumo_y_eterno_sacerdote(textos_reales):
+    # 26-nov-2026: el motor ya da la fiesta (jueves después de Pentecostés). Antes salía la feria con
+    # San Bernardino; ahora solo la fiesta, con su oficio propio.
+    dia = generar.generar_dia(date(2027, 5, 20), textos_reales, {})
+    assert [c["id"] for c in dia["celebraciones"]] == ["nuestro-senor-jesucristo-sumo-y-eterno-sacerdote"]
+    for hora in ("laudes", "visperas"):
+        assert oracion(dia, hora, 0)["clave"] == \
+            f"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/{hora}/oracion"
+
+
 def test_san_basilio_y_san_gregorio_con_su_oracion_y_los_salmos_del_dia(textos_reales):
     # 26-nov-2026: el motor ya da la memoria del 2-ene (antes se perdía tras la octava). Reza su oración;
     # los salmos son los del día, no el salterio del sábado en que cayó en 2027 fijado como propio.

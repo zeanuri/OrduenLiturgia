@@ -12091,6 +12091,468 @@
 "propio/nuestro-senor-jesucristo-rey-del-universo/visperas1/salmo3": {
 "ref": "salterio/s1/mar/visperas/salmo3"
 },
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Kristoren gurutzeko odolaz bakeak egin ditu Aitak zeru-lurretan diren guztiekin."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L1642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/ant2": {
+"lineas": [
+{
+"t": "texto",
+"x": "Sortua izan den guztiak Kristo du eredu eta helburu."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L1642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/ant3": {
+"lineas": [
+{
+"t": "texto",
+"x": "Gauza guztiak menpean jarri dizkio Jainkoak eta buru eman dio haren gorputza den Elizari."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L1642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/ant_ev": {
+"lineas": [
+{
+"t": "texto",
+"x": "Egizu, Aita, guztiak bat izan daitezela, munduak sinets dezan Zuk bidali nauzula."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L6642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/himno": {
+"lineas": [
+{
+"t": "estrofa",
+"x": "Gure maitez gizon egin\nzinen, Kristo Apaiza;\nzeru-lurrek kantuz dute\nabesten zure aintza,\nAitaren nahia betez\nZuk eginiko eskaintza.\n\nGurutzean zenuen Zuk\nbizia oparitu;\nsalbamenaren betea\nzenigun eskuratu;\ngaraituak izan dira\nherio eta beldur.\n\nGiza opariak daude\nbalio gabeturik;\nzure iragarpen ziren\neta aurreirudi;\nZu zara, Kristo, betiko\ngure Apaiz Nagusi.\n\nHeriotza jasatea\nZuretzat ez zen aski;\nEukaristia eginik\naldarean eskainiz,\nzeure Gorputza diguzu\neman orain janari.\n\nBizia diguzu lortu\ngurutzeko odolez;\nesker ona nahi diguzu\nhelarazi bihotzez.\nAita, Seme, Espiritu,\nZuei aintza ta ospe. Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L0642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/lectura": {
+"lineas": [
+{
+"t": "cita",
+"x": "Heb 10, 5-10"
+},
+{
+"t": "texto",
+"x": "Kristok, munduan sartzean, dio: «Ez zenuen oparirik eta eskaintzarik nahi izan; baina gorputza eratu zenidan. Erre-oparirik eta bekatuen barkamen-oparirik ez zenuen atsegin izan. Orduan, esan nuen: Hemen nauzu, Jainko, zure nahia betetzeko; hau dago Liburuan Nitaz idatzia». Lehendabizi dio: «Ez zenuen nahi izan, ez atsegin izan, oparirik eta eskaintzarik, ez erre-oparirik, ez bekatuen barkamen-oparirik», nahiz eta gauza guztiok legeak agindutakoak izan. Ondoren beste hau dio: «Hemen nauzu, zure nahia betetzeko». Lehenengo kultua kentzen du, bigarrena jartzeko. Eta Jesu Kristok, behin betiko egin zuen bere gorputzaren opariaren bidez, Jainkoaren nahia bete duelako izan gara gu sagaratuak."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L5642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Oi Jainko, zure handitasunaren aintzarako eta gizadi osoa salbatzeko, betiereko apaiz nagusi egin duzu zeure Seme bakarra; egizu, Kristok zure misterioen zerbitzari eta emaile aukeratu dituenek, Espiritu Santuaren graziaz leial bete dezatela hartu duten zerbitzu hori. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6421"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/preces": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Egun honen hasieran, gorets dezagun Jesu Kristo, gizakientzat betiereko salbamena dena eta eska diezaiogun apalki:"
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Jauna, entzun iezaguzu."
+},
+{
+"t": "texto",
+"x": "Jesus, Jainko biziaren Seme,"
+},
+{
+"t": "texto",
+"x": "—eraman gaitzazu zure egiaren argirantz."
+},
+{
+"t": "texto",
+"x": "Kristo, betidanik eta betidaino Aitaren ondoan zauden Jainkoaren Hitza,"
+},
+{
+"t": "texto",
+"x": "—sagara ezazu zure Eliza batasunean."
+},
+{
+"t": "texto",
+"x": "Jesus, Espiritu Santuaren indarrez Aitak gantzutua,"
+},
+{
+"t": "texto",
+"x": "—sagara ezazu zure Eliza santutasunean."
+},
+{
+"t": "texto",
+"x": "Kristo, Itun berriaren apaiz nagusi,"
+},
+{
+"t": "texto",
+"x": "—eman apaizei zure santutasuna Aitaren aintzarako."
+},
+{
+"t": "texto",
+"x": "Kristo, Jainkoaren jakinduria, gure bake eta adiskidetzea,"
+},
+{
+"t": "texto",
+"x": "—egizu, aho batezko izan gaitezela elkarrekin bat etorriz zure Elizan."
+},
+{
+"t": "texto",
+"x": "Kristo, Aitaren aintzarako betiereko apaiz,"
+},
+{
+"t": "texto",
+"x": "—egizu, zurekin batera geure burua eskain dezagula betiko aintzaren gorespenerako."
+},
+{
+"t": "rubrica",
+"x": "Nork bere eskariak ere egin ditzake."
+},
+{
+"t": "titulo",
+"x": "Jaunaren otoitza"
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Orain, gure gorespen eta eskariak berretsiz esan dezagun Jaunaren otoitza:"
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L7642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/responsorio": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Hemen nauzu, Jauna, zure nahia egin dezadan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Hemen nauzu, Jauna, zure nahia egin dezadan."
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Barne muinetan daukat zure legea."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Zure nahia egin dezadan."
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Aintza Aitari, eta Semeari, eta Espiritu Santuari."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Hemen nauzu, Jauna, zure nahia egin dezadan."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad L5642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/salmo1": {
+"ref": "salterio/s1/dom/laudes/salmo1"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/salmo2": {
+"ref": "salterio/s1/dom/laudes/salmo2"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/laudes/salmo3": {
+"ref": "salterio/s1/dom/laudes/salmo3"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/ant1": {
+"lineas": [
+{
+"t": "texto",
+"x": "Zin egina du Jaunak eta ez da damutuko: «Apaiz zara Zu betiko»."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V1642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/ant2": {
+"lineas": [
+{
+"t": "texto",
+"x": "Errukian aberatsa den Jainkoak bizia eman digu Kristorekin batean."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V1642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/ant3": {
+"lineas": [
+{
+"t": "texto",
+"x": "Jainko ikusezinaren irudi da Kristo, sorkari guztietan lehen-sortua."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V1642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/ant_ev": {
+"lineas": [
+{
+"t": "texto",
+"x": "Hauen alde erregutzen dizut, Aita, zureak direlako, eta hauengatik sagaratzen dizut neure burua, hauek ere sagara ditzazun egiaren bidez."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V6642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/himno": {
+"lineas": [
+{
+"t": "estrofa",
+"x": "Kristo, Aitaren eskuz etorri Apaiza,\nlagun onak hautatuz, Zuk molda Eliza.\n\nSortu orduko, Jauna, eman diguzu\nmaitasunaren beroa:\ngu denen etxe bakoitza Zuk egizu\nfede-lur paregabea.\n\nKristo, Aitaren eskuz etorri Apaiza,\nlagun onak hautatuz, zuk molda Eliza.\n\nBerri handia, mezu paregabea,\noraino askok ez jakin.\nPiztua dugu Kristo Salbatzailea:\ngaitezen bizi Harekin.\n\nKristo, Aitaren eskuz etorri Apaiza,\nlagun onak hautatuz, zuk molda Eliza."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V0642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/lectura": {
+"lineas": [
+{
+"t": "cita",
+"x": "Heb 10, 19-23"
+},
+{
+"t": "texto",
+"x": "Senideok: Jesusen odolari esker badugu konfiantza santutegian sartzeko, Jesusek bide berria eta bizia ireki baitigu gortinan barna, hau da, bere gorputzean barna. Eta Jesus apaiz handia Jainkoaren etxeko buru dugunez, hurbil gaitezen bihotz zintzoz eta fede osoz, barrua bekatu-kontzientzia guztitik garbiturik eta gorputza ur garbiz txukundurik. Iraun dezagun sendo itxaropena aitortzen, hitzekoa baita agintzaria egin duena."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V5642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/oracion": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Oi Jainko, zure handitasunaren aintzarako eta gizadi osoa salbatzeko, betiereko apaiz nagusi egin duzu zeure Seme bakarra; egizu, Kristok zure misterioen zerbitzari eta emaile aukeratu dituenek, Espiritu Santuaren graziaz leial bete dezatela hartu duten zerbitzu hori. Zure Seme Jesu Kristo gure Jaunaren bitartez, Zurekin eta Espiritu Santuarekin batean Jainko eta errege bizi baita, gizaldi eta gizaldietan."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Amen."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad O6421"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/preces": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Egin diezaiogun otoitz uste onez Kristo gure apaiz nagusiari, eta aurkez diezazkiogun gure beharrak eta eskariak, apalki esanez:"
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Entzun iezaguzu, Jauna, fedez eskatzen dizugu."
+},
+{
+"t": "texto",
+"x": "Kristo, Aitaren Hitza zarena,"
+},
+{
+"t": "texto",
+"x": "—jar ezazu gure ezpainetan eskatu behar duguna."
+},
+{
+"t": "texto",
+"x": "Kristo, apaiza, biziaren ogia zarena,"
+},
+{
+"t": "texto",
+"x": "—egizu, Zuk aukeratu dituzunek bizi dezatela beren apaizgoaren dohaina, nor bere buruaren eskaintza zugan bere betera eramanez."
+},
+{
+"t": "texto",
+"x": "Kristo, aintzaz betea, Aitaren aurrean gure alde egiteko betiko bizi zarena,"
+},
+{
+"t": "texto",
+"x": "—egizu leial iraun dezagula zure Elizaren aldeko otoitzean."
+},
+{
+"t": "texto",
+"x": "Kristo, Jauna, Aitak bidalia,"
+},
+{
+"t": "texto",
+"x": "—egizu, guztiek Zugan aurki dezatela erreinuko bizia eta bidea."
+},
+{
+"t": "rubrica",
+"x": "Nork bere eskariak ere egin ditzake."
+},
+{
+"t": "texto",
+"x": "Kristo, Jainko biziaren Semea, hilik heriotza garaitu zenuena,"
+},
+{
+"t": "texto",
+"x": "—egizu gure hildakoen azken eskaintzak eraman ditzala zure aintzaren betiko gozatzera."
+},
+{
+"t": "titulo",
+"x": "Jaunaren otoitza"
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Eta orain esan dezagun elkarrekin Kristok, Jaunak, irakatsitako otoitza:"
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V7642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/responsorio": {
+"lineas": [
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Bakean gaude Jainkoarekin, Jesu Kristo gure Jaunari esker."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Bakean gaude Jainkoarekin, Jesu Kristo gure Jaunari esker."
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Eta harro gaude Jainkoaren aintza iritsiko dugun itxaropenez."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Jesu Kristo gure Jaunari esker."
+},
+{
+"t": "v",
+"x": "V."
+},
+{
+"t": "texto",
+"x": "Aintza Aitari, eta Semeari, eta Espiritu Santuari."
+},
+{
+"t": "r",
+"x": "R."
+},
+{
+"t": "texto",
+"x": "Bakean gaude Jainkoarekin, Jesu Kristo gure Jaunari esker."
+}
+],
+"batua": true,
+"fuente": "Liturgia euskaraz (Publicaciones de la Conferencia Episcopal Española), unidad V5642"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/salmo1": {
+"ref": "salterio/s1/dom/visperas/salmo1"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/salmo2": {
+"ref": "salterio/s3/dom/visperas/salmo2"
+},
+"propio/nuestro-senor-jesucristo-sumo-y-eterno-sacerdote/visperas/salmo3": {
+"ref": "salterio/s1/mie/visperas/salmo3"
+},
 "propio/presentacion-de-la-virgen-maria/laudes/ant_ev": {
 "lineas": [
 {
